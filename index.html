@@ -6,10 +6,7 @@
 
   <title>Central & Eastern Europe Strategic Monitor</title>
 
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -24,7 +21,7 @@
 
     .header {
       background: #111827;
-      padding: 20px;
+      padding: 22px;
       border-bottom: 1px solid #1e293b;
     }
 
@@ -105,8 +102,13 @@
     .country-row {
       display: flex;
       justify-content: space-between;
+      gap: 14px;
       margin-bottom: 6px;
       font-size: 14px;
+    }
+
+    .country-row span:last-child {
+      text-align: right;
     }
 
     .risk-high {
@@ -124,6 +126,11 @@
       font-weight: bold;
     }
 
+    .risk-low {
+      color: #3b82f6;
+      font-weight: bold;
+    }
+
     #map {
       width: 100%;
       height: 800px;
@@ -131,6 +138,11 @@
 
     .right-panel-content {
       padding: 16px;
+    }
+
+    .right-panel-content h3 {
+      margin-top: 8px;
+      margin-bottom: 10px;
     }
 
     .topic-list {
@@ -156,9 +168,13 @@
       margin-bottom: 12px;
       border-radius: 10px;
       font-size: 14px;
+      line-height: 1.4;
     }
 
-    .chart-section {
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
       padding: 20px;
     }
 
@@ -167,15 +183,35 @@
       border: 1px solid #1e293b;
       border-radius: 14px;
       padding: 20px;
-      margin: 20px;
+    }
+
+    .chart-container h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .note {
+      color: #94a3b8;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     canvas {
       max-width: 100%;
     }
 
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 1200px) {
-      .layout {
+      .layout,
+      .chart-grid {
         grid-template-columns: 1fr;
       }
 
@@ -195,6 +231,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="header">
@@ -227,30 +264,21 @@
   <div class="layout">
 
     <div class="panel">
-      <div class="panel-title">
-        Country Strategic Status
-      </div>
-
+      <div class="panel-title">Country Strategic Status</div>
       <div class="countries" id="countriesContainer"></div>
     </div>
 
     <div class="panel">
-      <div class="panel-title">
-        Regional Strategic Map
-      </div>
-
+      <div class="panel-title">Regional Strategic Map</div>
       <div id="map"></div>
     </div>
 
     <div class="panel">
-      <div class="panel-title">
-        Regional Strategic Overview
-      </div>
+      <div class="panel-title">Regional Strategic Overview</div>
 
       <div class="right-panel-content">
-
         <h3>Main Regional Trend</h3>
-        <p id="mainTrend"></p>
+        <p id="mainTrend" class="note"></p>
 
         <h3>Top Strategic Topics</h3>
         <div class="topic-list" id="topicsContainer"></div>
@@ -259,27 +287,42 @@
           <h3>Latest Strategic Developments</h3>
           <div id="eventsContainer"></div>
         </div>
-
       </div>
     </div>
 
   </div>
 
-  <div class="chart-container">
-    <h2>Regional Strategic Trend</h2>
-    <canvas id="regionalChart"></canvas>
+  <div class="chart-grid">
+    <div class="chart-container">
+      <h2>Regional Risk and Stability Trend</h2>
+      <canvas id="regionalTrendChart"></canvas>
+      <p class="note">
+        The trend chart is built from archived daily values in
+        <code>docs/data/history/regional_history.json</code>.
+      </p>
+    </div>
+
+    <div class="chart-container">
+      <h2>Current Country Risk Scores</h2>
+      <canvas id="countryRiskChart"></canvas>
+      <p class="note">
+        Country scores are generated from GDELT and local RSS monitoring.
+      </p>
+    </div>
   </div>
 
   <script>
-
-    const map = L.map('map').setView([53, 22], 4);
+    const map = L.map("map").setView([53, 22], 4);
 
     L.tileLayer(
-      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
       {
-        attribution: '&copy; OpenStreetMap contributors'
+        attribution: "&copy; OpenStreetMap contributors"
       }
     ).addTo(map);
+
+    let countryRiskChart = null;
+    let regionalTrendChart = null;
 
     function riskColor(level) {
       if (level === "HIGH") return "#ef4444";
@@ -288,92 +331,117 @@
       return "#3b82f6";
     }
 
-    async function loadDashboard() {
+    function riskClass(level) {
+      if (level === "HIGH") return "risk-high";
+      if (level === "ELEVATED") return "risk-elevated";
+      if (level === "GUARDED") return "risk-guarded";
+      return "risk-low";
+    }
 
-      const response = await fetch('docs/data/latest_status.json');
-      const data = await response.json();
+    function safeText(value, fallback = "-") {
+      if (value === null || value === undefined || value === "") {
+        return fallback;
+      }
+      return value;
+    }
 
-      document.getElementById('lastUpdate').innerText =
-        `Last update: ${new Date(data.last_update).toLocaleString()}`;
+    async function fetchJson(path, fallback) {
+      try {
+        const response = await fetch(path + "?v=" + Date.now());
+        if (!response.ok) {
+          throw new Error("HTTP " + response.status);
+        }
+        return await response.json();
+      } catch (error) {
+        console.warn("Could not load", path, error);
+        return fallback;
+      }
+    }
 
-      document.getElementById('overallRisk').innerText =
-        data.regional_summary.overall_risk;
+    function renderTopStats(data) {
+      document.getElementById("lastUpdate").innerText =
+        "Last update: " + new Date(data.last_update).toLocaleString();
 
-      document.getElementById('stabilityScore').innerText =
-        data.regional_summary.regional_stability_score;
+      document.getElementById("overallRisk").innerText =
+        safeText(data.regional_summary.overall_risk);
 
-      document.getElementById('riskScore').innerText =
-        data.regional_summary.regional_risk_score;
+      document.getElementById("stabilityScore").innerText =
+        safeText(data.regional_summary.regional_stability_score);
 
-      document.getElementById('mainTrend').innerText =
-        data.regional_summary.main_trend;
+      document.getElementById("riskScore").innerText =
+        safeText(data.regional_summary.regional_risk_score);
 
-      const topicsContainer = document.getElementById('topicsContainer');
+      document.getElementById("mainTrend").innerText =
+        safeText(data.regional_summary.main_trend, "No regional trend available.");
+    }
 
-      data.regional_summary.top_topics.forEach(topic => {
-        const div = document.createElement('div');
-        div.className = 'topic-item';
+    function renderTopics(data) {
+      const topicsContainer = document.getElementById("topicsContainer");
+      topicsContainer.innerHTML = "";
+
+      const topics = data.regional_summary.top_topics || [];
+
+      if (!topics.length) {
+        const div = document.createElement("div");
+        div.className = "topic-item";
+        div.innerText = "No dominant strategic topic detected.";
+        topicsContainer.appendChild(div);
+        return;
+      }
+
+      topics.forEach(topic => {
+        const div = document.createElement("div");
+        div.className = "topic-item";
         div.innerText = topic;
         topicsContainer.appendChild(div);
       });
+    }
 
-      const countriesContainer =
-        document.getElementById('countriesContainer');
+    function renderCountries(data) {
+      const countriesContainer = document.getElementById("countriesContainer");
+      const eventsContainer = document.getElementById("eventsContainer");
 
-      const eventsContainer =
-        document.getElementById('eventsContainer');
-
-      const chartLabels = [];
-      const chartValues = [];
+      countriesContainer.innerHTML = "";
+      eventsContainer.innerHTML = "";
 
       data.countries.forEach(country => {
-
-        chartLabels.push(country.country);
-        chartValues.push(country.risk_score);
-
-        const card = document.createElement('div');
-        card.className = 'country-card';
-
-        const riskClass =
-          country.risk_level === "HIGH"
-            ? "risk-high"
-            : country.risk_level === "ELEVATED"
-            ? "risk-elevated"
-            : "risk-guarded";
+        const card = document.createElement("div");
+        card.className = "country-card";
 
         card.innerHTML = `
-          <div class="country-name">${country.country}</div>
+          <div class="country-name">
+            ${safeText(country.country)}
+            ${country.country_local ? `<span class="note"> / ${country.country_local}</span>` : ""}
+          </div>
 
           <div class="country-row">
             <span>Risk Level</span>
-            <span class="${riskClass}">
-              ${country.risk_level}
-            </span>
+            <span class="${riskClass(country.risk_level)}">${safeText(country.risk_level)}</span>
           </div>
 
           <div class="country-row">
             <span>Risk Score</span>
-            <span>${country.risk_score}</span>
+            <span>${safeText(country.risk_score)}</span>
           </div>
 
           <div class="country-row">
             <span>Political Mood</span>
-            <span>${country.political_mood}</span>
+            <span>${safeText(country.political_mood)}</span>
           </div>
 
           <div class="country-row">
             <span>Security Trend</span>
-            <span>${country.security_trend}</span>
+            <span>${safeText(country.security_trend)}</span>
           </div>
 
           <div class="country-row">
             <span>Articles</span>
-            <span>${country.article_count}</span>
+            <span>${safeText(country.article_count)}</span>
           </div>
 
           <div class="country-row">
             <span>Main Topic</span>
-            <span>${country.main_topic}</span>
+            <span>${safeText(country.main_topic)}</span>
           </div>
         `;
 
@@ -383,74 +451,177 @@
           radius: 12,
           color: riskColor(country.risk_level),
           fillColor: riskColor(country.risk_level),
-          fillOpacity: 0.8,
+          fillOpacity: 0.85,
           weight: 2
         })
         .addTo(map)
         .bindPopup(`
-          <b>${country.country}</b><br>
-          Risk Level: ${country.risk_level}<br>
-          Risk Score: ${country.risk_score}<br>
-          Main Topic: ${country.main_topic}<br>
-          Political Mood: ${country.political_mood}
+          <b>${safeText(country.country)}</b><br>
+          Risk Level: ${safeText(country.risk_level)}<br>
+          Risk Score: ${safeText(country.risk_score)}<br>
+          Main Topic: ${safeText(country.main_topic)}<br>
+          Political Mood: ${safeText(country.political_mood)}<br>
+          Articles: ${safeText(country.article_count)}
         `);
 
-        const eventBox = document.createElement('div');
-        eventBox.className = 'event-box';
+        const eventBox = document.createElement("div");
+        eventBox.className = "event-box";
+
+        let articleLink = "";
+
+        if (country.top_articles && country.top_articles.length > 0) {
+          const firstArticle = country.top_articles[0];
+          if (firstArticle.url) {
+            articleLink = `<br><a href="${firstArticle.url}" target="_blank" rel="noopener">Open source</a>`;
+          }
+        }
 
         eventBox.innerHTML = `
-          <b>${country.country}</b><br>
-          ${country.latest_event}
+          <b>${safeText(country.country)}</b><br>
+          ${safeText(country.latest_event, "No recent event available.")}
+          ${articleLink}
         `;
 
         eventsContainer.appendChild(eventBox);
-
       });
+    }
 
-      new Chart(
-        document.getElementById('regionalChart'),
-        {
-          type: 'bar',
-          data: {
-            labels: chartLabels,
-            datasets: [
-              {
-                label: 'Regional Risk Score',
-                data: chartValues
+    function renderCountryRiskChart(data) {
+      const labels = data.countries.map(country => country.country);
+      const values = data.countries.map(country => country.risk_score);
+
+      const ctx = document.getElementById("countryRiskChart");
+
+      if (countryRiskChart) {
+        countryRiskChart.destroy();
+      }
+
+      countryRiskChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Country Risk Score",
+              data: values
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#e2e8f0"
               }
-            ]
+            }
           },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                labels: {
-                  color: '#e2e8f0'
-                }
+          scales: {
+            x: {
+              ticks: {
+                color: "#e2e8f0"
               }
             },
-            scales: {
-              x: {
-                ticks: {
-                  color: '#e2e8f0'
-                }
-              },
-              y: {
-                ticks: {
-                  color: '#e2e8f0'
-                },
-                beginAtZero: true,
-                max: 100
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: {
+                color: "#e2e8f0"
               }
             }
           }
         }
+      });
+    }
+
+    function renderRegionalTrendChart(historyData) {
+      const history = historyData.history || [];
+
+      const labels = history.map(item => item.date);
+      const riskValues = history.map(item => item.regional_risk_score || 0);
+      const stabilityValues = history.map(item => item.regional_stability_score || 0);
+
+      const ctx = document.getElementById("regionalTrendChart");
+
+      if (regionalTrendChart) {
+        regionalTrendChart.destroy();
+      }
+
+      regionalTrendChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Regional Risk Score",
+              data: riskValues,
+              tension: 0.25
+            },
+            {
+              label: "Regional Stability Score",
+              data: stabilityValues,
+              tension: 0.25
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#e2e8f0"
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "#e2e8f0"
+              }
+            },
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: {
+                color: "#e2e8f0"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    async function loadDashboard() {
+      const latestData = await fetchJson(
+        "docs/data/latest_status.json",
+        {
+          last_update: new Date().toISOString(),
+          regional_summary: {
+            overall_risk: "-",
+            regional_stability_score: "-",
+            regional_risk_score: "-",
+            main_trend: "No data available.",
+            top_topics: []
+          },
+          countries: []
+        }
       );
 
+      const historyData = await fetchJson(
+        "docs/data/history/regional_history.json",
+        {
+          history: []
+        }
+      );
+
+      renderTopStats(latestData);
+      renderTopics(latestData);
+      renderCountries(latestData);
+      renderCountryRiskChart(latestData);
+      renderRegionalTrendChart(historyData);
     }
 
     loadDashboard();
-
   </script>
 
 </body>
