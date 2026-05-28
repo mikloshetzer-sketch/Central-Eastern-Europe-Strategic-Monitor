@@ -50,27 +50,28 @@
       background: #0f172a;
       color: #ffffff;
       border-radius: 22px;
-      padding: 30px;
+      padding: 24px 28px;
       box-shadow: var(--shadow);
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       text-align: center;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 34px;
+      font-size: 32px;
       letter-spacing: 0.2px;
     }
 
     .hero p {
-      margin: 12px auto 0;
-      max-width: 1050px;
+      margin: 10px auto 0;
+      max-width: 980px;
       color: #cbd5e1;
-      line-height: 1.55;
+      line-height: 1.45;
+      font-size: 15px;
     }
 
     .update-line {
-      margin-top: 14px;
+      margin-top: 12px;
       color: #94a3b8;
       font-size: 13px;
     }
@@ -78,64 +79,41 @@
     .top-panel {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 20px;
+      border-radius: 20px;
+      padding: 16px;
       box-shadow: var(--shadow);
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 14px;
-      margin-bottom: 14px;
     }
 
     .stat-card {
       background: var(--soft);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 16px;
+      padding: 14px;
     }
 
     .stat-label {
       color: var(--muted);
       font-size: 13px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .stat-value {
-      font-size: 28px;
+      font-size: 27px;
       font-weight: 800;
-    }
-
-    .method-note {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 10px 0 0;
-    }
-
-    .nav-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .nav-pill {
-      background: #0f172a;
-      color: #ffffff;
-      border-radius: 12px;
-      padding: 11px 16px;
-      font-weight: 700;
-      font-size: 14px;
     }
 
     .summary-grid {
       display: grid;
       grid-template-columns: 1.3fr 0.7fr;
       gap: 18px;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .panel {
@@ -166,6 +144,17 @@
       margin: 0 8px 8px 0;
       font-size: 13px;
       font-weight: 700;
+    }
+
+    .dashboard-charts {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .wide-chart {
+      height: 320px;
     }
 
     .country-grid {
@@ -259,6 +248,33 @@
       font-weight: 800;
     }
 
+    .security-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+
+    .security-mini {
+      background: #ffffff;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+      padding: 7px;
+    }
+
+    .security-mini-label {
+      color: var(--muted);
+      font-size: 10px;
+      margin-bottom: 3px;
+    }
+
+    .security-mini-value {
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.15;
+      word-break: break-word;
+    }
+
     .block {
       background: var(--soft);
       border: 1px solid var(--border);
@@ -294,6 +310,26 @@
 
     .small-chart-holder {
       height: 145px;
+    }
+
+    .security-chart-holder {
+      height: 135px;
+    }
+
+    .sub-narratives {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .sub-chip {
+      background: #eef2ff;
+      color: #3730a3;
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-weight: 700;
     }
 
     .social-metrics {
@@ -365,17 +401,6 @@
       text-decoration: underline;
     }
 
-    .bottom-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      margin-bottom: 22px;
-    }
-
-    .wide-chart {
-      height: 320px;
-    }
-
     .note {
       color: var(--muted);
       font-size: 13px;
@@ -389,7 +414,7 @@
       }
 
       .summary-grid,
-      .bottom-grid {
+      .dashboard-charts {
         grid-template-columns: 1fr;
       }
     }
@@ -401,7 +426,8 @@
       }
 
       .mini-metrics,
-      .social-metrics {
+      .social-metrics,
+      .security-metrics {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -450,18 +476,27 @@
           <div class="stat-value">8</div>
         </div>
       </div>
+    </section>
 
-      <p class="method-note">
-        Kulcsszavas, híralapú és biztonsági monitoring. Nem közvélemény-kutatás.
-        A social réteg jelenleg részben híralapú fallback, később Reddit, Mastodon és opcionális X adatokkal bővíthető.
-      </p>
+    <section class="dashboard-charts">
+      <div class="panel">
+        <h2>Regionális kombinált trend</h2>
+        <div class="wide-chart">
+          <canvas id="regionalCombinedChart"></canvas>
+        </div>
+        <div class="note">
+          A regionális trend a hírkockázat és social signal országonkénti átlagából épül.
+        </div>
+      </div>
 
-      <div class="nav-row">
-        <div class="nav-pill">GDELT + regional RSS</div>
-        <div class="nav-pill">CEE Security Map overlay</div>
-        <div class="nav-pill">Social signal layer</div>
-        <div class="nav-pill">Domináns narratívák</div>
-        <div class="nav-pill">Kombinált trend</div>
+      <div class="panel">
+        <h2>Aktuális országkockázati összevetés</h2>
+        <div class="wide-chart">
+          <canvas id="countryRiskChart"></canvas>
+        </div>
+        <div class="note">
+          A pontszámok a dashboard_layers.json előkészített vizualizációs rétegeiből származnak.
+        </div>
       </div>
     </section>
 
@@ -478,28 +513,6 @@
     </section>
 
     <section class="country-grid" id="countryGrid"></section>
-
-    <section class="bottom-grid">
-      <div class="panel">
-        <h2>Regionális kombinált trend</h2>
-        <div class="wide-chart">
-          <canvas id="regionalCombinedChart"></canvas>
-        </div>
-        <div class="note">
-          A regionális trend a hírkockázat, security pressure és social signal országonkénti átlagából épül.
-        </div>
-      </div>
-
-      <div class="panel">
-        <h2>Aktuális országkockázati összevetés</h2>
-        <div class="wide-chart">
-          <canvas id="countryRiskChart"></canvas>
-        </div>
-        <div class="note">
-          A pontszámok a dashboard_layers.json előkészített vizualizációs rétegeiből származnak.
-        </div>
-      </div>
-    </section>
       </div>
 
   <script>
@@ -541,7 +554,9 @@
 
     function getLayer(layers, countryId) {
       if (!layers || !layers.countries) return {};
-      return layers.countries[countryId] || {};
+      return layers.countries.find
+        ? layers.countries.find(item => item.id === countryId) || {}
+        : layers.countries[countryId] || {};
     }
 
     function renderHeader(latest) {
@@ -595,12 +610,13 @@
         const security = layer.security_layer || {};
         const social = layer.social_layer || {};
         const combinedHistory = layer.combined_history || [];
-        const articles = country.top_articles || [];
+        const articles = layer.top_articles || country.top_articles || [];
 
         const countryCard = document.createElement("article");
         countryCard.className = "country-card";
 
         const narrativeChartId = `narrative_${country.id}`;
+        const securityChartId = `security_${country.id}`;
         const combinedChartId = `combined_${country.id}`;
 
         const sourceLinks = articles.slice(0, 5).map(article => {
@@ -615,11 +631,17 @@
           `;
         }).join("");
 
-        const socialTopicRows = (social.topics || []).slice(0, 4).map(item => `
+        const socialTopicRows = (social.social_topics || social.topics || []).slice(0, 4).map(item => `
           <div class="topic-row">
             <span>${safe(item.name)}</span>
-            <strong>${safe(item.count, 0)}</strong>
+            <strong>${safe(item.count, item.score || 0)}</strong>
           </div>
+        `).join("");
+
+        const topSubNarratives = narratives[0]?.sub_narratives || [];
+
+        const subNarrativesHtml = topSubNarratives.slice(0, 6).map(item => `
+          <span class="sub-chip">${safe(item.name)} (${safe(item.score, 0)})</span>
         `).join("");
 
         countryCard.innerHTML = `
@@ -648,51 +670,64 @@
 
             <div class="mini-box">
               <div class="mini-label">Security</div>
-              <div class="mini-value">${safe(security.security_risk, 0)}</div>
+              <div class="mini-value">${safe(security.security_risk_score || security.security_risk || 0)}</div>
             </div>
 
             <div class="mini-box">
               <div class="mini-label">Social</div>
-              <div class="mini-value">${safe(social.index, 0)}</div>
+              <div class="mini-value">${safe(social.social_index || social.index || 0)}</div>
             </div>
           </div>
 
           <div class="block security-block">
             <h3>Biztonsági réteg</h3>
 
-            <div class="mini-metrics">
-              <div class="mini-box">
-                <div class="mini-label">Security risk</div>
-                <div class="mini-value">${safe(security.security_risk, 0)}</div>
+            <div class="security-metrics">
+              <div class="security-mini">
+                <div class="security-mini-label">Security risk</div>
+                <div class="security-mini-value">${safe(security.security_risk_score || security.security_risk || 0)}</div>
               </div>
 
-              <div class="mini-box">
-                <div class="mini-label">Szint</div>
-                <div class="mini-value">${safe(security.level, "minimal")}</div>
+              <div class="security-mini">
+                <div class="security-mini-label">Szint</div>
+                <div class="security-mini-value">${safe(security.security_status || security.level || "minimal")}</div>
               </div>
 
-              <div class="mini-box">
-                <div class="mini-label">Események</div>
-                <div class="mini-value">${safe(security.events, 0)}</div>
+              <div class="security-mini">
+                <div class="security-mini-label">Események</div>
+                <div class="security-mini-value">${safe(security.security_events || security.events || 0)}</div>
               </div>
 
-              <div class="mini-box">
-                <div class="mini-label">Forrás</div>
-                <div class="mini-value" style="font-size:15px;">
-                  ${safe(security.source, "news_derived")}
-                </div>
+              <div class="security-mini">
+                <div class="security-mini-label">Trend</div>
+                <div class="security-mini-value">${safe(security.security_trend || "STABLE")}</div>
               </div>
             </div>
 
             <p>
               Fő biztonsági narratíva:
-              <strong>${safe(security.main_security_narrative, "Nincs kiemelt biztonsági narratíva.")}</strong>
+              <strong>${safe(security.main_security_narrative || layer.main_topic || country.main_topic, "Nincs kiemelt biztonsági narratíva.")}</strong>
             </p>
+          </div>
+
+          <div class="block security-block">
+            <h3>Security risk trend</h3>
+            <p>A biztonsági érték külön diagramon jelenik meg, nem keveredik a hír- és social indexszel.</p>
+            <div class="security-chart-holder">
+              <canvas id="${securityChartId}"></canvas>
+            </div>
           </div>
 
           <div class="block">
             <h3>Domináns narratívák</h3>
-            <p>A témacsoportok relatív súlya az aktuális híranyag alapján.</p>
+            <p>${safe(layer.narrative_summary, "A témacsoportok relatív súlya az aktuális híranyag alapján.")}</p>
+
+            ${
+              subNarrativesHtml
+                ? `<div class="sub-narratives">${subNarrativesHtml}</div>`
+                : ""
+            }
+
             <div class="chart-holder">
               <canvas id="${narrativeChartId}"></canvas>
             </div>
@@ -704,51 +739,38 @@
             <div class="social-metrics">
               <div class="social-mini">
                 <div class="social-mini-label">Említések</div>
-                <div class="social-mini-value">${safe(social.mentions, 0)}</div>
+                <div class="social-mini-value">${safe(social.social_mentions || social.mentions, 0)}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">Negatív</div>
-                <div class="social-mini-value">${safe(social.negative, 0)}</div>
+                <div class="social-mini-label">X</div>
+                <div class="social-mini-value">${safe(social.x_mentions, 0)}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">Pozitív</div>
-                <div class="social-mini-value">${safe(social.positive, 0)}</div>
+                <div class="social-mini-label">Reddit</div>
+                <div class="social-mini-value">${safe(social.reddit_mentions, 0)}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">Index</div>
-                <div class="social-mini-value">${safe(social.index, 0)}</div>
+                <div class="social-mini-label">Mastodon</div>
+                <div class="social-mini-value">${safe(social.mastodon_mentions, 0)}</div>
               </div>
             </div>
 
             <p>
-              X: ${safe(social.x_mentions, 0)} |
-              Reddit: ${safe(social.reddit_mentions, 0)} |
-              Mastodon: ${safe(social.mastodon_mentions, 0)}
+              Fő social téma:
+              <strong>${safe(social.social_topic || social.main_social_topic, "Nincs adat")}</strong>
             </p>
 
             <div class="topic-table">
-              <div>
-                Fő geopolitikai téma:
-                <strong>${safe(social.main_social_topic, "Nincs adat")}</strong>
-              </div>
-              <div>
-                Megbízható források:
-                <strong>${safe(social.reliable_sources, 0)}</strong>
-                |
-                Geopolitikai pontszám:
-                <strong>${safe(social.geopolitical_score, 0)}</strong>
-              </div>
-
               ${socialTopicRows || "<div class='topic-row'><span>Nincs social téma</span><strong>0</strong></div>"}
             </div>
           </div>
 
           <div class="block">
             <h3>Mini kombinált trenddiagram</h3>
-            <p>Kék vonal: combined score. Halvány oszlop: social index. Narancs vonal: security risk.</p>
+            <p>Kék vonal: combined score. Halvány oszlop: social signal. Zöld vonal: news risk.</p>
             <div class="small-chart-holder">
               <canvas id="${combinedChartId}"></canvas>
             </div>
@@ -762,8 +784,86 @@
 
         grid.appendChild(countryCard);
 
+        renderSecurityRiskChart(securityChartId, combinedHistory);
         renderNarrativeChart(narrativeChartId, narratives);
         renderCombinedCountryChart(combinedChartId, combinedHistory);
+      });
+    }
+
+    function renderSecurityRiskChart(canvasId, rows) {
+      const ctx = document.getElementById(canvasId);
+
+      const labels = rows.map(item => item.date);
+      const security = rows.map(item =>
+        item.security_risk ||
+        item.security_risk_score ||
+        item.risk_score ||
+        0
+      );
+
+      if (countryCharts[canvasId]) {
+        countryCharts[canvasId].destroy();
+      }
+
+      countryCharts[canvasId] = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "Security risk",
+              data: security,
+              borderColor: "#ea580c",
+              backgroundColor: "rgba(234, 88, 12, 0.12)",
+              fill: true,
+              tension: 0.25,
+              borderWidth: 2,
+              pointRadius: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#64748b",
+                boxWidth: 10,
+                font: {
+                  size: 11
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "#64748b",
+                maxRotation: 0,
+                font: {
+                  size: 10
+                }
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              min: 0,
+              max: 100,
+              ticks: {
+                color: "#64748b",
+                font: {
+                  size: 10
+                }
+              },
+              grid: {
+                color: "#e5e7eb"
+              }
+            }
+          }
+        }
       });
     }
 
@@ -804,7 +904,6 @@
           scales: {
             x: {
               min: 0,
-              max: 100,
               ticks: {
                 color: "#64748b"
               },
@@ -832,9 +931,9 @@
       const ctx = document.getElementById(canvasId);
 
       const labels = rows.map(item => item.date);
-      const combined = rows.map(item => item.combined_score || 0);
-      const social = rows.map(item => item.social_index || 0);
-      const security = rows.map(item => item.security_risk || 0);
+      const combined = rows.map(item => item.combined_score || item.risk_score || 0);
+      const social = rows.map(item => item.social_index || item.social_signal || 0);
+      const news = rows.map(item => item.news_risk || item.risk_score || 0);
 
       if (countryCharts[canvasId]) {
         countryCharts[canvasId].destroy();
@@ -846,7 +945,7 @@
           datasets: [
             {
               type: "bar",
-              label: "Social index",
+              label: "Social signal",
               data: social,
               backgroundColor: "rgba(147, 197, 253, 0.55)",
               borderColor: "#93c5fd",
@@ -855,10 +954,10 @@
             },
             {
               type: "line",
-              label: "Combined score",
-              data: combined,
-              borderColor: "#2563eb",
-              backgroundColor: "#2563eb",
+              label: "News risk",
+              data: news,
+              borderColor: "#16a34a",
+              backgroundColor: "#16a34a",
               tension: 0.25,
               borderWidth: 2,
               pointRadius: 2,
@@ -866,10 +965,10 @@
             },
             {
               type: "line",
-              label: "Security risk",
-              data: security,
-              borderColor: "#ea580c",
-              backgroundColor: "#ea580c",
+              label: "Combined score",
+              data: combined,
+              borderColor: "#2563eb",
+              backgroundColor: "#2563eb",
               tension: 0.25,
               borderWidth: 2,
               pointRadius: 2,
@@ -923,7 +1022,10 @@
     }
 
     function renderRegionalCombined(layers) {
-      const countries = Object.values(layers.countries || {});
+      const countries = Array.isArray(layers.countries)
+        ? layers.countries
+        : Object.values(layers.countries || {});
+
       const dates = [];
 
       countries.forEach(country => {
@@ -941,14 +1043,14 @@
 
         countries.forEach(country => {
           const row = (country.combined_history || []).find(r => r.date === date);
-          if (row) values.push(row.combined_score || 0);
+          if (row) {
+            values.push(row.combined_score || row.risk_score || 0);
+          }
         });
 
         if (!values.length) return 0;
 
-        return Math.round(
-          values.reduce((sum, value) => sum + value, 0) / values.length
-        );
+        return Math.round(values.reduce((sum, value) => sum + value, 0) / values.length);
       });
 
       const ctx = document.getElementById("regionalCombinedChart");
@@ -1016,7 +1118,9 @@
         const history = layer.combined_history || [];
         const last = history[history.length - 1];
 
-        return last ? last.combined_score : country.risk_score || 0;
+        return last
+          ? (last.combined_score || last.risk_score || country.risk_score || 0)
+          : country.risk_score || 0;
       });
 
       const ctx = document.getElementById("countryRiskChart");
@@ -1082,14 +1186,14 @@
       });
 
       const layers = await fetchJson(DASHBOARD_LAYERS_PATH, {
-        countries: {}
+        countries: []
       });
 
       renderHeader(latest);
       renderTopics(latest);
-      renderCountryCards(latest, layers);
       renderRegionalCombined(layers);
       renderCountryRiskChart(latest, layers);
+      renderCountryCards(latest, layers);
     }
 
     loadDashboard();
