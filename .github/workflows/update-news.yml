@@ -34,6 +34,9 @@ jobs:
       - name: History frissítés
         run: python scripts/update_history.py
 
+      - name: Dashboard rétegek előállítása
+        run: python scripts/build_dashboard_layers.py
+
       - name: Változások commitolása
         run: |
           git config user.name "github-actions"
@@ -42,8 +45,10 @@ jobs:
           git add docs/data/latest_status.json
           git add docs/data/raw_news.json
           git add docs/data/security_overlay.json
+          git add docs/data/social_overlay.json
+          git add docs/data/dashboard_layers.json
           git add docs/data/history/regional_history.json
           git add docs/data/history/country_history.json
 
-          git commit -m "Update CEE Strategic Monitor data" || echo "Nincs változás"
+          git commit -m "Update CEE Strategic Monitor dashboard layers" || echo "Nincs változás"
           git push
