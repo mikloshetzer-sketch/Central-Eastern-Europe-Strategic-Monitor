@@ -1,419 +1,449 @@
 {
-  "generated_utc": "2026-05-28T13:36:02.903959+00:00",
-  "description": "Prepared visualization layers for the CEE Strategic Monitor dashboard.",
-  "countries": {
-    "hungary": {
+  "last_update": "2026-05-28T14:05:54.559532+00:00",
+  "source": "latest_status.json + raw_news.json + security_overlay.json + social_overlay.json",
+  "regional_summary": {
+    "regional_risk_score": 90,
+    "regional_social_score": 70,
+    "top_regional_narratives": [
+      {
+        "name": "NATO keleti szárny és katonai elrettentés",
+        "score": 451
+      },
+      {
+        "name": "EU-politika, jogállamiság és uniós források",
+        "score": 406
+      },
+      {
+        "name": "Ukrajna támogatása és orosz–ukrán háború",
+        "score": 300
+      },
+      {
+        "name": "Belpolitikai feszültség és választási dinamika",
+        "score": 177
+      },
+      {
+        "name": "Energiabiztonság, gazdaság és infrastruktúra",
+        "score": 22
+      }
+    ]
+  },
+  "countries": [
+    {
+      "id": "hungary",
+      "country": "Hungary",
+      "country_local": "Magyarország",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "EU-politika, jogállamiság és uniós források",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 50
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 114,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 22
+            },
+            {
+              "name": "korrupció és intézményi bizalom",
+              "score": 3
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 2
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 40
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 36,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 3
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 30
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 21,
+          "sub_narratives": [
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 7
+            },
+            {
+              "name": "balti elrettentés",
+              "score": 7
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 3
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 30
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 15,
+          "sub_narratives": [
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 6
+            },
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 3
+            },
+            {
+              "name": "korrupciós ügyek",
+              "score": 3
+            },
+            {
+              "name": "tüntetések és utcai mobilizáció",
+              "score": 2
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 1
+            },
+            {
+              "name": "helyi önkormányzati konfliktus",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: EU-politika, jogállamiság és uniós források. A legerősebb alnarratívák: EU-s döntéshozatali konfliktus, korrupció és intézményi bizalom, uniós források és kohéziós pénzek.",
+      "top_narrative_drivers": [
+        {
+          "title": "The US will keep embassy in Kyiv open despite Russian threats",
+          "source": "Politico Europe",
+          "url": "https://www.politico.eu/article/us-ukraine-embassy-open-russia-threats/",
+          "score": 10
         },
         {
-          "name": "Energia és gazdaság",
-          "score": 30
+          "title": "EU probes Chinese giant JD.com’s bid for Germany Ceconomy",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/eu-probes-chinese-giant-jd-coms-bid-for-germany-ceconomy/",
+          "score": 9
+        },
+        {
+          "title": "Trump cheers on Armenia’s prime minister ahead of election",
+          "source": "Politico Europe",
+          "url": "https://www.politico.eu/article/donald-trump-endorses-nikol-pashinyan-ahead-of-election/",
+          "score": 8
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Norway to join France-led nuclear deterrence programme",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/norway-to-join-france-led-nuclear-deterrence-programme/",
+          "score": 8
+        },
+        {
+          "title": "Europe should join Russia-Ukraine talks — but not as mediator, says Norway",
+          "source": "Politico Europe",
+          "url": "https://www.politico.eu/article/europe-russia-ukraine-war-talks-mediator-norway-espen-barth-eide/",
+          "score": 7
         }
       ],
       "security_layer": {
-        "security_risk": 94.5,
-        "level": "high",
-        "events": 54,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 19,
-        "negative": 5,
-        "positive": 2,
-        "index": 71,
-        "x_mentions": 3,
-        "reddit_mentions": 11,
+        "social_index": 75,
+        "social_mentions": 19,
+        "x_mentions": 4,
+        "reddit_mentions": 10,
         "mastodon_mentions": 5,
-        "main_social_topic": "Belpolitikai feszültség",
-        "reliable_sources": 5,
-        "geopolitical_score": 469,
-        "topics": [
+        "social_topic": "Belpolitikai feszültség",
+        "social_topics": [
           {
             "name": "Belpolitikai feszültség",
             "count": 8
           },
           {
+            "name": "Ukrajna és Oroszország",
+            "count": 6
+          },
+          {
             "name": "Biztonsági kockázat",
             "count": 5
-          },
-          {
-            "name": "Ukrajna és Oroszország",
-            "count": 4
-          },
-          {
-            "name": "EU / jogállamiság",
-            "count": 2
-          }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 11,
-          "mastodon": 5,
-          "x": 3
-        },
-        "category_counts": {
-          "security": 5,
-          "government_crisis": 8,
-          "ukraine_russia": 4,
-          "eu_rule_of_law": 2
-        },
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 489,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Russian attacks kill 2, injure 23 across Ukraine over past day as Kherson strike devastates family # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Trump # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Den",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116651578710122416",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Thu, 28 May 2026 09:50:33 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 72,
-            "quality_score": 77,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Exclusive: Zelensky sends Trump urgent letter warning of Ukraine's critical missile defense shortages # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # Trump # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # ",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116646699858348689",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Wed, 27 May 2026 13:09:47 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 69,
-            "quality_score": 74,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kaja Kallas warns against walking into Russian ‘trap’ as EU ministers meet for talks – Europe live https://www. theguardian.com/world/live/202 6/may/28/europe-russia-ukraine-talks-heatwave-kaja-kallas-putin-latest-news-updates # Europe # EuropeanUnion # Russia # Ukraine # Hungary # ExtremeHeat # ClimateCrisis",
-            "url": "https://halo.nu/@theguardian_world_news/116651231562830544",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Thu, 28 May 2026 08:22:16 +0000",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 55,
-            "quality_score": 60,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Az uniós pénzekért indult Brüsszelbe Magyar Péter",
-            "text": "\"Úton Brüsszelbe. Az egész kormány azon dolgozik, hogy holnapig sikerüljön megkötni a megállapodást az Európai Bizottság elnökével sok ezer milliárd forint uniós forrás hazahozataláról\". A versenyfutás elsősorban a Covid-járvány után létrehozott úgynevezett Helyreállítási Alap (RRF) pénzeiért folyik, ebből a keretből ugyanis 10,4 milliárd eurót (mostani árfo",
-            "url": "https://www.reddit.com/r/hungary/comments/1tpuzqx/az_uniós_pénzekért_indult_brüsszelbe_magyar_péter/",
-            "source": "reddit",
-            "tag": "hungary",
-            "seen_date": "2026-05-28T06:10:31+00:00",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 11
-            },
-            "event_category": "government_crisis",
-            "event_category_label": "Belpolitikai feszültség",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 3,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 34,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Fekete-Győr: Támogatóan állok a Tiszához, de új ellenzéket is fel kell építeni a Fidesz helyett",
-            "text": "„Nekem az az állításom, hogy a következő országgyűlési választásokon, 2030-ban jöhet el annak az ideje, amikor a magyar országgyűlés visszakapja azt a méltóságot, hogy van egy párbeszédképes kormánya és van egy párbeszédképes ellenzéke. A mi feladatunk, és én így tekintek saját magamra is a parlamenten kívül, hosszú távon majd felépíteni egy olyan alternatív",
-            "url": "https://www.reddit.com/r/hungary/comments/1tpsl4h/feketegyőr_támogatóan_állok_a_tiszához_de_új/",
-            "source": "reddit",
-            "tag": "hungary",
-            "seen_date": "2026-05-28T04:07:57+00:00",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 10
-            },
-            "event_category": "government_crisis",
-            "event_category_label": "Belpolitikai feszültség",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 4,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 31,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 56,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 71.3
+          "risk_score": 56,
+          "social_signal": -8,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 57,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 71.8
+          "risk_score": 57,
+          "social_signal": -9,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 58,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 72.2
+          "risk_score": 58,
+          "social_signal": -10,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 58,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 72.2
+          "risk_score": 58,
+          "social_signal": -11,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 59,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 72.6
+          "risk_score": 59,
+          "social_signal": -12,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 58,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 72.2
+          "risk_score": 58,
+          "social_signal": -12,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 59,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 72.6
+          "risk_score": 59,
+          "social_signal": -13,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 71,
-          "security_risk": 94.5,
-          "combined_score": 86.6
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "Yad Vashem set to open Holocaust education centers in Germany",
+          "url": "https://www.politico.eu/article/yad-vashem-set-to-open-holocaust-education-centers-in-germany/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T13:31:52+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Europe should join Russia-Ukraine talks — but not as mediator, says Norway",
+          "url": "https://www.politico.eu/article/europe-russia-ukraine-war-talks-mediator-norway-espen-barth-eide/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:54:49+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "The US will keep embassy in Kyiv open despite Russian threats",
+          "url": "https://www.politico.eu/article/us-ukraine-embassy-open-russia-threats/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:15:34+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Trump cheers on Armenia’s prime minister ahead of election",
+          "url": "https://www.politico.eu/article/donald-trump-endorses-nikol-pashinyan-ahead-of-election/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T09:03:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Pentagon puts building blocks in place for Cuba invasion",
+          "url": "https://www.politico.com/news/2026/05/27/cuba-us-military-attack-00938740",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T06:33:24+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "National subsidies won’t solve fertiliser crisis, EU farm ministers warn",
+          "url": "https://www.euractiv.com/news/national-subsidies-wont-solve-fertiliser-crisis-eu-farm-ministers-warn/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-26T13:52:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Polish beekeepers push back against alleged EU nature plan restrictions",
+          "url": "https://www.euractiv.com/news/polish-beekeepers-push-back-against-alleged-eu-nature-plan-restrictions/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T12:53:36+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "poland": {
+    {
+      "id": "poland",
+      "country": "Poland",
+      "country_local": "Polska",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 90
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 59,
+          "sub_narratives": [
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 7
+            },
+            {
+              "name": "balti elrettentés",
+              "score": 6
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 5
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 60
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 38,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 9
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 50
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 36,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 4
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 30
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 35,
+          "sub_narratives": [
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 18
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 8
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 5
+            },
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
+              "score": 5
+            },
+            {
+              "name": "helyi önkormányzati konfliktus",
+              "score": 3
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 2
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: védelmi kiadások és fegyverbeszerzés, balti elrettentés, légtérellenőrzés és légvédelem.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "Külső befolyás",
-          "score": 30
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 99.9,
-        "level": "high",
-        "events": 14,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 22,
-        "negative": 9,
-        "positive": 2,
-        "index": 73,
+        "social_index": 69,
+        "social_mentions": 22,
         "x_mentions": 2,
         "reddit_mentions": 9,
         "mastodon_mentions": 11,
-        "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 6,
-        "geopolitical_score": 560,
-        "topics": [
+        "social_topic": "Biztonsági kockázat",
+        "social_topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 10
+            "count": 12
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 6
+            "count": 4
           },
           {
             "name": "Belpolitikai feszültség",
@@ -431,719 +461,530 @@
             "name": "Tiltakozás",
             "count": 1
           }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 9,
-          "mastodon": 11,
-          "x": 2
-        },
-        "category_counts": {
-          "security": 10,
-          "migration_border": 1,
-          "government_crisis": 2,
-          "ukraine_russia": 6,
-          "eu_rule_of_law": 2,
-          "protest": 1
-        },
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 602,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Starmer and Tusk sign a UK–Poland defence pact amid warnings over Russian threats. UK Prime Minister Keir Starmer and his Polish counterpart Donald Tusk have signed a new defence pact aimed at deepening military and security cooperation between the two NATO allies. The agreement strengthens joint capabilities, cyber defence and coordination in response to gr",
-            "url": "https://mastodon.mediafaro.org/@mf_newsdigest/116651570397889859",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Thu, 28 May 2026 09:48:26 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 6
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 103,
-            "quality_score": 108,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Ukrainian pro-N@zi, anti-Polish and antisemitic political leader Andrii Melnyk and his wife reinterred at National Military Memorial Cemetery of Kyiv",
-            "text": "Zelenskyy said: \" Colonel Andrii Melnyk has returned to a different Ukraine – not the one he was forced to leave, but the one he dreamed of. [...] He has returned to a Ukraine that is strong, free and proud; a Ukraine that knows what it wants; and a Ukraine that holds together without internal discord, and it is precisely for this reason that, through its un",
-            "url": "https://www.reddit.com/r/poland/comments/1tq181g/ukrainian_pronzi_antipolish_and_antisemitic/",
-            "source": "reddit",
-            "tag": "poland",
-            "seen_date": "2026-05-28T11:47:57+00:00",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 50,
-            "quality_score": 49,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "https:// youtu.be/LA71x3NYOOA ⚡️🇺🇦In Focus: Russia targets the Baltics after its embarrassing failures in Ukraine (UATV VIDEO) # Ukraine # Lithuania # Latvia # Estonia # Poland # Press # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
-            "url": "https://mastodon.online/@SocraticEthics/116648560433912496",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Wed, 27 May 2026 21:02:58 +0000",
-            "matched_countries": [
-              "poland",
-              "estonia",
-              "latvia"
-            ],
-            "country_confidence": {
-              "poland": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 49,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "US troops are moving from Germany to Poland – The Suwałki Gap makes this the most strategically significant NATO shift in years # NATO :na1::na2: # EuropeanArmy https:// vulpesetleo.substack.com/p/kos ciuszko-smiles-for-our-freedom",
-            "url": "https://mas.to/@eunews/116651026386485068",
-            "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Thu, 28 May 2026 07:30:05 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "The Chancellery of Prime Minister lost a lawsuit concerning personnel changes made at the Polish-Hungarian Institute in Warsaw after the current coalition took power. The legal pre",
-            "text": "The Chancellery of Prime Minister lost a lawsuit concerning personnel changes made at the Polish-Hungarian Institute in Warsaw after the current coalition took power. The legal precedent should serve as a warning to government, who have rushed to",
-            "url": "https://x.com/i/web/status/2059990345320972483",
-            "source": "x",
-            "tag": "hungary",
-            "seen_date": "2026-05-28T13:29:05.000Z",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 5,
-              "hungary": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 68,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 78.8
+          "risk_score": 68,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 69,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 79.3
+          "risk_score": 69,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 70,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 79.7
+          "risk_score": 70,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 71,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 80.2
+          "risk_score": 71,
+          "social_signal": 7,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 72,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 80.6
+          "risk_score": 72,
+          "social_signal": 8,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 72,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 80.6
+          "risk_score": 72,
+          "social_signal": 8,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 73,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 81.1
+          "risk_score": 73,
+          "social_signal": 9,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 73,
-          "security_risk": 99.9,
-          "combined_score": 88.7
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Polish beekeepers push back against alleged EU nature plan restrictions",
+          "url": "https://www.euractiv.com/news/polish-beekeepers-push-back-against-alleged-eu-nature-plan-restrictions/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T12:53:36+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Polish academics protest underfunding of science and higher education",
+          "url": "https://notesfrompoland.com/2026/05/27/polish-academics-protest-underfunding-of-science-and-higher-education/",
+          "source": "Notes from Poland",
+          "seen_date": "2026-05-27T15:36:35+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Polish soldier acquitted over firing shots towards migrants illegally crossing Belarus border",
+          "url": "https://notesfrompoland.com/2026/05/27/polish-soldier-acquitted-over-firing-shots-towards-migrants-illegally-crossing-belarus-border/",
+          "source": "Notes from Poland",
+          "seen_date": "2026-05-27T14:45:41+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "PKB w USA. Wynik niższy niż zakładano",
+          "url": "https://tvn24.pl/biznes/ze-swiata/pkb-w-usa-w-pierwszym-kwartale-2026-wynik-nizszy-niz-zakladano-st9071036",
+          "source": "TVN24 Poland",
+          "seen_date": "2026-05-28T13:27:33+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Setki sztabek złota w domu byłego urzędnika. Oto jak je zdobył",
+          "url": "https://tvn24.pl/swiat/usa-setki-sztabek-zlota-w-domu-bylego-urzednika-oto-jak-je-zdobyl-st9070720",
+          "source": "TVN24 Poland",
+          "seen_date": "2026-05-28T13:20:50+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "slovakia": {
+    {
+      "id": "slovakia",
+      "country": "Slovakia",
+      "country_local": "Slovensko",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 60
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 45,
+          "sub_narratives": [
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 7
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 5
+            },
+            {
+              "name": "balti elrettentés",
+              "score": 5
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 50
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 39,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 6
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 40
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 25,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 9
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 40
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 20,
+          "sub_narratives": [
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 10
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 5
+            },
+            {
+              "name": "tüntetések és utcai mobilizáció",
+              "score": 2
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 1
+            },
+            {
+              "name": "médiaszabadság és civil szféra",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem, balti elrettentés.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "Külső befolyás",
-          "score": 10
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 50.4,
-        "level": "medium",
-        "events": 1,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 11,
-        "negative": 2,
-        "positive": 0,
-        "index": 54,
-        "x_mentions": 5,
+        "social_index": 61,
+        "social_mentions": 12,
+        "x_mentions": 6,
         "reddit_mentions": 1,
         "mastodon_mentions": 5,
-        "main_social_topic": "Belpolitikai feszültség",
-        "reliable_sources": 2,
-        "geopolitical_score": 253,
-        "topics": [
+        "social_topic": "Belpolitikai feszültség",
+        "social_topics": [
           {
             "name": "Belpolitikai feszültség",
             "count": 6
           },
           {
             "name": "Biztonsági kockázat",
-            "count": 4
+            "count": 5
           },
           {
             "name": "EU / jogállamiság",
             "count": 1
-          }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 1,
-          "mastodon": 5,
-          "x": 5
-        },
-        "category_counts": {
-          "government_crisis": 6,
-          "security": 4,
-          "eu_rule_of_law": 1
-        },
-        "engagement_total": 83,
-        "raw_engagement_total": 83,
-        "quality_total": 276,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Russian attacks kill 2, injure 23 across Ukraine over past day as Kherson strike devastates family # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Trump # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Den",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116651578710122416",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Thu, 28 May 2026 09:50:33 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 72,
-            "quality_score": 77,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Exclusive: Zelensky sends Trump urgent letter warning of Ukraine's critical missile defense shortages # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # Trump # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # ",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116646699858348689",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Wed, 27 May 2026 13:09:47 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 69,
-            "quality_score": 74,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "🤝 Incap Slovakia joins the Slovak Security and Defence Industry Association (ZBOP)! We are pleased to announce that Incap Slovakia has officially joined the Slovak Security and Def",
-            "text": "🤝 Incap Slovakia joins the Slovak Security and Defence Industry Association (ZBOP)! We are pleased to announce that Incap Slovakia has officially joined the Slovak Security and Defence Industry Association ZBOP. This membership strengthens ´s position within",
-            "url": "https://x.com/i/web/status/2059990194351116590",
-            "source": "x",
-            "tag": "slovakia",
-            "seen_date": "2026-05-28T13:28:29.000Z",
-            "matched_countries": [
-              "slovakia"
-            ],
-            "country_confidence": {
-              "slovakia": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "ROBERT FICO MET WITH THE PRIME MINISTER OF THE PRINCALITY OF ANDORRA, XAVIER ESPOT ZAMORA 🇸🇰🤝🏻🇦🇩 Today, Thursday, 28 May 2026, at the Office of the Government of the Slovak Republi",
-            "text": "ROBERT FICO MET WITH THE PRIME MINISTER OF THE PRINCALITY OF ANDORRA, XAVIER ESPOT ZAMORA 🇸🇰🤝🏻🇦🇩 Today, Thursday, 28 May 2026, at the Office of the Government of the Slovak Republic in Bratislava, Prime Minister of the Slovak Republic Robert Fico received the Prime Minister of",
-            "url": "https://x.com/i/web/status/2059965004497985988",
-            "source": "x",
-            "tag": "slovakia",
-            "seen_date": "2026-05-28T11:48:24.000Z",
-            "matched_countries": [
-              "slovakia"
-            ],
-            "country_confidence": {
-              "slovakia": 9
-            },
-            "event_category": "government_crisis",
-            "event_category_label": "Belpolitikai feszültség",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 28,
-            "raw_engagement": 28,
-            "metrics": {
-              "likes": 24,
-              "reposts": 4,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Robert Fico: 'ROBERT FICO MET WITH THE PRIME MINISTER OF THE PRINCALITY OF ANDORRA, XAVIER ESPOT ZAMORA Today, Thursday, 28 May 2026, at the Office of the Government of the Slovak ",
-            "text": "Robert Fico: 'ROBERT FICO MET WITH THE PRIME MINISTER OF THE PRINCALITY OF ANDORRA, XAVIER ESPOT ZAMORA Today, Thursday, 28 May 2026, at the Office of the Government of the Slovak Republic in Bratislava, Prime Minister of the Slovak Republic Robert Fico received the Prime",
-            "url": "https://x.com/i/web/status/2059965195703693635",
-            "source": "x",
-            "tag": "slovakia",
-            "seen_date": "2026-05-28T11:49:09.000Z",
-            "matched_countries": [
-              "slovakia"
-            ],
-            "country_confidence": {
-              "slovakia": 9
-            },
-            "event_category": "government_crisis",
-            "event_category_label": "Belpolitikai feszültség",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 60,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 55.6
+          "risk_score": 60,
+          "social_signal": -6,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 61,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 56.1
+          "risk_score": 61,
+          "social_signal": -7,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 62,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 56.5
+          "risk_score": 62,
+          "social_signal": -8,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 63,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 57.0
+          "risk_score": 63,
+          "social_signal": -9,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 63,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 57.0
+          "risk_score": 63,
+          "social_signal": -9,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 64,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 57.4
+          "risk_score": 64,
+          "social_signal": -10,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 64,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 57.4
+          "risk_score": 64,
+          "social_signal": -10,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 54,
-          "security_risk": 50.4,
-          "combined_score": 69.1
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Polish academics protest underfunding of science and higher education",
+          "url": "https://notesfrompoland.com/2026/05/27/polish-academics-protest-underfunding-of-science-and-higher-education/",
+          "source": "Notes from Poland",
+          "seen_date": "2026-05-27T15:36:35+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Bocsánatkérést várt el a KNDP Magyar Pétertől, de ő inkább azt sorolta fel, miért kellene a volt kormánypártoknak bocsánatot kérniük",
+          "url": "https://444.hu/2026/05/27/bocsanatkerest-vart-el-a-kndp-magyar-petertol-nem-kapta-meg",
+          "source": "444",
+          "seen_date": "2026-05-27T09:01:29+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Szombat hajnalban minden vonatot megállítottak Szerbiában",
+          "url": "https://444.hu/2026/05/23/szombat-hajnalban-minden-vonatot-megallitottak-szerbiaban",
+          "source": "444",
+          "seen_date": "2026-05-23T07:41:00+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Olyan új ukrán légvédelmi rendszer készül, ami végleg megváltoztathatja a háború menetét",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/olyan-uj-ukran-legvedelmi-rendszer-keszul-ami-vegleg-megvaltoztathatja-a-haboru-menetet/",
+          "source": "Index",
+          "seen_date": "2026-05-28T11:24:18+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Lakóházat és egy infrastrukturális létesítményt rongált meg egy dróntámadás Odessza közelében",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/lakohazat-es-egy-infrastrukturalis-letesitmenyt-rongalt-meg-egy-drontamadas-odessza-kozeleben/",
+          "source": "Index",
+          "seen_date": "2026-05-28T09:30:13+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "czechia": {
+    {
+      "id": "czechia",
+      "country": "Czechia",
+      "country_local": "Česko",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 60
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 48,
+          "sub_narratives": [
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 7
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 5
+            },
+            {
+              "name": "balti elrettentés",
+              "score": 5
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 50
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 38,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 4
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 40
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 30,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 9
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 20
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 17,
+          "sub_narratives": [
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 10
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 3
+            },
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
+              "score": 3
+            },
+            {
+              "name": "tüntetések és utcai mobilizáció",
+              "score": 2
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem, balti elrettentés.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "Külső befolyás",
-          "score": 20
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 100,
-        "level": "high",
-        "events": 20,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 15,
-        "negative": 6,
-        "positive": 2,
-        "index": 71,
+        "social_index": 74,
+        "social_mentions": 14,
         "x_mentions": 4,
-        "reddit_mentions": 1,
+        "reddit_mentions": 0,
         "mastodon_mentions": 10,
-        "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 6,
-        "geopolitical_score": 430,
-        "topics": [
+        "social_topic": "Biztonsági kockázat",
+        "social_topics": [
           {
             "name": "Biztonsági kockázat",
             "count": 6
@@ -1157,379 +998,269 @@
             "count": 3
           },
           {
-            "name": "Migráció és határnyomás",
-            "count": 1
-          },
-          {
             "name": "EU / jogállamiság",
             "count": 1
-          }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 1,
-          "mastodon": 10,
-          "x": 4
-        },
-        "category_counts": {
-          "migration_border": 1,
-          "security": 6,
-          "eu_rule_of_law": 1,
-          "ukraine_russia": 4,
-          "government_crisis": 3
-        },
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 476,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Russian attacks kill 2, injure 23 across Ukraine over past day as Kherson strike devastates family # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Trump # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Den",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116651578710122416",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Thu, 28 May 2026 09:50:33 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 72,
-            "quality_score": 77,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Exclusive: Zelensky sends Trump urgent letter warning of Ukraine's critical missile defense shortages # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # Trump # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # ",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116646699858348689",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Wed, 27 May 2026 13:09:47 +0000",
-            "matched_countries": [
-              "slovakia",
-              "czechia",
-              "hungary"
-            ],
-            "country_confidence": {
-              "slovakia": 2,
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 69,
-            "quality_score": 74,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "https:// youtu.be/1OPvapGaZVc ⚡️🇬🇧Ukraine: The Latest | UN milquetoast response to Russia’s terrorist attack on their own humanitarian operations in Ukraine appears a tacit endorsement by the United Nations (The Telegraph VIDEO) # Ukraine # Press # Media # News # UN # London # UK # Headlines # ICC # WarCrimes # UnitedNations # NATO # Czechia # russiaUkraineW",
-            "url": "https://mastodon.online/@SocraticEthics/116648529710103647",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Wed, 27 May 2026 20:55:09 +0000",
-            "matched_countries": [
-              "czechia"
-            ],
-            "country_confidence": {
-              "czechia": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 60,
-            "quality_score": 65,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Participation in the Czech-led ammunition initiative for Ukraine has dropped from 18 to nine countries since PM Andrej # Babis took office. While Germany and Nordic nations remain, others cite a lack of Czech political support for the effort. https:// kyivindependent.com/half-of-co untries-withdraw-from-czech-ammunition-initiative/ # Ukraine # Russia # EU # ",
-            "url": "https://mastodon.social/@hanse_mina/116644305613416583",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Wed, 27 May 2026 03:00:54 +0000",
-            "matched_countries": [
-              "czechia"
-            ],
-            "country_confidence": {
-              "czechia": 2
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 43,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Současný nájemník Bílého domu Donald Trump dlouhodobě upozorňuje, že Evropané vydávají příliš málo prostředků na svou ob Tón: : mírně negativní # česko # gdelt # usa # eu # nato https://www. parlamentnilisty.cz/arena/moni tor/-USA-chtely-aby-Evropa-byla-slaba-Prisla-pripominka-z-necekaneho-smeru-791959",
-            "url": "https://rockosbasilisk.com/@slovensko/116651558914989698",
-            "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Thu, 28 May 2026 09:45:31 +0000",
-            "matched_countries": [
-              "czechia"
-            ],
-            "country_confidence": {
-              "czechia": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 32,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 40,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 65.8
+          "risk_score": 40,
+          "social_signal": 4,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 41,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 66.2
+          "risk_score": 41,
+          "social_signal": 4,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 41,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 66.2
+          "risk_score": 41,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 42,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 66.7
+          "risk_score": 42,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 42,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 66.7
+          "risk_score": 42,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 43,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 67.1
+          "risk_score": 43,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 43,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 67.1
+          "risk_score": 43,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 71,
-          "security_risk": 100,
-          "combined_score": 88.2
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Russia summons Czech envoy over Orthodox cleric’s drug arrest",
+          "url": "https://www.euractiv.com/news/russia-summons-czech-envoy-over-orthodox-clerics-drug-arrest/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-26T12:57:06+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Bocsánatkérést várt el a KNDP Magyar Pétertől, de ő inkább azt sorolta fel, miért kellene a volt kormánypártoknak bocsánatot kérniük",
+          "url": "https://444.hu/2026/05/27/bocsanatkerest-vart-el-a-kndp-magyar-petertol-nem-kapta-meg",
+          "source": "444",
+          "seen_date": "2026-05-27T09:01:29+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Szombat hajnalban minden vonatot megállítottak Szerbiában",
+          "url": "https://444.hu/2026/05/23/szombat-hajnalban-minden-vonatot-megallitottak-szerbiaban",
+          "source": "444",
+          "seen_date": "2026-05-23T07:41:00+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Macinka pro Fox News: Zbavme se zeleného šílenství a budou peníze na obranu",
+          "url": "https://www.novinky.cz/clanek/zahranicni-amerika-macinka-pro-fox-news-zbavme-se-zeleneho-silenstvi-a-budou-penize-na-obranu-40580415",
+          "source": "Novinky Czechia",
+          "seen_date": "2026-05-28T13:29:24+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "V Praze se vážně přiotrávili dva psi. Veterinářka varuje před nebezpečným potokem",
+          "url": "https://www.novinky.cz/clanek/domaci-zpravy-hlavni-mesto-praha-pozor-na-vodu-v-potocich-v-praze-se-vazne-priotravili-dva-psi-40580323",
+          "source": "Novinky Czechia",
+          "seen_date": "2026-05-28T12:51:06+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "romania": {
+    {
+      "id": "romania",
+      "country": "Romania",
+      "country_local": "România",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 60
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 55,
+          "sub_narratives": [
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 9
+            },
+            {
+              "name": "balti elrettentés",
+              "score": 6
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 5
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 50
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 46,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 3
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "korrupció és intézményi bizalom",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 40
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 34,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 11
+            }
+          ]
         },
         {
-          "name": "Külső befolyás",
-          "score": 30
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 29,
+          "sub_narratives": [
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
+              "score": 52
+            },
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 15
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 8
+            },
+            {
+              "name": "tüntetések és utcai mobilizáció",
+              "score": 5
+            },
+            {
+              "name": "helyi önkormányzati konfliktus",
+              "score": 4
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 2
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: védelmi kiadások és fegyverbeszerzés, balti elrettentés, légtérellenőrzés és légvédelem.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 20
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 61.2,
-        "level": "medium",
-        "events": 1,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 8,
-        "negative": 2,
-        "positive": 0,
-        "index": 45,
+        "social_index": 54,
+        "social_mentions": 10,
         "x_mentions": 6,
         "reddit_mentions": 0,
-        "mastodon_mentions": 2,
-        "main_social_topic": "Belpolitikai feszültség",
-        "reliable_sources": 2,
-        "geopolitical_score": 150,
-        "topics": [
+        "mastodon_mentions": 4,
+        "social_topic": "Belpolitikai feszültség",
+        "social_topics": [
           {
             "name": "Belpolitikai feszültség",
             "count": 3
@@ -1541,330 +1272,290 @@
           {
             "name": "Kiber és dezinformáció",
             "count": 2
-          }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 2,
-          "x": 6
-        },
-        "category_counts": {
-          "government_crisis": 3,
-          "security": 3,
-          "cyber_disinformation": 2
-        },
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 167,
-        "top_posts": [
-          {
-            "title": "A Romanian national has been sentenced to 56 months in federal prison for hacking an Oregon state government network and other cyberattacks against U.S. victims. Read more about th",
-            "text": "A Romanian national has been sentenced to 56 months in federal prison for hacking an Oregon state government network and other cyberattacks against U.S. victims. Read more about the case and implications here:",
-            "url": "https://x.com/i/web/status/2059979956935889175",
-            "source": "x",
-            "tag": "romania",
-            "seen_date": "2026-05-28T12:47:48.000Z",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 2
-            },
-            "event_category": "cyber_disinformation",
-            "event_category_label": "Kiber és dezinformáció",
-            "event_categories": [
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
-            "title": "Romanian gets 5 years in prison for hacking Oregon govt network A Romanian national was sentenced this week to 56 months in federal prison for breaking into an Oregon state governm",
-            "text": "Romanian gets 5 years in prison for hacking Oregon govt network A Romanian national was sentenced this week to 56 months in federal prison for breaking into an Oregon state government computer network and fr cyberattacks targeting dozens of other U.S. …",
-            "url": "https://x.com/i/web/status/2059979950808080507",
-            "source": "x",
-            "tag": "romania",
-            "seen_date": "2026-05-28T12:47:47.000Z",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 2
-            },
-            "event_category": "cyber_disinformation",
-            "event_category_label": "Kiber és dezinformáció",
-            "event_categories": [
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "name": "Tiltakozás",
+            "count": 1
           },
           {
-            "title": "NATO Sentry working in Romania border with the Black Sea, in the last few weeks, more NATO flights were going to Constanta, Romania.",
-            "text": "NATO Sentry working in Romania border with the Black Sea, in the last few weeks, more NATO flights were going to Constanta, Romania.",
-            "url": "https://x.com/i/web/status/2059982675990003805",
-            "source": "x",
-            "tag": "romania",
-            "seen_date": "2026-05-28T12:58:37.000Z",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Romanian gets 5 years in prison for hacking Oregon govt network Security",
-            "text": "Romanian gets 5 years in prison for hacking Oregon govt network Security",
-            "url": "https://x.com/i/web/status/2059980347874619657",
-            "source": "x",
-            "tag": "romania",
-            "seen_date": "2026-05-28T12:49:22.000Z",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "– Peste 40% dintre cetățenii moldoveni susțin unirea cu 🇷🇴 # România , peste 33% sunt pentru aderarea R. 🇲🇩 # Moldova la # NATO . Ieșirea din CSI, susținută de majoritate. 🔗 https:// wp.me/p9KpFA-5jdC # Știri",
-            "url": "https://mastodon.world/@G4Media/116650853211816720",
-            "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Thu, 28 May 2026 06:46:03 +0000",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 5
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 19,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "name": "Ukrajna és Oroszország",
+            "count": 1
           }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 70,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 61.1
+          "risk_score": 70,
+          "social_signal": 2,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 71,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 61.6
+          "risk_score": 71,
+          "social_signal": 2,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 72,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 62.0
+          "risk_score": 72,
+          "social_signal": 3,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 73,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 62.5
+          "risk_score": 73,
+          "social_signal": 3,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 74,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 62.9
+          "risk_score": 74,
+          "social_signal": 3,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 74,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 62.9
+          "risk_score": 74,
+          "social_signal": 4,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 75,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 63.4
+          "risk_score": 75,
+          "social_signal": 4,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 45,
-          "security_risk": 61.2,
-          "combined_score": 70.1
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "România și alte cinci state UE cer înghețarea certificatelor gratuite de CO2. Companiile se tem de relocări în afara UE",
+          "url": "https://www.digi24.ro/stiri/economie/romania-si-alte-cinci-state-ue-cer-inghetarea-certificatelor-gratuite-de-co2-companiile-se-tem-de-relocari-in-afara-ue-3789285",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T07:56:17+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Scandal în Parlamentul de la Chișinău. Primarul Capitalei de peste Prut a dat buzna în plen și a fost scos cu forța de ofițerii SPPS",
+          "url": "https://www.digi24.ro/stiri/externe/moldova/scandal-in-parlamentul-de-la-chisinau-primarul-capitalei-de-peste-prut-a-dat-buza-in-plen-si-a-fost-scos-cu-forta-de-ofiterii-spps-3789871",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:52:11+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful spionajului rus acuză NATO că planifică un „conflict de amploare în est”. Ce a spus Serghei Narîșkin despre UE",
+          "url": "https://www.digi24.ro/stiri/externe/rusia/seful-spionajului-rus-acuza-nato-ca-planifica-un-conflict-de-amploare-in-est-ce-a-spus-serghei-nariskin-despre-ue-3789867",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:48:54+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "CCR discută pe 10 iunie sesizarea trimisă de Grindeanu despre un posibil conflict juridic între Guvern și Parlament privind SAFE",
+          "url": "https://www.digi24.ro/stiri/actualitate/justitie/ccr-discuta-pe-10-iunie-sesizarea-trimisa-de-grindeanu-despre-un-posibil-conflict-juridic-intre-guvern-si-parlament-privind-safe-3789849",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:40:49+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Daniel Zamfir, atac la Constantin Toma: „E singurul bolojenist din PSD”",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/daniel-zamfir-atac-la-constantin-toma-e-singurul-bolojenist-din-psd-3789735",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T12:41:46+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "estonia": {
+    {
+      "id": "estonia",
+      "country": "Estonia",
+      "country_local": "Eesti",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 100
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 74,
+          "sub_narratives": [
+            {
+              "name": "balti elrettentés",
+              "score": 57
+            },
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 10
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 5
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 60
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 50,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 14
+            },
+            {
+              "name": "katonai támogatás Ukrajnának",
+              "score": 1
+            },
+            {
+              "name": "szankciós politika",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 60
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 38,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 4
+            },
+            {
+              "name": "korrupció és intézményi bizalom",
+              "score": 2
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Külső befolyás",
-          "score": 30
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 33,
+          "sub_narratives": [
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
+              "score": 16
+            },
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 12
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 8
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 6
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 3
+            },
+            {
+              "name": "polarizáció és radikalizáció",
+              "score": 3
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: balti elrettentés, védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 20
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 100,
-        "level": "high",
-        "events": 8,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 15,
-        "negative": 7,
-        "positive": 1,
-        "index": 76,
-        "x_mentions": 2,
+        "social_index": 75,
+        "social_mentions": 13,
+        "x_mentions": 0,
         "reddit_mentions": 2,
         "mastodon_mentions": 11,
-        "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 6,
-        "geopolitical_score": 596,
-        "topics": [
+        "social_topic": "Biztonsági kockázat",
+        "social_topics": [
           {
             "name": "Biztonsági kockázat",
             "count": 7
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 6
+            "count": 4
           },
           {
             "name": "EU / jogállamiság",
@@ -1874,755 +1565,537 @@
             "name": "Belpolitikai feszültség",
             "count": 1
           }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 2,
-          "mastodon": 11,
-          "x": 2
-        },
-        "category_counts": {
-          "security": 7,
-          "eu_rule_of_law": 1,
-          "ukraine_russia": 6,
-          "government_crisis": 1
-        },
-        "engagement_total": 47,
-        "raw_engagement_total": 47,
-        "quality_total": 643,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Ukrainian drones have strayed into Baltic countries' airspace in recent weeks, sowing confusion and raising tensions with Russia at a time when U.S. commitment to NATO's collective security is in question. https://www. japantimes.co.jp/news/2026/05/ 27/world/ukrainian-drones-nato-east/?utm_medium=Social&utm_source=mastodon # worldnews # nato # lithuania # la",
-            "url": "https://mastodon.social/@thejapantimes/116647534337204827",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Wed, 27 May 2026 16:42:01 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 90,
-            "quality_score": 95,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Faced with Russian drone incursions, Baltic nations are turning to Ukraine's defense expertise. Companies in Lithuania, Latvia, and Estonia are seeking Ukrainian-made bomb shelters and civil protection to prepare for Russian aggression. https://www. politico.eu/article/baltic-sta tes-ukraine-bomb-shelter-expertise-rising-russia-drone-threats/ # Ukraine # Rus",
-            "url": "https://mastodon.social/@hanse_mina/116644212571198282",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Wed, 27 May 2026 02:37:14 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 75,
-            "quality_score": 80,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Russia’s FSB head claims Finland and Estonia are violating border agreements. He alleges Finland has built unauthorized barriers and Estonia is deviating from water boundary protocols in Lake Peipus and the Narva River. https:// ru.themoscowtimes.com/2026/05/ 27/fsb-obvinila-finlyandiyu-i-estoniyu-v-narushenii-dogovorov-o-granitse-s-rossiei-a196446 # Ukraine",
-            "url": "https://mastodon.social/@hanse_mina/116649635118071690",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Thu, 28 May 2026 01:36:16 +0000",
-            "matched_countries": [
-              "estonia"
-            ],
-            "country_confidence": {
-              "estonia": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 50,
-            "quality_score": 53,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "✈️ NATO’s Baltic airspace is facing growing tension after multiple drone incidents raised security concerns across Estonia, Latvia, and Lithuania.",
-            "text": "Source &#32; submitted by &#32; /u/WillyNilly1997 [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/nato/comments/1tlsxi4/natos_baltic_airspace_is_facing_growing_tension/",
-            "source": "reddit",
-            "tag": "nato",
-            "seen_date": "2026-05-23T21:36:01+00:00",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 50,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "https:// youtu.be/LA71x3NYOOA ⚡️🇺🇦In Focus: Russia targets the Baltics after its embarrassing failures in Ukraine (UATV VIDEO) # Ukraine # Lithuania # Latvia # Estonia # Poland # Press # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
-            "url": "https://mastodon.online/@SocraticEthics/116648560433912496",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Wed, 27 May 2026 21:02:58 +0000",
-            "matched_countries": [
-              "poland",
-              "estonia",
-              "latvia"
-            ],
-            "country_confidence": {
-              "poland": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 49,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 74,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 82.3
+          "risk_score": 74,
+          "social_signal": 8,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 75,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 82.8
+          "risk_score": 75,
+          "social_signal": 9,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 76,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 83.2
+          "risk_score": 76,
+          "social_signal": 10,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 77,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 83.7
+          "risk_score": 77,
+          "social_signal": 10,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 78,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 84.1
+          "risk_score": 78,
+          "social_signal": 11,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 78,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 84.1
+          "risk_score": 78,
+          "social_signal": 11,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 79,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 84.6
+          "risk_score": 79,
+          "social_signal": 12,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 89.5
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "„Este un moment foarte periculos”. Șefa diplomației europene avertizează că Rusia ar putea ataca NATO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/este-un-moment-foarte-periculos-sefa-diplomatiei-europene-avertizeaza-ca-rusia-ar-putea-ataca-nato-3787645",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-27T09:05:49+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "NATO își întărește apărarea pe Flancul Estic pentru a trimite rapid forțe în zona baltică, în cazul unui război cu Rusia",
+          "url": "https://www.digi24.ro/stiri/externe/nato-isi-intareste-apararea-pe-flancul-estic-pentru-a-trimite-rapid-forte-in-zona-baltica-in-cazul-unui-razboi-cu-rusia-3786999",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-26T17:52:42+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Tallinn awarded 'Rescuer City' title for supporting Ukraine",
+          "url": "https://news.err.ee/1610039275/tallinn-awarded-rescuer-city-title-for-supporting-ukraine",
+          "source": "ERR Estonia",
+          "seen_date": "2026-05-27T12:19:00+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful spionajului rus acuză NATO că planifică un „conflict de amploare în est”. Ce a spus Serghei Narîșkin despre UE",
+          "url": "https://www.digi24.ro/stiri/externe/rusia/seful-spionajului-rus-acuza-nato-ca-planifica-un-conflict-de-amploare-in-est-ce-a-spus-serghei-nariskin-despre-ue-3789867",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:48:54+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Daniel Zamfir, atac la Constantin Toma: „E singurul bolojenist din PSD”",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/daniel-zamfir-atac-la-constantin-toma-e-singurul-bolojenist-din-psd-3789735",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T12:41:46+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "latvia": {
+    {
+      "id": "latvia",
+      "country": "Latvia",
+      "country_local": "Latvija",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 90
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 73,
+          "sub_narratives": [
+            {
+              "name": "balti elrettentés",
+              "score": 53
+            },
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 13
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 7
+            },
+            {
+              "name": "hadgyakorlatok és katonai készültség",
+              "score": 2
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 60
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 49,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 7
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "korrupció és intézményi bizalom",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 40
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 39,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 14
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 30
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 28,
+          "sub_narratives": [
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
+              "score": 18
+            },
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 11
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 6
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 2
+            },
+            {
+              "name": "médiaszabadság és civil szféra",
+              "score": 2
+            },
+            {
+              "name": "helyi önkormányzati konfliktus",
+              "score": 2
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: balti elrettentés, védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "Külső befolyás",
-          "score": 10
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
+        },
+        {
+          "title": "Szergej Lavrov „hülyeségnek” nevezte az EU Oroszországra vonatkozó kijelentését",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/szergej-lavrov-hulyesegnek-nevezte-az-eu-oroszorszagra-vonatkozo-kijelenteset/",
+          "score": 8
+        },
+        {
+          "title": "Súlyos állítás látott napvilágot arról, kik harcolhatnak valójában Oroszország oldalán",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/sulyos-allitas-latott-napvilagot-arrol-kik-harcolhatnak-valojaban-oroszorszag-oldalan/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 94.5,
-        "level": "high",
-        "events": 9,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 21,
-        "negative": 11,
-        "positive": 1,
-        "index": 79,
-        "x_mentions": 3,
-        "reddit_mentions": 3,
+        "social_index": 79,
+        "social_mentions": 20,
+        "x_mentions": 1,
+        "reddit_mentions": 4,
         "mastodon_mentions": 15,
-        "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 10,
-        "geopolitical_score": 978,
-        "topics": [
+        "social_topic": "Biztonsági kockázat",
+        "social_topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 14
+            "count": 12
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 5
+            "count": 6
           },
           {
             "name": "Belpolitikai feszültség",
             "count": 2
           }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 3,
-          "mastodon": 15,
-          "x": 3
-        },
-        "category_counts": {
-          "security": 14,
-          "ukraine_russia": 5,
-          "government_crisis": 2
-        },
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 1045,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "☀️ Russia Says Ukraine Used Storm Shadow Missiles Against Sevastopol! 🇷🇺 🇺🇦 🔸 https://www. rferl.org/a/russia-ukraine-war -strikes-missiles/33766579.html Ukraine has used Storm Shadows, built by a French-British consortium, as part of its campaign targeting 🇷🇺 Russian military and energy-infrastructure sites, an effort to decrease Moscow's \"revenues\" and und",
-            "url": "https://mastodon.social/@Davexxx/116652233449444984",
-            "source": "mastodon",
-            "tag": "latvia",
-            "seen_date": "Thu, 28 May 2026 12:37:03 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 95,
-            "quality_score": 100,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "☀️ Lavrov Warns: Evacuate US Citizens amid Systematic Strikes' On Kyiv! 🇷🇺 🇺🇦 🔸 https://www. rferl.org/a/russia-ukraine-lav rov-rubio-kyiv-attacks-threats/33765072.html 💀 A day after Moscow pummeled the Kyiv region with hundreds of drones - and a \"powerful\" new hypersonic missile!... \"Foreign Minister\" Sergei Lavrov called 🇺🇸 US Secretary of State Marco Rubi",
-            "url": "https://mastodon.social/@Davexxx/116652153456950009",
-            "source": "mastodon",
-            "tag": "latvia",
-            "seen_date": "Thu, 28 May 2026 12:16:43 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 91,
-            "quality_score": 96,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Ukrainian drones have strayed into Baltic countries' airspace in recent weeks, sowing confusion and raising tensions with Russia at a time when U.S. commitment to NATO's collective security is in question. https://www. japantimes.co.jp/news/2026/05/ 27/world/ukrainian-drones-nato-east/?utm_medium=Social&utm_source=mastodon # worldnews # nato # lithuania # la",
-            "url": "https://mastodon.social/@thejapantimes/116647534337204827",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Wed, 27 May 2026 16:42:01 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 90,
-            "quality_score": 95,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Faced with Russian drone incursions, Baltic nations are turning to Ukraine's defense expertise. Companies in Lithuania, Latvia, and Estonia are seeking Ukrainian-made bomb shelters and civil protection to prepare for Russian aggression. https://www. politico.eu/article/baltic-sta tes-ukraine-bomb-shelter-expertise-rising-russia-drone-threats/ # Ukraine # Rus",
-            "url": "https://mastodon.social/@hanse_mina/116644212571198282",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Wed, 27 May 2026 02:37:14 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 75,
-            "quality_score": 80,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "☀️ Nearly 500,000 Russian Soldiers Killed In Ukraine Since Start Of All-Out War! 🇷🇺 🔸 https://www. rferl.org/a/russia-ukraine-war -casualties-british-intelligence/33766873.html 💀 The figure tracks with other \"estimates\" made in recent months by other Western governments, as well as independent media organizations. Other British government warnings: 💀 🇷🇺 Russ",
-            "url": "https://mastodon.social/@Davexxx/116652191093708541",
-            "source": "mastodon",
-            "tag": "latvia",
-            "seen_date": "Thu, 28 May 2026 12:26:17 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 63,
-            "quality_score": 68,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 72,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 80.5
+          "risk_score": 72,
+          "social_signal": 4,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 73,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 81.0
+          "risk_score": 73,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 74,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 81.4
+          "risk_score": 74,
+          "social_signal": 5,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 75,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 81.8
+          "risk_score": 75,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 76,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 82.3
+          "risk_score": 76,
+          "social_signal": 6,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 76,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 82.3
+          "risk_score": 76,
+          "social_signal": 7,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 77,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 82.8
+          "risk_score": 77,
+          "social_signal": 7,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 79,
-          "security_risk": 94.5,
-          "combined_score": 88.6
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "„Este un moment foarte periculos”. Șefa diplomației europene avertizează că Rusia ar putea ataca NATO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/este-un-moment-foarte-periculos-sefa-diplomatiei-europene-avertizeaza-ca-rusia-ar-putea-ataca-nato-3787645",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-27T09:05:49+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "NATO își întărește apărarea pe Flancul Estic pentru a trimite rapid forțe în zona baltică, în cazul unui război cu Rusia",
+          "url": "https://www.digi24.ro/stiri/externe/nato-isi-intareste-apararea-pe-flancul-estic-pentru-a-trimite-rapid-forte-in-zona-baltica-in-cazul-unui-razboi-cu-rusia-3786999",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-26T17:52:42+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful spionajului rus acuză NATO că planifică un „conflict de amploare în est”. Ce a spus Serghei Narîșkin despre UE",
+          "url": "https://www.digi24.ro/stiri/externe/rusia/seful-spionajului-rus-acuza-nato-ca-planifica-un-conflict-de-amploare-in-est-ce-a-spus-serghei-nariskin-despre-ue-3789867",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:48:54+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Daniel Zamfir, atac la Constantin Toma: „E singurul bolojenist din PSD”",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/daniel-zamfir-atac-la-constantin-toma-e-singurul-bolojenist-din-psd-3789735",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T12:41:46+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Dronele ucrainene rătăcite stârnesc îngrijorare în rândul aliaților NATO: „Crește nivelul de ameninţare. Trebuie să protejăm oamenii”",
+          "url": "https://www.digi24.ro/stiri/externe/dronele-ucrainene-ratacite-starnesc-ingrijorare-in-randul-aliatilor-nato-creste-nivelul-de-amenintare-trebuie-sa-protejam-oamenii-3787595",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T04:00:20+00:00",
+          "origin": "RSS"
         }
       ]
     },
-    "lithuania": {
+    {
+      "id": "lithuania",
+      "country": "Lithuania",
+      "country_local": "Lietuva",
+      "risk_level": "HIGH",
+      "risk_score": 90,
+      "political_mood": "ALERT",
+      "security_trend": "RISING",
+      "main_topic": "NATO keleti szárny és katonai elrettentés",
+      "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Biztonsági kockázat",
-          "score": 70
+          "name": "NATO keleti szárny és katonai elrettentés",
+          "score": 76,
+          "sub_narratives": [
+            {
+              "name": "balti elrettentés",
+              "score": 35
+            },
+            {
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 14
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 8
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "score": 60
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 48,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 13
+            }
+          ]
         },
         {
-          "name": "Belpolitikai feszültség",
-          "score": 40
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 46,
+          "sub_narratives": [
+            {
+              "name": "EU-s döntéshozatali konfliktus",
+              "score": 3
+            },
+            {
+              "name": "uniós források és kohéziós pénzek",
+              "score": 1
+            },
+            {
+              "name": "korrupció és intézményi bizalom",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási reform",
+              "score": 1
+            }
+          ]
         },
         {
-          "name": "EU / jogállamiság",
-          "score": 20
+          "name": "Energiabiztonság, gazdaság és infrastruktúra",
+          "score": 22,
+          "sub_narratives": [
+            {
+              "name": "kritikus infrastruktúra",
+              "score": 6
+            },
+            {
+              "name": "infláció és gazdasági nyomás",
+              "score": 1
+            },
+            {
+              "name": "LNG és energiaútvonalak",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: balti elrettentés, védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem.",
+      "top_narrative_drivers": [
+        {
+          "title": "Tisza-kormány: megjött Magyar Péter első bejelentése Brüsszelből",
+          "source": "Portfolio Economy",
+          "url": "https://www.portfolio.hu/gazdasag/20260528/tisza-kormany-megjott-magyar-peter-elso-bejelentese-brusszelbol-839520",
+          "score": 11
         },
         {
-          "name": "Külső befolyás",
-          "score": 20
+          "title": "How Ukraine and Russia drone war spread into Europe as Putin hijack Kyiv weapons in mid - air",
+          "source": "independent.co.uk",
+          "url": "https://www.independent.co.uk/news/world/europe/russia-ukraine-drone-war-putin-zelensky-nato-airspace-b2982953.html",
+          "score": 9
+        },
+        {
+          "title": "FIREPOWER: Von der Leyen meets with Baltic presidents over drone incursions",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-von-der-leyen-meets-with-baltic-presidents-over-drone-incursions/",
+          "score": 9
+        },
+        {
+          "title": "Az ukrán hadsereg masszív légitámadást indított Oroszország ellen",
+          "source": "Index",
+          "url": "https://index.hu/kulfold/2026/05/28/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-europai-unio-nato-beketargyalasok/az-ukran-hadsereg-massziv-legitamadast-inditott-oroszorszag-ellen/",
+          "score": 9
+        },
+        {
+          "title": "Дроны , дезинформация и психологическая война : как Россия запугивает страны Балтии",
+          "source": "ru.euronews.com",
+          "url": "https://ru.euronews.com/my-europe/2026/05/27/drones-disinformation-and-psychological-warfare-the-anatomy-of-russias-interference-ru",
+          "score": 8
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "score": 8
         }
       ],
       "security_layer": {
-        "security_risk": 100,
-        "level": "high",
-        "events": 12,
-        "source": "cee-security-map",
-        "main_security_narrative": "Biztonsági kockázat"
+        "security_risk_score": 90,
+        "security_status": "HIGH",
+        "security_events": 0,
+        "security_trend": "RISING"
       },
       "social_layer": {
-        "mentions": 17,
-        "negative": 6,
-        "positive": 1,
-        "index": 76,
+        "social_index": 73,
+        "social_mentions": 17,
         "x_mentions": 4,
         "reddit_mentions": 4,
         "mastodon_mentions": 9,
-        "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 6,
-        "geopolitical_score": 600,
-        "topics": [
+        "social_topic": "Biztonsági kockázat",
+        "social_topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 8
+            "count": 9
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 5
+            "count": 4
           },
           {
             "name": "Belpolitikai feszültség",
@@ -2636,311 +2109,116 @@
             "name": "Energia és gazdaság",
             "count": 1
           }
-        ],
-        "source_status": "active",
-        "source_counts": {
-          "reddit": 4,
-          "mastodon": 9,
-          "x": 4
-        },
-        "category_counts": {
-          "security": 8,
-          "ukraine_russia": 5,
-          "eu_rule_of_law": 1,
-          "government_crisis": 2,
-          "energy_economy": 1
-        },
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 642,
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Ukrainian drones have strayed into Baltic countries' airspace in recent weeks, sowing confusion and raising tensions with Russia at a time when U.S. commitment to NATO's collective security is in question. https://www. japantimes.co.jp/news/2026/05/ 27/world/ukrainian-drones-nato-east/?utm_medium=Social&utm_source=mastodon # worldnews # nato # lithuania # la",
-            "url": "https://mastodon.social/@thejapantimes/116647534337204827",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Wed, 27 May 2026 16:42:01 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 90,
-            "quality_score": 95,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Faced with Russian drone incursions, Baltic nations are turning to Ukraine's defense expertise. Companies in Lithuania, Latvia, and Estonia are seeking Ukrainian-made bomb shelters and civil protection to prepare for Russian aggression. https://www. politico.eu/article/baltic-sta tes-ukraine-bomb-shelter-expertise-rising-russia-drone-threats/ # Ukraine # Rus",
-            "url": "https://mastodon.social/@hanse_mina/116644212571198282",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Wed, 27 May 2026 02:37:14 +0000",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 75,
-            "quality_score": 80,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Lithuanian embassy to remain open in Kyiv despite Russian threats Lithuania says its embassy in Kyiv will continue operating despite Russian threats of intensified strikes on the Ukrainian capital and calls for foreign nationals, including diplomats, to leave the city. https://www. lrt.lt/en/news-in-english/19/2 942170/lithuanian-embassy-to-remain-open-in-ky",
-            "url": "https://mastodon.social/@publicnewsfeed/116646134734189468",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Wed, 27 May 2026 10:46:04 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 2
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 65,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "✈️ NATO’s Baltic airspace is facing growing tension after multiple drone incidents raised security concerns across Estonia, Latvia, and Lithuania.",
-            "text": "Source &#32; submitted by &#32; /u/WillyNilly1997 [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/nato/comments/1tlsxi4/natos_baltic_airspace_is_facing_growing_tension/",
-            "source": "reddit",
-            "tag": "nato",
-            "seen_date": "2026-05-23T21:36:01+00:00",
-            "matched_countries": [
-              "estonia",
-              "latvia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 50,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Russia can falsify GPS signals ‌deep into Europe at a radius of up to 450km (280 miles) from its Kaliningrad exclave due to hugely-expanded capacity, a Lithuanian official said on Tuesday. https://www. reuters.com/business/aerospace -defense/russia-can-falsify-gps-signals-deep-into-europe-lithuania-says-2026-05-26/ # Ukraine # Russia # EU # Lithuania # Kalin",
-            "url": "https://mastodon.social/@hanse_mina/116652413616042112",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Thu, 28 May 2026 13:22:53 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 6
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 49,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
         ]
       },
       "combined_history": [
         {
           "date": "2026-05-21",
-          "news_risk": 77,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 83.7
+          "risk_score": 77,
+          "social_signal": 7,
+          "article_count": 0
         },
         {
           "date": "2026-05-22",
-          "news_risk": 78,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 84.1
+          "risk_score": 78,
+          "social_signal": 8,
+          "article_count": 0
         },
         {
           "date": "2026-05-23",
-          "news_risk": 79,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 84.6
+          "risk_score": 79,
+          "social_signal": 8,
+          "article_count": 0
         },
         {
           "date": "2026-05-24",
-          "news_risk": 80,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 85.0
+          "risk_score": 80,
+          "social_signal": 9,
+          "article_count": 0
         },
         {
           "date": "2026-05-25",
-          "news_risk": 81,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 85.5
+          "risk_score": 81,
+          "social_signal": 9,
+          "article_count": 0
         },
         {
           "date": "2026-05-26",
-          "news_risk": 81,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 85.5
+          "risk_score": 81,
+          "social_signal": 10,
+          "article_count": 0
         },
         {
           "date": "2026-05-27",
-          "news_risk": 82,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 85.9
+          "risk_score": 82,
+          "social_signal": 10,
+          "article_count": 0
         },
         {
           "date": "2026-05-28",
-          "news_risk": 90,
-          "social_index": 76,
-          "security_risk": 100,
-          "combined_score": 89.5
+          "risk_score": 90,
+          "social_signal": 0,
+          "article_count": 90
+        }
+      ],
+      "top_articles": [
+        {
+          "title": "NATO prepares a Baltic fortress to head off Putin",
+          "url": "https://www.politico.eu/article/nato-prepares-a-baltic-fortress-to-head-off-putin/",
+          "source": "Politico Europe",
+          "seen_date": "2026-05-28T12:01:39+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "„Este un moment foarte periculos”. Șefa diplomației europene avertizează că Rusia ar putea ataca NATO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/este-un-moment-foarte-periculos-sefa-diplomatiei-europene-avertizeaza-ca-rusia-ar-putea-ataca-nato-3787645",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-27T09:05:49+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "NATO își întărește apărarea pe Flancul Estic pentru a trimite rapid forțe în zona baltică, în cazul unui război cu Rusia",
+          "url": "https://www.digi24.ro/stiri/externe/nato-isi-intareste-apararea-pe-flancul-estic-pentru-a-trimite-rapid-forte-in-zona-baltica-in-cazul-unui-razboi-cu-rusia-3786999",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-26T17:52:42+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "FIREPOWER: Zelenskyy warns US and EU of critical shortages in Ukraine’s air defences",
+          "url": "https://www.euractiv.com/news/firepower-zelenskyy-warns-us-and-eu-of-critical-shortages-in-ukraines-air-defences/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-28T07:12:58+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "US expected to clarify NATO troop and asset deployments in early June",
+          "url": "https://www.euractiv.com/news/us-expected-to-clarify-nato-troop-and-asset-deployments-in-early-june/",
+          "source": "Euractiv",
+          "seen_date": "2026-05-27T17:13:28+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful spionajului rus acuză NATO că planifică un „conflict de amploare în est”. Ce a spus Serghei Narîșkin despre UE",
+          "url": "https://www.digi24.ro/stiri/externe/rusia/seful-spionajului-rus-acuza-nato-ca-planifica-un-conflict-de-amploare-in-est-ce-a-spus-serghei-nariskin-despre-ue-3789867",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T13:48:54+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Daniel Zamfir, atac la Constantin Toma: „E singurul bolojenist din PSD”",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/daniel-zamfir-atac-la-constantin-toma-e-singurul-bolojenist-din-psd-3789735",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T12:41:46+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Dronele ucrainene rătăcite stârnesc îngrijorare în rândul aliaților NATO: „Crește nivelul de ameninţare. Trebuie să protejăm oamenii”",
+          "url": "https://www.digi24.ro/stiri/externe/dronele-ucrainene-ratacite-starnesc-ingrijorare-in-randul-aliatilor-nato-creste-nivelul-de-amenintare-trebuie-sa-protejam-oamenii-3787595",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-05-28T04:00:20+00:00",
+          "origin": "RSS"
         }
       ]
     }
-  }
+  ]
 }
