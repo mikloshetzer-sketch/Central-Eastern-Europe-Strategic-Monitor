@@ -2,445 +2,953 @@ import json
 import os
 import re
 import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
-from urllib.parse import quote_plus
-
-import feedparser
-import requests
+from email.utils import parsedate_to_datetime
 
 
-CONFIG_PATH = "docs/data/news_sources_config.json"
-OUTPUT_PATH = "docs/data/latest_status.json"
+LATEST_STATUS_PATH = "docs/data/latest_status.json"
 RAW_NEWS_PATH = "docs/data/raw_news.json"
+REGIONAL_HISTORY_PATH = "docs/data/history/regional_history.json"
+COUNTRY_HISTORY_PATH = "docs/data/history/country_history.json"
+
+MAX_ARTICLES_PER_COUNTRY = 90
+GDELT_MAX_RECORDS = 50
+GDELT_TIMESPAN = "7d"
 
 
-TOPIC_RULES = {
-    "Military security": [
-        "nato", "military", "defence", "defense", "army", "troops", "border",
-        "missile", "drone", "airspace", "deterrence", "hadsereg", "katonai",
-        "határ", "védelem", "wojsko", "bezpieczeństwo", "bezpečnost",
-        "securitate", "julgeolek", "drošība", "saugumas"
-    ],
-    "Ukraine war": [
-        "ukraine", "ukrajna", "ukraina", "ucraina", "russia", "oroszország",
-        "rosja", "rusko", "rusia", "venemaa", "krievija", "rusija", "war",
-        "háború", "vojna", "wojna", "karš"
-    ],
-    "Cyber security": [
-        "cyber", "kiber", "hack", "ransomware", "disinformation",
-        "dezinformáció", "kibertámadás", "kiberatak", "kybernetický",
-        "kibernetinė", "küberrünnak", "kiberuzbrukums"
-    ],
-    "Energy security": [
-        "energy", "energia", "gas", "oil", "pipeline", "electricity",
-        "nuclear", "lng", "gáz", "olaj", "vezeték", "energiaellátás"
-    ],
-    "Domestic political stability": [
-        "election", "government", "parliament", "protest", "coalition",
-        "opposition", "corruption", "rule of law", "választás", "kormány",
-        "parlament", "tüntetés", "korrupció", "koalíció"
-    ],
-    "EU policy": [
-        "european union", "eu", "brussels", "commission", "council",
-        "funds", "európai unió", "brüsszel", "bizottság"
-    ],
-}
+RSS_FEEDS = [
+    # International / regional
+    {"name": "Reuters Europe", "url": "https://feeds.reuters.com/reuters/worldNews", "weight": 10},
+    {"name": "Politico Europe", "url": "https://www.politico.eu/feed/", "weight": 9},
+    {"name": "Euractiv", "url": "https://www.euractiv.com/feed/", "weight": 8},
+    {"name": "Euronews", "url": "https://www.euronews.com/rss?level=theme&name=news", "weight": 7},
+    {"name": "RFE/RL Europe", "url": "https://www.rferl.org/api/zrqiteuuir", "weight": 8},
+    {"name": "NATO News", "url": "https://www.nato.int/cps/en/natohq/rss.xml", "weight": 9},
+
+    # Hungary
+    {"name": "Telex", "url": "https://telex.hu/rss", "weight": 8},
+    {"name": "HVG", "url": "https://hvg.hu/rss", "weight": 7},
+    {"name": "444", "url": "https://444.hu/feed", "weight": 7},
+    {"name": "Index", "url": "https://index.hu/24ora/rss/", "weight": 6},
+    {"name": "Portfolio Global", "url": "https://www.portfolio.hu/rss/global.xml", "weight": 8},
+    {"name": "Portfolio Economy", "url": "https://www.portfolio.hu/rss/gazdasag.xml", "weight": 8},
+
+    # Poland
+    {"name": "Notes from Poland", "url": "https://notesfrompoland.com/feed/", "weight": 8},
+    {"name": "TVN24 Poland", "url": "https://tvn24.pl/najnowsze.xml", "weight": 8},
+    {"name": "Polskie Radio", "url": "https://www.polskieradio.pl/395/rss", "weight": 7},
+    {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss/1010-kraj.xml", "weight": 7},
+    {"name": "Wyborcza", "url": "https://wyborcza.pl/pub/rss/wyborcza_kraj.xml", "weight": 7},
+
+    # Slovakia
+    {"name": "Aktuality Slovakia", "url": "https://www.aktuality.sk/rss/", "weight": 7},
+    {"name": "SME Slovakia", "url": "https://www.sme.sk/rss-title", "weight": 7},
+    {"name": "Pravda Slovakia", "url": "https://spravy.pravda.sk/rss/xml/", "weight": 6},
+    {"name": "Dennik N Slovakia", "url": "https://dennikn.sk/feed/", "weight": 7},
+
+    # Czechia
+    {"name": "iRozhlas", "url": "https://www.irozhlas.cz/rss", "weight": 8},
+    {"name": "Novinky Czechia", "url": "https://www.novinky.cz/rss", "weight": 7},
+    {"name": "iDNES Czechia", "url": "https://www.idnes.cz/rss.aspx", "weight": 7},
+    {"name": "CT24 Czechia", "url": "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy", "weight": 8},
+
+    # Romania
+    {"name": "Digi24 Romania", "url": "https://www.digi24.ro/rss", "weight": 8},
+    {"name": "HotNews Romania", "url": "https://hotnews.ro/rss", "weight": 7},
+    {"name": "G4Media Romania", "url": "https://www.g4media.ro/feed", "weight": 8},
+    {"name": "Romania Insider", "url": "https://www.romania-insider.com/rss.xml", "weight": 7},
+    {"name": "Europa Libera Romania", "url": "https://romania.europalibera.org/api/zrqiteuuir", "weight": 8},
+
+    # Estonia
+    {"name": "ERR Estonia", "url": "https://news.err.ee/rss", "weight": 8},
+    {"name": "Postimees Estonia", "url": "https://www.postimees.ee/rss", "weight": 7},
+    {"name": "Delfi Estonia", "url": "https://www.delfi.ee/rss", "weight": 7},
+
+    # Latvia
+    {"name": "LSM Latvia", "url": "https://eng.lsm.lv/rss/", "weight": 8},
+    {"name": "Delfi Latvia", "url": "https://www.delfi.lv/rss/", "weight": 7},
+    {"name": "Latvijas Avize", "url": "https://www.la.lv/feed", "weight": 6},
+
+    # Lithuania
+    {"name": "LRT Lithuania", "url": "https://www.lrt.lt/rss/news", "weight": 8},
+    {"name": "Delfi Lithuania", "url": "https://www.delfi.lt/rss/feeds/news.xml", "weight": 7},
+    {"name": "15min Lithuania", "url": "https://www.15min.lt/rss", "weight": 7}
+]
+
+
+COUNTRIES = [
+    {
+        "id": "hungary",
+        "country": "Hungary",
+        "country_local": "Magyarország",
+        "coordinates": [47.4979, 19.0402],
+        "queries": [
+            "Hungary politics EU NATO Ukraine",
+            "Hungary government Russia Ukraine policy",
+            "Hungary rule of law EU funds"
+        ],
+        "keywords": [
+            "hungary", "hungarian", "budapest", "orban", "orbán", "fidesz",
+            "magyarország", "magyar", "magyar kormány", "kormány",
+            "parlament", "ellenzék", "tüntetés", "jogállamiság",
+            "ukrajna", "oroszország", "nato", "eu", "brüsszel"
+        ]
+    },
+    {
+        "id": "poland",
+        "country": "Poland",
+        "country_local": "Polska",
+        "coordinates": [52.2297, 21.0122],
+        "queries": [
+            "Poland politics NATO eastern flank Ukraine",
+            "Poland government EU rule of law",
+            "Poland Belarus border security"
+        ],
+        "keywords": [
+            "poland", "polish", "warsaw", "warszawa", "polska",
+            "polski rząd", "rząd", "opozycja", "wybory", "tusk",
+            "duda", "pis", "nato", "ukraina", "rosja", "białoruś",
+            "bezpieczeństwo", "granica"
+        ]
+    },
+    {
+        "id": "slovakia",
+        "country": "Slovakia",
+        "country_local": "Slovensko",
+        "coordinates": [48.1486, 17.1077],
+        "queries": [
+            "Slovakia politics Fico Ukraine Russia",
+            "Slovakia government NATO EU",
+            "Slovakia domestic political crisis"
+        ],
+        "keywords": [
+            "slovakia", "slovak", "bratislava", "fico", "slovensko",
+            "slovenská vláda", "vláda", "opozícia", "voľby", "nato",
+            "ukrajina", "rusko", "bezpečnosť", "protest"
+        ]
+    },
+    {
+        "id": "czechia",
+        "country": "Czechia",
+        "country_local": "Česko",
+        "coordinates": [50.0755, 14.4378],
+        "queries": [
+            "Czechia politics NATO Ukraine",
+            "Czech Republic government EU security",
+            "Czechia Russia influence disinformation"
+        ],
+        "keywords": [
+            "czechia", "czech republic", "czech", "prague", "praha",
+            "česko", "česká republika", "česká vláda", "vláda",
+            "opozice", "volby", "nato", "ukrajina", "rusko",
+            "bezpečnost", "dezinformace"
+        ]
+    },
+    {
+        "id": "romania",
+        "country": "Romania",
+        "country_local": "România",
+        "coordinates": [44.4268, 26.1025],
+        "queries": [
+            "Romania politics NATO Black Sea Ukraine",
+            "Romania government Moldova security",
+            "Romania election EU Russia influence"
+        ],
+        "keywords": [
+            "romania", "romanian", "bucharest", "bucuresti", "bucurești",
+            "românia", "guvernul român", "guvern", "alegeri",
+            "nato", "ucraina", "rusia", "moldova", "marea neagră",
+            "securitate", "corupție"
+        ]
+    },
+    {
+        "id": "estonia",
+        "country": "Estonia",
+        "country_local": "Eesti",
+        "coordinates": [59.437, 24.7536],
+        "queries": [
+            "Estonia NATO Russia cyber security",
+            "Estonia government Ukraine Baltic defence",
+            "Estonia Russian influence disinformation"
+        ],
+        "keywords": [
+            "estonia", "estonian", "tallinn", "eesti", "eesti valitsus",
+            "valitsus", "nato", "ukraina", "venemaa", "julgeolek",
+            "küberrünnak", "küberjulgeolek", "balti julgeolek"
+        ]
+    },
+    {
+        "id": "latvia",
+        "country": "Latvia",
+        "country_local": "Latvija",
+        "coordinates": [56.9496, 24.1052],
+        "queries": [
+            "Latvia NATO Russia security",
+            "Latvia government Ukraine Baltic defence",
+            "Latvia border security disinformation"
+        ],
+        "keywords": [
+            "latvia", "latvian", "riga", "rīga", "latvija",
+            "latvijas valdība", "valdība", "nato", "ukraina",
+            "krievija", "drošība", "robeža", "kiberuzbrukums",
+            "dezinformācija"
+        ]
+    },
+    {
+        "id": "lithuania",
+        "country": "Lithuania",
+        "country_local": "Lietuva",
+        "coordinates": [54.6872, 25.2797],
+        "queries": [
+            "Lithuania NATO Kaliningrad Belarus security",
+            "Lithuania government Ukraine Russia sanctions",
+            "Lithuania border security Belarus"
+        ],
+        "keywords": [
+            "lithuania", "lithuanian", "vilnius", "lietuva",
+            "lietuvos vyriausybė", "vyriausybė", "nato", "ukraina",
+            "rusija", "baltarusija", "kaliningrad", "kaliningradas",
+            "saugumas", "kibernetinė ataka"
+        ]
+    }
+]
 
 
 NEGATIVE_WORDS = [
-    "crisis", "threat", "attack", "war", "tension", "conflict", "protest",
-    "corruption", "sanction", "risk", "pressure", "hybrid", "spy",
-    "háború", "válság", "fenyegetés", "támadás", "tüntetés", "korrupció"
+    "protest", "protests", "crisis", "corruption", "violence", "conflict",
+    "tension", "tensions", "sanction", "sanctions", "arrest", "attack",
+    "war", "unrest", "fraud", "dispute", "scandal", "threat",
+    "instability", "clash", "clashes", "riot", "boycott", "polarization",
+    "propaganda", "blocked", "deadlock", "resignation", "investigation",
+    "charges", "convicted", "hybrid", "sabotage", "espionage", "spy",
+    "háború", "válság", "korrupció", "támadás", "tüntetés",
+    "fenyegetés", "feszültség", "szankció", "dezinformáció",
+    "wojna", "kryzys", "korupcja", "atak", "protest",
+    "vojna", "korupcia", "útok", "kríza",
+    "válka", "korupce", "útok", "krize",
+    "război", "criză", "corupție", "atac",
+    "karš", "krīze", "korupcija", "uzbrukums",
+    "sõda", "kriis", "korruptsioon", "rünnak",
+    "karas", "krizė", "korupcija", "ataka"
 ]
+
 
 POSITIVE_WORDS = [
-    "cooperation", "agreement", "support", "growth", "stable", "investment",
-    "resilience", "modernisation", "coordination", "együttműködés",
-    "megállapodás", "támogatás", "stabil", "beruházás"
+    "agreement", "reform", "growth", "cooperation", "investment",
+    "stability", "dialogue", "progress", "development", "support",
+    "partnership", "coordination", "resilience", "aid package",
+    "defence cooperation", "eu funds", "nato support",
+    "megállapodás", "reform", "együttműködés", "támogatás",
+    "stabilitás", "beruházás", "fejlődés",
+    "porozumienie", "współpraca", "stabilność",
+    "dohoda", "spolupráca", "stabilita",
+    "acord", "cooperare", "stabilitate",
+    "kokkulepe", "koostöö", "stabiilsus",
+    "vienošanās", "sadarbība", "stabilitāte",
+    "susitarimas", "bendradarbiavimas", "stabilumas"
 ]
-
-
-COUNTRY_COORDS = {
-    "hungary": [47.4979, 19.0402],
-    "poland": [52.2297, 21.0122],
-    "slovakia": [48.1486, 17.1077],
-    "czechia": [50.0755, 14.4378],
-    "romania": [44.4268, 26.1025],
-    "estonia": [59.437, 24.7536],
-    "latvia": [56.9496, 24.1052],
-    "lithuania": [54.6872, 25.2797],
-}
+TOPIC_RULES = [
+    {
+        "label": "NATO keleti szárny és katonai elrettentés",
+        "keywords": [
+            "nato", "eastern flank", "deterrence", "troops", "military",
+            "defence", "defense", "army", "exercise", "air policing",
+            "forward presence", "katonai", "hadsereg", "védelem",
+            "wojsko", "bezpieczeństwo", "armia", "vojaci", "bezpečnosť",
+            "bezpečnost", "securitate", "julgeolek", "drošība", "saugumas"
+        ],
+        "weight": 8
+    },
+    {
+        "label": "Ukrajna támogatása és orosz–ukrán háború",
+        "keywords": [
+            "ukraine", "ukrainian", "kyiv", "russia", "russian", "war",
+            "sanctions", "frontline", "ukrajna", "ukraina", "ucraina",
+            "oroszország", "rosja", "rusko", "rusia", "venemaa",
+            "krievija", "rusija", "háború", "wojna", "vojna", "válka",
+            "război", "karš", "karas"
+        ],
+        "weight": 8
+    },
+    {
+        "label": "EU-politika, jogállamiság és uniós források",
+        "keywords": [
+            "european union", "eu", "brussels", "commission", "council",
+            "rule of law", "eu funds", "cohesion funds", "democracy",
+            "európai unió", "brüsszel", "bizottság", "jogállamiság",
+            "unijne fundusze", "praworządność", "eurofondy",
+            "vláda zákona", "statul de drept"
+        ],
+        "weight": 7
+    },
+    {
+        "label": "Belpolitikai feszültség és választási dinamika",
+        "keywords": [
+            "government", "parliament", "opposition", "election", "coalition",
+            "resignation", "prime minister", "president", "party", "cabinet",
+            "kormány", "parlament", "ellenzék", "választás", "koalíció",
+            "rząd", "opozycja", "wybory", "vláda", "opozícia", "voľby",
+            "opozice", "volby", "guvern", "alegeri"
+        ],
+        "weight": 6
+    },
+    {
+        "label": "Tüntetések, társadalmi nyomás és polarizáció",
+        "keywords": [
+            "protest", "protests", "demonstration", "strike", "riot",
+            "unrest", "boycott", "polarization", "tüntetés", "tiltakozás",
+            "sztrájk", "protesty", "demonstracja", "protest", "manifestace",
+            "protesty", "proteste", "polarizare"
+        ],
+        "weight": 6
+    },
+    {
+        "label": "Kiberbiztonság és dezinformáció",
+        "keywords": [
+            "cyber", "cyberattack", "ransomware", "hack", "disinformation",
+            "propaganda", "hybrid", "information warfare", "kiber",
+            "kibertámadás", "dezinformáció", "dezinformacja",
+            "kybernetický", "kybernetické", "dezinformace",
+            "atac cibernetic", "küberrünnak", "kiberuzbrukums",
+            "kibernetinė ataka"
+        ],
+        "weight": 7
+    },
+    {
+        "label": "Energiabiztonság, gazdaság és infrastruktúra",
+        "keywords": [
+            "energy", "gas", "oil", "pipeline", "electricity", "nuclear",
+            "lng", "inflation", "economy", "infrastructure",
+            "energia", "gáz", "olaj", "vezeték", "infláció", "gazdaság",
+            "energia", "gaz", "ropa", "inflacja", "gospodarka",
+            "energie", "plyn", "ropa", "infrastruktura",
+            "energie", "gaz", "petrol", "economie"
+        ],
+        "weight": 5
+    },
+    {
+        "label": "Belarusz, Kalinyingrád és határbiztonság",
+        "keywords": [
+            "belarus", "belarusian", "kaliningrad", "border security",
+            "border pressure", "suwałki", "suwalki", "białoruś",
+            "baltarusija", "kaliningradas", "határ", "granica",
+            "hranica", "frontier", "robeža", "siena"
+        ],
+        "weight": 8
+    },
+    {
+        "label": "Fekete-tengeri biztonság és Moldova",
+        "keywords": [
+            "black sea", "moldova", "transnistria", "danube", "constanta",
+            "marea neagră", "moldova", "transnistria", "dunărea",
+            "romania nato", "black sea security"
+        ],
+        "weight": 8
+    },
+    {
+        "label": "Külső befolyás: Oroszország, Kína és hibrid műveletek",
+        "keywords": [
+            "russian influence", "china", "chinese", "foreign influence",
+            "hybrid operation", "espionage", "spy", "sabotage",
+            "orosz befolyás", "kína", "kínai", "külső befolyás",
+            "rosyjski wpływ", "chiny", "szpieg", "špionáž",
+            "influență rusă", "china"
+        ],
+        "weight": 7
+    },
+    {
+        "label": "Migráció és határnyomás",
+        "keywords": [
+            "migration", "migrant", "refugee", "asylum", "border pressure",
+            "migráció", "menekült", "menedékjog", "migracja",
+            "uchodźcy", "azyl", "migrácia", "uprchlík",
+            "migrație", "refugiat"
+        ],
+        "weight": 5
+    },
+    {
+        "label": "V4 együttműködés és regionális törésvonalak",
+        "keywords": [
+            "visegrad", "v4", "central europe", "regional cooperation",
+            "visegrád", "v4", "közép-európa", "współpraca regionalna",
+            "visegrádská", "visegrád"
+        ],
+        "weight": 6
+    }
+]
 
 
 def ensure_dirs():
     os.makedirs("docs/data", exist_ok=True)
+    os.makedirs("docs/data/history", exist_ok=True)
 
 
-def load_config():
-    with open(CONFIG_PATH, "r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-def clean_text(value):
-    if not value:
+def clean_text(text):
+    if not text:
         return ""
-    value = re.sub(r"\s+", " ", str(value))
-    return value.strip()
+
+    text = re.sub(r"<[^>]+>", " ", str(text))
+    text = text.replace("\n", " ")
+    text = text.replace("\r", " ")
+    text = text.replace("&nbsp;", " ")
+    text = text.replace("&amp;", "&")
+    text = text.replace("&quot;", '"')
+    text = text.replace("&#39;", "'")
+
+    return " ".join(text.split()).strip()
 
 
 def normalize_url(url):
     return clean_text(url).split("?")[0].strip()
 
 
-def build_gdelt_query(country_config):
-    keywords = []
-
-    keywords.extend(country_config.get("gdelt_keywords_en", []))
-    keywords.extend(country_config.get("local_keywords", [])[:5])
-
-    terms = []
-    for keyword in keywords:
-        if " " in keyword:
-            terms.append(f'"{keyword}"')
-        else:
-            terms.append(keyword)
-
-    return " OR ".join(terms)
-
-
-def fetch_gdelt(country_id, country_config, max_records=15):
-    query = build_gdelt_query(country_config)
-
-    url = (
-        "https://api.gdeltproject.org/api/v2/doc/doc"
-        f"?query={quote_plus(query)}"
-        "&mode=artlist"
-        "&format=json"
-        "&sort=hybridrel"
-        f"&maxrecords={max_records}"
+def fetch_url(url):
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 CEE-Strategic-Monitor/1.0"
+        }
     )
 
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read()
+
+
+def parse_date(value):
+    if not value:
+        return ""
+
     try:
-        response = requests.get(url, timeout=25)
-        response.raise_for_status()
-        data = response.json()
-        articles = data.get("articles", [])
-    except Exception as exc:
-        print(f"[WARN] GDELT failed for {country_id}: {exc}")
+        parsed = parsedate_to_datetime(value)
+
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+
+        return parsed.astimezone(timezone.utc).isoformat()
+
+    except Exception:
+        return clean_text(value)
+
+
+def fetch_gdelt_articles(query):
+    base_url = "https://api.gdeltproject.org/api/v2/doc/doc"
+
+    params = {
+        "query": query,
+        "mode": "artlist",
+        "format": "json",
+        "maxrecords": GDELT_MAX_RECORDS,
+        "sort": "datedesc",
+        "timespan": GDELT_TIMESPAN
+    }
+
+    url = base_url + "?" + urllib.parse.urlencode(params)
+
+    try:
+        raw_data = fetch_url(url).decode("utf-8")
+        data = json.loads(raw_data)
+
+        articles = []
+
+        for item in data.get("articles", []):
+            title = clean_text(item.get("title", ""))
+            article_url = normalize_url(item.get("url", ""))
+
+            if not title or not article_url:
+                continue
+
+            articles.append({
+                "title": title,
+                "url": article_url,
+                "source": item.get("domain", "GDELT"),
+                "source_weight": 5,
+                "seen_date": item.get("seendate", ""),
+                "description": "",
+                "origin": "GDELT"
+            })
+
+        return articles
+
+    except Exception as error:
+        print(f"GDELT hiba: {query}")
+        print(error)
         return []
 
-    output = []
 
-    for item in articles:
-        title = clean_text(item.get("title"))
-        article_url = normalize_url(item.get("url"))
-        domain = clean_text(item.get("domain"))
-        seen_date = clean_text(item.get("seendate"))
+def fetch_rss_articles(feed):
+    articles = []
 
-        if not title or not article_url:
-            continue
+    try:
+        raw_xml = fetch_url(feed["url"])
+        root = ET.fromstring(raw_xml)
 
-        output.append({
-            "country_id": country_id,
-            "source_type": "gdelt",
-            "title": title,
-            "url": article_url,
-            "source": domain,
-            "published": seen_date,
-            "summary": "",
-            "language": country_config.get("language", ""),
-            "matched_keywords": [],
-        })
-
-    return output
-
-
-def keyword_match_score(text, keywords):
-    lower = text.lower()
-    matches = []
-
-    for keyword in keywords:
-        k = keyword.lower()
-        if k and k in lower:
-            matches.append(keyword)
-
-    return matches
-
-
-def fetch_rss_local(country_id, country_config):
-    rss_sources = country_config.get("rss_sources", [])
-    local_keywords = country_config.get("local_keywords", [])
-    english_keywords = country_config.get("gdelt_keywords_en", [])
-    keywords = local_keywords + english_keywords
-
-    output = []
-
-    for feed_url in rss_sources:
-        try:
-            feed = feedparser.parse(feed_url)
-        except Exception as exc:
-            print(f"[WARN] RSS parse failed for {feed_url}: {exc}")
-            continue
-
-        source_title = clean_text(feed.feed.get("title", feed_url))
-
-        for entry in feed.entries[:30]:
-            title = clean_text(entry.get("title"))
-            link = normalize_url(entry.get("link"))
-            summary = clean_text(entry.get("summary") or entry.get("description"))
-            published = clean_text(
-                entry.get("published")
-                or entry.get("updated")
-                or entry.get("created")
-            )
-
-            combined = f"{title} {summary}"
-            matched_keywords = keyword_match_score(combined, keywords)
+        # RSS 2.0
+        for item in root.findall(".//item"):
+            title = clean_text(item.findtext("title", ""))
+            link = normalize_url(item.findtext("link", ""))
+            pub_date = clean_text(item.findtext("pubDate", ""))
+            description = clean_text(item.findtext("description", ""))
 
             if not title or not link:
                 continue
 
-            if not matched_keywords:
-                continue
-
-            output.append({
-                "country_id": country_id,
-                "source_type": "rss_local",
+            articles.append({
                 "title": title,
                 "url": link,
-                "source": source_title,
-                "published": published,
-                "summary": summary[:500],
-                "language": country_config.get("language", ""),
-                "matched_keywords": matched_keywords[:8],
+                "source": feed["name"],
+                "source_weight": feed.get("weight", 5),
+                "seen_date": parse_date(pub_date),
+                "description": description,
+                "origin": "RSS"
             })
 
-    return output
+        # Atom fallback
+        if not articles:
+            ns = {"atom": "http://www.w3.org/2005/Atom"}
+
+            for entry in root.findall(".//atom:entry", ns):
+                title = clean_text(entry.findtext("atom:title", "", ns))
+                link_node = entry.find("atom:link", ns)
+                link = ""
+
+                if link_node is not None:
+                    link = normalize_url(link_node.attrib.get("href", ""))
+
+                updated = clean_text(entry.findtext("atom:updated", "", ns))
+                summary = clean_text(entry.findtext("atom:summary", "", ns))
+
+                if not title or not link:
+                    continue
+
+                articles.append({
+                    "title": title,
+                    "url": link,
+                    "source": feed["name"],
+                    "source_weight": feed.get("weight", 5),
+                    "seen_date": parse_date(updated),
+                    "description": summary,
+                    "origin": "RSS"
+                })
+
+        print(f"RSS találatok: {feed['name']} - {len(articles)}")
+
+    except Exception as error:
+        print(f"RSS hiba: {feed['name']}")
+        print(error)
+
+    return articles
 
 
-def deduplicate_articles(articles):
+def fetch_all_rss_articles():
+    all_articles = []
+
+    for feed in RSS_FEEDS:
+        all_articles.extend(fetch_rss_articles(feed))
+        time.sleep(0.3)
+
+    return all_articles
+
+
+def article_text(article):
+    return (
+        f"{article.get('title', '')} "
+        f"{article.get('description', '')} "
+        f"{article.get('source', '')} "
+        f"{article.get('url', '')}"
+    ).lower()
+
+
+def is_relevant(article, keywords):
+    text = article_text(article)
+
+    for keyword in keywords:
+        if keyword.lower() in text:
+            return True
+
+    return False
+
+
+def collect_articles(country, rss_articles):
+    all_articles = []
     seen_urls = set()
-    seen_titles = set()
-    unique = []
 
-    for article in articles:
-        url = normalize_url(article.get("url", ""))
-        title_key = clean_text(article.get("title", "")).lower()
+    for query in country["queries"]:
+        gdelt_articles = fetch_gdelt_articles(query)
 
-        title_key = re.sub(r"[^a-zA-Z0-9áéíóöőúüűÁÉÍÓÖŐÚÜŰčďěľĺňôŕšťžąęłńóśźżăâîșț\s]", "", title_key)
-        title_key = re.sub(r"\s+", " ", title_key).strip()
+        for article in gdelt_articles:
+            url = article.get("url", "")
 
-        if url and url in seen_urls:
-            continue
+            if not url:
+                continue
 
-        if title_key and title_key in seen_titles:
-            continue
+            if url in seen_urls:
+                continue
 
-        if url:
+            if not is_relevant(article, country["keywords"]):
+                continue
+
             seen_urls.add(url)
+            all_articles.append(article)
 
-        if title_key:
-            seen_titles.add(title_key)
+        time.sleep(0.5)
 
-        unique.append(article)
+    for article in rss_articles:
+        url = article.get("url", "")
 
-    return unique
+        if not url:
+            continue
 
+        if url in seen_urls:
+            continue
 
-def detect_topic(text):
-    lower = text.lower()
-    scores = {}
+        if not is_relevant(article, country["keywords"]):
+            continue
 
-    for topic, words in TOPIC_RULES.items():
-        score = sum(1 for word in words if word.lower() in lower)
-        if score > 0:
-            scores[topic] = score
+        seen_urls.add(url)
+        all_articles.append(article)
 
-    if not scores:
-        return "General strategic affairs"
-
-    return max(scores, key=scores.get)
+    return all_articles[:MAX_ARTICLES_PER_COUNTRY]
 
 
-def sentiment_score(text):
-    lower = text.lower()
-    negative = sum(1 for word in NEGATIVE_WORDS if word.lower() in lower)
-    positive = sum(1 for word in POSITIVE_WORDS if word.lower() in lower)
-    return positive - negative
-
-
-def risk_from_articles(articles):
-    if not articles:
-        return 40
-
-    risk = 42
+def classify_topics(articles):
+    topic_scores = {}
 
     for article in articles:
-        text = f"{article.get('title', '')} {article.get('summary', '')}".lower()
+        text = article_text(article)
 
-        if any(word in text for word in ["war", "háború", "wojna", "vojna", "karš"]):
-            risk += 5
-        if any(word in text for word in ["attack", "támadás", "drone", "missile"]):
-            risk += 5
-        if any(word in text for word in ["military", "nato", "border", "katonai", "határ"]):
-            risk += 4
-        if any(word in text for word in ["cyber", "kiber", "hybrid", "disinformation"]):
-            risk += 3
-        if any(word in text for word in ["protest", "tüntetés", "crisis", "válság", "corruption"]):
-            risk += 2
-        if any(word in text for word in ["cooperation", "agreement", "stable", "együttműködés"]):
-            risk -= 1
+        for rule in TOPIC_RULES:
+            label = rule["label"]
+            weight = rule.get("weight", 1)
 
-    article_volume_bonus = min(10, len(articles) // 3)
-    risk += article_volume_bonus
+            for keyword in rule["keywords"]:
+                if keyword.lower() in text:
+                    topic_scores[label] = topic_scores.get(label, 0) + weight
+                    break
 
-    return max(20, min(90, risk))
+    sorted_topics = sorted(
+        topic_scores.items(),
+        key=lambda item: item[1],
+        reverse=True
+    )
+
+    return {
+        "main_topic": (
+            sorted_topics[0][0]
+            if sorted_topics
+            else "nincs kiemelkedő téma"
+        ),
+        "topic_scores": dict(sorted_topics[:6])
+    }
+
+
+def analyze_articles(articles):
+    negative_hits = 0
+    positive_hits = 0
+    source_weight_total = 0
+    security_hits = 0
+
+    for article in articles:
+        text = article_text(article)
+
+        source_weight_total += int(article.get("source_weight", 5))
+
+        if any(word.lower() in text for word in NEGATIVE_WORDS):
+            negative_hits += 1
+
+        if any(word.lower() in text for word in POSITIVE_WORDS):
+            positive_hits += 1
+
+        if any(
+            word in text
+            for word in [
+                "nato", "military", "defence", "defense", "security",
+                "border", "cyber", "hybrid", "sabotage", "war",
+                "katonai", "biztonság", "határ", "kiber"
+            ]
+        ):
+            security_hits += 1
+
+    risk_score = (
+        len(articles) * 1.2
+        + negative_hits * 4
+        + security_hits * 3
+        + min(source_weight_total / 10, 20)
+        - positive_hits * 1.5
+    )
+
+    risk_score = max(15, min(round(risk_score), 90))
+
+    sentiment_score = (positive_hits * 4) - (negative_hits * 4)
+    sentiment_score = max(min(sentiment_score, 30), -30)
+
+    return {
+        "risk_score": risk_score,
+        "sentiment_score": sentiment_score,
+        "negative_hits": negative_hits,
+        "positive_hits": positive_hits,
+        "security_hits": security_hits
+    }
 
 
 def risk_level(score):
     if score >= 75:
         return "HIGH"
+
     if score >= 55:
         return "ELEVATED"
+
     if score >= 40:
         return "GUARDED"
+
     return "LOW"
 
 
 def political_mood(score):
-    if score >= 75:
+    if score >= 70:
         return "ALERT"
-    if score >= 65:
-        return "TENSE"
+
     if score >= 55:
         return "POLARISED"
+
     if score >= 40:
         return "WATCHFUL"
+
     return "STABLE"
 
 
 def security_trend(score):
     if score >= 70:
         return "RISING"
+
     if score >= 55:
         return "VOLATILE"
+
     return "STABLE"
 
 
-def build_country_status(country_id, country_config, articles):
-    topic_counter = {}
+def get_top_articles(articles):
+    scored = []
 
     for article in articles:
-        text = f"{article.get('title', '')} {article.get('summary', '')}"
-        topic = detect_topic(text)
-        article["topic"] = topic
-        topic_counter[topic] = topic_counter.get(topic, 0) + 1
+        text = article_text(article)
+        topic_result = classify_topics([article])
+        priority = int(article.get("source_weight", 5))
 
-    score = risk_from_articles(articles)
+        if any(word.lower() in text for word in NEGATIVE_WORDS):
+            priority += 4
 
-    if topic_counter:
-        main_topic = max(topic_counter, key=topic_counter.get)
-    else:
-        main_topic = "General strategic affairs"
+        if any(word.lower() in text for word in POSITIVE_WORDS):
+            priority += 1
 
-    if articles:
-        latest_event = articles[0]["title"]
-        top_narrative = f"Current coverage is mainly focused on {main_topic.lower()}."
-    else:
-        latest_event = "No fresh article was available during this run."
-        top_narrative = "No strong narrative detected. Dashboard is using fallback status."
+        if topic_result["main_topic"] != "nincs kiemelkedő téma":
+            priority += 3
 
-    social_signal = sentiment_score(" ".join([a.get("title", "") for a in articles]))
+        scored.append((priority, article))
+
+    scored = sorted(scored, key=lambda item: item[0], reverse=True)
+
+    top_articles = []
+
+    for _, article in scored[:8]:
+        top_articles.append({
+            "title": article.get("title", ""),
+            "url": article.get("url", ""),
+            "source": article.get("source", ""),
+            "seen_date": article.get("seen_date", ""),
+            "origin": article.get("origin", "")
+        })
+
+    return top_articles
+
+
+def build_country_output(country, articles):
+    analysis = analyze_articles(articles)
+    topic_result = classify_topics(articles)
 
     return {
-        "id": country_id,
-        "country": country_config.get("name_en", country_id),
-        "country_local": country_config.get("name_local", ""),
-        "risk_level": risk_level(score),
-        "risk_score": score,
-        "political_mood": political_mood(score),
-        "social_signal": social_signal,
-        "security_trend": security_trend(score),
-        "top_narrative": top_narrative,
-        "main_topic": main_topic,
+        "id": country["id"],
+        "country": country["country"],
+        "country_local": country["country_local"],
+        "coordinates": country["coordinates"],
+        "risk_level": risk_level(analysis["risk_score"]),
+        "risk_score": analysis["risk_score"],
+        "political_mood": political_mood(analysis["risk_score"]),
+        "social_signal": 0,
+        "security_trend": security_trend(analysis["risk_score"]),
+        "top_narrative": (
+            f"Domináns téma: {topic_result['main_topic']}."
+            if topic_result["main_topic"] != "nincs kiemelkedő téma"
+            else "Nem azonosítható erős domináns narratíva."
+        ),
+        "main_topic": topic_result["main_topic"],
+        "topic_scores": topic_result["topic_scores"],
         "article_count": len(articles),
-        "latest_event": latest_event,
-        "coordinates": COUNTRY_COORDS.get(country_id, [0, 0]),
-        "top_articles": articles[:8]
+        "negative_hits": analysis["negative_hits"],
+        "positive_hits": analysis["positive_hits"],
+        "security_hits": analysis["security_hits"],
+        "latest_event": (
+            articles[0]["title"]
+            if articles
+            else "No fresh article available."
+        ),
+        "top_articles": get_top_articles(articles)
     }
 
 
-def build_latest_status(config):
+def update_history(latest_status):
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    regional_history = {
+        "project": "Central & Eastern Europe Strategic Monitor",
+        "history": []
+    }
+
+    if os.path.exists(REGIONAL_HISTORY_PATH):
+        with open(REGIONAL_HISTORY_PATH, "r", encoding="utf-8") as file:
+            regional_history = json.load(file)
+
+    summary = latest_status.get("regional_summary", {})
+
+    regional_history["history"] = [
+        row for row in regional_history.get("history", [])
+        if row.get("date") != today
+    ]
+
+    regional_history["history"].append({
+        "date": today,
+        "regional_stability_score": summary.get("regional_stability_score", 0),
+        "regional_risk_score": summary.get("regional_risk_score", 0),
+        "overall_risk": summary.get("overall_risk", "UNKNOWN"),
+        "main_trend": summary.get("main_trend", "")
+    })
+
+    regional_history["history"] = regional_history["history"][-90:]
+    regional_history["last_update"] = datetime.now(timezone.utc).isoformat()
+
+    with open(REGIONAL_HISTORY_PATH, "w", encoding="utf-8") as file:
+        json.dump(regional_history, file, ensure_ascii=False, indent=2)
+
+    country_history = {
+        "project": "Central & Eastern Europe Strategic Monitor",
+        "countries": {}
+    }
+
+    if os.path.exists(COUNTRY_HISTORY_PATH):
+        with open(COUNTRY_HISTORY_PATH, "r", encoding="utf-8") as file:
+            country_history = json.load(file)
+
+    for country in latest_status.get("countries", []):
+        country_id = country.get("id")
+
+        rows = country_history.get("countries", {}).get(country_id, [])
+
+        rows = [
+            row for row in rows
+            if row.get("date") != today
+        ]
+
+        rows.append({
+            "date": today,
+            "risk_score": country.get("risk_score", 0),
+            "risk_level": country.get("risk_level", ""),
+            "political_mood": country.get("political_mood", ""),
+            "social_signal": country.get("social_signal", 0),
+            "security_trend": country.get("security_trend", ""),
+            "article_count": country.get("article_count", 0),
+            "main_topic": country.get("main_topic", "")
+        })
+
+        rows = rows[-90:]
+        country_history.setdefault("countries", {})[country_id] = rows
+
+    country_history["last_update"] = datetime.now(timezone.utc).isoformat()
+
+    with open(COUNTRY_HISTORY_PATH, "w", encoding="utf-8") as file:
+        json.dump(country_history, file, ensure_ascii=False, indent=2)
+
+
+def main():
+    ensure_dirs()
+
+    print("RSS források lekérése...")
+    rss_articles = fetch_all_rss_articles()
+
     countries_output = []
     raw_news = {}
 
-    countries = config.get("countries", {})
+    for country in COUNTRIES:
+        print(f"Adatgyűjtés: {country['country']}")
 
-    for country_id, country_config in countries.items():
-        print(f"[INFO] Fetching news for {country_config.get('name_en', country_id)}...")
+        articles = collect_articles(country, rss_articles)
 
-        gdelt_articles = fetch_gdelt(country_id, country_config)
-        time.sleep(1)
+        print(f"Szűrt cikkek száma: {len(articles)}")
 
-        rss_articles = fetch_rss_local(country_id, country_config)
+        raw_news[country["id"]] = articles
 
-        articles = deduplicate_articles(gdelt_articles + rss_articles)
-
-        articles = sorted(
-            articles,
-            key=lambda x: x.get("published", ""),
-            reverse=True
+        countries_output.append(
+            build_country_output(country, articles)
         )
 
-        raw_news[country_id] = articles
+    avg_risk = round(
+        sum(country["risk_score"] for country in countries_output)
+        / len(countries_output)
+    )
 
-        status = build_country_status(country_id, country_config, articles)
-        countries_output.append(status)
+    regional_stability = max(
+        0,
+        min(100, 100 - avg_risk)
+    )
 
-    avg_risk = round(sum(c["risk_score"] for c in countries_output) / len(countries_output))
-    stability_score = max(0, min(100, 100 - avg_risk))
+    topic_counter = {}
 
-    all_topics = {}
     for country in countries_output:
-        topic = country["main_topic"]
-        all_topics[topic] = all_topics.get(topic, 0) + 1
+        topic = country.get("main_topic", "")
 
-    top_topics = sorted(all_topics, key=all_topics.get, reverse=True)[:5]
+        if topic:
+            topic_counter[topic] = topic_counter.get(topic, 0) + 1
+
+    top_topics = sorted(
+        topic_counter,
+        key=topic_counter.get,
+        reverse=True
+    )[:6]
 
     latest_status = {
         "last_update": datetime.now(timezone.utc).isoformat(),
+        "source": "GDELT + regional RSS + local-language keyword filtering",
+        "method_note": (
+            "Kulcsszavas, híralapú stratégiai monitoring. "
+            "Nem közvélemény-kutatás. "
+            "A rendszer GDELT, regionális RSS és országonkénti saját nyelvű kulcsszavak alapján dolgozik."
+        ),
         "regional_summary": {
             "overall_risk": risk_level(avg_risk),
-            "regional_stability_score": stability_score,
+            "regional_stability_score": regional_stability,
             "regional_risk_score": avg_risk,
-            "main_trend": "Automated monitoring based on GDELT, local RSS sources and local-language keyword filtering.",
+            "main_trend": (
+                "A régiós összkép a híráramlás, biztonsági témák, "
+                "EU/NATO narratívák és helyi politikai feszültségek alapján készül."
+            ),
             "top_topics": top_topics
         },
         "countries": countries_output
     }
 
-    return latest_status, raw_news
+    with open(LATEST_STATUS_PATH, "w", encoding="utf-8") as file:
+        json.dump(latest_status, file, ensure_ascii=False, indent=2)
 
+    with open(RAW_NEWS_PATH, "w", encoding="utf-8") as file:
+        json.dump({
+            "last_update": datetime.now(timezone.utc).isoformat(),
+            "items": raw_news
+        }, file, ensure_ascii=False, indent=2)
 
-def save_json(path, data):
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=2)
+    update_history(latest_status)
 
-
-def main():
-    ensure_dirs()
-    config = load_config()
-
-    latest_status, raw_news = build_latest_status(config)
-
-    save_json(OUTPUT_PATH, latest_status)
-    save_json(RAW_NEWS_PATH, {
-        "last_update": datetime.now(timezone.utc).isoformat(),
-        "items": raw_news
-    })
-
-    print(f"[OK] Saved latest status to {OUTPUT_PATH}")
-    print(f"[OK] Saved raw news to {RAW_NEWS_PATH}")
+    print("latest_status.json, raw_news.json és history frissítve")
 
 
 if __name__ == "__main__":
