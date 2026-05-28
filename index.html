@@ -24,14 +24,10 @@
       --amber-soft: #fff7ed;
       --green: #16a34a;
       --green-soft: #dcfce7;
-      --purple: #7c3aed;
-      --purple-soft: #f5f3ff;
       --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -59,7 +55,6 @@
     .hero h1 {
       margin: 0;
       font-size: 32px;
-      letter-spacing: 0.2px;
     }
 
     .hero p {
@@ -76,12 +71,17 @@
       font-size: 13px;
     }
 
-    .top-panel {
+    .top-panel,
+    .panel,
+    .country-card {
       background: var(--card);
       border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .top-panel {
       border-radius: 20px;
       padding: 16px;
-      box-shadow: var(--shadow);
       margin-bottom: 18px;
     }
 
@@ -109,6 +109,13 @@
       font-weight: 800;
     }
 
+    .dashboard-charts {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
     .summary-grid {
       display: grid;
       grid-template-columns: 1.3fr 0.7fr;
@@ -117,11 +124,8 @@
     }
 
     .panel {
-      background: var(--card);
-      border: 1px solid var(--border);
       border-radius: 20px;
       padding: 18px;
-      box-shadow: var(--shadow);
     }
 
     .panel h2 {
@@ -135,6 +139,10 @@
       line-height: 1.55;
     }
 
+    .wide-chart {
+      height: 310px;
+    }
+
     .topic-chip {
       display: inline-block;
       background: var(--blue-soft);
@@ -146,17 +154,6 @@
       font-weight: 700;
     }
 
-    .dashboard-charts {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      margin-bottom: 22px;
-    }
-
-    .wide-chart {
-      height: 320px;
-    }
-
     .country-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -165,10 +162,7 @@
     }
 
     .country-card {
-      background: var(--card);
       border-radius: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
       padding: 18px;
       border-left: 7px solid var(--red);
     }
@@ -194,7 +188,7 @@
     }
 
     .risk-pill {
-      min-width: 96px;
+      min-width: 92px;
       text-align: center;
       border-radius: 14px;
       padding: 9px 12px;
@@ -202,27 +196,10 @@
       font-size: 14px;
     }
 
-    .risk-high {
-      background: var(--red-soft);
-      color: var(--red);
-    }
-
-    .risk-elevated,
-    .risk-medium {
-      background: var(--amber-soft);
-      color: var(--amber);
-    }
-
-    .risk-guarded,
-    .risk-low {
-      background: var(--green-soft);
-      color: var(--green);
-    }
-
-    .risk-minimal {
-      background: var(--blue-soft);
-      color: var(--blue);
-    }
+    .risk-high { background: var(--red-soft); color: var(--red); }
+    .risk-elevated, .risk-medium { background: var(--amber-soft); color: var(--amber); }
+    .risk-guarded, .risk-low { background: var(--green-soft); color: var(--green); }
+    .risk-minimal { background: var(--blue-soft); color: var(--blue); }
 
     .mini-metrics {
       display: grid;
@@ -246,6 +223,31 @@
     .mini-value {
       font-size: 20px;
       font-weight: 800;
+    }
+
+    .block {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .block h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .block p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .security-block {
+      background: #fff7ed;
+      border-color: #fed7aa;
     }
 
     .security-metrics {
@@ -275,67 +277,43 @@
       word-break: break-word;
     }
 
-    .block {
-      background: var(--soft);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 14px;
-    }
-
-    .block h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
-    }
-
-    .block p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.45;
-      font-size: 14px;
-    }
-
-    .security-block {
-      background: #fff7ed;
-      border-color: #fed7aa;
-    }
-
-    .social-block {
-      background: #f8fafc;
+    .security-chart-holder {
+      height: 135px;
     }
 
     .chart-holder {
-      height: 170px;
+      height: 130px;
     }
 
     .small-chart-holder {
       height: 145px;
     }
 
-    .security-chart-holder {
-      height: 135px;
-    }
-
     .sub-narratives {
-      margin-top: 10px;
+      margin-top: 8px;
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
+      gap: 6px;
     }
 
     .sub-chip {
       background: #eef2ff;
       color: #3730a3;
       border-radius: 999px;
-      padding: 6px 9px;
-      font-size: 12px;
+      padding: 5px 8px;
+      font-size: 11px;
       font-weight: 700;
+    }
+
+    .social-block {
+      background: #f8fafc;
+      border-color: var(--border);
     }
 
     .social-metrics {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
+      gap: 10px;
       margin-bottom: 12px;
     }
 
@@ -355,12 +333,26 @@
       font-weight: 800;
     }
 
+    .social-platforms {
+      color: #0f172a;
+      font-size: 14px;
+      margin: 8px 0 12px;
+    }
+
     .topic-table {
       background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 10px;
+      padding: 10px 14px;
       margin-top: 10px;
+    }
+
+    .topic-table-head {
+      color: #0f172a;
+      line-height: 1.45;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 8px;
     }
 
     .topic-row {
@@ -397,9 +389,7 @@
       font-size: 14px;
     }
 
-    .source-link:hover {
-      text-decoration: underline;
-    }
+    .source-link:hover { text-decoration: underline; }
 
     .note {
       color: var(--muted);
@@ -409,35 +399,15 @@
     }
 
     @media (max-width: 1350px) {
-      .country-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .summary-grid,
-      .dashboard-charts {
-        grid-template-columns: 1fr;
-      }
+      .country-grid { grid-template-columns: repeat(2, 1fr); }
+      .summary-grid, .dashboard-charts { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 880px) {
-      .country-grid,
-      .stats {
-        grid-template-columns: 1fr;
-      }
-
-      .mini-metrics,
-      .social-metrics,
-      .security-metrics {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .page {
-        padding: 12px;
-      }
-
-      .hero h1 {
-        font-size: 26px;
-      }
+      .country-grid, .stats { grid-template-columns: 1fr; }
+      .mini-metrics, .social-metrics, .security-metrics { grid-template-columns: repeat(2, 1fr); }
+      .page { padding: 12px; }
+      .hero h1 { font-size: 26px; }
     }
   </style>
 </head>
@@ -447,10 +417,7 @@
 
     <section class="hero">
       <h1>Central & Eastern Europe Strategic Monitor</h1>
-      <p>
-        Hírindex, biztonsági réteg, social signal és domináns narratívák
-        nyolc kelet-közép-európai ország alapján.
-      </p>
+      <p>Hírindex, biztonsági réteg, social signal és domináns narratívák nyolc kelet-közép-európai ország alapján.</p>
       <div class="update-line" id="lastUpdate">Betöltés...</div>
     </section>
 
@@ -460,17 +427,14 @@
           <div class="stat-label">Regional Risk Level</div>
           <div class="stat-value" id="overallRisk">-</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-label">Regional Risk Score</div>
           <div class="stat-value" id="riskScore">-</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-label">Regional Stability</div>
           <div class="stat-value" id="stabilityScore">-</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-label">Countries</div>
           <div class="stat-value">8</div>
@@ -484,18 +448,12 @@
         <div class="wide-chart">
           <canvas id="regionalCombinedChart"></canvas>
         </div>
-        <div class="note">
-          A regionális trend a hírkockázat és social signal országonkénti átlagából épül.
-        </div>
       </div>
 
       <div class="panel">
         <h2>Aktuális országkockázati összevetés</h2>
         <div class="wide-chart">
           <canvas id="countryRiskChart"></canvas>
-        </div>
-        <div class="note">
-          A pontszámok a dashboard_layers.json előkészített vizualizációs rétegeiből származnak.
         </div>
       </div>
     </section>
@@ -554,9 +512,15 @@
 
     function getLayer(layers, countryId) {
       if (!layers || !layers.countries) return {};
-      return layers.countries.find
+      return Array.isArray(layers.countries)
         ? layers.countries.find(item => item.id === countryId) || {}
         : layers.countries[countryId] || {};
+    }
+
+    function getSocialValue(social, keyA, keyB, fallback = 0) {
+      if (social[keyA] !== undefined && social[keyA] !== null) return social[keyA];
+      if (keyB && social[keyB] !== undefined && social[keyB] !== null) return social[keyB];
+      return fallback;
     }
 
     function renderHeader(latest) {
@@ -565,14 +529,9 @@
       document.getElementById("lastUpdate").innerText =
         "Utolsó frissítés: " + new Date(latest.last_update).toLocaleString();
 
-      document.getElementById("overallRisk").innerText =
-        safe(summary.overall_risk);
-
-      document.getElementById("riskScore").innerText =
-        safe(summary.regional_risk_score);
-
-      document.getElementById("stabilityScore").innerText =
-        safe(summary.regional_stability_score);
+      document.getElementById("overallRisk").innerText = safe(summary.overall_risk);
+      document.getElementById("riskScore").innerText = safe(summary.regional_risk_score);
+      document.getElementById("stabilityScore").innerText = safe(summary.regional_stability_score);
 
       document.getElementById("mainTrend").innerText =
         safe(summary.main_trend, "Nincs elérhető regionális összegzés.");
@@ -631,7 +590,9 @@
           `;
         }).join("");
 
-        const socialTopicRows = (social.social_topics || social.topics || []).slice(0, 4).map(item => `
+        const socialTopics = social.social_topics || social.topics || [];
+
+        const socialTopicRows = socialTopics.slice(0, 5).map(item => `
           <div class="topic-row">
             <span>${safe(item.name)}</span>
             <strong>${safe(item.count, item.score || 0)}</strong>
@@ -640,9 +601,17 @@
 
         const topSubNarratives = narratives[0]?.sub_narratives || [];
 
-        const subNarrativesHtml = topSubNarratives.slice(0, 6).map(item => `
+        const subNarrativesHtml = topSubNarratives.slice(0, 5).map(item => `
           <span class="sub-chip">${safe(item.name)} (${safe(item.score, 0)})</span>
         `).join("");
+
+        const socialMentions = getSocialValue(social, "social_mentions", "mentions", 0);
+        const socialNegative = getSocialValue(social, "negative", null, 0);
+        const socialPositive = getSocialValue(social, "positive", null, 0);
+        const socialIndex = getSocialValue(social, "social_index", "index", 0);
+        const socialTopic = safe(social.social_topic || social.main_social_topic, "Nincs adat");
+        const reliableSources = safe(social.reliable_sources, 0);
+        const geopoliticalScore = safe(social.geopolitical_score, 0);
 
         countryCard.innerHTML = `
           <div class="country-head">
@@ -675,7 +644,7 @@
 
             <div class="mini-box">
               <div class="mini-label">Social</div>
-              <div class="mini-value">${safe(social.social_index || social.index || 0)}</div>
+              <div class="mini-value">${socialIndex}</div>
             </div>
           </div>
 
@@ -739,31 +708,42 @@
             <div class="social-metrics">
               <div class="social-mini">
                 <div class="social-mini-label">Említések</div>
-                <div class="social-mini-value">${safe(social.social_mentions || social.mentions, 0)}</div>
+                <div class="social-mini-value">${socialMentions}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">X</div>
-                <div class="social-mini-value">${safe(social.x_mentions, 0)}</div>
+                <div class="social-mini-label">Negatív</div>
+                <div class="social-mini-value">${socialNegative}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">Reddit</div>
-                <div class="social-mini-value">${safe(social.reddit_mentions, 0)}</div>
+                <div class="social-mini-label">Pozitív</div>
+                <div class="social-mini-value">${socialPositive}</div>
               </div>
 
               <div class="social-mini">
-                <div class="social-mini-label">Mastodon</div>
-                <div class="social-mini-value">${safe(social.mastodon_mentions, 0)}</div>
+                <div class="social-mini-label">Index</div>
+                <div class="social-mini-value">${socialIndex}</div>
               </div>
             </div>
 
-            <p>
-              Fő social téma:
-              <strong>${safe(social.social_topic || social.main_social_topic, "Nincs adat")}</strong>
-            </p>
+            <div class="social-platforms">
+              X: ${safe(social.x_mentions, 0)} |
+              Reddit: ${safe(social.reddit_mentions, 0)} |
+              Mastodon: ${safe(social.mastodon_mentions, 0)}
+            </div>
 
             <div class="topic-table">
+              <div class="topic-table-head">
+                Fő geopolitikai téma:
+                <strong>${socialTopic}</strong><br>
+                Megbízható források:
+                <strong>${reliableSources}</strong>
+                |
+                Geopolitikai pontszám:
+                <strong>${geopoliticalScore}</strong>
+              </div>
+
               ${socialTopicRows || "<div class='topic-row'><span>Nincs social téma</span><strong>0</strong></div>"}
             </div>
           </div>
@@ -814,7 +794,7 @@
               label: "Security risk",
               data: security,
               borderColor: "#ea580c",
-              backgroundColor: "rgba(234, 88, 12, 0.12)",
+              backgroundColor: "rgba(234, 88, 12, 0.10)",
               fill: true,
               tension: 0.25,
               borderWidth: 2,
@@ -822,48 +802,7 @@
             }
           ]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              labels: {
-                color: "#64748b",
-                boxWidth: 10,
-                font: {
-                  size: 11
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                color: "#64748b",
-                maxRotation: 0,
-                font: {
-                  size: 10
-                }
-              },
-              grid: {
-                display: false
-              }
-            },
-            y: {
-              min: 0,
-              max: 100,
-              ticks: {
-                color: "#64748b",
-                font: {
-                  size: 10
-                }
-              },
-              grid: {
-                color: "#e5e7eb"
-              }
-            }
-          }
-        }
+        options: sharedSmallChartOptions()
       });
     }
 
@@ -885,10 +824,12 @@
             {
               label: "Narratíva súly",
               data: values,
-              backgroundColor: "rgba(37, 99, 235, 0.62)",
+              backgroundColor: "rgba(37, 99, 235, 0.42)",
               borderColor: "#2563eb",
               borderWidth: 1,
-              borderRadius: 8
+              borderRadius: 5,
+              barThickness: 5,
+              maxBarThickness: 6
             }
           ]
         },
@@ -897,30 +838,23 @@
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
-            legend: {
-              display: false
-            }
+            legend: { display: false }
           },
           scales: {
             x: {
               min: 0,
               ticks: {
-                color: "#64748b"
+                color: "#64748b",
+                font: { size: 10 }
               },
-              grid: {
-                color: "#e5e7eb"
-              }
+              grid: { color: "#eef2f7" }
             },
             y: {
               ticks: {
                 color: "#64748b",
-                font: {
-                  size: 11
-                }
+                font: { size: 10 }
               },
-              grid: {
-                display: false
-              }
+              grid: { display: false }
             }
           }
         }
@@ -947,7 +881,7 @@
               type: "bar",
               label: "Social signal",
               data: social,
-              backgroundColor: "rgba(147, 197, 253, 0.55)",
+              backgroundColor: "rgba(147, 197, 253, 0.48)",
               borderColor: "#93c5fd",
               borderWidth: 1,
               yAxisID: "y"
@@ -976,49 +910,43 @@
             }
           ]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              labels: {
-                color: "#64748b",
-                boxWidth: 10,
-                font: {
-                  size: 11
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                color: "#64748b",
-                maxRotation: 0,
-                font: {
-                  size: 10
-                }
-              },
-              grid: {
-                display: false
-              }
-            },
-            y: {
-              min: 0,
-              max: 100,
-              ticks: {
-                color: "#64748b",
-                font: {
-                  size: 10
-                }
-              },
-              grid: {
-                color: "#e5e7eb"
-              }
+        options: sharedSmallChartOptions()
+      });
+    }
+
+    function sharedSmallChartOptions() {
+      return {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: {
+              color: "#64748b",
+              boxWidth: 10,
+              font: { size: 10 }
             }
           }
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: "#64748b",
+              maxRotation: 0,
+              font: { size: 9 }
+            },
+            grid: { display: false }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              color: "#64748b",
+              font: { size: 9 }
+            },
+            grid: { color: "#eef2f7" }
+          }
         }
-      });
+      };
     }
 
     function renderRegionalCombined(layers) {
@@ -1030,9 +958,7 @@
 
       countries.forEach(country => {
         (country.combined_history || []).forEach(row => {
-          if (row.date && !dates.includes(row.date)) {
-            dates.push(row.date);
-          }
+          if (row.date && !dates.includes(row.date)) dates.push(row.date);
         });
       });
 
@@ -1043,21 +969,16 @@
 
         countries.forEach(country => {
           const row = (country.combined_history || []).find(r => r.date === date);
-          if (row) {
-            values.push(row.combined_score || row.risk_score || 0);
-          }
+          if (row) values.push(row.combined_score || row.risk_score || 0);
         });
 
         if (!values.length) return 0;
-
         return Math.round(values.reduce((sum, value) => sum + value, 0) / values.length);
       });
 
       const ctx = document.getElementById("regionalCombinedChart");
 
-      if (regionalCombinedChart) {
-        regionalCombinedChart.destroy();
-      }
+      if (regionalCombinedChart) regionalCombinedChart.destroy();
 
       regionalCombinedChart = new Chart(ctx, {
         type: "line",
@@ -1075,37 +996,7 @@
             }
           ]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              labels: {
-                color: "#64748b"
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                color: "#64748b"
-              },
-              grid: {
-                display: false
-              }
-            },
-            y: {
-              min: 0,
-              max: 100,
-              ticks: {
-                color: "#64748b"
-              },
-              grid: {
-                color: "#e5e7eb"
-              }
-            }
-          }
-        }
+        options: sharedLargeChartOptions()
       });
     }
 
@@ -1125,9 +1016,7 @@
 
       const ctx = document.getElementById("countryRiskChart");
 
-      if (countryRiskChart) {
-        countryRiskChart.destroy();
-      }
+      if (countryRiskChart) countryRiskChart.destroy();
 
       countryRiskChart = new Chart(ctx, {
         type: "bar",
@@ -1144,38 +1033,35 @@
             }
           ]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              labels: {
-                color: "#64748b"
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                color: "#64748b"
-              },
-              grid: {
-                display: false
-              }
-            },
-            y: {
-              min: 0,
-              max: 100,
-              ticks: {
-                color: "#64748b"
-              },
-              grid: {
-                color: "#e5e7eb"
-              }
+        options: sharedLargeChartOptions()
+      });
+    }
+
+    function sharedLargeChartOptions() {
+      return {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: {
+              color: "#64748b",
+              font: { size: 12 }
             }
           }
+        },
+        scales: {
+          x: {
+            ticks: { color: "#64748b" },
+            grid: { display: false }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            ticks: { color: "#64748b" },
+            grid: { color: "#e5e7eb" }
+          }
         }
-      });
+      };
     }
 
     async function loadDashboard() {
