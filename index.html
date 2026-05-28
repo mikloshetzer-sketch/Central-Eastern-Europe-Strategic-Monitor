@@ -2,1228 +2,1097 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Central & Eastern Europe Strategic Monitor</title>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
-
-    :root{
-      --bg:#f3f4f6;
-      --card:#ffffff;
-      --border:#e5e7eb;
-      --text:#111827;
-      --muted:#6b7280;
-
-      --blue:#2563eb;
-      --blue-soft:#dbeafe;
-
-      --green:#16a34a;
-      --green-soft:#dcfce7;
-
-      --amber:#d97706;
-      --amber-soft:#fef3c7;
-
-      --red:#dc2626;
-      --red-soft:#fee2e2;
-
-      --purple:#7c3aed;
-      --purple-soft:#ede9fe;
-
-      --shadow:0 10px 25px rgba(15,23,42,0.08);
+    :root {
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --soft: #f9fafb;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --red: #dc2626;
+      --red-soft: #fee2e2;
+      --amber: #ea580c;
+      --amber-soft: #fff7ed;
+      --green: #16a34a;
+      --green-soft: #dcfce7;
+      --purple: #7c3aed;
+      --purple-soft: #f5f3ff;
+      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
     }
 
-    *{
-      box-sizing:border-box;
+    * {
+      box-sizing: border-box;
     }
 
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:Arial, Helvetica, sans-serif;
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .page{
-      max-width:1500px;
-      margin:0 auto;
-      padding:22px;
+    .page {
+      max-width: 1580px;
+      margin: 0 auto;
+      padding: 22px;
     }
 
-    .hero{
-      background:linear-gradient(135deg,#ffffff,#eef2ff);
-      border:1px solid var(--border);
-      border-radius:22px;
-      padding:28px;
-      box-shadow:var(--shadow);
-      margin-bottom:18px;
+    .hero {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+      text-align: center;
     }
 
-    .hero-kicker{
-      color:var(--blue);
-      font-size:13px;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:0.08em;
-      margin-bottom:8px;
+    .hero h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 0.2px;
     }
 
-    .hero h1{
-      margin:0;
-      font-size:34px;
-      line-height:1.15;
+    .hero p {
+      margin: 12px auto 0;
+      max-width: 1050px;
+      color: #cbd5e1;
+      line-height: 1.55;
     }
 
-    .hero p{
-      margin:12px 0 0;
-      color:var(--muted);
-      line-height:1.6;
-      max-width:1100px;
+    .update-line {
+      margin-top: 14px;
+      color: #94a3b8;
+      font-size: 13px;
     }
 
-    .update-line{
-      margin-top:14px;
-      color:var(--muted);
-      font-size:13px;
+    .top-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
     }
 
-    .nav-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-bottom:18px;
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 14px;
     }
 
-    .nav-pill{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:10px 14px;
-      font-size:13px;
-      color:#374151;
-      box-shadow:0 4px 12px rgba(15,23,42,0.05);
+    .stat-card {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
     }
 
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-      margin-bottom:18px;
+    .stat-label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 6px;
     }
 
-    .stat-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:18px;
-      box-shadow:var(--shadow);
+    .stat-value {
+      font-size: 28px;
+      font-weight: 800;
     }
 
-    .stat-label{
-      color:var(--muted);
-      font-size:13px;
-      margin-bottom:8px;
+    .method-note {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 10px 0 0;
     }
 
-    .stat-value{
-      font-size:30px;
-      font-weight:800;
+    .nav-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
     }
 
-    .summary-grid{
-      display:grid;
-      grid-template-columns:1.4fr 0.8fr;
-      gap:16px;
-      margin-bottom:18px;
+    .nav-pill {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 11px 16px;
+      font-weight: 700;
+      font-size: 14px;
     }
 
-    .panel{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:18px;
-      box-shadow:var(--shadow);
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 18px;
+      margin-bottom: 22px;
     }
 
-    .panel h2{
-      margin:0 0 12px;
-      font-size:20px;
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: var(--shadow);
     }
 
-    .panel p{
-      color:var(--muted);
-      line-height:1.6;
-      margin:0;
+    .panel h2 {
+      margin: 0 0 12px;
+      font-size: 21px;
     }
 
-    .topic-chip{
-      display:inline-block;
-      padding:8px 12px;
-      margin:0 8px 8px 0;
-      border-radius:999px;
-      background:var(--blue-soft);
-      color:#1d4ed8;
-      font-size:13px;
-      font-weight:700;
+    .panel p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
     }
 
-    .country-grid{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:16px;
-      margin-bottom:18px;
+    .topic-chip {
+      display: inline-block;
+      background: var(--blue-soft);
+      color: #1d4ed8;
+      border-radius: 999px;
+      padding: 8px 12px;
+      margin: 0 8px 8px 0;
+      font-size: 13px;
+      font-weight: 700;
     }
 
-    .country-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:16px;
-      box-shadow:var(--shadow);
-      min-height:520px;
-
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-bottom: 22px;
     }
 
-    .country-head{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:flex-start;
+    .country-card {
+      background: var(--card);
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      border-left: 7px solid var(--red);
     }
 
-    .country-name{
-      font-size:20px;
-      font-weight:800;
+    .country-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
     }
 
-    .country-local{
-      display:block;
-      margin-top:3px;
-      color:var(--muted);
-      font-size:13px;
+    .country-name {
+      font-size: 24px;
+      font-weight: 800;
     }
 
-    .badge{
-      border-radius:999px;
-      padding:6px 10px;
-      font-size:12px;
-      font-weight:800;
-      border:1px solid transparent;
-      white-space:nowrap;
+    .country-local {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
     }
 
-    .badge-high{
-      background:var(--red-soft);
-      color:var(--red);
-      border-color:#fecaca;
+    .risk-pill {
+      min-width: 96px;
+      text-align: center;
+      border-radius: 14px;
+      padding: 9px 12px;
+      font-weight: 800;
+      font-size: 14px;
     }
 
-    .badge-elevated,
-    .badge-medium{
-      background:var(--amber-soft);
-      color:var(--amber);
-      border-color:#fde68a;
+    .risk-high {
+      background: var(--red-soft);
+      color: var(--red);
     }
 
-    .badge-guarded,
-    .badge-low{
-      background:var(--green-soft);
-      color:var(--green);
-      border-color:#bbf7d0;
+    .risk-elevated,
+    .risk-medium {
+      background: var(--amber-soft);
+      color: var(--amber);
     }
 
-    .badge-minimal{
-      background:var(--blue-soft);
-      color:var(--blue);
-      border-color:#bfdbfe;
+    .risk-guarded,
+    .risk-low {
+      background: var(--green-soft);
+      color: var(--green);
     }
 
-    .metrics{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:8px;
+    .risk-minimal {
+      background: var(--blue-soft);
+      color: var(--blue);
     }
 
-    .metric{
-      background:#f9fafb;
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:10px;
+    .mini-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
     }
 
-    .metric-label{
-      color:var(--muted);
-      font-size:12px;
-      margin-bottom:4px;
+    .mini-box {
+      background: #f3f4f6;
+      border-radius: 12px;
+      padding: 10px;
     }
 
-    .metric-value{
-      font-size:19px;
-      font-weight:800;
+    .mini-label {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
     }
 
-    .section-box{
-      background:#f8fafc;
-      border-left:4px solid var(--blue);
-      border-radius:12px;
-      padding:11px;
-      font-size:14px;
-      line-height:1.45;
-      color:#374151;
+    .mini-value {
+      font-size: 20px;
+      font-weight: 800;
     }
 
-    .security-box{
-      background:#faf5ff;
-      border-left:4px solid var(--purple);
+    .block {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 14px;
     }
 
-    .social-box{
-      background:#eff6ff;
-      border-left:4px solid #0ea5e9;
+    .block h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
     }
 
-    .dominant-list{
-      display:flex;
-      flex-wrap:wrap;
-      gap:6px;
-      margin-top:8px;
+    .block p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
     }
 
-    .dominant-item{
-      background:#e0f2fe;
-      color:#0369a1;
-      border-radius:999px;
-      padding:5px 9px;
-      font-size:12px;
-      font-weight:700;
+    .security-block {
+      background: #fff7ed;
+      border-color: #fed7aa;
     }
 
-    .mini-chart-wrap{
-      height:78px;
-      margin-top:2px;
+    .social-block {
+      background: #f8fafc;
     }
 
-    .source-list{
-      border-top:1px solid var(--border);
-      padding-top:10px;
-      margin-top:auto;
+    .chart-holder {
+      height: 170px;
     }
 
-    .source-title{
-      font-size:13px;
-      color:var(--muted);
-      font-weight:800;
-      margin-bottom:7px;
+    .small-chart-holder {
+      height: 145px;
     }
 
-    .source-link{
-      display:block;
-      color:var(--blue);
-      text-decoration:none;
-      font-size:13px;
-      line-height:1.35;
-      margin-bottom:6px;
+    .social-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 12px;
     }
 
-    .source-link:hover{
-      text-decoration:underline;
+    .social-mini {
+      background: #f3f4f6;
+      border-radius: 12px;
+      padding: 9px;
     }
 
-    .chart-grid{
-      display:grid;
-      grid-template-columns:1.15fr 1fr;
-      gap:16px;
-      margin-bottom:18px;
+    .social-mini-label {
+      color: var(--muted);
+      font-size: 12px;
     }
 
-    .chart-box{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:18px;
-      box-shadow:var(--shadow);
+    .social-mini-value {
+      font-size: 18px;
+      font-weight: 800;
     }
 
-    .chart-box h2{
-      margin:0 0 12px;
-      font-size:20px;
+    .topic-table {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px;
+      margin-top: 10px;
     }
 
-    .bottom-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:16px;
-      margin-bottom:18px;
+    .topic-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px dotted var(--border);
+      padding: 6px 0;
+      font-size: 14px;
     }
 
-    .small-note{
-      margin-top:10px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.45;
+    .topic-row:last-child {
+      border-bottom: 0;
     }
 
-    .security-item{
-      background:#f9fafb;
-      border:1px solid var(--border);
-      border-left:4px solid var(--purple);
-      border-radius:12px;
-      padding:11px;
-      margin-bottom:10px;
-      font-size:14px;
-      color:#374151;
-      line-height:1.45;
+    .sources {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
     }
 
-    @media (max-width:1250px){
+    .sources h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
 
-      .country-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
+    .source-link {
+      display: block;
+      color: var(--blue);
+      text-decoration: none;
+      margin-bottom: 8px;
+      line-height: 1.35;
+      font-size: 14px;
+    }
 
-      .stats{
-        grid-template-columns:repeat(2,1fr);
+    .source-link:hover {
+      text-decoration: underline;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .wide-chart {
+      height: 320px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 1350px) {
+      .country-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .summary-grid,
-      .chart-grid,
-      .bottom-grid{
-        grid-template-columns:1fr;
+      .bottom-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width:720px){
-
-      .page{
-        padding:12px;
-      }
-
+    @media (max-width: 880px) {
       .country-grid,
-      .stats{
-        grid-template-columns:1fr;
+      .stats {
+        grid-template-columns: 1fr;
       }
 
-      .hero h1{
-        font-size:26px;
+      .mini-metrics,
+      .social-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .page {
+        padding: 12px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
       }
     }
-
   </style>
 </head>
 
 <body>
+  <div class="page">
 
-<div class="page">
+    <section class="hero">
+      <h1>Central & Eastern Europe Strategic Monitor</h1>
+      <p>
+        Hírindex, biztonsági réteg, social signal és domináns narratívák
+        nyolc kelet-közép-európai ország alapján.
+      </p>
+      <div class="update-line" id="lastUpdate">Betöltés...</div>
+    </section>
 
-  <section class="hero">
+    <section class="top-panel">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-label">Regional Risk Level</div>
+          <div class="stat-value" id="overallRisk">-</div>
+        </div>
 
-    <div class="hero-kicker">
-      Strategic regional dashboard
-    </div>
+        <div class="stat-card">
+          <div class="stat-label">Regional Risk Score</div>
+          <div class="stat-value" id="riskScore">-</div>
+        </div>
 
-    <h1>
-      Central & Eastern Europe Strategic Monitor
-    </h1>
+        <div class="stat-card">
+          <div class="stat-label">Regional Stability</div>
+          <div class="stat-value" id="stabilityScore">-</div>
+        </div>
 
-    <p>
-      Kelet-Közép-Európa stratégiai helyzetképe nyolc ország alapján:
-      Magyarország, Lengyelország, Szlovákia, Csehország,
-      Románia, Észtország, Lettország és Litvánia.
-      A rendszer GDELT, helyi RSS-források,
-      saját nyelvű kulcsszavak,
-      valamint a CEE Security Map háttéradatai alapján dolgozik.
-    </p>
-
-    <div class="update-line" id="lastUpdate">
-      Betöltés...
-    </div>
-
-  </section>
-
-  <div class="nav-row">
-    <div class="nav-pill">GDELT monitoring</div>
-    <div class="nav-pill">Local RSS sources</div>
-    <div class="nav-pill">Country-language keywords</div>
-    <div class="nav-pill">CEE Security Map overlay</div>
-    <div class="nav-pill">Social monitoring layer</div>
-    <div class="nav-pill">90-day historical archive</div>
-  </div>
-
-  <section class="stats">
-
-    <div class="stat-card">
-      <div class="stat-label">Regional Risk Level</div>
-      <div class="stat-value" id="overallRisk">-</div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-label">Regional Risk Score</div>
-      <div class="stat-value" id="riskScore">-</div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-label">Regional Stability Score</div>
-      <div class="stat-value" id="stabilityScore">-</div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-label">Countries Monitored</div>
-      <div class="stat-value">8</div>
-    </div>
-
-  </section>
-
-  <section class="summary-grid">
-
-    <div class="panel">
-      <h2>Regionális stratégiai összkép</h2>
-      <p id="mainTrend">Betöltés...</p>
-    </div>
-
-    <div class="panel">
-      <h2>Fő stratégiai témák</h2>
-      <div id="topicList"></div>
-    </div>
-
-  </section>
-
-  <section class="country-grid" id="countryGrid"></section>
-    <section class="chart-grid">
-
-    <div class="chart-box">
-      <h2>Regionális kombinált trend</h2>
-
-      <canvas id="regionalTrendChart"></canvas>
-
-      <div class="small-note">
-        Kombinált trend:
-        news risk + social signal + security pressure.
+        <div class="stat-card">
+          <div class="stat-label">Countries</div>
+          <div class="stat-value">8</div>
+        </div>
       </div>
-    </div>
 
-    <div class="chart-box">
-      <h2>Országkockázati összevetés</h2>
+      <p class="method-note">
+        Kulcsszavas, híralapú és biztonsági monitoring. Nem közvélemény-kutatás.
+        A social réteg jelenleg részben híralapú fallback, később Reddit, Mastodon és opcionális X adatokkal bővíthető.
+      </p>
 
-      <canvas id="countryRiskChart"></canvas>
-
-      <div class="small-note">
-        A pontszám a hírmennyiség,
-        kulcsszavak,
-        biztonsági események,
-        valamint social narratívák alapján képzett indikátor.
+      <div class="nav-row">
+        <div class="nav-pill">GDELT + regional RSS</div>
+        <div class="nav-pill">CEE Security Map overlay</div>
+        <div class="nav-pill">Social signal layer</div>
+        <div class="nav-pill">Domináns narratívák</div>
+        <div class="nav-pill">Kombinált trend</div>
       </div>
-    </div>
-
-  </section>
-
-  <section class="bottom-grid">
-
-    <div class="panel">
-      <h2>CEE Security Map háttérjelzés</h2>
-
-      <div id="securitySummary"></div>
-    </div>
-
-    <div class="panel">
-
-      <h2>Módszertani megjegyzés</h2>
-
-      <ul style="margin:0;padding-left:18px;color:#6b7280;line-height:1.6;">
-        <li>A dashboard nem közvélemény-kutatás.</li>
-        <li>A risk score esemény- és híralapú indikátor.</li>
-        <li>A social signal külön monitoringréteg.</li>
-        <li>A domináns narratívák kulcsszó- és forráselemzésből épülnek.</li>
-        <li>A CEE Security Map külön biztonsági háttérjelként működik.</li>
-        <li>A rendszer országonként saját nyelvű kereséseket használ.</li>
-      </ul>
-
-    </div>
-
-  </section>
-
-</div>
-
-<script>
-
-const LATEST_STATUS_PATH =
-  "docs/data/latest_status.json";
-
-const COUNTRY_HISTORY_PATH =
-  "docs/data/history/country_history.json";
-
-const REGIONAL_HISTORY_PATH =
-  "docs/data/history/regional_history.json";
-
-const SECURITY_OVERLAY_PATH =
-  "docs/data/security_overlay.json";
-
-const SOCIAL_OVERLAY_PATH =
-  "docs/data/social_overlay.json";
-
-
-let regionalTrendChart = null;
-let countryRiskChart = null;
-
-const miniCharts = {};
-
-
-async function fetchJson(path, fallback){
-
-  try{
-
-    const response =
-      await fetch(path + "?v=" + Date.now());
-
-    if(!response.ok){
-      throw new Error("HTTP " + response.status);
-    }
-
-    return await response.json();
-
-  }catch(error){
-
-    console.warn("Could not load", path, error);
-
-    return fallback;
-  }
-}
-
-
-function safe(value, fallback="-"){
-
-  if(
-    value === undefined ||
-    value === null ||
-    value === ""
-  ){
-    return fallback;
-  }
-
-  return value;
-}
-
-
-function badgeClass(level){
-
-  const value =
-    String(level || "").toLowerCase();
-
-  if(value === "high") return "badge-high";
-  if(value === "elevated") return "badge-elevated";
-  if(value === "medium") return "badge-medium";
-  if(value === "guarded") return "badge-guarded";
-  if(value === "low") return "badge-low";
-  if(value === "minimal") return "badge-minimal";
-
-  return "badge-low";
-}
-
-
-function renderHeader(latest){
-
-  const summary =
-    latest.regional_summary || {};
-
-  document.getElementById("lastUpdate").innerText =
-    "Utolsó frissítés: " +
-    new Date(latest.last_update).toLocaleString();
-
-  document.getElementById("overallRisk").innerText =
-    safe(summary.overall_risk);
-
-  document.getElementById("riskScore").innerText =
-    safe(summary.regional_risk_score);
-
-  document.getElementById("stabilityScore").innerText =
-    safe(summary.regional_stability_score);
-
-  document.getElementById("mainTrend").innerText =
-    safe(
-      summary.main_trend,
-      "Nincs elérhető regionális összegzés."
-    );
-}
-
-
-function renderTopics(latest){
-
-  const container =
-    document.getElementById("topicList");
-
-  container.innerHTML = "";
-
-  const topics =
-    latest.regional_summary?.top_topics || [];
-
-  if(!topics.length){
-
-    container.innerHTML =
-      "<span class='topic-chip'>Nincs domináns téma</span>";
-
-    return;
-  }
-
-  topics.forEach(topic => {
-
-    const span =
-      document.createElement("span");
-
-    span.className = "topic-chip";
-    span.innerText = topic;
-
-    container.appendChild(span);
-
-  });
-}
-
-
-function renderMiniChart(canvasId, history){
-
-  const ctx =
-    document.getElementById(canvasId);
-
-  const labels =
-    history.map(item => item.date);
-
-  const values =
-    history.map(item => item.risk_score || 0);
-
-  if(miniCharts[canvasId]){
-    miniCharts[canvasId].destroy();
-  }
-
-  miniCharts[canvasId] = new Chart(ctx, {
-
-    type:"line",
-
-    data:{
-      labels,
-      datasets:[
-        {
-          data:values,
-          tension:0.3,
-          pointRadius:0,
-          borderWidth:2,
-          borderColor:"#2563eb",
-          backgroundColor:"rgba(37,99,235,0.08)",
-          fill:true
-        }
-      ]
-    },
-
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-
-      plugins:{
-        legend:{
-          display:false
-        }
-      },
-
-      scales:{
-        x:{display:false},
-        y:{
-          display:false,
-          min:0,
-          max:100
-        }
+    </section>
+
+    <section class="summary-grid">
+      <div class="panel">
+        <h2>Regionális stratégiai összkép</h2>
+        <p id="mainTrend">Betöltés...</p>
+      </div>
+
+      <div class="panel">
+        <h2>Fő stratégiai témák</h2>
+        <div id="topicList"></div>
+      </div>
+    </section>
+
+    <section class="country-grid" id="countryGrid"></section>
+
+    <section class="bottom-grid">
+      <div class="panel">
+        <h2>Regionális kombinált trend</h2>
+        <div class="wide-chart">
+          <canvas id="regionalCombinedChart"></canvas>
+        </div>
+        <div class="note">
+          A regionális trend a hírkockázat, security pressure és social signal országonkénti átlagából épül.
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Aktuális országkockázati összevetés</h2>
+        <div class="wide-chart">
+          <canvas id="countryRiskChart"></canvas>
+        </div>
+        <div class="note">
+          A pontszámok a dashboard_layers.json előkészített vizualizációs rétegeiből származnak.
+        </div>
+      </div>
+    </section>
+      </div>
+
+  <script>
+    const LATEST_STATUS_PATH = "docs/data/latest_status.json";
+    const DASHBOARD_LAYERS_PATH = "docs/data/dashboard_layers.json";
+
+    const countryCharts = {};
+    let regionalCombinedChart = null;
+    let countryRiskChart = null;
+
+    async function fetchJson(path, fallback) {
+      try {
+        const response = await fetch(path + "?v=" + Date.now());
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return await response.json();
+      } catch (error) {
+        console.warn("Could not load", path, error);
+        return fallback;
       }
     }
 
-  });
-}
+    function safe(value, fallback = "-") {
+      if (value === undefined || value === null || value === "") return fallback;
+      return value;
+    }
 
+    function riskClass(level) {
+      const v = String(level || "").toLowerCase();
 
-function renderCountryCards(
-  latest,
-  historyData,
-  securityData,
-  socialData
-){
+      if (v === "high") return "risk-high";
+      if (v === "elevated") return "risk-elevated";
+      if (v === "medium") return "risk-medium";
+      if (v === "guarded") return "risk-guarded";
+      if (v === "low") return "risk-low";
+      if (v === "minimal") return "risk-minimal";
 
-  const grid =
-    document.getElementById("countryGrid");
+      return "risk-low";
+    }
 
-  grid.innerHTML = "";
+    function getLayer(layers, countryId) {
+      if (!layers || !layers.countries) return {};
+      return layers.countries[countryId] || {};
+    }
 
-  const countries =
-    latest.countries || [];
+    function renderHeader(latest) {
+      const summary = latest.regional_summary || {};
 
-  countries.forEach(country => {
+      document.getElementById("lastUpdate").innerText =
+        "Utolsó frissítés: " + new Date(latest.last_update).toLocaleString();
 
-    const countryHistory =
-      historyData.countries?.[country.id] || [];
+      document.getElementById("overallRisk").innerText =
+        safe(summary.overall_risk);
 
-    const security =
-      securityData.countries?.[country.id] || {};
+      document.getElementById("riskScore").innerText =
+        safe(summary.regional_risk_score);
 
-    const social =
-      socialData.countries?.[country.id] || {};
+      document.getElementById("stabilityScore").innerText =
+        safe(summary.regional_stability_score);
 
-    const chartId =
-      "miniChart_" + country.id;
+      document.getElementById("mainTrend").innerText =
+        safe(summary.main_trend, "Nincs elérhető regionális összegzés.");
+    }
 
-    const dominantTopics =
-      social.topics || [];
+    function renderTopics(latest) {
+      const container = document.getElementById("topicList");
+      container.innerHTML = "";
 
-    const dominantHtml =
-      dominantTopics.length
-      ? dominantTopics.map(item => `
-          <span class="dominant-item">${item}</span>
-        `).join("")
-      : `
-          <span class="dominant-item">
-            No dominant narrative
-          </span>
+      const topics = latest.regional_summary?.top_topics || [];
+
+      if (!topics.length) {
+        container.innerHTML = "<span class='topic-chip'>Nincs domináns téma</span>";
+        return;
+      }
+
+      topics.forEach(topic => {
+        const span = document.createElement("span");
+        span.className = "topic-chip";
+        span.innerText = topic;
+        container.appendChild(span);
+      });
+    }
+
+    function renderCountryCards(latest, layers) {
+      const grid = document.getElementById("countryGrid");
+      grid.innerHTML = "";
+
+      const countries = latest.countries || [];
+
+      countries.forEach(country => {
+        const layer = getLayer(layers, country.id);
+
+        const narratives = layer.dominant_narratives || [];
+        const security = layer.security_layer || {};
+        const social = layer.social_layer || {};
+        const combinedHistory = layer.combined_history || [];
+        const articles = country.top_articles || [];
+
+        const countryCard = document.createElement("article");
+        countryCard.className = "country-card";
+
+        const narrativeChartId = `narrative_${country.id}`;
+        const combinedChartId = `combined_${country.id}`;
+
+        const sourceLinks = articles.slice(0, 5).map(article => {
+          const title = safe(article.title, "Forrás megnyitása");
+          const url = article.url || "#";
+          const source = article.source ? `<span class="note">${article.source}</span>` : "";
+
+          return `
+            <a class="source-link" href="${url}" target="_blank" rel="noopener">
+              ${title}<br>${source}
+            </a>
+          `;
+        }).join("");
+
+        const socialTopicRows = (social.topics || []).slice(0, 4).map(item => `
+          <div class="topic-row">
+            <span>${safe(item.name)}</span>
+            <strong>${safe(item.count, 0)}</strong>
+          </div>
+        `).join("");
+
+        countryCard.innerHTML = `
+          <div class="country-head">
+            <div>
+              <div class="country-name">${safe(country.country)}</div>
+              <span class="country-local">${safe(country.country_local, "")}</span>
+            </div>
+
+            <div class="risk-pill ${riskClass(country.risk_level)}">
+              ${safe(country.risk_score, 0)}<br>
+              <span style="font-size:12px;font-weight:500;">${safe(country.risk_level)}</span>
+            </div>
+          </div>
+
+          <div class="mini-metrics">
+            <div class="mini-box">
+              <div class="mini-label">Cikkek</div>
+              <div class="mini-value">${safe(country.article_count, 0)}</div>
+            </div>
+
+            <div class="mini-box">
+              <div class="mini-label">News risk</div>
+              <div class="mini-value">${safe(country.risk_score, 0)}</div>
+            </div>
+
+            <div class="mini-box">
+              <div class="mini-label">Security</div>
+              <div class="mini-value">${safe(security.security_risk, 0)}</div>
+            </div>
+
+            <div class="mini-box">
+              <div class="mini-label">Social</div>
+              <div class="mini-value">${safe(social.index, 0)}</div>
+            </div>
+          </div>
+
+          <div class="block security-block">
+            <h3>Biztonsági réteg</h3>
+
+            <div class="mini-metrics">
+              <div class="mini-box">
+                <div class="mini-label">Security risk</div>
+                <div class="mini-value">${safe(security.security_risk, 0)}</div>
+              </div>
+
+              <div class="mini-box">
+                <div class="mini-label">Szint</div>
+                <div class="mini-value">${safe(security.level, "minimal")}</div>
+              </div>
+
+              <div class="mini-box">
+                <div class="mini-label">Események</div>
+                <div class="mini-value">${safe(security.events, 0)}</div>
+              </div>
+
+              <div class="mini-box">
+                <div class="mini-label">Forrás</div>
+                <div class="mini-value" style="font-size:15px;">
+                  ${safe(security.source, "news_derived")}
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Fő biztonsági narratíva:
+              <strong>${safe(security.main_security_narrative, "Nincs kiemelt biztonsági narratíva.")}</strong>
+            </p>
+          </div>
+
+          <div class="block">
+            <h3>Domináns narratívák</h3>
+            <p>A témacsoportok relatív súlya az aktuális híranyag alapján.</p>
+            <div class="chart-holder">
+              <canvas id="${narrativeChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="block social-block">
+            <h3>Social signal</h3>
+
+            <div class="social-metrics">
+              <div class="social-mini">
+                <div class="social-mini-label">Említések</div>
+                <div class="social-mini-value">${safe(social.mentions, 0)}</div>
+              </div>
+
+              <div class="social-mini">
+                <div class="social-mini-label">Negatív</div>
+                <div class="social-mini-value">${safe(social.negative, 0)}</div>
+              </div>
+
+              <div class="social-mini">
+                <div class="social-mini-label">Pozitív</div>
+                <div class="social-mini-value">${safe(social.positive, 0)}</div>
+              </div>
+
+              <div class="social-mini">
+                <div class="social-mini-label">Index</div>
+                <div class="social-mini-value">${safe(social.index, 0)}</div>
+              </div>
+            </div>
+
+            <p>
+              X: ${safe(social.x_mentions, 0)} |
+              Reddit: ${safe(social.reddit_mentions, 0)} |
+              Mastodon: ${safe(social.mastodon_mentions, 0)}
+            </p>
+
+            <div class="topic-table">
+              <div>
+                Fő geopolitikai téma:
+                <strong>${safe(social.main_social_topic, "Nincs adat")}</strong>
+              </div>
+              <div>
+                Megbízható források:
+                <strong>${safe(social.reliable_sources, 0)}</strong>
+                |
+                Geopolitikai pontszám:
+                <strong>${safe(social.geopolitical_score, 0)}</strong>
+              </div>
+
+              ${socialTopicRows || "<div class='topic-row'><span>Nincs social téma</span><strong>0</strong></div>"}
+            </div>
+          </div>
+
+          <div class="block">
+            <h3>Mini kombinált trenddiagram</h3>
+            <p>Kék vonal: combined score. Halvány oszlop: social index. Narancs vonal: security risk.</p>
+            <div class="small-chart-holder">
+              <canvas id="${combinedChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="sources">
+            <h3>Kiemelt cikkek</h3>
+            ${sourceLinks || "<span class='note'>Nincs elérhető forrás.</span>"}
+          </div>
         `;
 
-    const articles =
-      country.top_articles || [];
-
-    const articleLinks =
-      articles.slice(0,3).map(article => {
-
-        const url =
-          article.url || "#";
-
-        const title =
-          safe(article.title, "Open source");
-
-        const source =
-          article.source
-          ? " — " + article.source
-          : "";
-
-        return `
-          <a
-            class="source-link"
-            href="${url}"
-            target="_blank"
-            rel="noopener"
-          >
-            ${title}${source}
-          </a>
-        `;
-
-      }).join("");
-
-    const card =
-      document.createElement("article");
-
-    card.className = "country-card";
-
-    card.innerHTML = `
-
-      <div class="country-head">
-
-        <div>
-
-          <div class="country-name">
-            ${safe(country.country)}
-          </div>
-
-          <span class="country-local">
-            ${safe(country.country_local,"")}
-          </span>
-
-        </div>
-
-        <span class="badge ${badgeClass(country.risk_level)}">
-          ${safe(country.risk_level)}
-        </span>
-
-      </div>
-
-      <div class="metrics">
-
-        <div class="metric">
-          <div class="metric-label">News Risk</div>
-          <div class="metric-value">
-            ${safe(country.risk_score)}
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="metric-label">Security</div>
-          <div class="metric-value">
-            ${safe(security.security_score,0)}
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="metric-label">Social Signal</div>
-          <div class="metric-value">
-            ${safe(social.index,0)}
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="metric-label">Mentions</div>
-          <div class="metric-value">
-            ${safe(social.mentions,0)}
-          </div>
-        </div>
-
-      </div>
-
-      <div class="section-box">
-
-        <strong>Domináns narratíva</strong><br>
-
-        ${safe(
-          country.main_topic,
-          "No dominant narrative detected."
-        )}
-
-        <div class="dominant-list">
-          ${dominantHtml}
-        </div>
-
-      </div>
-
-      <div class="section-box security-box">
-
-        <strong>Biztonsági réteg</strong><br>
-
-        ${safe(
-          security.main_security_narrative,
-          "No country-specific security pressure detected."
-        )}
-
-        <br><br>
-
-        <span style="color:#6b7280;font-size:13px;">
-          Security level:
-          ${safe(security.security_level,"minimal")}
-          |
-          Events:
-          ${safe(security.event_count,0)}
-        </span>
-
-      </div>
-
-      <div class="section-box social-box">
-
-        <strong>Social monitoring</strong><br>
-
-        ${safe(
-          social.main_social_topic,
-          "Social monitoring not yet active."
-        )}
-
-        <br><br>
-
-        <span style="color:#6b7280;font-size:13px;">
-          X:
-          ${safe(social.x_mentions,0)}
-          |
-          Reddit:
-          ${safe(social.reddit_mentions,0)}
-          |
-          Mastodon:
-          ${safe(social.mastodon_mentions,0)}
-        </span>
-
-      </div>
-
-      <div class="mini-chart-wrap">
-        <canvas id="${chartId}"></canvas>
-      </div>
-
-      <div class="source-list">
-
-        <div class="source-title">
-          Kiemelt források
-        </div>
-
-        ${
-          articleLinks ||
-          "<span class='small-note'>Nincs elérhető forrás.</span>"
-        }
-
-      </div>
-
-    `;
-
-    grid.appendChild(card);
-
-    renderMiniChart(
-      chartId,
-      countryHistory
-    );
-
-  });
-
-}
-
-
-function renderRegionalTrend(historyData){
-
-  const history =
-    historyData.history || [];
-
-  const labels =
-    history.map(item => item.date);
-
-  const risk =
-    history.map(item =>
-      item.regional_risk_score || 0
-    );
-
-  const stability =
-    history.map(item =>
-      item.regional_stability_score || 0
-    );
-
-  const ctx =
-    document.getElementById("regionalTrendChart");
-
-  if(regionalTrendChart){
-    regionalTrendChart.destroy();
-  }
-
-  regionalTrendChart = new Chart(ctx, {
-
-    type:"line",
-
-    data:{
-      labels,
-
-      datasets:[
-
-        {
-          label:"Regional Risk",
-          data:risk,
-          tension:0.25,
-          borderWidth:2,
-          borderColor:"#dc2626",
-          backgroundColor:"rgba(220,38,38,0.08)",
-          fill:true
-        },
-
-        {
-          label:"Regional Stability",
-          data:stability,
-          tension:0.25,
-          borderWidth:2,
-          borderColor:"#16a34a",
-          backgroundColor:"rgba(22,163,74,0.08)",
-          fill:true
-        }
-
-      ]
-    },
-
-    options:{
-      responsive:true,
-
-      plugins:{
-        legend:{
-          labels:{
-            color:"#374151"
-          }
-        }
-      },
-
-      scales:{
-        x:{
-          ticks:{color:"#6b7280"},
-          grid:{color:"#e5e7eb"}
-        },
-
-        y:{
-          min:0,
-          max:100,
-          ticks:{color:"#6b7280"},
-          grid:{color:"#e5e7eb"}
-        }
-      }
+        grid.appendChild(countryCard);
+
+        renderNarrativeChart(narrativeChartId, narratives);
+        renderCombinedCountryChart(combinedChartId, combinedHistory);
+      });
     }
 
-  });
+    function renderNarrativeChart(canvasId, narratives) {
+      const ctx = document.getElementById(canvasId);
 
-}
+      const labels = narratives.map(item => item.name);
+      const values = narratives.map(item => item.score || 0);
 
+      if (countryCharts[canvasId]) {
+        countryCharts[canvasId].destroy();
+      }
 
-function renderCountryRiskChart(latest){
-
-  const countries =
-    latest.countries || [];
-
-  const labels =
-    countries.map(country => country.country);
-
-  const values =
-    countries.map(country =>
-      country.risk_score || 0
-    );
-
-  const ctx =
-    document.getElementById("countryRiskChart");
-
-  if(countryRiskChart){
-    countryRiskChart.destroy();
-  }
-
-  countryRiskChart = new Chart(ctx, {
-
-    type:"bar",
-
-    data:{
-      labels,
-
-      datasets:[
-        {
-          label:"Country Risk",
-          data:values,
-          backgroundColor:"rgba(37,99,235,0.45)",
-          borderColor:"#2563eb",
-          borderWidth:1
-        }
-      ]
-    },
-
-    options:{
-      responsive:true,
-
-      plugins:{
-        legend:{
-          labels:{
-            color:"#374151"
+      countryCharts[canvasId] = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "Narratíva súly",
+              data: values,
+              backgroundColor: "rgba(37, 99, 235, 0.62)",
+              borderColor: "#2563eb",
+              borderWidth: 1,
+              borderRadius: 8
+            }
+          ]
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: 100,
+              ticks: {
+                color: "#64748b"
+              },
+              grid: {
+                color: "#e5e7eb"
+              }
+            },
+            y: {
+              ticks: {
+                color: "#64748b",
+                font: {
+                  size: 11
+                }
+              },
+              grid: {
+                display: false
+              }
+            }
           }
         }
-      },
-
-      scales:{
-        x:{
-          ticks:{color:"#6b7280"},
-          grid:{display:false}
-        },
-
-        y:{
-          min:0,
-          max:100,
-          ticks:{color:"#6b7280"},
-          grid:{color:"#e5e7eb"}
-        }
-      }
+      });
     }
 
-  });
+    function renderCombinedCountryChart(canvasId, rows) {
+      const ctx = document.getElementById(canvasId);
 
-}
+      const labels = rows.map(item => item.date);
+      const combined = rows.map(item => item.combined_score || 0);
+      const social = rows.map(item => item.social_index || 0);
+      const security = rows.map(item => item.security_risk || 0);
 
-
-function renderSecuritySummary(securityData){
-
-  const container =
-    document.getElementById("securitySummary");
-
-  container.innerHTML = "";
-
-  const countries =
-    securityData.countries || {};
-
-  Object.values(countries).forEach(item => {
-
-    if(!item.event_count) return;
-
-    const div =
-      document.createElement("div");
-
-    div.className = "security-item";
-
-    div.innerHTML = `
-      <strong>${safe(item.country_id)}</strong><br>
-
-      Security score:
-      ${safe(item.security_score,0)}
-      |
-      Level:
-      ${safe(item.security_level)}
-      |
-      Events:
-      ${safe(item.event_count,0)}
-    `;
-
-    container.appendChild(div);
-
-  });
-
-}
-
-
-async function loadDashboard(){
-
-  const latest =
-    await fetchJson(
-      LATEST_STATUS_PATH,
-      {
-        last_update:new Date().toISOString(),
-        regional_summary:{},
-        countries:[]
+      if (countryCharts[canvasId]) {
+        countryCharts[canvasId].destroy();
       }
-    );
 
-  const historyData =
-    await fetchJson(
-      COUNTRY_HISTORY_PATH,
-      {countries:{}}
-    );
+      countryCharts[canvasId] = new Chart(ctx, {
+        data: {
+          labels,
+          datasets: [
+            {
+              type: "bar",
+              label: "Social index",
+              data: social,
+              backgroundColor: "rgba(147, 197, 253, 0.55)",
+              borderColor: "#93c5fd",
+              borderWidth: 1,
+              yAxisID: "y"
+            },
+            {
+              type: "line",
+              label: "Combined score",
+              data: combined,
+              borderColor: "#2563eb",
+              backgroundColor: "#2563eb",
+              tension: 0.25,
+              borderWidth: 2,
+              pointRadius: 2,
+              yAxisID: "y"
+            },
+            {
+              type: "line",
+              label: "Security risk",
+              data: security,
+              borderColor: "#ea580c",
+              backgroundColor: "#ea580c",
+              tension: 0.25,
+              borderWidth: 2,
+              pointRadius: 2,
+              yAxisID: "y"
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#64748b",
+                boxWidth: 10,
+                font: {
+                  size: 11
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "#64748b",
+                maxRotation: 0,
+                font: {
+                  size: 10
+                }
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              min: 0,
+              max: 100,
+              ticks: {
+                color: "#64748b",
+                font: {
+                  size: 10
+                }
+              },
+              grid: {
+                color: "#e5e7eb"
+              }
+            }
+          }
+        }
+      });
+    }
 
-  const regionalHistory =
-    await fetchJson(
-      REGIONAL_HISTORY_PATH,
-      {history:[]}
-    );
+    function renderRegionalCombined(layers) {
+      const countries = Object.values(layers.countries || {});
+      const dates = [];
 
-  const securityData =
-    await fetchJson(
-      SECURITY_OVERLAY_PATH,
-      {countries:{}}
-    );
+      countries.forEach(country => {
+        (country.combined_history || []).forEach(row => {
+          if (row.date && !dates.includes(row.date)) {
+            dates.push(row.date);
+          }
+        });
+      });
 
-  const socialData =
-    await fetchJson(
-      SOCIAL_OVERLAY_PATH,
-      {countries:{}}
-    );
+      dates.sort();
 
-  renderHeader(latest);
+      const regionalCombined = dates.map(date => {
+        const values = [];
 
-  renderTopics(latest);
+        countries.forEach(country => {
+          const row = (country.combined_history || []).find(r => r.date === date);
+          if (row) values.push(row.combined_score || 0);
+        });
 
-  renderCountryCards(
-    latest,
-    historyData,
-    securityData,
-    socialData
-  );
+        if (!values.length) return 0;
 
-  renderRegionalTrend(
-    regionalHistory
-  );
+        return Math.round(
+          values.reduce((sum, value) => sum + value, 0) / values.length
+        );
+      });
 
-  renderCountryRiskChart(
-    latest
-  );
+      const ctx = document.getElementById("regionalCombinedChart");
 
-  renderSecuritySummary(
-    securityData
-  );
+      if (regionalCombinedChart) {
+        regionalCombinedChart.destroy();
+      }
 
-}
+      regionalCombinedChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: dates,
+          datasets: [
+            {
+              label: "Regional combined score",
+              data: regionalCombined,
+              borderColor: "#2563eb",
+              backgroundColor: "rgba(37, 99, 235, 0.12)",
+              fill: true,
+              tension: 0.25,
+              borderWidth: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#64748b"
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "#64748b"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              min: 0,
+              max: 100,
+              ticks: {
+                color: "#64748b"
+              },
+              grid: {
+                color: "#e5e7eb"
+              }
+            }
+          }
+        }
+      });
+    }
 
+    function renderCountryRiskChart(latest, layers) {
+      const countries = latest.countries || [];
 
-loadDashboard();
+      const labels = countries.map(country => country.country);
+      const values = countries.map(country => {
+        const layer = getLayer(layers, country.id);
+        const history = layer.combined_history || [];
+        const last = history[history.length - 1];
 
-</script>
+        return last ? last.combined_score : country.risk_score || 0;
+      });
 
+      const ctx = document.getElementById("countryRiskChart");
+
+      if (countryRiskChart) {
+        countryRiskChart.destroy();
+      }
+
+      countryRiskChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "Combined risk score",
+              data: values,
+              backgroundColor: "rgba(220, 38, 38, 0.35)",
+              borderColor: "#dc2626",
+              borderWidth: 1,
+              borderRadius: 8
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                color: "#64748b"
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "#64748b"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              min: 0,
+              max: 100,
+              ticks: {
+                color: "#64748b"
+              },
+              grid: {
+                color: "#e5e7eb"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    async function loadDashboard() {
+      const latest = await fetchJson(LATEST_STATUS_PATH, {
+        last_update: new Date().toISOString(),
+        regional_summary: {},
+        countries: []
+      });
+
+      const layers = await fetchJson(DASHBOARD_LAYERS_PATH, {
+        countries: {}
+      });
+
+      renderHeader(latest);
+      renderTopics(latest);
+      renderCountryCards(latest, layers);
+      renderRegionalCombined(layers);
+      renderCountryRiskChart(latest, layers);
+    }
+
+    loadDashboard();
+  </script>
 </body>
 </html>
