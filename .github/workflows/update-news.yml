@@ -28,6 +28,9 @@ jobs:
       - name: Hírgyűjtő script futtatása
         run: python scripts/fetch_news.py
 
+      - name: CEE Security Map adatok importálása
+        run: python scripts/import_security_map.py
+
       - name: History frissítés
         run: python scripts/update_history.py
 
@@ -38,9 +41,9 @@ jobs:
 
           git add docs/data/latest_status.json
           git add docs/data/raw_news.json
+          git add docs/data/security_overlay.json
           git add docs/data/history/regional_history.json
           git add docs/data/history/country_history.json
 
           git commit -m "Update CEE Strategic Monitor data" || echo "Nincs változás"
-
           git push
