@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Central & Eastern Europe Strategic Monitor</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      background: #111827;
+      padding: 20px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #f8fafc;
+    }
+
+    .header p {
+      margin-top: 8px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .top-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .stat-box {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .stat-title {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 350px 1fr 350px;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .panel {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .panel-title {
+      padding: 16px;
+      border-bottom: 1px solid #1e293b;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .countries {
+      max-height: 800px;
+      overflow-y: auto;
+    }
+
+    .country-card {
+      border-bottom: 1px solid #1e293b;
+      padding: 16px;
+    }
+
+    .country-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .country-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .risk-high {
+      color: #ef4444;
+      font-weight: bold;
+    }
+
+    .risk-elevated {
+      color: #f59e0b;
+      font-weight: bold;
+    }
+
+    .risk-guarded {
+      color: #22c55e;
+      font-weight: bold;
+    }
+
+    #map {
+      width: 100%;
+      height: 800px;
+    }
+
+    .right-panel-content {
+      padding: 16px;
+    }
+
+    .topic-list {
+      margin-top: 10px;
+    }
+
+    .topic-item {
+      background: #1e293b;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .latest-events {
+      margin-top: 20px;
+    }
+
+    .event-box {
+      background: #1e293b;
+      border-left: 4px solid #3b82f6;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .chart-section {
+      padding: 20px;
+    }
+
+    .chart-container {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    canvas {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .top-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #map {
+        height: 500px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .top-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Central & Eastern Europe Strategic Monitor</h1>
+    <p id="lastUpdate">Loading latest strategic monitoring data...</p>
+  </div>
+
+  <div class="top-stats">
+    <div class="stat-box">
+      <div class="stat-title">Regional Risk Level</div>
+      <div class="stat-value" id="overallRisk">-</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-title">Regional Stability Score</div>
+      <div class="stat-value" id="stabilityScore">-</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-title">Regional Risk Score</div>
+      <div class="stat-value" id="riskScore">-</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-title">Countries Monitored</div>
+      <div class="stat-value">8</div>
+    </div>
+  </div>
+
+  <div class="layout">
+
+    <div class="panel">
+      <div class="panel-title">
+        Country Strategic Status
+      </div>
+
+      <div class="countries" id="countriesContainer"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        Regional Strategic Map
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        Regional Strategic Overview
+      </div>
+
+      <div class="right-panel-content">
+
+        <h3>Main Regional Trend</h3>
+        <p id="mainTrend"></p>
+
+        <h3>Top Strategic Topics</h3>
+        <div class="topic-list" id="topicsContainer"></div>
+
+        <div class="latest-events">
+          <h3>Latest Strategic Developments</h3>
+          <div id="eventsContainer"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="chart-container">
+    <h2>Regional Strategic Trend</h2>
+    <canvas id="regionalChart"></canvas>
+  </div>
+
+  <script>
+
+    const map = L.map('map').setView([53, 22], 4);
+
+    L.tileLayer(
+      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      {
+        attribution: '&copy; OpenStreetMap contributors'
+      }
+    ).addTo(map);
+
+    function riskColor(level) {
+      if (level === "HIGH") return "#ef4444";
+      if (level === "ELEVATED") return "#f59e0b";
+      if (level === "GUARDED") return "#22c55e";
+      return "#3b82f6";
+    }
+
+    async function loadDashboard() {
+
+      const response = await fetch('docs/data/latest_status.json');
+      const data = await response.json();
+
+      document.getElementById('lastUpdate').innerText =
+        `Last update: ${new Date(data.last_update).toLocaleString()}`;
+
+      document.getElementById('overallRisk').innerText =
+        data.regional_summary.overall_risk;
+
+      document.getElementById('stabilityScore').innerText =
+        data.regional_summary.regional_stability_score;
+
+      document.getElementById('riskScore').innerText =
+        data.regional_summary.regional_risk_score;
+
+      document.getElementById('mainTrend').innerText =
+        data.regional_summary.main_trend;
+
+      const topicsContainer = document.getElementById('topicsContainer');
+
+      data.regional_summary.top_topics.forEach(topic => {
+        const div = document.createElement('div');
+        div.className = 'topic-item';
+        div.innerText = topic;
+        topicsContainer.appendChild(div);
+      });
+
+      const countriesContainer =
+        document.getElementById('countriesContainer');
+
+      const eventsContainer =
+        document.getElementById('eventsContainer');
+
+      const chartLabels = [];
+      const chartValues = [];
+
+      data.countries.forEach(country => {
+
+        chartLabels.push(country.country);
+        chartValues.push(country.risk_score);
+
+        const card = document.createElement('div');
+        card.className = 'country-card';
+
+        const riskClass =
+          country.risk_level === "HIGH"
+            ? "risk-high"
+            : country.risk_level === "ELEVATED"
+            ? "risk-elevated"
+            : "risk-guarded";
+
+        card.innerHTML = `
+          <div class="country-name">${country.country}</div>
+
+          <div class="country-row">
+            <span>Risk Level</span>
+            <span class="${riskClass}">
+              ${country.risk_level}
+            </span>
+          </div>
+
+          <div class="country-row">
+            <span>Risk Score</span>
+            <span>${country.risk_score}</span>
+          </div>
+
+          <div class="country-row">
+            <span>Political Mood</span>
+            <span>${country.political_mood}</span>
+          </div>
+
+          <div class="country-row">
+            <span>Security Trend</span>
+            <span>${country.security_trend}</span>
+          </div>
+
+          <div class="country-row">
+            <span>Articles</span>
+            <span>${country.article_count}</span>
+          </div>
+
+          <div class="country-row">
+            <span>Main Topic</span>
+            <span>${country.main_topic}</span>
+          </div>
+        `;
+
+        countriesContainer.appendChild(card);
+
+        L.circleMarker(country.coordinates, {
+          radius: 12,
+          color: riskColor(country.risk_level),
+          fillColor: riskColor(country.risk_level),
+          fillOpacity: 0.8,
+          weight: 2
+        })
+        .addTo(map)
+        .bindPopup(`
+          <b>${country.country}</b><br>
+          Risk Level: ${country.risk_level}<br>
+          Risk Score: ${country.risk_score}<br>
+          Main Topic: ${country.main_topic}<br>
+          Political Mood: ${country.political_mood}
+        `);
+
+        const eventBox = document.createElement('div');
+        eventBox.className = 'event-box';
+
+        eventBox.innerHTML = `
+          <b>${country.country}</b><br>
+          ${country.latest_event}
+        `;
+
+        eventsContainer.appendChild(eventBox);
+
+      });
+
+      new Chart(
+        document.getElementById('regionalChart'),
+        {
+          type: 'bar',
+          data: {
+            labels: chartLabels,
+            datasets: [
+              {
+                label: 'Regional Risk Score',
+                data: chartValues
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#e2e8f0'
+                }
+              }
+            },
+            scales: {
+              x: {
+                ticks: {
+                  color: '#e2e8f0'
+                }
+              },
+              y: {
+                ticks: {
+                  color: '#e2e8f0'
+                },
+                beginAtZero: true,
+                max: 100
+              }
+            }
+          }
+        }
+      );
+
+    }
+
+    loadDashboard();
+
+  </script>
+
+</body>
+</html>
