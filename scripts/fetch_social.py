@@ -300,7 +300,7 @@ def parse_iso_date(value):
         return parsed.astimezone(timezone.utc)
     except Exception:
         return None
-    def is_recent(published):
+def is_recent(published):
     parsed = parse_date(published) or parse_iso_date(published)
 
     if not parsed:
