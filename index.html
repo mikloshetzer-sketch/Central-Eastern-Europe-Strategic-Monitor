@@ -6,9 +6,6 @@
 
   <title>Central & Eastern Europe Strategic Monitor</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
@@ -20,172 +17,228 @@
     }
 
     .header {
-      background: #111827;
-      padding: 22px;
-      border-bottom: 1px solid #1e293b;
+      padding: 28px;
+      background: linear-gradient(135deg, #111827, #1e293b);
+      border-bottom: 1px solid #334155;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 32px;
       color: #f8fafc;
     }
 
     .header p {
-      margin-top: 8px;
+      margin: 10px 0 0;
       color: #94a3b8;
-      font-size: 14px;
+      max-width: 980px;
+      line-height: 1.5;
     }
 
-    .top-stats {
+    .topbar {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      gap: 14px;
       padding: 20px;
     }
 
-    .stat-box {
+    .stat {
       background: #111827;
       border: 1px solid #1e293b;
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 18px;
     }
 
-    .stat-title {
+    .stat-label {
       color: #94a3b8;
       font-size: 13px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .stat-value {
       font-size: 28px;
       font-weight: bold;
+      color: #f8fafc;
     }
 
-    .layout {
+    .section {
+      padding: 0 20px 20px;
+    }
+
+    .info-panel {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    .info-panel h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .info-panel p {
+      color: #cbd5e1;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: 350px 1fr 350px;
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .country-card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 410px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .country-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .country-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f8fafc;
+    }
+
+    .country-local {
+      display: block;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+
+    .badge {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .high {
+      background: rgba(239, 68, 68, 0.16);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+
+    .elevated {
+      background: rgba(245, 158, 11, 0.16);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    .guarded {
+      background: rgba(34, 197, 94, 0.16);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.4);
+    }
+
+    .low, .minimal {
+      background: rgba(59, 130, 246, 0.16);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .metric {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .metric-label {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 5px;
+    }
+
+    .metric-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #f8fafc;
+    }
+
+    .topic {
+      background: #1e293b;
+      border-left: 4px solid #38bdf8;
+      border-radius: 12px;
+      padding: 11px;
+      font-size: 14px;
+      color: #dbeafe;
+      line-height: 1.4;
+    }
+
+    .narrative {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .articles {
+      margin-top: auto;
+      border-top: 1px solid #1e293b;
+      padding-top: 10px;
+    }
+
+    .articles-title {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .article-link {
+      display: block;
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.35;
+      margin-bottom: 7px;
+    }
+
+    .article-link:hover {
+      text-decoration: underline;
+    }
+
+    .chart-wrap {
+      height: 80px;
+      margin-top: 4px;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+      margin-top: 20px;
     }
 
     .panel {
       background: #111827;
       border: 1px solid #1e293b;
-      border-radius: 14px;
-      overflow: hidden;
+      border-radius: 16px;
+      padding: 18px;
     }
 
-    .panel-title {
-      padding: 16px;
-      border-bottom: 1px solid #1e293b;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .countries {
-      max-height: 800px;
-      overflow-y: auto;
-    }
-
-    .country-card {
-      border-bottom: 1px solid #1e293b;
-      padding: 16px;
-    }
-
-    .country-name {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .country-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
-
-    .country-row span:last-child {
-      text-align: right;
-    }
-
-    .risk-high {
-      color: #ef4444;
-      font-weight: bold;
-    }
-
-    .risk-elevated {
-      color: #f59e0b;
-      font-weight: bold;
-    }
-
-    .risk-guarded {
-      color: #22c55e;
-      font-weight: bold;
-    }
-
-    .risk-low {
-      color: #3b82f6;
-      font-weight: bold;
-    }
-
-    #map {
-      width: 100%;
-      height: 800px;
-    }
-
-    .right-panel-content {
-      padding: 16px;
-    }
-
-    .right-panel-content h3 {
-      margin-top: 8px;
-      margin-bottom: 10px;
-    }
-
-    .topic-list {
-      margin-top: 10px;
-    }
-
-    .topic-item {
-      background: #1e293b;
-      padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-
-    .latest-events {
-      margin-top: 20px;
-    }
-
-    .event-box {
-      background: #1e293b;
-      border-left: 4px solid #3b82f6;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 10px;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .chart-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .chart-container {
-      background: #111827;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 20px;
-    }
-
-    .chart-container h2 {
+    .panel h2 {
       margin-top: 0;
       font-size: 20px;
     }
@@ -196,37 +249,28 @@
       line-height: 1.5;
     }
 
-    canvas {
-      max-width: 100%;
-    }
-
-    a {
-      color: #93c5fd;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 1200px) {
-      .layout,
-      .chart-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .top-stats {
+    @media (max-width: 1350px) {
+      .grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      #map {
-        height: 500px;
+      .topbar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .bottom-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width: 700px) {
-      .top-stats {
+    @media (max-width: 760px) {
+      .grid,
+      .topbar {
         grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 25px;
       }
     }
   </style>
@@ -234,312 +278,302 @@
 
 <body>
 
-  <div class="header">
+  <header class="header">
     <h1>Central & Eastern Europe Strategic Monitor</h1>
-    <p id="lastUpdate">Loading latest strategic monitoring data...</p>
-  </div>
+    <p>
+      A strategic monitoring dashboard for Hungary, Poland, Slovakia, Czechia,
+      Romania, Estonia, Latvia and Lithuania. The system combines GDELT,
+      local RSS sources, country-language keywords and the CEE Security Map
+      background signal.
+    </p>
+    <p id="lastUpdate">Loading data...</p>
+  </header>
 
-  <div class="top-stats">
-    <div class="stat-box">
-      <div class="stat-title">Regional Risk Level</div>
+  <div class="topbar">
+    <div class="stat">
+      <div class="stat-label">Regional Risk Level</div>
       <div class="stat-value" id="overallRisk">-</div>
     </div>
 
-    <div class="stat-box">
-      <div class="stat-title">Regional Stability Score</div>
-      <div class="stat-value" id="stabilityScore">-</div>
-    </div>
-
-    <div class="stat-box">
-      <div class="stat-title">Regional Risk Score</div>
+    <div class="stat">
+      <div class="stat-label">Regional Risk Score</div>
       <div class="stat-value" id="riskScore">-</div>
     </div>
 
-    <div class="stat-box">
-      <div class="stat-title">Countries Monitored</div>
+    <div class="stat">
+      <div class="stat-label">Regional Stability Score</div>
+      <div class="stat-value" id="stabilityScore">-</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-label">Countries Monitored</div>
       <div class="stat-value">8</div>
     </div>
   </div>
 
-  <div class="layout">
+  <main class="section">
 
-    <div class="panel">
-      <div class="panel-title">Country Strategic Status</div>
-      <div class="countries" id="countriesContainer"></div>
+    <div class="info-panel">
+      <h2>Regional Strategic Overview</h2>
+      <p id="mainTrend">Loading regional trend...</p>
     </div>
 
-    <div class="panel">
-      <div class="panel-title">Regional Strategic Map</div>
-      <div id="map"></div>
-    </div>
+    <div class="grid" id="countryGrid"></div>
 
-    <div class="panel">
-      <div class="panel-title">Regional Strategic Overview</div>
+    <div class="bottom-grid">
+      <div class="panel">
+        <h2>Regional Risk and Stability Trend</h2>
+        <canvas id="regionalTrendChart"></canvas>
+        <p class="note">
+          Historical values are read from <code>docs/data/history/regional_history.json</code>.
+        </p>
+      </div>
 
-      <div class="right-panel-content">
-        <h3>Main Regional Trend</h3>
-        <p id="mainTrend" class="note"></p>
-
-        <h3>Top Strategic Topics</h3>
-        <div class="topic-list" id="topicsContainer"></div>
-
-        <div class="latest-events">
-          <h3>Latest Strategic Developments</h3>
-          <div id="eventsContainer"></div>
-        </div>
+      <div class="panel">
+        <h2>Top Strategic Topics</h2>
+        <div id="topicList"></div>
+        <p class="note">
+          Topics are generated from GDELT and local RSS monitoring.
+        </p>
       </div>
     </div>
 
-  </div>
-
-  <div class="chart-grid">
-    <div class="chart-container">
-      <h2>Regional Risk and Stability Trend</h2>
-      <canvas id="regionalTrendChart"></canvas>
-      <p class="note">
-        The trend chart is built from archived daily values in
-        <code>docs/data/history/regional_history.json</code>.
-      </p>
-    </div>
-
-    <div class="chart-container">
-      <h2>Current Country Risk Scores</h2>
-      <canvas id="countryRiskChart"></canvas>
-      <p class="note">
-        Country scores are generated from GDELT and local RSS monitoring.
-      </p>
-    </div>
-  </div>
+  </main>
 
   <script>
-    const map = L.map("map").setView([53, 22], 4);
+    const COUNTRY_HISTORY_PATH = "docs/data/history/country_history.json";
+    const REGIONAL_HISTORY_PATH = "docs/data/history/regional_history.json";
+    const LATEST_STATUS_PATH = "docs/data/latest_status.json";
+    const SECURITY_OVERLAY_PATH = "docs/data/security_overlay.json";
 
-    L.tileLayer(
-      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-      {
-        attribution: "&copy; OpenStreetMap contributors"
-      }
-    ).addTo(map);
-
-    let countryRiskChart = null;
+    const miniCharts = {};
     let regionalTrendChart = null;
-
-    function riskColor(level) {
-      if (level === "HIGH") return "#ef4444";
-      if (level === "ELEVATED") return "#f59e0b";
-      if (level === "GUARDED") return "#22c55e";
-      return "#3b82f6";
-    }
-
-    function riskClass(level) {
-      if (level === "HIGH") return "risk-high";
-      if (level === "ELEVATED") return "risk-elevated";
-      if (level === "GUARDED") return "risk-guarded";
-      return "risk-low";
-    }
-
-    function safeText(value, fallback = "-") {
-      if (value === null || value === undefined || value === "") {
-        return fallback;
-      }
-      return value;
-    }
 
     async function fetchJson(path, fallback) {
       try {
-        const response = await fetch(path + "?v=" + Date.now());
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
-        return await response.json();
-      } catch (error) {
-        console.warn("Could not load", path, error);
+        const res = await fetch(path + "?v=" + Date.now());
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return await res.json();
+      } catch (err) {
+        console.warn("Could not load:", path, err);
         return fallback;
       }
     }
 
-    function renderTopStats(data) {
-      document.getElementById("lastUpdate").innerText =
-        "Last update: " + new Date(data.last_update).toLocaleString();
+    function riskClass(level) {
+      const value = String(level || "").toLowerCase();
 
-      document.getElementById("overallRisk").innerText =
-        safeText(data.regional_summary.overall_risk);
+      if (value === "high") return "high";
+      if (value === "elevated") return "elevated";
+      if (value === "guarded") return "guarded";
+      if (value === "medium") return "elevated";
+      if (value === "low") return "low";
+      if (value === "minimal") return "minimal";
 
-      document.getElementById("stabilityScore").innerText =
-        safeText(data.regional_summary.regional_stability_score);
-
-      document.getElementById("riskScore").innerText =
-        safeText(data.regional_summary.regional_risk_score);
-
-      document.getElementById("mainTrend").innerText =
-        safeText(data.regional_summary.main_trend, "No regional trend available.");
+      return "low";
     }
 
-    function renderTopics(data) {
-      const topicsContainer = document.getElementById("topicsContainer");
-      topicsContainer.innerHTML = "";
+    function safe(value, fallback = "-") {
+      if (value === undefined || value === null || value === "") return fallback;
+      return value;
+    }
 
-      const topics = data.regional_summary.top_topics || [];
+    function getSecurityOverlay(securityData, countryId) {
+      if (!securityData || !securityData.countries) return null;
+      return securityData.countries[countryId] || null;
+    }
+
+    function getCountryHistory(historyData, countryId) {
+      if (!historyData || !historyData.countries) return [];
+      return historyData.countries[countryId] || [];
+    }
+
+    function renderTopStats(latest) {
+      const summary = latest.regional_summary || {};
+
+      document.getElementById("lastUpdate").innerText =
+        "Last update: " + new Date(latest.last_update).toLocaleString();
+
+      document.getElementById("overallRisk").innerText =
+        safe(summary.overall_risk);
+
+      document.getElementById("riskScore").innerText =
+        safe(summary.regional_risk_score);
+
+      document.getElementById("stabilityScore").innerText =
+        safe(summary.regional_stability_score);
+
+      document.getElementById("mainTrend").innerText =
+        safe(summary.main_trend, "No regional summary available.");
+    }
+
+    function renderTopics(latest) {
+      const container = document.getElementById("topicList");
+      container.innerHTML = "";
+
+      const topics = latest.regional_summary?.top_topics || [];
 
       if (!topics.length) {
-        const div = document.createElement("div");
-        div.className = "topic-item";
-        div.innerText = "No dominant strategic topic detected.";
-        topicsContainer.appendChild(div);
+        container.innerHTML = "<p class='note'>No dominant topic detected.</p>";
         return;
       }
 
       topics.forEach(topic => {
         const div = document.createElement("div");
-        div.className = "topic-item";
+        div.className = "topic";
+        div.style.marginBottom = "10px";
         div.innerText = topic;
-        topicsContainer.appendChild(div);
+        container.appendChild(div);
       });
     }
 
-    function renderCountries(data) {
-      const countriesContainer = document.getElementById("countriesContainer");
-      const eventsContainer = document.getElementById("eventsContainer");
+    function renderCountryCards(latest, countryHistory, securityData) {
+      const grid = document.getElementById("countryGrid");
+      grid.innerHTML = "";
 
-      countriesContainer.innerHTML = "";
-      eventsContainer.innerHTML = "";
+      const countries = latest.countries || [];
 
-      data.countries.forEach(country => {
-        const card = document.createElement("div");
+      countries.forEach(country => {
+        const overlay = getSecurityOverlay(securityData, country.id);
+        const history = getCountryHistory(countryHistory, country.id);
+
+        const securityScore = overlay ? overlay.security_score : 0;
+        const securityLevel = overlay ? overlay.security_level : "minimal";
+        const securityEvents = overlay ? overlay.event_count : 0;
+
+        const articles = country.top_articles || [];
+
+        const card = document.createElement("article");
         card.className = "country-card";
 
+        const chartId = "miniChart_" + country.id;
+
+        const articleLinks = articles.slice(0, 3).map(article => {
+          const title = safe(article.title, "Open source");
+          const url = article.url || "#";
+          const source = article.source ? ` <span class="note">(${article.source})</span>` : "";
+
+          return `
+            <a class="article-link" href="${url}" target="_blank" rel="noopener">
+              ${title}${source}
+            </a>
+          `;
+        }).join("");
+
         card.innerHTML = `
-          <div class="country-name">
-            ${safeText(country.country)}
-            ${country.country_local ? `<span class="note"> / ${country.country_local}</span>` : ""}
+          <div class="country-head">
+            <div>
+              <div class="country-title">${safe(country.country)}</div>
+              <span class="country-local">${safe(country.country_local, "")}</span>
+            </div>
+            <span class="badge ${riskClass(country.risk_level)}">
+              ${safe(country.risk_level)}
+            </span>
           </div>
 
-          <div class="country-row">
-            <span>Risk Level</span>
-            <span class="${riskClass(country.risk_level)}">${safeText(country.risk_level)}</span>
+          <div class="metric-row">
+            <div class="metric">
+              <div class="metric-label">News Risk</div>
+              <div class="metric-value">${safe(country.risk_score)}</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-label">Articles</div>
+              <div class="metric-value">${safe(country.article_count, 0)}</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-label">Social Signal</div>
+              <div class="metric-value">${safe(country.social_signal, 0)}</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-label">Security Overlay</div>
+              <div class="metric-value">${safe(securityScore, 0)}</div>
+            </div>
           </div>
 
-          <div class="country-row">
-            <span>Risk Score</span>
-            <span>${safeText(country.risk_score)}</span>
+          <div class="topic">
+            <b>Main topic:</b><br>
+            ${safe(country.main_topic, "No topic detected.")}
           </div>
 
-          <div class="country-row">
-            <span>Political Mood</span>
-            <span>${safeText(country.political_mood)}</span>
+          <div class="narrative">
+            <b>News narrative:</b><br>
+            ${safe(country.top_narrative, "No narrative available.")}
           </div>
 
-          <div class="country-row">
-            <span>Security Trend</span>
-            <span>${safeText(country.security_trend)}</span>
+          <div class="narrative">
+            <b>CEE Security Map:</b><br>
+            ${overlay ? safe(overlay.main_security_narrative) : "No security overlay available."}
+            <br>
+            <span class="note">
+              Level: ${safe(securityLevel)} | Events: ${safe(securityEvents, 0)}
+            </span>
           </div>
 
-          <div class="country-row">
-            <span>Articles</span>
-            <span>${safeText(country.article_count)}</span>
+          <div class="chart-wrap">
+            <canvas id="${chartId}"></canvas>
           </div>
 
-          <div class="country-row">
-            <span>Main Topic</span>
-            <span>${safeText(country.main_topic)}</span>
+          <div class="articles">
+            <div class="articles-title">Highlighted sources</div>
+            ${articleLinks || "<span class='note'>No source article available.</span>"}
           </div>
         `;
 
-        countriesContainer.appendChild(card);
+        grid.appendChild(card);
 
-        L.circleMarker(country.coordinates, {
-          radius: 12,
-          color: riskColor(country.risk_level),
-          fillColor: riskColor(country.risk_level),
-          fillOpacity: 0.85,
-          weight: 2
-        })
-        .addTo(map)
-        .bindPopup(`
-          <b>${safeText(country.country)}</b><br>
-          Risk Level: ${safeText(country.risk_level)}<br>
-          Risk Score: ${safeText(country.risk_score)}<br>
-          Main Topic: ${safeText(country.main_topic)}<br>
-          Political Mood: ${safeText(country.political_mood)}<br>
-          Articles: ${safeText(country.article_count)}
-        `);
-
-        const eventBox = document.createElement("div");
-        eventBox.className = "event-box";
-
-        let articleLink = "";
-
-        if (country.top_articles && country.top_articles.length > 0) {
-          const firstArticle = country.top_articles[0];
-          if (firstArticle.url) {
-            articleLink = `<br><a href="${firstArticle.url}" target="_blank" rel="noopener">Open source</a>`;
-          }
-        }
-
-        eventBox.innerHTML = `
-          <b>${safeText(country.country)}</b><br>
-          ${safeText(country.latest_event, "No recent event available.")}
-          ${articleLink}
-        `;
-
-        eventsContainer.appendChild(eventBox);
+        renderMiniChart(chartId, history);
       });
     }
 
-    function renderCountryRiskChart(data) {
-      const labels = data.countries.map(country => country.country);
-      const values = data.countries.map(country => country.risk_score);
+    function renderMiniChart(canvasId, history) {
+      const ctx = document.getElementById(canvasId);
 
-      const ctx = document.getElementById("countryRiskChart");
+      const labels = history.map(item => item.date);
+      const values = history.map(item => item.risk_score || 0);
 
-      if (countryRiskChart) {
-        countryRiskChart.destroy();
+      if (miniCharts[canvasId]) {
+        miniCharts[canvasId].destroy();
       }
 
-      countryRiskChart = new Chart(ctx, {
-        type: "bar",
+      miniCharts[canvasId] = new Chart(ctx, {
+        type: "line",
         data: {
-          labels: labels,
-          datasets: [
-            {
-              label: "Country Risk Score",
-              data: values
-            }
-          ]
+          labels,
+          datasets: [{
+            label: "Risk",
+            data: values,
+            tension: 0.3,
+            pointRadius: 0,
+            borderWidth: 2
+          }]
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
-            legend: {
-              labels: {
-                color: "#e2e8f0"
-              }
-            }
+            legend: { display: false }
           },
           scales: {
-            x: {
-              ticks: {
-                color: "#e2e8f0"
-              }
-            },
+            x: { display: false },
             y: {
-              beginAtZero: true,
-              max: 100,
-              ticks: {
-                color: "#e2e8f0"
-              }
+              display: false,
+              min: 0,
+              max: 100
             }
           }
         }
       });
     }
 
-    function renderRegionalTrendChart(historyData) {
+    function renderRegionalTrend(historyData) {
       const history = historyData.history || [];
 
       const labels = history.map(item => item.date);
-      const riskValues = history.map(item => item.regional_risk_score || 0);
-      const stabilityValues = history.map(item => item.regional_stability_score || 0);
+      const risk = history.map(item => item.regional_risk_score || 0);
+      const stability = history.map(item => item.regional_stability_score || 0);
 
       const ctx = document.getElementById("regionalTrendChart");
 
@@ -550,17 +584,19 @@
       regionalTrendChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: labels,
+          labels,
           datasets: [
             {
-              label: "Regional Risk Score",
-              data: riskValues,
-              tension: 0.25
+              label: "Regional Risk",
+              data: risk,
+              tension: 0.25,
+              borderWidth: 2
             },
             {
-              label: "Regional Stability Score",
-              data: stabilityValues,
-              tension: 0.25
+              label: "Regional Stability",
+              data: stability,
+              tension: 0.25,
+              borderWidth: 2
             }
           ]
         },
@@ -568,23 +604,17 @@
           responsive: true,
           plugins: {
             legend: {
-              labels: {
-                color: "#e2e8f0"
-              }
+              labels: { color: "#e2e8f0" }
             }
           },
           scales: {
             x: {
-              ticks: {
-                color: "#e2e8f0"
-              }
+              ticks: { color: "#94a3b8" }
             },
             y: {
-              beginAtZero: true,
+              min: 0,
               max: 100,
-              ticks: {
-                color: "#e2e8f0"
-              }
+              ticks: { color: "#94a3b8" }
             }
           }
         }
@@ -592,33 +622,28 @@
     }
 
     async function loadDashboard() {
-      const latestData = await fetchJson(
-        "docs/data/latest_status.json",
-        {
-          last_update: new Date().toISOString(),
-          regional_summary: {
-            overall_risk: "-",
-            regional_stability_score: "-",
-            regional_risk_score: "-",
-            main_trend: "No data available.",
-            top_topics: []
-          },
-          countries: []
-        }
-      );
+      const latest = await fetchJson(LATEST_STATUS_PATH, {
+        last_update: new Date().toISOString(),
+        regional_summary: {},
+        countries: []
+      });
 
-      const historyData = await fetchJson(
-        "docs/data/history/regional_history.json",
-        {
-          history: []
-        }
-      );
+      const countryHistory = await fetchJson(COUNTRY_HISTORY_PATH, {
+        countries: {}
+      });
 
-      renderTopStats(latestData);
-      renderTopics(latestData);
-      renderCountries(latestData);
-      renderCountryRiskChart(latestData);
-      renderRegionalTrendChart(historyData);
+      const regionalHistory = await fetchJson(REGIONAL_HISTORY_PATH, {
+        history: []
+      });
+
+      const securityData = await fetchJson(SECURITY_OVERLAY_PATH, {
+        countries: {}
+      });
+
+      renderTopStats(latest);
+      renderTopics(latest);
+      renderCountryCards(latest, countryHistory, securityData);
+      renderRegionalTrend(regionalHistory);
     }
 
     loadDashboard();
