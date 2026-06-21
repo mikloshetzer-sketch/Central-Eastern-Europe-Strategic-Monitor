@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-20T19:16:16.320157+00:00",
+  "last_update": "2026-06-21T02:57:04.182861+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -17,16 +17,16 @@
   },
   "countries": {
     "hungary": {
-      "mentions": 7,
-      "negative": 2,
-      "positive": 0,
-      "index": 46,
+      "mentions": 9,
+      "negative": 1,
+      "positive": 1,
+      "index": 50,
       "x_mentions": 0,
-      "reddit_mentions": 2,
-      "mastodon_mentions": 5,
+      "reddit_mentions": 1,
+      "mastodon_mentions": 8,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 2,
-      "geopolitical_score": 234,
+      "reliable_sources": 3,
+      "geopolitical_score": 327,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
@@ -34,6 +34,10 @@
         },
         {
           "name": "Belpolitikai feszültség",
+          "count": 2
+        },
+        {
+          "name": "Tiltakozás",
           "count": 1
         },
         {
@@ -43,18 +47,19 @@
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 2,
-        "mastodon": 5,
+        "reddit": 1,
+        "mastodon": 8,
         "x": 0
       },
       "category_counts": {
-        "government_crisis": 1,
+        "government_crisis": 2,
         "ukraine_russia": 5,
+        "protest": 1,
         "security": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 251,
+      "quality_total": 356,
       "top_posts": [
         {
           "title": "",
@@ -108,6 +113,106 @@
           ],
           "geopolitical_score": 65,
           "quality_score": 70,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Hungary’s new government has officially overturned a nine-month-long ban on Ukrainian media imposed by the former Viktor Orban administration. https:// kyivindependent.com/hungary-li fts-orban-era-ban-on-ukrainian-media/ # Ukraine # Russia # EU # Hungary # Orban",
+          "url": "https://mastodon.social/@hanse_mina/116785478509337171",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Sun, 21 Jun 2026 01:23:02 +0000",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 5
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 56,
+          "quality_score": 59,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Politico: Negotiations with # Ukraine and # Moldova on # EU accession are set to begin on June 15 Meanwhile, Hungarian Prime Minister Peter Mihály Fischer continues to insist on an agreement from Kyiv to grant broad legal autonomy to ethnic Hungarians in Transcarpathia, while # Slovakia believes that the conclusion of a lasting peace with # Russia should be ",
+          "url": "https://tty0.social/@rabfakovskay/116785637093054032",
+          "source": "mastodon",
+          "tag": "slovakia",
+          "seen_date": "Sun, 21 Jun 2026 02:03:21 +0000",
+          "matched_countries": [
+            "slovakia",
+            "hungary"
+          ],
+          "country_confidence": {
+            "slovakia": 2,
+            "hungary": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 52,
+          "quality_score": 57,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -211,117 +316,43 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "# HUNGARY LIFTS # BAN ON # UKRAINIAN # MEDIA : On June 19, # Hungarian # Minister of Social Affairs and # Culture Zoltán # Tarr announced that the ban on blacklisted Ukrainian # online # publications would be lifted. In September 2025, the # Orbán # government banned 12 Ukrainian online portals. https://www. kyivpost.com/post/78589",
-          "url": "https://journa.host/@timkmak/116782611940815685",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Sat, 20 Jun 2026 13:14:01 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 6
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            }
-          ],
-          "geopolitical_score": 26,
-          "quality_score": 29,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "The EU should use the Ukrainian accession process to rethink itself, and do not give to a single country this much power anymore. But this means a lot of countries should rethink their position in an EU where there is no veto power (and in this I look more and more to the medium-sized ones, which are the ones which will lose the most: countries like Hungary ",
-          "url": "https://mastodon.uno/@elCelio/116783829735177999",
-          "source": "mastodon",
-          "tag": "eu",
-          "seen_date": "Sat, 20 Jun 2026 18:23:43 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 23,
-          "quality_score": 26,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
     "poland": {
-      "mentions": 25,
-      "negative": 20,
+      "mentions": 26,
+      "negative": 18,
       "positive": 0,
       "index": 82,
       "x_mentions": 0,
-      "reddit_mentions": 0,
+      "reddit_mentions": 1,
       "mastodon_mentions": 25,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 13,
-      "geopolitical_score": 1253,
+      "reliable_sources": 14,
+      "geopolitical_score": 1205,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 19
+          "count": 21
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 6
+          "count": 5
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 0,
+        "reddit": 1,
         "mastodon": 25,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 19,
-        "security": 6
+        "ukraine_russia": 21,
+        "security": 5
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 1354,
+      "quality_total": 1307,
       "top_posts": [
         {
           "title": "",
@@ -374,66 +405,11 @@
         },
         {
           "title": "",
-          "text": "⚠️🇺🇦Russian terrorists strike civilians in the Mykolaiv region, injuring two men (more) https://www. ukrinform.net/rubric-ato/41359 02-russian-drones-strike-parutyne-in-mykolaiv-region-injuring-two-men.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Warsaw # Poland ",
-          "url": "https://mastodon.online/@SocraticEthics/116783058170848323",
+          "text": "President Zelenskyy has returned the Order of the White Eagle, awarded in 2023, to Nawrocki, stating the honor was intended for the Ukrainian people and military rather than himself personally. https://www. bloomberg.com/news/articles/20 26-06-19/polish-president-strips-zelenskyy-of-top-state-honor-amid-row # Ukraine # Russia # EU # Poland # Zelensky",
+          "url": "https://mastodon.social/@hanse_mina/116785433667937442",
           "source": "mastodon",
           "tag": "poland",
-          "seen_date": "Sat, 20 Jun 2026 15:07:30 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 72,
-          "quality_score": 77,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Poland and Ukraine are at odds over WWII history after President Zelenskyy awarded a military unit the honorary title “Heroes of the UPA.” Many Ukrainians see the UPA as anti-Soviet resistance fighters, while Poland links it to the Volhynia massacres. Polish President Karol Nawrocki responded by revoking Zelenskyy’s Order of the White Eagle. Despite the disp",
-          "url": "https://troet.cafe/@jeschua/116783463934135278",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Sat, 20 Jun 2026 16:50:42 +0000",
+          "seen_date": "Sun, 21 Jun 2026 01:11:37 +0000",
           "matched_countries": [
             "poland"
           ],
@@ -474,8 +450,8 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 70,
-          "quality_score": 73,
+          "geopolitical_score": 69,
+          "quality_score": 72,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -484,47 +460,41 @@
         },
         {
           "title": "",
-          "text": "⚠️🇺🇦Another war crime as Russian terrorists bomb civilians in Zaporizhzhia, leaving dead and injured (more) https://www. ukrinform.net/rubric-ato/41359 43-russian-army-bombes-zaporizhzhia-leaving-dead-and-injured.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Polan",
-          "url": "https://mastodon.online/@SocraticEthics/116783432851083631",
+          "text": "Zelenskyy returns Poland's highest honor as row deepens Ukraine's president has returned a medal to Poland after a decision to strip him of the honor. Warsaw has been one of Kyiv's key allies since Russia's war in Ukraine. https://www. dw.com/en/zelenskyy-returns-po lands-highest-honor-as-row-deepens/a-77637366 # TopNews # News # Poland # Ukrainian # Polish",
+          "url": "https://mastodon.social/@top_news/116784944201759173",
           "source": "mastodon",
           "tag": "poland",
-          "seen_date": "Sat, 20 Jun 2026 16:42:47 +0000",
+          "seen_date": "Sat, 20 Jun 2026 23:07:09 +0000",
           "matched_countries": [
             "poland"
           ],
           "country_confidence": {
-            "poland": 5
+            "poland": 6
           },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
           "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 4,
+              "hits": 5,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "foreign_influence",
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
             }
           ],
-          "geopolitical_score": 65,
-          "quality_score": 70,
+          "geopolitical_score": 67,
+          "quality_score": 72,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -579,24 +549,67 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "https:// t.me/warriorsukrainian/106981 ⛔️🇵🇱(The writing on it) Return to sender, address unknown…No such number, no such zone. Former President Poroshenko also refused the Polish state award - the Order of the White Eagle (PHOTO) # Ukraine # Press # Media # Poland # Warsaw # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+          "url": "https://mastodon.online/@SocraticEthics/116784005906981497",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Sat, 20 Jun 2026 19:08:32 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 6
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 5,
+              "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 63,
+          "quality_score": 66,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
         }
       ]
     },
     "slovakia": {
-      "mentions": 2,
+      "mentions": 3,
       "negative": 2,
-      "positive": 0,
-      "index": 26,
+      "positive": 1,
+      "index": 34,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 2,
+      "mastodon_mentions": 3,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 1,
-      "geopolitical_score": 77,
+      "reliable_sources": 2,
+      "geopolitical_score": 129,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 1
+          "count": 2
         },
         {
           "name": "Biztonsági kockázat",
@@ -606,16 +619,16 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 2,
+        "mastodon": 3,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 1,
+        "ukraine_russia": 2,
         "security": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 85,
+      "quality_total": 142,
       "top_posts": [
         {
           "title": "",
@@ -677,6 +690,57 @@
         },
         {
           "title": "",
+          "text": "Politico: Negotiations with # Ukraine and # Moldova on # EU accession are set to begin on June 15 Meanwhile, Hungarian Prime Minister Peter Mihály Fischer continues to insist on an agreement from Kyiv to grant broad legal autonomy to ethnic Hungarians in Transcarpathia, while # Slovakia believes that the conclusion of a lasting peace with # Russia should be ",
+          "url": "https://tty0.social/@rabfakovskay/116785637093054032",
+          "source": "mastodon",
+          "tag": "slovakia",
+          "seen_date": "Sun, 21 Jun 2026 02:03:21 +0000",
+          "matched_countries": [
+            "slovakia",
+            "hungary"
+          ],
+          "country_confidence": {
+            "slovakia": 2,
+            "hungary": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 52,
+          "quality_score": 57,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "Slovakia Official alert: Severe high temperature warning Area: Dunajská Streda Severity: Red Orange High-temperature Warning issued for Slovakia - Dunajská Streda Weather Now helps track alerts, radar, wind, rain, and hourly changes. Source: MeteoAlarm https:// meteoalarm.org?geocode=EMMA_ID :SK201 App Store: https:// apps.apple.com/us/app/weather- now-radar",
           "url": "https://mastodon.social/@weathernow/116782715113146735",
           "source": "mastodon",
@@ -709,21 +773,17 @@
       ]
     },
     "czechia": {
-      "mentions": 5,
+      "mentions": 4,
       "negative": 1,
       "positive": 0,
-      "index": 38,
+      "index": 33,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 5,
-      "main_social_topic": "EU / jogállamiság",
-      "reliable_sources": 3,
-      "geopolitical_score": 98,
+      "mastodon_mentions": 4,
+      "main_social_topic": "Belpolitikai feszültség",
+      "reliable_sources": 2,
+      "geopolitical_score": 89,
       "topics": [
-        {
-          "name": "EU / jogállamiság",
-          "count": 2
-        },
         {
           "name": "Belpolitikai feszültség",
           "count": 1
@@ -735,23 +795,27 @@
         {
           "name": "Tiltakozás",
           "count": 1
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 5,
+        "mastodon": 4,
         "x": 0
       },
       "category_counts": {
         "government_crisis": 1,
         "security": 1,
         "protest": 1,
-        "eu_rule_of_law": 2
+        "eu_rule_of_law": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 119,
+      "quality_total": 105,
       "top_posts": [
         {
           "title": "",
@@ -818,37 +882,6 @@
           "source": "mastodon",
           "tag": "czechrepublic",
           "seen_date": "Wed, 17 Jun 2026 10:18:45 +0000",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 1
-          },
-          "event_category": "eu_rule_of_law",
-          "event_category_label": "EU / jogállamiság",
-          "event_categories": [
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 9,
-          "quality_score": 14,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Doorstep by @adamvojtech86, Minister for Health of the # CzechRepublic , at the Employment, Social Policy, Health and Consumer Affairs Council # EPSCO (Health) taking place on 16 June in # Luxembourg . https:// newsroom.consilium.europa.eu/e vents/20260616-employment-social-policy-health-and-consumer-affairs-council-health-june-2026/154633-doorstep-cz-vojtec",
-          "url": "https://respublicae.eu/@EUCouncilTVNews/116764935707291186",
-          "source": "mastodon",
-          "tag": "czechrepublic",
-          "seen_date": "Wed, 17 Jun 2026 10:18:43 +0000",
           "matched_countries": [
             "czechia"
           ],
@@ -977,7 +1010,7 @@
           "text": "Iron Curtain 2.0 • NATO’s New Mega-Bases in Eastern Europe A quiet structural revolution is reshaping the face of European security. For decades, the crown jewel of NATO’s European footprint was Ramstein Air Base in Germany. # Military # Warfare # DefenseNews # weapons # news # NATO # Europe # Germany # Italy # France # poland # UnitedKingdom # Sweden # finl",
           "url": "https://mastodon.social/@Billwill75/116783024844108468",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Sat, 20 Jun 2026 14:59:02 +0000",
           "matched_countries": [
             "poland",
@@ -1186,27 +1219,27 @@
     },
     "estonia": {
       "mentions": 9,
-      "negative": 3,
+      "negative": 4,
       "positive": 3,
-      "index": 48,
+      "index": 52,
       "x_mentions": 0,
       "reddit_mentions": 0,
       "mastodon_mentions": 9,
-      "main_social_topic": "Biztonsági kockázat",
+      "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 2,
-      "geopolitical_score": 298,
+      "geopolitical_score": 316,
       "topics": [
+        {
+          "name": "Ukrajna és Oroszország",
+          "count": 4
+        },
         {
           "name": "Biztonsági kockázat",
           "count": 3
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "count": 3
-        },
-        {
           "name": "Belpolitikai feszültség",
-          "count": 3
+          "count": 2
         }
       ],
       "source_status": "active",
@@ -1216,20 +1249,20 @@
         "x": 0
       },
       "category_counts": {
+        "ukraine_russia": 4,
         "security": 3,
-        "ukraine_russia": 3,
-        "government_crisis": 3
+        "government_crisis": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 329,
+      "quality_total": 347,
       "top_posts": [
         {
           "title": "",
           "text": "Iron Curtain 2.0 • NATO’s New Mega-Bases in Eastern Europe A quiet structural revolution is reshaping the face of European security. For decades, the crown jewel of NATO’s European footprint was Ramstein Air Base in Germany. # Military # Warfare # DefenseNews # weapons # news # NATO # Europe # Germany # Italy # France # poland # UnitedKingdom # Sweden # finl",
           "url": "https://mastodon.social/@Billwill75/116783024844108468",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Sat, 20 Jun 2026 14:59:02 +0000",
           "matched_countries": [
             "poland",
@@ -1324,6 +1357,49 @@
         },
         {
           "title": "",
+          "text": "putin uses two traps to divide the West: offering false hope and spreading fear # Estonia # EU # Europe # putin # russia # Ukraine # war https:// uatribune.com/en/europe-must-m aintain-strategic-patience-increase-pressure-on-russia-and-stand-firmly-alongside-ukraine-estonia-s-foreign-minister/",
+          "url": "https://mastodon.social/@uatribune/116785121581046101",
+          "source": "mastodon",
+          "tag": "estonia",
+          "seen_date": "Sat, 20 Jun 2026 23:52:15 +0000",
+          "matched_countries": [
+            "estonia"
+          ],
+          "country_confidence": {
+            "estonia": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 42,
+          "quality_score": 45,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "Kyiv Independent: What happens if Russia attacks Estonia? https://www. youtube.com/watch?v=5sCbRtQCp7w # Estonia # Russia # war",
           "url": "https://phire.place/@paparatti/116778498295993200",
           "source": "mastodon",
@@ -1384,54 +1460,6 @@
           ],
           "geopolitical_score": 33,
           "quality_score": 36,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "│ 💀 │ 💀 │ 🇺🇸 🇷🇺 🇺🇸 │ 💀 │ 💀 │ ◽ Russia is a Terrorist State!... and Donald Trump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania",
-          "url": "https://mastodon.social/@Ezpen/116782837409918490",
-          "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Sat, 20 Jun 2026 14:11:22 +0000",
-          "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
-          ],
-          "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1678,20 +1706,20 @@
       ]
     },
     "lithuania": {
-      "mentions": 9,
-      "negative": 5,
+      "mentions": 8,
+      "negative": 3,
       "positive": 3,
-      "index": 64,
+      "index": 51,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 9,
+      "mastodon_mentions": 8,
       "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 4,
-      "geopolitical_score": 453,
+      "reliable_sources": 3,
+      "geopolitical_score": 331,
       "topics": [
         {
           "name": "Biztonsági kockázat",
-          "count": 5
+          "count": 4
         },
         {
           "name": "Ukrajna és Oroszország",
@@ -1705,17 +1733,17 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 9,
+        "mastodon": 8,
         "x": 0
       },
       "category_counts": {
-        "security": 5,
+        "security": 4,
         "ukraine_russia": 2,
         "government_crisis": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 488,
+      "quality_total": 361,
       "top_posts": [
         {
           "title": "",
@@ -1823,98 +1851,6 @@
         },
         {
           "title": "",
-          "text": "- \" # Ukraine has repeatedly given signals that Russia's involvement in this war with # Belarus could lead to extremely dangerous consequences. In particular, we have recorded that along our border in Belarus, special equipment has been installed that works for # Russia , for the Russians, which helps the Russians launch # drone strikes against us, against o",
-          "url": "https://social.ludepress.com/@Akizi_Ajo/116783567342166910",
-          "source": "mastodon",
-          "tag": "russia",
-          "seen_date": "Sat, 20 Jun 2026 17:17:00 +0000",
-          "matched_countries": [
-            "lithuania"
-          ],
-          "country_confidence": {
-            "lithuania": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 80,
-          "quality_score": 83,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "‼️🇺🇦President Zelensky Warns Belarus To Remove Signaling Equipment Used By Russia For Attacks (more) http://www. rferl.org/a/33784778.html # Ukraine # Press # Media # News # Headlines # Belarus # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
-          "url": "https://mastodon.online/@SocraticEthics/116784010561595170",
-          "source": "mastodon",
-          "tag": "ukraine",
-          "seen_date": "Sat, 20 Jun 2026 19:09:43 +0000",
-          "matched_countries": [
-            "lithuania"
-          ],
-          "country_confidence": {
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 65,
-          "quality_score": 70,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
           "text": "\"NATO’s Gallant Boar 2026 exercise is being presented by pro-Kremlin outlets as evidence of an ‘imminent NATO attack on Kaliningrad’. In reality, the exercise focuses on defending the Suwałki Gap – one of NATO’s most strategically vulnerable areas. The Kremlin often sees the actions of others through its own lens.\" - EUvsDisinfo‬ # Russia # Kaliningrad # NAT",
           "url": "https://mastodon.social/@mse_eu/116782169229456067",
           "source": "mastodon",
@@ -1958,6 +1894,74 @@
           "quality_score": 52,
           "source_reliability": 5,
           "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Three parliamentary groups in # Lithuania will sign an agreement on forming a new coalition # government on 18 June 2026. Incumbent Prime Minister Inga Ruginiene's government will resign on 23 June 2026. https:// viabaltica.fi/lithuania-new-co alition-to-sign-agreement-on-government/",
+          "url": "https://mstdn.social/@viabaltica/116767530978534857",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Wed, 17 Jun 2026 21:18:44 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 4,
+              "weight": 8
+            }
+          ],
+          "geopolitical_score": 33,
+          "quality_score": 36,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Three parliamentary groups in # Lithuania have signed an agreement on a new coalition # government . Incoming PM Mindaugas Sinkevicius said that his government's key focus would be to tackle rising # prices , inequality, and # poverty . https:// viabaltica.fi/lithuania-new-co alition-agreement-signed/",
+          "url": "https://mstdn.social/@viabaltica/116773536854882572",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Thu, 18 Jun 2026 22:46:06 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 3,
+              "weight": 8
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 29,
+          "quality_score": 32,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
