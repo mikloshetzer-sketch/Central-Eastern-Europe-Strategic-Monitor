@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-30T02:42:06.966292+00:00",
+  "last_update": "2026-06-30T09:04:03.955473+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -10,7 +10,7 @@
       {
         "country": "hungary",
         "status_code": 402,
-        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
       }
     ],
     "collected": 0
@@ -61,7 +61,7 @@
           "text": "Russia preparing possible ‘provocation’ in Baltic states or Poland # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Trump # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain ",
           "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116828584984778964",
           "source": "mastodon",
-          "tag": "hungary",
+          "tag": "czechia",
           "seen_date": "Sun, 28 Jun 2026 16:05:34 +0000",
           "matched_countries": [
             "slovakia",
@@ -279,39 +279,44 @@
       ]
     },
     "poland": {
-      "mentions": 30,
-      "negative": 14,
+      "mentions": 38,
+      "negative": 17,
       "positive": 0,
       "index": 82,
       "x_mentions": 0,
-      "reddit_mentions": 1,
-      "mastodon_mentions": 29,
+      "reddit_mentions": 2,
+      "mastodon_mentions": 36,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 11,
-      "geopolitical_score": 1207,
+      "reliable_sources": 16,
+      "geopolitical_score": 1579,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 17
+          "count": 20
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 13
+          "count": 17
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 1,
-        "mastodon": 29,
+        "reddit": 2,
+        "mastodon": 36,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 17,
-        "security": 13
+        "ukraine_russia": 20,
+        "security": 17,
+        "eu_rule_of_law": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 1315,
+      "quality_total": 1717,
       "top_posts": [
         {
           "title": "",
@@ -359,6 +364,106 @@
           ],
           "geopolitical_score": 86,
           "quality_score": 91,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "2/2 - Poland expels 11 suspected of Russian campaign to influence Ukrainian refugees - Russian tanker armed with machine guns spotted in Gulf of Finland - Latvia to build joint drone production facility with Ukraine near Russian border 📨 Daily newsletter: https:// russia-ukraine-newsletter.beeh iiv.com/ 💬 Telegram: https:// t.me/russiaukrainedaily # ukraine ",
+          "url": "https://mastodon.social/@rvps2001/116837827248769594",
+          "source": "mastodon",
+          "tag": "russia",
+          "seen_date": "Tue, 30 Jun 2026 07:16:00 +0000",
+          "matched_countries": [
+            "poland",
+            "latvia"
+          ],
+          "country_confidence": {
+            "poland": 1,
+            "latvia": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 5,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "migration_border",
+              "label": "Migráció és határnyomás",
+              "hits": 1,
+              "weight": 6
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 86,
+          "quality_score": 89,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Poland orders Swedish submarines to bulk up its navy. Poland has placed an order for three Swedish submarines in an effort to step up defense capabilities. The NATO member is modernising its navy in the face of Russian aggression at its borders. https:// mediafaro.org/article/20260629 -poland-orders-swedish-submarines-to-bulk-up-its-navy?mf_channel=mastodon&",
+          "url": "https://mastodon.mediafaro.org/@mf_newsdigest/116838244572467704",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Tue, 30 Jun 2026 09:02:08 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 4,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 81,
+          "quality_score": 86,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -476,104 +581,6 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "⚠️🇺🇦Russian terrorists commit war crime strike on rescue unit in Druzhkivka (PHOTOS, more) https://www. ukrinform.net/rubric-ato/41388 25-russian-army-shells-rescue-unit-in-druzhkivka.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Poland # Warsaw # 12yrInvasionOfUk",
-          "url": "https://mastodon.online/@SocraticEthics/116836495213516575",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Tue, 30 Jun 2026 01:37:15 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 72,
-          "quality_score": 77,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "⛔️🇺🇳UN confirms 129 Ukrainian POWs unlawfully executed by Russian invaders since 2022 (more) https://www. ukrinform.net/rubric-ato/41389 14-un-confirms-129-ukrainian-pows-executed-by-russian-forces-since-2022.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Poland # ",
-          "url": "https://mastodon.online/@SocraticEthics/116836582298281426",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Tue, 30 Jun 2026 01:59:24 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 5
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 5,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 64,
-          "quality_score": 69,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
@@ -612,7 +619,7 @@
           "text": "Russia preparing possible ‘provocation’ in Baltic states or Poland # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Trump # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain ",
           "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116828584984778964",
           "source": "mastodon",
-          "tag": "hungary",
+          "tag": "czechia",
           "seen_date": "Sun, 28 Jun 2026 16:05:34 +0000",
           "matched_countries": [
             "slovakia",
@@ -668,20 +675,20 @@
       ]
     },
     "czechia": {
-      "mentions": 13,
+      "mentions": 12,
       "negative": 5,
       "positive": 0,
       "index": 73,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 13,
+      "mastodon_mentions": 12,
       "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 7,
-      "geopolitical_score": 289,
+      "reliable_sources": 6,
+      "geopolitical_score": 275,
       "topics": [
         {
           "name": "Biztonsági kockázat",
-          "count": 7
+          "count": 6
         },
         {
           "name": "Ukrajna és Oroszország",
@@ -691,23 +698,23 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 13,
+        "mastodon": 12,
         "x": 0
       },
       "category_counts": {
-        "security": 7,
+        "security": 6,
         "ukraine_russia": 6
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 342,
+      "quality_total": 323,
       "top_posts": [
         {
           "title": "",
           "text": "Russia preparing possible ‘provocation’ in Baltic states or Poland # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Trump # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain ",
           "url": "https://social.kyiv.dcomm.net.ua/@September_UA/116828584984778964",
           "source": "mastodon",
-          "tag": "hungary",
+          "tag": "czechia",
           "seen_date": "Sun, 28 Jun 2026 16:05:34 +0000",
           "matched_countries": [
             "slovakia",
@@ -935,24 +942,20 @@
       ]
     },
     "romania": {
-      "mentions": 10,
+      "mentions": 6,
       "negative": 2,
-      "positive": 0,
-      "index": 58,
+      "positive": 2,
+      "index": 42,
       "x_mentions": 0,
-      "reddit_mentions": 1,
-      "mastodon_mentions": 9,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 6,
       "main_social_topic": "Biztonsági kockázat",
       "reliable_sources": 5,
-      "geopolitical_score": 241,
+      "geopolitical_score": 134,
       "topics": [
         {
           "name": "Biztonsági kockázat",
-          "count": 7
-        },
-        {
-          "name": "Migráció és határnyomás",
-          "count": 2
+          "count": 5
         },
         {
           "name": "Belpolitikai feszültség",
@@ -961,26 +964,25 @@
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 1,
-        "mastodon": 9,
+        "reddit": 0,
+        "mastodon": 6,
         "x": 0
       },
       "category_counts": {
-        "security": 7,
         "government_crisis": 1,
-        "migration_border": 2
+        "security": 5
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 277,
+      "quality_total": 162,
       "top_posts": [
         {
           "title": "",
-          "text": "Morning(ish) all, while Ukraine targets Russian warships and war-funding money-spinners (oil refineries) with its new PGMs (drones, cruise missiles), # Putin targets hospitals and apartment blocks with similar unmanned weapons. As if another year of killing Ukrainian civilians will see Vlad’s warped strategy succeed where five years of such attacks have fail",
-          "url": "https://mas.to/@PhilipCJames/116833497742353530",
+          "text": "Romania Secures Spyder Air Defense System in $2.3 Billion Deal with Rafael Romania has sealed a game-changing $2.3 billion deal with Rafael to secure the cutting-edge Spyder Air Defense System, marking the largest agreement in the Israeli firm's history. This strategic partnership bolsters Romania's defenses and cements its position as a key player in region",
+          "url": "https://mastodon.social/@Analyst207/116837467853306382",
           "source": "mastodon",
           "tag": "nato",
-          "seen_date": "Mon, 29 Jun 2026 12:54:57 +0000",
+          "seen_date": "Tue, 30 Jun 2026 05:44:36 +0000",
           "matched_countries": [
             "romania"
           ],
@@ -997,32 +999,14 @@
               "weight": 10
             },
             {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 5,
-              "weight": 9
-            },
-            {
               "category": "foreign_influence",
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 2,
-              "weight": 4
             }
           ],
-          "geopolitical_score": 103,
-          "quality_score": 108,
+          "geopolitical_score": 45,
+          "quality_score": 50,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1031,16 +1015,16 @@
         },
         {
           "title": "",
-          "text": "Ședința # CSAT s-a terminat. 🇷🇴#România va cere aliaților din # NATO să asigure “o postură de descurajare și apărare aeriană puternică” și o “prezență militară corespunzătoare în zonă și pe teritoriul național”, pe fondul incursiunilor de drone militare în spațiul aerian. 🔗 https:// biziday.ro/?p=362284 # Știri",
-          "url": "https://mastodon.world/@biziday/116834224812525528",
+          "text": "# war 500 AEREI DA BASI USA IN ITALIA PER SUPPORTO ATTACCO CONTRO # IRAN . PER IL GOVERNO? “VOLI LOGISTICI” L’Iran accusa Italia e Romania di “complicità” nell’aggressione statunitense e israeliana, chiamando in causa la # Nato . In particolare sarebbero state coinvolte le basi di # Aviano , in Friuli-Venezia Giulia, e di # Sigonella , in Sicilia. https://ww",
+          "url": "https://sociale.network/@antoniomazzeo/116837848551111455",
           "source": "mastodon",
           "tag": "nato",
-          "seen_date": "Mon, 29 Jun 2026 15:59:51 +0000",
+          "seen_date": "Tue, 30 Jun 2026 07:21:25 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
-            "romania": 5
+            "romania": 1
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -1048,12 +1032,18 @@
             {
               "category": "security",
               "label": "Biztonsági kockázat",
-              "hits": 2,
+              "hits": 1,
               "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
             }
           ],
-          "geopolitical_score": 24,
-          "quality_score": 29,
+          "geopolitical_score": 27,
+          "quality_score": 32,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1065,7 +1055,7 @@
           "text": "Promisiunile unui prezidențiabil francez: 🇫🇷#Franța va ieși din # NATO , va coopera cu 🇷🇺#Rusia și 🇨🇳#China: ”A început declinul 🇺🇸#SUA”. 🔗 https:// stirileprotv.ro/stiri/internat ional/franta-va-iesi-din-nato-va-coopera-cu-rusia-si-china-a-inceput-declinul-sua-declaratiile-unui-prezidentiabil-francez.html # Știri # România",
           "url": "https://mstdn.social/@RomaniaTeIubesc/116835337817513513",
           "source": "mastodon",
-          "tag": "romania",
+          "tag": "nato",
           "seen_date": "Mon, 29 Jun 2026 20:42:54 +0000",
           "matched_countries": [
             "romania"
@@ -1102,7 +1092,7 @@
           "text": "🇳🇱#GuvernulOlandei: ”🇷🇺#Rusia se pregătește de o confruntare pe termen lung cu 🌍#Europa”. Când va ataca o țară # NATO . 🔗 https:// stirileprotv.ro/stiri/internat ional/guvernul-olandez-rusia-se-pregateste-de-o-confruntare-pe-termen-lung-cu-europa-cand-va-ataca-nato.html # Știri # România # Olanda # UE # UniuneaEuropeană",
           "url": "https://mstdn.social/@RomaniaTeIubesc/116835222523734594",
           "source": "mastodon",
-          "tag": "romania",
+          "tag": "nato",
           "seen_date": "Mon, 29 Jun 2026 20:13:35 +0000",
           "matched_countries": [
             "romania"
@@ -1135,17 +1125,17 @@
           "quality": "rss_filtered"
         },
         {
-          "title": "Iron Dome and Iron Beam maker Rafael signs $2.3 billion Spyder air defense deal with Romania | The deal with Romania includes multiple air defense batteries, with deliveries expect",
-          "text": "&#32; submitted by &#32; /u/NotSoSaneExile [link] &#32; [comments]",
-          "url": "https://www.reddit.com/r/geopolitics/comments/1ui4zag/iron_dome_and_iron_beam_maker_rafael_signs_23/",
-          "source": "reddit",
-          "tag": "geopolitics",
-          "seen_date": "2026-06-28T18:36:35+00:00",
+          "title": "",
+          "text": "Concluzii după # CSAT . 🇷🇴#România va cere aliaților din # NATO să asigure “o postură de descurajare și apărare aeriană puternică”. 🔗 https:// stirileprotv.ro/stiri/actualit ate/concluzii-dupa-csat-romania-va-cere-aliatilor-din-nato-sa-asigure-o-postura-de-descurajare-si-aparare-aeriana-puternica.html # Știri",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/116834917132807080",
+          "source": "mastodon",
+          "tag": "nato",
+          "seen_date": "Mon, 29 Jun 2026 18:55:55 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
-            "romania": 1
+            "romania": 6
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -1155,18 +1145,12 @@
               "label": "Biztonsági kockázat",
               "hits": 1,
               "weight": 10
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
             }
           ],
-          "geopolitical_score": 20,
+          "geopolitical_score": 14,
           "quality_score": 19,
-          "source_reliability": 1,
-          "trusted_source_hint": false,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
@@ -1440,16 +1424,16 @@
       ]
     },
     "latvia": {
-      "mentions": 14,
+      "mentions": 16,
       "negative": 2,
       "positive": 0,
-      "index": 58,
+      "index": 62,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 14,
+      "mastodon_mentions": 16,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 1,
-      "geopolitical_score": 410,
+      "reliable_sources": 2,
+      "geopolitical_score": 510,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
@@ -1457,7 +1441,7 @@
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 3
+          "count": 5
         },
         {
           "name": "Kiber és dezinformáció",
@@ -1471,19 +1455,76 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 14,
+        "mastodon": 16,
         "x": 0
       },
       "category_counts": {
         "ukraine_russia": 9,
         "cyber_disinformation": 1,
         "eu_rule_of_law": 1,
-        "security": 3
+        "security": 5
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 454,
+      "quality_total": 562,
       "top_posts": [
+        {
+          "title": "",
+          "text": "2/2 - Poland expels 11 suspected of Russian campaign to influence Ukrainian refugees - Russian tanker armed with machine guns spotted in Gulf of Finland - Latvia to build joint drone production facility with Ukraine near Russian border 📨 Daily newsletter: https:// russia-ukraine-newsletter.beeh iiv.com/ 💬 Telegram: https:// t.me/russiaukrainedaily # ukraine ",
+          "url": "https://mastodon.social/@rvps2001/116837827248769594",
+          "source": "mastodon",
+          "tag": "russia",
+          "seen_date": "Tue, 30 Jun 2026 07:16:00 +0000",
+          "matched_countries": [
+            "poland",
+            "latvia"
+          ],
+          "country_confidence": {
+            "poland": 1,
+            "latvia": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 5,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "migration_border",
+              "label": "Migráció és határnyomás",
+              "hits": 1,
+              "weight": 6
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 86,
+          "quality_score": 89,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
         {
           "title": "",
           "text": "🟢 DefenseIndustry | 5/10 🇱🇻 🇺🇦 🇷🇺 Latvia and Ukraine plan joint drone production facility near Russia and Belarus border Latvian Prime Minister Kulbergs stated that Latvia, together with Ukraine, intends to build a drone production facility near the border with Belarus and Russia. # OSINT # NewsGroup # Latvia # Ukraine # Drones # DefenseIndustry",
@@ -1675,33 +1716,77 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
+        }
+      ]
+    },
+    "lithuania": {
+      "mentions": 7,
+      "negative": 3,
+      "positive": 0,
+      "index": 64,
+      "x_mentions": 0,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 7,
+      "main_social_topic": "Biztonsági kockázat",
+      "reliable_sources": 4,
+      "geopolitical_score": 416,
+      "topics": [
+        {
+          "name": "Biztonsági kockázat",
+          "count": 5
         },
         {
+          "name": "Ukrajna és Oroszország",
+          "count": 2
+        }
+      ],
+      "source_status": "active",
+      "source_counts": {
+        "reddit": 0,
+        "mastodon": 7,
+        "x": 0
+      },
+      "category_counts": {
+        "ukraine_russia": 2,
+        "security": 5
+      },
+      "engagement_total": 0,
+      "raw_engagement_total": 0,
+      "quality_total": 445,
+      "top_posts": [
+        {
           "title": "",
-          "text": "│ 💀 💀 │ 🇺🇸 🇷🇺 🇺🇸 │ 💀 💀 │ ◽ Russia is a Terrorist State!... and Donald Trump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # t",
-          "url": "https://mastodon.social/@Ezpen/116828310351250658",
+          "text": "Russian Maps Blurred 119 Of Russia’s Own Military Sites In The Nordics And Baltics—And Gave Away Their Locations (The objects blurred on Yandex run from air bases and shipyards to nuclear-weapons facilities, reporters from four countries found.) -- https:// euromaidanpress.com/2026/06/28 /russian-maps-blurred-119-of-russias-own-military-sites-in-the-nordics-",
+          "url": "https://techhub.social/@GregCocks/116836836024680281",
           "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Sun, 28 Jun 2026 14:55:44 +0000",
+          "tag": "nato",
+          "seen_date": "Tue, 30 Jun 2026 03:03:55 +0000",
           "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
+            "lithuania"
           ],
           "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
+            "lithuania": 4
           },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
           "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 4,
+              "weight": 10
+            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 2,
+              "hits": 3,
               "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
             },
             {
               "category": "foreign_influence",
@@ -1714,53 +1799,22 @@
               "label": "EU / jogállamiság",
               "hits": 1,
               "weight": 5
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
             }
           ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
+          "geopolitical_score": 97,
+          "quality_score": 102,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        }
-      ]
-    },
-    "lithuania": {
-      "mentions": 8,
-      "negative": 4,
-      "positive": 0,
-      "index": 66,
-      "x_mentions": 0,
-      "reddit_mentions": 0,
-      "mastodon_mentions": 8,
-      "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 3,
-      "geopolitical_score": 438,
-      "topics": [
-        {
-          "name": "Biztonsági kockázat",
-          "count": 5
         },
-        {
-          "name": "Ukrajna és Oroszország",
-          "count": 3
-        }
-      ],
-      "source_status": "active",
-      "source_counts": {
-        "reddit": 0,
-        "mastodon": 8,
-        "x": 0
-      },
-      "category_counts": {
-        "ukraine_russia": 3,
-        "security": 5
-      },
-      "engagement_total": 0,
-      "raw_engagement_total": 0,
-      "quality_total": 468,
-      "top_posts": [
         {
           "title": "",
           "text": "https:// t.me/warriorsukrainian/108422 ⛔️🇧🇾After three days of closed-door negotiations with Putin, Lukashenko flies not to Minsk, but has reported immediately to Beijing # Ukraine # Press # Brussels # Media # PACE # UK # OSCE # CoE # News # UN # US # Latvia # Lithuania # EU # Headlines # Poland # Warsaw # NATO # Belarus # 12yrInvasionOfUkraine # RussiansAre",
@@ -1925,49 +1979,6 @@
             "lithuania": 2,
             "poland": 1,
             "latvia": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 63,
-          "quality_score": 66,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "‼️🇺🇦AFU Air Force spox explains how shutdown of relay towers in Belarus affects Russian drone attacks (more) https://www. ukrinform.net/rubric-ato/41387 99-air-force-spox-explains-how-shutdown-of-relay-towers-in-belarus-affects-russian-drone-attacks.html # Ukraine # Press # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBaby",
-          "url": "https://mastodon.online/@SocraticEthics/116836623112874144",
-          "source": "mastodon",
-          "tag": "ukraine",
-          "seen_date": "Tue, 30 Jun 2026 02:09:46 +0000",
-          "matched_countries": [
-            "lithuania"
-          ],
-          "country_confidence": {
-            "lithuania": 1
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
