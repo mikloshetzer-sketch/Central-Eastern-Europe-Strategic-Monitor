@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01 09:39 UTC",
+  "updated_at": "2026-07-01 14:19 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -9,7 +9,7 @@
       {
         "country": "hungary",
         "status_code": 402,
-        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
       }
     ],
     "collected": 0
@@ -20,21 +20,17 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 5,
-        "negative": 1,
+        "mentions": 3,
+        "negative": 0,
         "positive": 0,
-        "index": 38,
+        "index": 24,
         "x_mentions": 0,
-        "reddit_mentions": 1,
-        "mastodon_mentions": 4,
-        "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 3,
-        "geopolitical_score": 110,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 3,
+        "main_social_topic": "Biztonsági kockázat",
+        "reliable_sources": 2,
+        "geopolitical_score": 75,
         "topics": [
-          {
-            "name": "Ukrajna és Oroszország",
-            "count": 2
-          },
           {
             "name": "Biztonsági kockázat",
             "count": 2
@@ -46,18 +42,17 @@
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 4,
+          "reddit": 0,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 2,
           "eu_rule_of_law": 1,
           "security": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 127,
+        "quality_total": 88,
         "top_posts": [
           {
             "title": "",
@@ -160,84 +155,6 @@
           },
           {
             "title": "",
-            "text": "# Temperature records tumble across # Europe as # heatwave moves east More than 191m people in Europe face temperatures of at least 35C degrees on Sunday, with extreme # heat warnings in # Germany , # Czechia , # Poland and # Hungary https://www. theguardian.com/environment/20 26/jun/28/temperature-records-tumble-across-europe-as-heatwave-moves-east?CMP=Shar",
-            "url": "https://norden.social/@juergenwiese/116827537244349148",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Sun, 28 Jun 2026 11:39:07 +0000",
-            "matched_countries": [
-              "czechia",
-              "hungary",
-              "poland"
-            ],
-            "country_confidence": {
-              "czechia": 2,
-              "hungary": 1,
-              "poland": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Hungary opposes scaling down EU protections for Ukrainian men",
-            "text": "&#32; submitted by &#32; /u/Haunting_Switch3463 [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/europe/comments/1uk1s6v/hungary_opposes_scaling_down_eu_protections_for/",
-            "source": "reddit",
-            "tag": "europe",
-            "seen_date": "2026-06-30T21:11:50+00:00",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 13,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "# Hungary # Spain # Europe A brutal heatwave has scorched much of Europe, causing record heat‑related deaths in Spain, breaking temperature records across multiple nations, and forcing Hungarian villagers to rely on mobile water trucks to survive the 40 degree Celsius blaze https:// ng.headtopics.com/news/extreme -european-heatwave-spills-over-hungary-spain-",
             "url": "https://mastodon.social/@Snoro/116843803363461400",
             "source": "mastodon",
@@ -275,16 +192,16 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 28,
+        "mentions": 27,
         "negative": 15,
         "positive": 3,
         "index": 73,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 28,
+        "mastodon_mentions": 27,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 14,
-        "geopolitical_score": 1098,
+        "reliable_sources": 13,
+        "geopolitical_score": 1015,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
@@ -301,28 +218,23 @@
           {
             "name": "Belpolitikai feszültség",
             "count": 1
-          },
-          {
-            "name": "EU / jogállamiság",
-            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 28,
+          "mastodon": 27,
           "x": 0
         },
         "category_counts": {
           "ukraine_russia": 18,
           "foreign_influence": 1,
           "government_crisis": 1,
-          "security": 7,
-          "eu_rule_of_law": 1
+          "security": 7
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 1210,
+        "quality_total": 1122,
         "top_posts": [
           {
             "title": "",
@@ -435,61 +347,6 @@
           },
           {
             "title": "",
-            "text": "⚠️🇺🇦Russian terrorists attacked civilians in the Kharkiv region, injuring seven people (more) https://www. ukrinform.net/rubric-ato/41392 15-injuries-reported-as-russian-drone-strikes-bohodukhiv-in-kharkiv-region.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Polan",
-            "url": "https://mastodon.online/@SocraticEthics/116839753587455483",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Tue, 30 Jun 2026 15:25:54 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 5
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 72,
-            "quality_score": 77,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "🇵🇱 Polish special services are preparing for possible Russian sabotage operations aimed at inflaming tensions between Poles and Ukrainians, Tomasz Siemoniak, ​minister in charge of special services, told RMF FM Radio ‌on Wednesday. https://www. reuters.com/world/poland-warns -russia-seeks-exploit-ukraine-tensions-with-sabotage-operations-2026-07-01/ # poland",
             "url": "https://mastodon.social/@rvps2001/116843770281310222",
             "source": "mastodon",
@@ -570,6 +427,55 @@
             "quality_score": 68,
             "source_reliability": 3,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "⚠️⛔️Another hour, another Russian barbaric war crime: Russian terrorists attack kindergarten in Zaporizhzhia (PHOTOS, VIDEO, more) https://www. ukrinform.net/rubric-ato/41392 83-russian-strike-hits-kindergarten-in-zaporizhzhia.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Hea",
+            "url": "https://mastodon.online/@SocraticEthics/116840973687459257",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Tue, 30 Jun 2026 20:36:11 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 5
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "label": "Tiltakozás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 67,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -678,15 +584,15 @@
       "name_hu": "Csehország",
       "social_signal": {
         "mentions": 10,
-        "negative": 5,
+        "negative": 4,
         "positive": 1,
-        "index": 66,
+        "index": 64,
         "x_mentions": 0,
         "reddit_mentions": 0,
         "mastodon_mentions": 10,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 5,
-        "geopolitical_score": 275,
+        "reliable_sources": 4,
+        "geopolitical_score": 263,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -694,7 +600,11 @@
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 5
+            "count": 4
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
           }
         ],
         "source_status": "active",
@@ -704,12 +614,13 @@
           "x": 0
         },
         "category_counts": {
+          "eu_rule_of_law": 1,
           "security": 5,
-          "ukraine_russia": 5
+          "ukraine_russia": 4
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 315,
+        "quality_total": 301,
         "top_posts": [
           {
             "title": "",
@@ -952,13 +863,13 @@
         "mentions": 1,
         "negative": 0,
         "positive": 0,
-        "index": 6,
+        "index": 10,
         "x_mentions": 0,
         "reddit_mentions": 0,
         "mastodon_mentions": 1,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 0,
-        "geopolitical_score": 10,
+        "reliable_sources": 1,
+        "geopolitical_score": 14,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -976,20 +887,20 @@
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 13,
+        "quality_total": 19,
         "top_posts": [
           {
             "title": "",
-            "text": "Same mountain, different angle. Brought the drone lower to capture the details. • #rhododendron #wildflowers #photo #mountains #nature #naturelovers #outdoors #landscape #hiking #aerialviews #photography #naturephotography #mountainsphotography #dronephotography #bucegi #romania",
-            "url": "https://pixelfed.social/p/ciprian.parvan/977851116411048430",
+            "text": "Summitul # NATO din 🇹🇷#Turcia. De ce aliații evită să vorbească despre problemele legate de drepturile omului în țara lui # Erdoğan . 🔗 https:// stirileprotv.ro/stiri/internat ional/summitul-nato-din-turcia-de-ce-aliatii-evita-sa-vorbeasca-despre-problemele-legate-de-drepturile-omului-in-tara-lui-erdogan.html # Știri # România",
+            "url": "https://mstdn.social/@RomaniaTeIubesc/116844767050961009",
             "source": "mastodon",
             "tag": "romania",
-            "seen_date": "Wed, 01 Jul 2026 08:31:13 +0000",
+            "seen_date": "Wed, 01 Jul 2026 12:40:53 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 1
+              "romania": 5
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -1001,10 +912,10 @@
                 "weight": 10
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 14,
+            "quality_score": 19,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1017,16 +928,16 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 17,
-        "negative": 1,
+        "mentions": 18,
+        "negative": 2,
         "positive": 1,
-        "index": 63,
+        "index": 62,
         "x_mentions": 0,
-        "reddit_mentions": 1,
-        "mastodon_mentions": 16,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 18,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 4,
-        "geopolitical_score": 699,
+        "reliable_sources": 2,
+        "geopolitical_score": 743,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -1035,21 +946,26 @@
           {
             "name": "Ukrajna és Oroszország",
             "count": 6
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 16,
+          "reddit": 0,
+          "mastodon": 18,
           "x": 0
         },
         "category_counts": {
           "security": 11,
+          "government_crisis": 1,
           "ukraine_russia": 6
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 754,
+        "quality_total": 801,
         "top_posts": [
           {
             "title": "",
@@ -1157,54 +1073,11 @@
           },
           {
             "title": "",
-            "text": "NRK: Order 138. “NRK has worked together with Nordic public broadcasters and Estonian Delfi to uncover the ongoing Russian military buildup along the Nato border. We have also conducted a data investigation to identify and examine 120 areas that have been blurred by the Russian map service Yandex Maps.” https://rbfirehose.com/2026/07/01/nrk-order-138/",
-            "url": "https://rbfirehose.com/2026/07/01/nrk-order-138/",
+            "text": "Russia closes its railway borders with Finland, Estonia and Latvia. In an unexpected move, Russia announced several railway border crossings with Finland, Estonia and Latvia to be “temporarily” shut down. Could this indicate an upcoming mobilisation in Russia as Moscow lacks troops for its ongoing all-out war against Ukraine? https:// mediafaro.org/article/2",
+            "url": "https://mastodon.mediafaro.org/@mf_newsdigest/116844154611235562",
             "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Wed, 01 Jul 2026 07:40:42 +0000",
-            "matched_countries": [
-              "estonia"
-            ],
-            "country_confidence": {
-              "estonia": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 59,
-            "quality_score": 64,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🟡 Border Closure | 8/10 🇷🇺 🇱🇻 🇫🇮 Russia closes border crossings with Latvia, Finland, and Estonia The Russian government has closed several border crossings with Latvia, Finland, and Estonia, according to an official decree. # OSINT # NewsGroup # BorderClosure # Russia # NATO",
-            "url": "https://social.vir.group/@analytics/116840558586793458",
-            "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Tue, 30 Jun 2026 18:50:37 +0000",
+            "tag": "estonia",
+            "seen_date": "Wed, 01 Jul 2026 10:05:08 +0000",
             "matched_countries": [
               "estonia",
               "latvia"
@@ -1225,14 +1098,8 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 2,
+                "hits": 4,
                 "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
               },
               {
                 "category": "foreign_influence",
@@ -1241,10 +1108,10 @@
                 "weight": 7
               }
             ],
-            "geopolitical_score": 57,
-            "quality_score": 62,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 66,
+            "quality_score": 69,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1285,6 +1152,61 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Photos from Estonian border guards show heavy machine guns on a Russian gas tanker in the Baltic Sea. This development indicates increased protection intended to deter Western boarding and inspection of Russian vessels. https://www. ftm.eu/articles/russian-armed- tankers-photos-of-machine-guns # Ukraine # Russia # EU # Estonia",
+            "url": "https://mastodon.social/@hanse_mina/116833224647952155",
+            "source": "mastodon",
+            "tag": "estonia",
+            "seen_date": "Mon, 29 Jun 2026 11:45:30 +0000",
+            "matched_countries": [
+              "estonia"
+            ],
+            "country_confidence": {
+              "estonia": 2
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 54,
+            "quality_score": 57,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1297,46 +1219,46 @@
         "mentions": 20,
         "negative": 3,
         "positive": 0,
-        "index": 68,
+        "index": 65,
         "x_mentions": 0,
-        "reddit_mentions": 2,
-        "mastodon_mentions": 18,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 20,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 2,
-        "geopolitical_score": 671,
+        "reliable_sources": 1,
+        "geopolitical_score": 661,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 10
+            "count": 9
           },
           {
             "name": "Ukrajna és Oroszország",
             "count": 8
           },
           {
-            "name": "Kiber és dezinformáció",
-            "count": 1
+            "name": "EU / jogállamiság",
+            "count": 2
           },
           {
-            "name": "EU / jogállamiság",
+            "name": "Kiber és dezinformáció",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 2,
-          "mastodon": 18,
+          "reddit": 0,
+          "mastodon": 20,
           "x": 0
         },
         "category_counts": {
-          "security": 10,
+          "security": 9,
           "ukraine_russia": 8,
-          "cyber_disinformation": 1,
-          "eu_rule_of_law": 1
+          "eu_rule_of_law": 2,
+          "cyber_disinformation": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 727,
+        "quality_total": 723,
         "top_posts": [
           {
             "title": "",
@@ -1383,6 +1305,51 @@
             ],
             "geopolitical_score": 70,
             "quality_score": 73,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Russia closes its railway borders with Finland, Estonia and Latvia. In an unexpected move, Russia announced several railway border crossings with Finland, Estonia and Latvia to be “temporarily” shut down. Could this indicate an upcoming mobilisation in Russia as Moscow lacks troops for its ongoing all-out war against Ukraine? https:// mediafaro.org/article/2",
+            "url": "https://mastodon.mediafaro.org/@mf_newsdigest/116844154611235562",
+            "source": "mastodon",
+            "tag": "estonia",
+            "seen_date": "Wed, 01 Jul 2026 10:05:08 +0000",
+            "matched_countries": [
+              "estonia",
+              "latvia"
+            ],
+            "country_confidence": {
+              "estonia": 1,
+              "latvia": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 2,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 66,
+            "quality_score": 69,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1483,18 +1450,20 @@
           },
           {
             "title": "",
-            "text": "🟡 Border Closure | 8/10 🇷🇺 🇱🇻 🇫🇮 Russia closes border crossings with Latvia, Finland, and Estonia The Russian government has closed several border crossings with Latvia, Finland, and Estonia, according to an official decree. # OSINT # NewsGroup # BorderClosure # Russia # NATO",
-            "url": "https://social.vir.group/@analytics/116840558586793458",
+            "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
+            "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
             "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Tue, 30 Jun 2026 18:50:37 +0000",
+            "tag": "hungary",
+            "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
             "matched_countries": [
               "estonia",
-              "latvia"
+              "latvia",
+              "lithuania"
             ],
             "country_confidence": {
               "estonia": 1,
-              "latvia": 1
+              "latvia": 1,
+              "lithuania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -1502,79 +1471,24 @@
               {
                 "category": "security",
                 "label": "Biztonsági kockázat",
-                "hits": 2,
+                "hits": 1,
                 "weight": 10
               },
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 2,
+                "hits": 3,
                 "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
               },
               {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
-                "hits": 1,
+                "hits": 2,
                 "weight": 7
               }
             ],
-            "geopolitical_score": 57,
-            "quality_score": 62,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🇱🇻🇺🇦 # Latvia will build a joint drone manufacturing facility with # Ukraine near its border with # Russia , Latvian Prime Minister Andris Kulbergs said on June 29. https://www. pravda.com.ua/eng/news/2026/06 /29/8041552/",
-            "url": "https://mastodon.social/@rvps2001/116832468340962876",
-            "source": "mastodon",
-            "tag": "latvia",
-            "seen_date": "Mon, 29 Jun 2026 08:33:10 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 53,
-            "quality_score": 56,
+            "geopolitical_score": 51,
+            "quality_score": 54,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1589,23 +1503,23 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 7,
-        "negative": 3,
+        "mentions": 8,
+        "negative": 4,
         "positive": 0,
-        "index": 56,
+        "index": 62,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
-        "main_social_topic": "Ukrajna és Oroszország",
+        "mastodon_mentions": 8,
+        "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 2,
-        "geopolitical_score": 344,
+        "geopolitical_score": 388,
         "topics": [
           {
-            "name": "Ukrajna és Oroszország",
-            "count": 3
+            "name": "Biztonsági kockázat",
+            "count": 4
           },
           {
-            "name": "Biztonsági kockázat",
+            "name": "Ukrajna és Oroszország",
             "count": 3
           },
           {
@@ -1616,17 +1530,17 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
+          "mastodon": 8,
           "x": 0
         },
         "category_counts": {
+          "security": 4,
           "ukraine_russia": 3,
-          "security": 3,
           "government_crisis": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 369,
+        "quality_total": 416,
         "top_posts": [
           {
             "title": "",
@@ -1825,22 +1739,30 @@
           },
           {
             "title": "",
-            "text": "Today in Labor History June 30, 1648: The Chmielnicki Uprising began, a 9-year Cossack rebellion in the eastern territories of the Polish-Lithuanian Commonwealth. Cossacks, Tatars and Ukrainian peasants allied against Polish domination. There were rampant atrocities, particularly by Cossacks, against Catholics and Jewish civilians, and equally violent repris",
-            "url": "https://kolektiva.social/@MikeDunnAuthor/116839796196656555",
+            "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
+            "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
             "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Tue, 30 Jun 2026 15:36:44 +0000",
+            "tag": "hungary",
+            "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
             "matched_countries": [
-              "poland",
+              "estonia",
+              "latvia",
               "lithuania"
             ],
             "country_confidence": {
-              "poland": 2,
-              "lithuania": 2
+              "estonia": 1,
+              "latvia": 1,
+              "lithuania": 1
             },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
             "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
@@ -1850,12 +1772,12 @@
               {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
-                "hits": 1,
+                "hits": 2,
                 "weight": 7
               }
             ],
-            "geopolitical_score": 37,
-            "quality_score": 40,
+            "geopolitical_score": 51,
+            "quality_score": 54,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1868,19 +1790,21 @@
   ],
   "posts": [
     {
-      "title": "Russia Urgently Halts Rail Crossings at Borders With Finland, Estonia, Latvia",
-      "text": "&#32; submitted by &#32; /u/readher [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1ujzppr/russia_urgently_halts_rail_crossings_at_borders/",
-      "source": "reddit",
-      "tag": "europe",
-      "seen_date": "2026-06-30T19:54:59+00:00",
+      "title": "",
+      "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
+      "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
       "matched_countries": [
         "estonia",
-        "latvia"
+        "latvia",
+        "lithuania"
       ],
       "country_confidence": {
         "estonia": 1,
-        "latvia": 1
+        "latvia": 1,
+        "lithuania": 1
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -1894,99 +1818,19 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 1,
+          "hits": 3,
           "weight": 9
         },
         {
           "category": "foreign_influence",
           "label": "Külső befolyás",
-          "hits": 1,
+          "hits": 2,
           "weight": 7
         }
       ],
-      "geopolitical_score": 26,
-      "quality_score": 25,
-      "source_reliability": 1,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "Hungary opposes scaling down EU protections for Ukrainian men",
-      "text": "&#32; submitted by &#32; /u/Haunting_Switch3463 [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1uk1s6v/hungary_opposes_scaling_down_eu_protections_for/",
-      "source": "reddit",
-      "tag": "europe",
-      "seen_date": "2026-06-30T21:11:50+00:00",
-      "matched_countries": [
-        "hungary"
-      ],
-      "country_confidence": {
-        "hungary": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 14,
-      "quality_score": 13,
-      "source_reliability": 1,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "Latvia will build a joint drone production facility with Ukraine as the country faces increasing threats along its border with Russia",
-      "text": "&#32; submitted by &#32; /u/TheExpressUS [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/latvia/comments/1uiq4fz/latvia_will_build_a_joint_drone_production/",
-      "source": "reddit",
-      "tag": "latvia",
-      "seen_date": "2026-06-29T11:42:40+00:00",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 48,
-      "quality_score": 47,
-      "source_reliability": 1,
+      "geopolitical_score": 51,
+      "quality_score": 54,
+      "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
@@ -2017,6 +1861,68 @@
       ],
       "geopolitical_score": 9,
       "quality_score": 12,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🇵🇱 Poland Official alert: Red Thunderstorm warning Area: Śląskie Province Bielski County Severity: Red Red Thunderstorm Warning issued for Poland - Śląskie Province Bielski County Weather Now helps track alerts, radar, wind, rain, and hourly changes. Source: MeteoAlarm https:// meteoalarm.org?geocode=EMMA_ID :PL2402 App Store: https:// apps.apple.com/us/app/",
+      "url": "https://mastodon.social/@weathernow/116845003836870383",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Wed, 01 Jul 2026 13:41:06 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 12,
+      "quality_score": 15,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Mondi Investments v # Poland # ICSID Case No. ARB(AF)/24/1 June 30, 2026 - The Tribunal renders its award. https:// icsid.worldbank.org/cases/case -database/case-detail?CaseNo=ARB(AF)/24/1",
+      "url": "https://mastodon.social/@ogeltdm/116844430712809130",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Wed, 01 Jul 2026 11:15:21 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 13,
+      "quality_score": 16,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -2505,16 +2411,16 @@
     },
     {
       "title": "",
-      "text": "# Poland is one of the most restrictive countries in Europe for # LGBTQ rights. Neither marriages nor civil partnerships for same-sex couples are legal there. But as of late May, Poland has legalised the recognition of same-sex marriages performed in third countries, following a ruling by the European Court of Justice. As a result, Polish same-sex couples ha",
-      "url": "https://mastodon.social/@Vittoria/116839816662000542",
+      "text": "I'm so old that I remember # EuRuKo being affordable for people from not-so-wealthy countries. But I guess 🇨🇿 # Czechia hit inflation too for # EuRuKo2026 . It was nice that # RubyConferences once were affordable for everybody. It made you meet people that otherwise wouldn't have come. I felt this shift in the community in the recent past. But maybe next yea",
+      "url": "https://ruby.social/@alexanderadam/116844315341651508",
       "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 30 Jun 2026 15:41:56 +0000",
+      "tag": "czechia",
+      "seen_date": "Wed, 01 Jul 2026 10:46:00 +0000",
       "matched_countries": [
-        "poland"
+        "czechia"
       ],
       "country_confidence": {
-        "poland": 2
+        "czechia": 2
       },
       "event_category": "eu_rule_of_law",
       "event_category_label": "EU / jogállamiság",
@@ -2524,106 +2430,18 @@
           "label": "EU / jogállamiság",
           "hits": 1,
           "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
         }
       ],
-      "geopolitical_score": 6,
-      "quality_score": 9,
+      "geopolitical_score": 9,
+      "quality_score": 12,
       "source_reliability": 3,
       "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Today in Labor History June 30, 1648: The Chmielnicki Uprising began, a 9-year Cossack rebellion in the eastern territories of the Polish-Lithuanian Commonwealth. Cossacks, Tatars and Ukrainian peasants allied against Polish domination. There were rampant atrocities, particularly by Cossacks, against Catholics and Jewish civilians, and equally violent repris",
-      "url": "https://kolektiva.social/@MikeDunnAuthor/116839796196656555",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 30 Jun 2026 15:36:44 +0000",
-      "matched_countries": [
-        "poland",
-        "lithuania"
-      ],
-      "country_confidence": {
-        "poland": 2,
-        "lithuania": 2
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 37,
-      "quality_score": 40,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇺🇦Russian terrorists attacked civilians in the Kharkiv region, injuring seven people (more) https://www. ukrinform.net/rubric-ato/41392 15-injuries-reported-as-russian-drone-strikes-bohodukhiv-in-kharkiv-region.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Bulgaria # Sofia # Headlines # Polan",
-      "url": "https://mastodon.online/@SocraticEthics/116839753587455483",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 30 Jun 2026 15:25:54 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 72,
-      "quality_score": 77,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -2795,47 +2613,6 @@
       ],
       "geopolitical_score": 44,
       "quality_score": 49,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "# Temperature records tumble across # Europe as # heatwave moves east More than 191m people in Europe face temperatures of at least 35C degrees on Sunday, with extreme # heat warnings in # Germany , # Czechia , # Poland and # Hungary https://www. theguardian.com/environment/20 26/jun/28/temperature-records-tumble-across-europe-as-heatwave-moves-east?CMP=Shar",
-      "url": "https://norden.social/@juergenwiese/116827537244349148",
-      "source": "mastodon",
-      "tag": "czechia",
-      "seen_date": "Sun, 28 Jun 2026 11:39:07 +0000",
-      "matched_countries": [
-        "czechia",
-        "hungary",
-        "poland"
-      ],
-      "country_confidence": {
-        "czechia": 2,
-        "hungary": 1,
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 21,
-      "quality_score": 26,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -3044,16 +2821,16 @@
     },
     {
       "title": "",
-      "text": "Same mountain, different angle. Brought the drone lower to capture the details. • #rhododendron #wildflowers #photo #mountains #nature #naturelovers #outdoors #landscape #hiking #aerialviews #photography #naturephotography #mountainsphotography #dronephotography #bucegi #romania",
-      "url": "https://pixelfed.social/p/ciprian.parvan/977851116411048430",
+      "text": "Summitul # NATO din 🇹🇷#Turcia. De ce aliații evită să vorbească despre problemele legate de drepturile omului în țara lui # Erdoğan . 🔗 https:// stirileprotv.ro/stiri/internat ional/summitul-nato-din-turcia-de-ce-aliatii-evita-sa-vorbeasca-despre-problemele-legate-de-drepturile-omului-in-tara-lui-erdogan.html # Știri # România",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/116844767050961009",
       "source": "mastodon",
       "tag": "romania",
-      "seen_date": "Wed, 01 Jul 2026 08:31:13 +0000",
+      "seen_date": "Wed, 01 Jul 2026 12:40:53 +0000",
       "matched_countries": [
         "romania"
       ],
       "country_confidence": {
-        "romania": 1
+        "romania": 5
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -3065,8 +2842,141 @@
           "weight": 10
         }
       ],
-      "geopolitical_score": 10,
-      "quality_score": 13,
+      "geopolitical_score": 14,
+      "quality_score": 19,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russia temporarily closes rail border crossings with Estonia, Latvia and Finland Russia's government has decided to temporarily suspend, starting July 1, the movement of people, vehicles, goods and cargo through several rail border crossing points on its borders with Finland, Estonia and Latvia. https:// news.err.ee/1610067124/russia- temporarily-closes-rail",
+      "url": "https://mastodon.social/@publicnewsfeed/116845141446974674",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Wed, 01 Jul 2026 14:16:06 +0000",
+      "matched_countries": [
+        "estonia",
+        "latvia"
+      ],
+      "country_confidence": {
+        "estonia": 2,
+        "latvia": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 43,
+      "quality_score": 46,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russia closes its railway borders with Finland, Estonia and Latvia. In an unexpected move, Russia announced several railway border crossings with Finland, Estonia and Latvia to be “temporarily” shut down. Could this indicate an upcoming mobilisation in Russia as Moscow lacks troops for its ongoing all-out war against Ukraine? https:// mediafaro.org/article/2",
+      "url": "https://mastodon.mediafaro.org/@mf_newsdigest/116844154611235562",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Wed, 01 Jul 2026 10:05:08 +0000",
+      "matched_countries": [
+        "estonia",
+        "latvia"
+      ],
+      "country_confidence": {
+        "estonia": 1,
+        "latvia": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 66,
+      "quality_score": 69,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "In Estonia, youth may gain the right to vote and run as candidates in elections to the European Parliament. Hopefully, the Estonian Parliament will approve amendments to the election law, so the age allowing voting will be lowered to 16 years old and the age allowing to become candidate to the European Parliament will be lowered to 18 years old. This change ",
+      "url": "https://vebinet.com/@dawid/116844085369507241",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Wed, 01 Jul 2026 09:47:31 +0000",
+      "matched_countries": [
+        "estonia"
+      ],
+      "country_confidence": {
+        "estonia": 6
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 2,
+          "weight": 8
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 2,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 26,
+      "quality_score": 29,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -3625,35 +3535,24 @@
     },
     {
       "title": "",
-      "text": "@ MAKS23 │ 💀 💀 │ 💀 💀 │ # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands",
-      "url": "https://mastodon.social/@Ezpen/116828382341148812",
+      "text": "Join the Conversation | Focus Groups - The Collective Act LGBT House, Wednesday, July 8 at 06:15 PM GMT+3 What does it mean to care for others while also caring for yourself? Are you a youth worker, teacher, facilitator, mentor, NGO worker, psychologist, social scientist, trainer, community organizer, or someone working closely with young people and communit",
+      "url": "https://kviriem.lv/event/join-the-conversation-or-focus-groups-the-collective-act",
       "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Sun, 28 Jun 2026 15:14:02 +0000",
+      "tag": "latvia",
+      "seen_date": "Wed, 01 Jul 2026 09:50:04 +0000",
       "matched_countries": [
-        "poland",
-        "estonia",
         "latvia"
       ],
       "country_confidence": {
-        "poland": 1,
-        "estonia": 1,
-        "latvia": 1,
-        "lithuania": 1
+        "latvia": 5
       },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
       "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
         {
           "category": "eu_rule_of_law",
           "label": "EU / jogállamiság",
-          "hits": 1,
+          "hits": 2,
           "weight": 5
         }
       ],
@@ -3956,55 +3855,6 @@
     },
     {
       "title": "",
-      "text": "🇱🇻🇺🇦 # Latvia will build a joint drone manufacturing facility with # Ukraine near its border with # Russia , Latvian Prime Minister Andris Kulbergs said on June 29. https://www. pravda.com.ua/eng/news/2026/06 /29/8041552/",
-      "url": "https://mastodon.social/@rvps2001/116832468340962876",
-      "source": "mastodon",
-      "tag": "latvia",
-      "seen_date": "Mon, 29 Jun 2026 08:33:10 +0000",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 53,
-      "quality_score": 56,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "Lithuania, Mindaugas Sinkevičius (LSDP-S&D) government investiture vote: For: 80 ✔️ Against: 2 Abstain: 28 Cabinet: centre-left LSDP (S&D), green and centre-left DSVL (G/EFA), conservative and agrarian LVŽS (ECR), conservative LLRA KŠS (ECR). # Lithuania ➤ https:// europeelects.eu/lithuania/",
       "url": "https://mastodon.social/@europeelects/116839092324766819",
       "source": "mastodon",
@@ -4178,6 +4028,48 @@
     },
     {
       "title": "",
+      "text": "@ MAKS23 │ 💀 💀 │ 💀 💀 │ # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands",
+      "url": "https://mastodon.social/@Ezpen/116828382341148812",
+      "source": "mastodon",
+      "tag": "lithuania",
+      "seen_date": "Sun, 28 Jun 2026 15:14:02 +0000",
+      "matched_countries": [
+        "poland",
+        "estonia",
+        "latvia"
+      ],
+      "country_confidence": {
+        "poland": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 14,
+      "quality_score": 17,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "│ 💀 💀 │ 🇺🇸 🇺🇸 │ 💀 💀 │ 🇺🇸 Donald Trump's a rotten GANGSTER! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands",
       "url": "https://mastodon.social/@Ezpen/116828360014217756",
       "source": "mastodon",
@@ -4268,6 +4160,43 @@
     },
     {
       "title": "",
+      "text": "Schluss mit freiwillig: Was das neue Bundeswehr-Gesetz für Firmen bedeutet Mit dem Reservestärkungsgesetz von Boris Pistorius müssen Betriebe Mitarbeiter für Übungen freistellen. Droht im Ernstfall die Wehrpflicht? https://www. telepolis.de/article/Schluss-m it-freiwillig-Was-das-neue-Bundeswehr-Gesetz-fuer-Firmen-bedeutet-11350565.html?wt_mc=sm.red.tp.masto",
+      "url": "https://social.heise.de/@telepolis/116844500128830806",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Wed, 01 Jul 2026 11:33:00 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 19,
+      "quality_score": 24,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "Andrej Babiš (ANO) vyzval Petra Pavla, aby si rozmyslel účast na summitu NATO v Ankaře, prezident mu vzkázal, že poletí. Tím ale spor nekončí. Vášně teď rozdmýchává boj o vedení delegace. Podle právničky však Pavel udělal jednu chybu. Tón: : mírně negativní # česko # gdelt # andrejBabiš # ministerstvoZahraničníchVěcí # nato https://www. blesk.cz/clanek/zprav",
       "url": "https://rockosbasilisk.com/@slovensko/116843074767716144",
       "source": "mastodon",
@@ -4299,67 +4228,16 @@
     },
     {
       "title": "",
-      "text": "🟡 Border Closure | 8/10 🇷🇺 🇱🇻 🇫🇮 Russia closes border crossings with Latvia, Finland, and Estonia The Russian government has closed several border crossings with Latvia, Finland, and Estonia, according to an official decree. # OSINT # NewsGroup # BorderClosure # Russia # NATO",
-      "url": "https://social.vir.group/@analytics/116840558586793458",
+      "text": "The Ukrainian parliament approved a bill to establish a national pantheon for historical leaders. This initiative, covering various historical eras, is contributing to ongoing diplomatic tensions between Ukraine and Poland. https:// kyivindependent.com/ukrainian- parliament-approves-creating-pantheon-to-commemorate-national-heroes/ # Ukraine # Russia",
+      "url": "https://mastodon.social/@hanse_mina/116845070904388059",
       "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Tue, 30 Jun 2026 18:50:37 +0000",
-      "matched_countries": [
-        "estonia",
-        "latvia"
-      ],
-      "country_confidence": {
-        "estonia": 1,
-        "latvia": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 57,
-      "quality_score": 62,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Poland warns Russia may exploit tensions with Ukraine for sabotage The Polish government has warned that Russia may exploit tensions in relations between Ukraine and Poland to carry out malicious actions. https://www. pravda.com.ua/eng/news/2026/07 /01/8041902/ # news # ukraine",
-      "url": "https://mstdn.social/@pravda/116844002213025086",
-      "source": "mastodon",
-      "tag": "ukraine",
-      "seen_date": "Wed, 01 Jul 2026 09:26:22 +0000",
+      "tag": "russia",
+      "seen_date": "Wed, 01 Jul 2026 13:58:10 +0000",
       "matched_countries": [
         "poland"
       ],
       "country_confidence": {
-        "poland": 5
+        "poland": 1
       },
       "event_category": "ukraine_russia",
       "event_category_label": "Ukrajna és Oroszország",
@@ -4367,7 +4245,7 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 3,
+          "hits": 4,
           "weight": 9
         },
         {
@@ -4383,8 +4261,8 @@
           "weight": 7
         }
       ],
-      "geopolitical_score": 45,
-      "quality_score": 48,
+      "geopolitical_score": 54,
+      "quality_score": 57,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4393,43 +4271,43 @@
     },
     {
       "title": "",
-      "text": "NRK: Order 138. “NRK has worked together with Nordic public broadcasters and Estonian Delfi to uncover the ongoing Russian military buildup along the Nato border. We have also conducted a data investigation to identify and examine 120 areas that have been blurred by the Russian map service Yandex Maps.” https://rbfirehose.com/2026/07/01/nrk-order-138/",
-      "url": "https://rbfirehose.com/2026/07/01/nrk-order-138/",
+      "text": "Prices in Russia for imported Belarusian gasoline nearly double in a month amid fuel crisis https:// meduza.io/en/news/2026/07/01/p rices-in-russia-for-imported-belarusian-gasoline-nearly-double-in-a-month-amid-fuel-crisis # Meduza # Russia # Belarus",
+      "url": "https://mastodon.social/@meduza_bot/116844901323716440",
       "source": "mastodon",
       "tag": "russia",
-      "seen_date": "Wed, 01 Jul 2026 07:40:42 +0000",
+      "seen_date": "Wed, 01 Jul 2026 13:15:02 +0000",
       "matched_countries": [
-        "estonia"
+        "lithuania"
       ],
       "country_confidence": {
-        "estonia": 2
+        "lithuania": 1
       },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
       "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 2,
+          "hits": 1,
           "weight": 9
         },
         {
           "category": "foreign_influence",
           "label": "Külső befolyás",
-          "hits": 1,
+          "hits": 2,
           "weight": 7
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
         }
       ],
-      "geopolitical_score": 59,
-      "quality_score": 64,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
+      "geopolitical_score": 30,
+      "quality_score": 33,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
