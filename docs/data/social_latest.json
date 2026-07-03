@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02 19:17 UTC",
+  "updated_at": "2026-07-03 02:14 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -9,7 +9,7 @@
       {
         "country": "hungary",
         "status_code": 402,
-        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
       }
     ],
     "collected": 0
@@ -20,16 +20,16 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 6,
-        "negative": 2,
-        "positive": 0,
-        "index": 50,
+        "mentions": 9,
+        "negative": 5,
+        "positive": 1,
+        "index": 68,
         "x_mentions": 0,
-        "reddit_mentions": 0,
-        "mastodon_mentions": 6,
+        "reddit_mentions": 1,
+        "mastodon_mentions": 8,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 3,
-        "geopolitical_score": 289,
+        "reliable_sources": 4,
+        "geopolitical_score": 359,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -37,36 +37,47 @@
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 2
+            "count": 3
+          },
+          {
+            "name": "Külső befolyás",
+            "count": 1
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 6,
+          "reddit": 1,
+          "mastodon": 8,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 2,
-          "security": 4
+          "foreign_influence": 1,
+          "government_crisis": 1,
+          "security": 4,
+          "ukraine_russia": 3
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 313,
+        "quality_total": 390,
         "top_posts": [
           {
             "title": "",
-            "text": "Not to defend Trump and his fellow nazi punks, the oil-Arabs in the vicinity have been begging for an excuse to sell oil in Yuan and other currency. So with # Iran as the excuse Trump created a condition where they can't, unless he approves of it, and therefore win/lose with Iran is win/win with UAE/Qat/SA/Kuwa gangsters. # Venezuela and # Nigeria are \"under",
-            "url": "https://kolektiva.social/@iriyan/116846872036697110",
+            "text": "The Kushner-Rama Albania rip-off stinks more # albania # epsteinclass # ukraine # hungary # poland # spain # france # oligarchy # corruption # UN # world # Israel # russia # war # justice # law # crime # news # eu # europe # nato # australia # japan # Canada # UK # democracy # meidastouch # reddit # international # resistance https:// flipboard.social/@NewsD",
+            "url": "https://mstdn.social/@PDMU_2Alt/116852828499993848",
             "source": "mastodon",
             "tag": "hungary",
-            "seen_date": "Wed, 01 Jul 2026 21:36:13 +0000",
+            "seen_date": "Thu, 02 Jul 2026 22:51:01 +0000",
             "matched_countries": [
-              "hungary"
+              "hungary",
+              "poland"
             ],
             "country_confidence": {
-              "hungary": 5,
-              "lithuania": 1
+              "hungary": 1,
+              "poland": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -84,9 +95,15 @@
                 "weight": 9
               },
               {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
-                "hits": 2,
+                "hits": 1,
                 "weight": 7
               },
               {
@@ -94,18 +111,12 @@
                 "label": "EU / jogállamiság",
                 "hits": 2,
                 "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
               }
             ],
             "geopolitical_score": 69,
-            "quality_score": 72,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "quality_score": 74,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -324,20 +335,20 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 28,
+        "mentions": 29,
         "negative": 18,
         "positive": 2,
         "index": 76,
         "x_mentions": 0,
-        "reddit_mentions": 1,
-        "mastodon_mentions": 27,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 29,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 17,
-        "geopolitical_score": 1437,
+        "reliable_sources": 16,
+        "geopolitical_score": 1382,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 21
+            "count": 22
           },
           {
             "name": "Biztonsági kockázat",
@@ -346,17 +357,17 @@
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 27,
+          "reddit": 0,
+          "mastodon": 29,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 21,
-          "security": 7
+          "security": 7,
+          "ukraine_russia": 22
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 1551,
+        "quality_total": 1501,
         "top_posts": [
           {
             "title": "",
@@ -464,11 +475,11 @@
           },
           {
             "title": "",
-            "text": "⛔️⚠️President Zelensky urges faster air defense deliveries after deadly Russian act of mass terrorism targeting civilians (more) https://www. ukrinform.net/rubric-polytics/ 4140143-zelensky-urges-faster-air-defense-deliveries-after-deadly-russian-strike.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # ",
-            "url": "https://mastodon.online/@SocraticEthics/116851902069917599",
+            "text": "⚠️🇺🇦Russian terrorists target civilian postal vehicle in Sumy region, injuring two people (more) https://www. ukrinform.net/rubric-ato/41401 96-russian-drone-strikes-postal-vehicle-in-sumy-region-injuring-two.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # ",
+            "url": "https://mastodon.online/@SocraticEthics/116852969462936202",
             "source": "mastodon",
             "tag": "poland",
-            "seen_date": "Thu, 02 Jul 2026 18:55:25 +0000",
+            "seen_date": "Thu, 02 Jul 2026 23:26:52 +0000",
             "matched_countries": [
               "poland"
             ],
@@ -491,12 +502,6 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
                 "category": "protest",
                 "label": "Tiltakozás",
                 "hits": 1,
@@ -515,57 +520,8 @@
                 "weight": 5
               }
             ],
-            "geopolitical_score": 80,
-            "quality_score": 85,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "⛔️⚠️War crime Evidence - Police recover Russian Kh-69 missile fragments with cluster submunitions in Kyiv (PHOTOS, VIDEO, more) https://www. ukrinform.net/rubric-ato/41400 66-police-recover-russian-kh69-missile-fragments-with-cluster-submunitions-in-kyiv.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN #",
-            "url": "https://mastodon.online/@SocraticEthics/116851790561059395",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Thu, 02 Jul 2026 18:27:03 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 5
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 74,
-            "quality_score": 79,
+            "geopolitical_score": 72,
+            "quality_score": 77,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -626,6 +582,55 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "https:// t.me/warriorsukrainian/109175 ⚠️⛔️War crime video of Russian terrorist strike on public swimming pool in Zaporizhzhia (VIDEO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # Warsaw # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+            "url": "https://mastodon.online/@SocraticEthics/116851997896125407",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Thu, 02 Jul 2026 19:19:47 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 5
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 5,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "label": "Tiltakozás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 71,
+            "quality_score": 76,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -636,22 +641,22 @@
       "name_hu": "Szlovákia",
       "social_signal": {
         "mentions": 4,
-        "negative": 1,
-        "positive": 1,
-        "index": 33,
+        "negative": 0,
+        "positive": 0,
+        "index": 30,
         "x_mentions": 0,
         "reddit_mentions": 0,
         "mastodon_mentions": 4,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 2,
-        "geopolitical_score": 174,
+        "geopolitical_score": 126,
         "topics": [
           {
             "name": "Biztonsági kockázat",
             "count": 3
           },
           {
-            "name": "Ukrajna és Oroszország",
+            "name": "Belpolitikai feszültség",
             "count": 1
           }
         ],
@@ -663,61 +668,12 @@
         },
         "category_counts": {
           "security": 3,
-          "ukraine_russia": 1
+          "government_crisis": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 190,
+        "quality_total": 142,
         "top_posts": [
-          {
-            "title": "",
-            "text": "The Prime Minister of # Slovakia , # Fico , stated that the West is practically in a state of war with # Russia : I belong to a very small, very small, group of prime ministers within the European Union who support dialogue, while the majority of # EU member states support the war in # Ukraine . Today, the Western world is practically in a state of war with ",
-            "url": "https://social.roadfm.fr/@gordonhaas_q/116849838680984289",
-            "source": "mastodon",
-            "tag": "slovakia",
-            "seen_date": "Thu, 02 Jul 2026 10:10:40 +0000",
-            "matched_countries": [
-              "slovakia"
-            ],
-            "country_confidence": {
-              "slovakia": 6
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 2,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 56,
-            "quality_score": 59,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Ukraine urgently appeals to nearly 40 allies for Patriot interceptors # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Trump # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spa",
@@ -861,6 +817,37 @@
             ],
             "geopolitical_score": 10,
             "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "SLOVENSKO - V relácii Analýzy 24 diskutovali minister obrany Robert Kaliňák (Smer-SSD) a poslanec parlamentu Juraj Krúpa (SaS). Tón: : mierne negatívny # slovakia # gdelt # politika # analýzy24 https://www. noviny.sk/slovensko/1229501-an alyzy-24-falosny-tehlovy-mur-odzrkadluje-tuto-vladu-tvrdi-krupa",
+            "url": "https://rockosbasilisk.com/@slovensko/116852333008678897",
+            "source": "mastodon",
+            "tag": "slovakia",
+            "seen_date": "Thu, 02 Jul 2026 20:45:00 +0000",
+            "matched_countries": [
+              "slovakia"
+            ],
+            "country_confidence": {
+              "slovakia": 6
+            },
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1169,39 +1156,44 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 2,
+        "mentions": 5,
         "negative": 1,
         "positive": 0,
-        "index": 21,
+        "index": 38,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 2,
-        "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 1,
-        "geopolitical_score": 64,
+        "mastodon_mentions": 5,
+        "main_social_topic": "Biztonsági kockázat",
+        "reliable_sources": 3,
+        "geopolitical_score": 114,
         "topics": [
+          {
+            "name": "Biztonsági kockázat",
+            "count": 3
+          },
           {
             "name": "Ukrajna és Oroszország",
             "count": 1
           },
           {
-            "name": "Biztonsági kockázat",
+            "name": "Külső befolyás",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 5,
           "x": 0
         },
         "category_counts": {
           "ukraine_russia": 1,
-          "security": 1
+          "foreign_influence": 1,
+          "security": 3
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 72,
+        "quality_total": 135,
         "top_posts": [
           {
             "title": "",
@@ -1252,10 +1244,78 @@
           },
           {
             "title": "",
+            "text": "Raport: 🇷🇺#Rusia ar fi spionat cu drone peste 12 state # NATO timp de 18 luni, fără să fie oprită. Cea mai afectată țară. 🔗 https:// stirileprotv.ro/stiri/internat ional/raport-rusia-ar-fi-spionat-cu-drone-peste-12-tari-nato-timp-de-18-luni-fara-sa-fie-oprita-care-a-fost-cea-mai-afectata.html # Știri # România",
+            "url": "https://mstdn.social/@RomaniaTeIubesc/116852246105226919",
+            "source": "mastodon",
+            "tag": "nato",
+            "seen_date": "Thu, 02 Jul 2026 20:22:54 +0000",
+            "matched_countries": [
+              "romania"
+            ],
+            "country_confidence": {
+              "romania": 5
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 2,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "SACEUR: 🌍#Europa preia tot mai multe responsabilități în # NATO după retragerea parțială a 🇺🇸#SUA. 🔗 https:// stirileprotv.ro/stiri/internat ional/saceur-europa-preia-tot-mai-multe-responsabilitati-in-nato-dupa-retragerea-partiala-a-sua.html # Știri # România # UE # UniuneaEuropeană",
+            "url": "https://mstdn.social/@RomaniaTeIubesc/116852277712625861",
+            "source": "mastodon",
+            "tag": "romania",
+            "seen_date": "Thu, 02 Jul 2026 20:30:57 +0000",
+            "matched_countries": [
+              "romania"
+            ],
+            "country_confidence": {
+              "romania": 5
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 24,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "# NATO , agentul de vânzări al lui # Trump . Înarmarea 🌍#Europei înseamnă 200.000 de joburi și 300 miliarde 💵#USD pentru 🇺🇸#SUA. 🔗 https:// stirileprotv.ro/stiri/internat ional/nato-agentul-de-vanzari-al-lui-trump-inarmarea-europei-inseamna-200-000-de-joburi-si-300-miliarde-de-dolari-pentru-sua.html # Știri # România # UE # UniuneaEuropeană",
             "url": "https://mstdn.social/@RomaniaTeIubesc/116851620862759866",
             "source": "mastodon",
-            "tag": "romania",
+            "tag": "nato",
             "seen_date": "Thu, 02 Jul 2026 17:43:54 +0000",
             "matched_countries": [
               "romania"
@@ -1286,6 +1346,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Bărbatul care a intrat cu avionul în cea mai înaltă clădire din # Beijing a făcut asta pentru că nu putea să doarmă. 🔗 https:// stirileprotv.ro/stiri/internat ional/barbatul-care-a-intrat-cu-avionul-in-cea-mai-inalta-cladire-din-beijing-a-facut-asta-pentru-ca-nu-putea-sa-doarma.html # Știri # România # China",
+            "url": "https://mstdn.social/@RomaniaTeIubesc/116852489850168213",
+            "source": "mastodon",
+            "tag": "romania",
+            "seen_date": "Thu, 02 Jul 2026 21:24:54 +0000",
+            "matched_countries": [
+              "romania"
+            ],
+            "country_confidence": {
+              "romania": 5
+            },
+            "event_category": "foreign_influence",
+            "event_category_label": "Külső befolyás",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 7,
+            "quality_score": 10,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1295,16 +1386,16 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 15,
+        "mentions": 16,
         "negative": 2,
-        "positive": 0,
-        "index": 59,
+        "positive": 1,
+        "index": 56,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 15,
+        "mastodon_mentions": 16,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 1,
-        "geopolitical_score": 539,
+        "geopolitical_score": 556,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -1313,21 +1404,26 @@
           {
             "name": "Ukrajna és Oroszország",
             "count": 7
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
+          "mastodon": 16,
           "x": 0
         },
         "category_counts": {
+          "government_crisis": 1,
           "ukraine_russia": 7,
           "security": 8
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 586,
+        "quality_total": 606,
         "top_posts": [
           {
             "title": "",
@@ -1483,7 +1579,7 @@
             "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
             "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
             "source": "mastodon",
-            "tag": "estonia",
+            "tag": "latvia",
             "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
             "matched_countries": [
               "estonia",
@@ -1590,16 +1686,16 @@
       "name_en": "Latvia",
       "name_hu": "Lettország",
       "social_signal": {
-        "mentions": 14,
+        "mentions": 13,
         "negative": 2,
         "positive": 0,
         "index": 55,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 14,
+        "mastodon_mentions": 13,
         "main_social_topic": "Ukrajna és Oroszország",
         "reliable_sources": 0,
-        "geopolitical_score": 462,
+        "geopolitical_score": 406,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
@@ -1608,76 +1704,22 @@
           {
             "name": "Biztonsági kockázat",
             "count": 5
-          },
-          {
-            "name": "EU / jogállamiság",
-            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
           "ukraine_russia": 8,
-          "security": 5,
-          "eu_rule_of_law": 1
+          "security": 5
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 504,
+        "quality_total": 445,
         "top_posts": [
-          {
-            "title": "",
-            "text": "Ukrainian President Volodymyr Zelensky vowed Thursday to retaliate for Russia's strikes on Kyiv that killed at least 21 people and wounded dozens, as he visited an apartment block partially destroyed in the attack. Asked by reporters whether Ukraine would retaliate, Zelensky replied: \"Definitely\". FRANCE 24's Antonia Kerrigan reports. # Ukraine # Russia # wa",
-            "url": "https://mastodon.social/@Vittoria/116851852012410286",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Thu, 02 Jul 2026 18:42:41 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 4
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 70,
-            "quality_score": 73,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Russia closes its railway borders with Finland, Estonia and Latvia. In an unexpected move, Russia announced several railway border crossings with Finland, Estonia and Latvia to be “temporarily” shut down. Could this indicate an upcoming mobilisation in Russia as Moscow lacks troops for its ongoing all-out war against Ukraine? https:// mediafaro.org/article/2",
@@ -1728,7 +1770,7 @@
             "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
             "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
             "source": "mastodon",
-            "tag": "estonia",
+            "tag": "latvia",
             "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
             "matched_countries": [
               "estonia",
@@ -1883,6 +1925,57 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Russia temporarily closes rail border crossings with Estonia, Latvia and Finland Russia's government has decided to temporarily suspend, starting July 1, the movement of people, vehicles, goods and cargo through several rail border crossing points on its borders with Finland, Estonia and Latvia. https:// news.err.ee/1610067124/russia- temporarily-closes-rail",
+            "url": "https://mastodon.social/@publicnewsfeed/116845141446974674",
+            "source": "mastodon",
+            "tag": "latvia",
+            "seen_date": "Wed, 01 Jul 2026 14:16:06 +0000",
+            "matched_countries": [
+              "estonia",
+              "latvia"
+            ],
+            "country_confidence": {
+              "estonia": 2,
+              "latvia": 2
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 43,
+            "quality_score": 46,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1892,56 +1985,51 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 7,
+        "mentions": 6,
         "negative": 0,
-        "positive": 1,
-        "index": 38,
+        "positive": 0,
+        "index": 36,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
+        "mastodon_mentions": 6,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 3,
-        "geopolitical_score": 229,
+        "reliable_sources": 2,
+        "geopolitical_score": 190,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 4
-          },
-          {
-            "name": "Energia és gazdaság",
-            "count": 1
+            "count": 3
           },
           {
             "name": "Belpolitikai feszültség",
-            "count": 1
+            "count": 2
           },
           {
-            "name": "Ukrajna és Oroszország",
+            "name": "Energia és gazdaság",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
+          "mastodon": 6,
           "x": 0
         },
         "category_counts": {
-          "security": 4,
-          "energy_economy": 1,
-          "government_crisis": 1,
-          "ukraine_russia": 1
+          "security": 3,
+          "government_crisis": 2,
+          "energy_economy": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 256,
+        "quality_total": 212,
         "top_posts": [
           {
             "title": "",
             "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
             "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
             "source": "mastodon",
-            "tag": "estonia",
+            "tag": "latvia",
             "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
             "matched_countries": [
               "estonia",
@@ -1979,49 +2067,6 @@
             "quality_score": 54,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Lithuania to lift ban on nukes, president says https://www.politico.eu/article/lithuanias-leaders-want-lift-ban-nukes-president-says/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Nuclearweapons #Military #Defense #NATO",
-            "url": "https://social.espeweb.net/objects/77ddeaee-d8ca-4cc2-b69f-f41e7f4c8f77",
-            "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Thu, 02 Jul 2026 15:59:43 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 51,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -2126,31 +2171,25 @@
           },
           {
             "title": "",
-            "text": "Putin backs additional fuel, airfare, and ferry support for exclave Kaliningrad as gasoline lines grow across the rest of Russia https:// meduza.io/en/news/2026/07/02/p utin-backs-additional-fuel-airfare-and-ferry-support-for-exclave-kaliningrad-as-gasoline-lines-grow-across-the-rest-of-russia # Meduza # Russia # Putin",
-            "url": "https://mastodon.social/@meduza_bot/116851861197867812",
+            "text": "The Lithuanian # parliament has approved the appointment of Mindaugas Sinkevicius, chairman of the Social Democratic Party of # Lithuania , as the country's new prime minister. He now has 15 days to present his cabinet of ministers and a # government programme to parliament. https:// viabaltica.fi/lithuania-parlia ment-votes-to-appoint-new-pm/",
+            "url": "https://mstdn.social/@viabaltica/116852518489021097",
             "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Thu, 02 Jul 2026 18:45:01 +0000",
+            "tag": "lithuania",
+            "seen_date": "Thu, 02 Jul 2026 21:32:11 +0000",
             "matched_countries": [
               "lithuania"
             ],
             "country_confidence": {
-              "lithuania": 4
+              "lithuania": 2
             },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
             "event_categories": [
               {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 3,
+                "weight": 8
               },
               {
                 "category": "energy_economy",
@@ -2159,8 +2198,51 @@
                 "weight": 4
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Lithuania, Mindaugas Sinkevičius (LSDP-S&D) government investiture vote: For: 80 ✔️ Against: 2 Abstain: 28 Cabinet: centre-left LSDP (S&D), green and centre-left DSVL (G/EFA), conservative and agrarian LVŽS (ECR), conservative LLRA KŠS (ECR). # Lithuania ➤ https:// europeelects.eu/lithuania/",
+            "url": "https://mastodon.social/@europeelects/116839092324766819",
+            "source": "mastodon",
+            "tag": "lithuania",
+            "seen_date": "Tue, 30 Jun 2026 12:37:44 +0000",
+            "matched_countries": [
+              "lithuania"
+            ],
+            "country_confidence": {
+              "lithuania": 1
+            },
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -2173,17 +2255,148 @@
   ],
   "posts": [
     {
-      "title": "11 Deported After Russia-Funded Anti-Ukraine Protest Network Exposed in Poland",
-      "text": "&#32; submitted by &#32; /u/UNITED24Media [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1ulkhr7/11_deported_after_russiafunded_antiukraine/",
+      "title": "Leak of EU document confirms existence of Hungarian spy network",
+      "text": "&#32; submitted by &#32; /u/Miao_Yin8964 [link] &#32; [comments]",
+      "url": "https://www.reddit.com/r/europe/comments/1uluzt7/leak_of_eu_document_confirms_existence_of/",
       "source": "reddit",
       "tag": "europe",
-      "seen_date": "2026-07-02T14:53:51+00:00",
+      "seen_date": "2026-07-02T21:22:23+00:00",
       "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 1
+      },
+      "event_category": "foreign_influence",
+      "event_category_label": "Külső befolyás",
+      "event_categories": [
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 15,
+      "quality_score": 14,
+      "source_reliability": 1,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Venice Commission Delegation Meets with President of the Republic in Budapest https:// fed.brid.gy/r/https://european conservative.com/articles/news-corner/venice-commission-delegation-meets-with-president-of-the-republic-in-budapest/",
+      "url": "https://fed.brid.gy/r/https://europeanconservative.com/articles/news-corner/venice-commission-delegation-meets-with-president-of-the-republic-in-budapest/",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 02 Jul 2026 13:23:32 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 4
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 13,
+      "quality_score": 16,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The Kushner-Rama Albania rip-off stinks more # albania # epsteinclass # ukraine # hungary # poland # spain # france # oligarchy # corruption # UN # world # Israel # russia # war # justice # law # crime # news # eu # europe # nato # australia # japan # Canada # UK # democracy # meidastouch # reddit # international # resistance https:// flipboard.social/@NewsD",
+      "url": "https://mstdn.social/@PDMU_2Alt/116852828499993848",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 02 Jul 2026 22:51:01 +0000",
+      "matched_countries": [
+        "hungary",
         "poland"
       ],
       "country_confidence": {
+        "hungary": 1,
         "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 2,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 69,
+      "quality_score": 74,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "RE: https:// digitalcourage.social/@echo_pb reyer/116849906752825989 As with supporting a proxy war against # Russia the ONLY governments that deviate from the Axis powers is some right wing populist, not that there is anything to the left of center in EU Germany funded heavily the dethroning of Orban in # Hungary , being its obstacle, the next to be railroa",
+      "url": "https://kolektiva.social/@iriyan/116852027804424481",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 02 Jul 2026 19:27:23 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 5
       },
       "event_category": "ukraine_russia",
       "event_category_label": "Ukrajna és Oroszország",
@@ -2195,21 +2408,27 @@
           "weight": 9
         },
         {
-          "category": "protest",
-          "label": "Tiltakozás",
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
           "hits": 1,
-          "weight": 7
+          "weight": 8
         },
         {
           "category": "foreign_influence",
           "label": "Külső befolyás",
           "hits": 1,
           "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
         }
       ],
-      "geopolitical_score": 35,
-      "quality_score": 34,
-      "source_reliability": 1,
+      "geopolitical_score": 42,
+      "quality_score": 45,
+      "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
@@ -2454,17 +2673,121 @@
     },
     {
       "title": "",
-      "text": "Not to defend Trump and his fellow nazi punks, the oil-Arabs in the vicinity have been begging for an excuse to sell oil in Yuan and other currency. So with # Iran as the excuse Trump created a condition where they can't, unless he approves of it, and therefore win/lose with Iran is win/win with UAE/Qat/SA/Kuwa gangsters. # Venezuela and # Nigeria are \"under",
-      "url": "https://kolektiva.social/@iriyan/116846872036697110",
+      "text": "Modern Poles don’t want to hear what really happened in Volhynia – Yuriy Vynnychuk \"The hate train has already gained speed, and there’s no stopping it.\" # Bandera # Galicia # history # Poland # Shukhevych # Tribune # Ukraine # UPA # Volhynia # Vynnychuk https:// uatribune.com/en/modern-poles- don-t-want-to-hear-what-really-happened-in-volhynia-yuriy-vynnych",
+      "url": "https://mastodon.social/@uatribune/116853330934281730",
       "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Wed, 01 Jul 2026 21:36:13 +0000",
+      "tag": "poland",
+      "seen_date": "Fri, 03 Jul 2026 00:58:47 +0000",
       "matched_countries": [
-        "hungary"
+        "poland"
       ],
       "country_confidence": {
-        "hungary": 5,
-        "lithuania": 1
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 9,
+      "quality_score": 12,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Warsaw Hospital Scandal Rocks Tusk Government https:// fed.brid.gy/r/https://european conservative.com/articles/news/warsaw-hospital-scandal-rocks-tusk-government/",
+      "url": "https://fed.brid.gy/r/https://europeanconservative.com/articles/news/warsaw-hospital-scandal-rocks-tusk-government/",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 15:48:33 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 8
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 20,
+      "quality_score": 23,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🇵🇱🇺🇦Suspected drug trafficker extradited from Poland to stand trial in Ukraine (more) https://www. ukrinform.net/rubric-crime/413 9796-suspected-drug-trafficker-extradited-from-poland-to-ukraine.html # Ukraine # Poland # Warsaw # Press # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+      "url": "https://mastodon.online/@SocraticEthics/116852978050601588",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 23:29:03 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 46,
+      "quality_score": 49,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⚠️🇺🇦Russian terrorists target civilian postal vehicle in Sumy region, injuring two people (more) https://www. ukrinform.net/rubric-ato/41401 96-russian-drone-strikes-postal-vehicle-in-sumy-region-injuring-two.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # ",
+      "url": "https://mastodon.online/@SocraticEthics/116852969462936202",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 23:26:52 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -2478,13 +2801,160 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 3,
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 72,
+      "quality_score": 77,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⚠️🇺🇦Russian terrorist’s targeted airstrike on civilians in the Donetsk region kills one person, injures two others (More) https://www. ukrinform.net/rubric-ato/41401 87-russian-airstrike-on-oleksandrivka-in-donetsk-region-kills-one-injures-two.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dubli",
+      "url": "https://mastodon.online/@SocraticEthics/116852943359223269",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 23:20:14 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 62,
+      "quality_score": 67,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⚠️🇺🇦Russian terrorists guided bomb attack on civilians in the Kharkiv region kills one, injures several others (more) https://www. ukrinform.net/rubric-ato/41401 85-russian-guided-bomb-attack-on-shevchenkove-in-kharkiv-region-kills-one-injures-several-others.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # ",
+      "url": "https://mastodon.online/@SocraticEthics/116852938200912056",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 23:18:55 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
           "weight": 9
         },
         {
           "category": "foreign_influence",
           "label": "Külső befolyás",
-          "hits": 2,
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 55,
+      "quality_score": 60,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⛔️⚠️Blatant and Flagrant Ongoing Genocide: Death toll from Russian war criminal’s intentional and systemic attack on a public school in Sumy rises to 11, including children (more) https://www. ukrinform.net/rubric-ato/41401 83-death-toll-from-russian-strike-on-school-in-sumy-rises-to-11-including-children.html # Ukraine # WarCrime # Press # Brussels # Media ",
+      "url": "https://mastodon.online/@SocraticEthics/116852933479708434",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 23:17:43 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
           "weight": 7
         },
         {
@@ -2492,18 +2962,196 @@
           "label": "EU / jogállamiság",
           "hits": 2,
           "weight": 5
+        }
+      ],
+      "geopolitical_score": 67,
+      "quality_score": 72,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "https:// youtu.be/Vu0a2_rT6u8 ⚡️🇬🇧Surviving on the Zero - Increasing the Chances of Survival of AFU frontline soldiers (Silicon Curtain VIDEO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # Warsaw # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+      "url": "https://mastodon.online/@SocraticEthics/116852076537841353",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 19:39:47 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
         },
         {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
           "hits": 1,
-          "weight": 4
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 55,
+      "quality_score": 60,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "https:// t.me/liveukraine_media/41326 ⚠️🇺🇦Massive overnight shelling of Kyiv. New details on the aftermath of the attack have emerged. 🔴Kyiv Zoo. Animals were affected: turtles and crocodiles were hit by falling glass and frame debris. All animals are (PHOTOS, more) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News",
+      "url": "https://mastodon.online/@SocraticEthics/116852029178981348",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 19:27:44 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 2,
+          "weight": 5
         }
       ],
       "geopolitical_score": 69,
-      "quality_score": 72,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "quality_score": 74,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "https:// t.me/warriorsukrainian/109175 ⚠️⛔️War crime video of Russian terrorist strike on public swimming pool in Zaporizhzhia (VIDEO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # Warsaw # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+      "url": "https://mastodon.online/@SocraticEthics/116851997896125407",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 19:19:47 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 71,
+      "quality_score": 76,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⚠️⛔️More than 70 foreign diplomats visit site of Russian terror strike in Kyiv to bare personal witness to Russia’s war crimes (PHOTOS, more) https://www. ukrinform.net/rubric-ato/41401 79-more-than-70-foreign-diplomats-visit-site-of-russian-strike-in-kyiv.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN",
+      "url": "https://mastodon.online/@SocraticEthics/116851989275812646",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 02 Jul 2026 19:17:35 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 71,
+      "quality_score": 76,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -2853,494 +3501,29 @@
     },
     {
       "title": "",
-      "text": "⛔️⚠️President Zelensky urges faster air defense deliveries after deadly Russian act of mass terrorism targeting civilians (more) https://www. ukrinform.net/rubric-polytics/ 4140143-zelensky-urges-faster-air-defense-deliveries-after-deadly-russian-strike.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # ",
-      "url": "https://mastodon.online/@SocraticEthics/116851902069917599",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:55:25 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 80,
-      "quality_score": 85,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️⛔️More War Crime evidence against Russia: Nearly 14,000 Russian chemical attacks against Ukrainian forces recorded since February 2022 (more) https://www. ukrinform.net/rubric-ato/41401 36-nearly-14000-russian-chemical-attacks-against-ukrainian-forces-recorded-since-february-2022.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # U",
-      "url": "https://mastodon.online/@SocraticEthics/116851897722046848",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:54:18 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 64,
-      "quality_score": 69,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇺🇦Russian terrorists attack civilians in Kharkiv, injuring three people, including a child (more) https://www. ukrinform.net/rubric-ato/41401 25-russian-strike-hits-gas-station-in-kharkiv-injuring-three-including-child.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines",
-      "url": "https://mastodon.online/@SocraticEthics/116851892458710366",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:52:58 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 66,
-      "quality_score": 71,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "https:// t.me/warriorsukrainian/109171 ⛔️⚠️If partners had fulfilled their promises on time, we might not have had so many victims today, — President Zelensky is forced to admit # Ukraine # WarCrime # Press # Germany # Paris # London # UK # Brussels # Media # ICC # Hague # PACE # UK # OSCE # Berlin # France # CoE # News # UN # US # Dublin # Ireland # Headlin",
-      "url": "https://mastodon.online/@SocraticEthics/116851854390930793",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:43:17 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 72,
-      "quality_score": 77,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️⛔️Another War Crime: Russian terrorists strike on civilian medical facility in Kherson kills doctor, injures nurse (more) https://www. ukrinform.net/rubric-ato/41400 95-russian-strike-on-medical-facility-in-kherson-kills-doctor-injures-nurse.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dubli",
-      "url": "https://mastodon.online/@SocraticEthics/116851815306938054",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:33:21 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 62,
-      "quality_score": 67,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇺🇦Russian terrorists strike on Zaporizhzhia civilian residents injures three people (VIDEO, PHOTOS, more) https://www. ukrinform.net/rubric-ato/41400 77-russian-strike-on-zaporizhzhia-sparks-fires-injures-three.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Polan",
-      "url": "https://mastodon.online/@SocraticEthics/116851799594898501",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:29:21 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 62,
-      "quality_score": 67,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⛔️⚠️War crime Evidence - Police recover Russian Kh-69 missile fragments with cluster submunitions in Kyiv (PHOTOS, VIDEO, more) https://www. ukrinform.net/rubric-ato/41400 66-police-recover-russian-kh69-missile-fragments-with-cluster-submunitions-in-kyiv.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN #",
-      "url": "https://mastodon.online/@SocraticEthics/116851790561059395",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:27:03 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 74,
-      "quality_score": 79,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇺🇦Russian terror strike damages National Academy of Sciences facilities in Kyiv (more) https://www. ukrinform.net/rubric-ato/41400 45-russian-strike-damages-national-academy-of-sciences-facilities-in-kyiv.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # Headlines # Poland # Wa",
-      "url": "https://mastodon.online/@SocraticEthics/116851773952855798",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:22:50 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 71,
-      "quality_score": 76,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇺🇦Russian terrorist attack destroys 800,000 books at BookChef warehouse in Kyiv region (PHOTOS, more) https://www. ukrinform.net/rubric-society/4 140033-russian-attack-destroys-800000-books-at-bookchef-warehouse-in-kyiv-region.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # US # Dublin # Ireland # H",
-      "url": "https://mastodon.online/@SocraticEthics/116851767796379019",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 02 Jul 2026 18:21:16 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 64,
-      "quality_score": 69,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "The Prime Minister of # Slovakia , # Fico , stated that the West is practically in a state of war with # Russia : I belong to a very small, very small, group of prime ministers within the European Union who support dialogue, while the majority of # EU member states support the war in # Ukraine . Today, the Western world is practically in a state of war with ",
-      "url": "https://social.roadfm.fr/@gordonhaas_q/116849838680984289",
+      "text": "SLOVENSKO - V relácii Analýzy 24 diskutovali minister obrany Robert Kaliňák (Smer-SSD) a poslanec parlamentu Juraj Krúpa (SaS). Tón: : mierne negatívny # slovakia # gdelt # politika # analýzy24 https://www. noviny.sk/slovensko/1229501-an alyzy-24-falosny-tehlovy-mur-odzrkadluje-tuto-vladu-tvrdi-krupa",
+      "url": "https://rockosbasilisk.com/@slovensko/116852333008678897",
       "source": "mastodon",
       "tag": "slovakia",
-      "seen_date": "Thu, 02 Jul 2026 10:10:40 +0000",
+      "seen_date": "Thu, 02 Jul 2026 20:45:00 +0000",
       "matched_countries": [
         "slovakia"
       ],
       "country_confidence": {
         "slovakia": 6
       },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
       "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
         {
           "category": "government_crisis",
           "label": "Belpolitikai feszültség",
           "hits": 1,
           "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 2,
-          "weight": 5
         }
       ],
-      "geopolitical_score": 56,
-      "quality_score": 59,
+      "geopolitical_score": 8,
+      "quality_score": 11,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -3691,11 +3874,42 @@
     },
     {
       "title": "",
-      "text": "# NATO , agentul de vânzări al lui # Trump . Înarmarea 🌍#Europei înseamnă 200.000 de joburi și 300 miliarde 💵#USD pentru 🇺🇸#SUA. 🔗 https:// stirileprotv.ro/stiri/internat ional/nato-agentul-de-vanzari-al-lui-trump-inarmarea-europei-inseamna-200-000-de-joburi-si-300-miliarde-de-dolari-pentru-sua.html # Știri # România # UE # UniuneaEuropeană",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/116851620862759866",
+      "text": "Bărbatul care a intrat cu avionul în cea mai înaltă clădire din # Beijing a făcut asta pentru că nu putea să doarmă. 🔗 https:// stirileprotv.ro/stiri/internat ional/barbatul-care-a-intrat-cu-avionul-in-cea-mai-inalta-cladire-din-beijing-a-facut-asta-pentru-ca-nu-putea-sa-doarma.html # Știri # România # China",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/116852489850168213",
       "source": "mastodon",
       "tag": "romania",
-      "seen_date": "Thu, 02 Jul 2026 17:43:54 +0000",
+      "seen_date": "Thu, 02 Jul 2026 21:24:54 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "foreign_influence",
+      "event_category_label": "Külső befolyás",
+      "event_categories": [
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 7,
+      "quality_score": 10,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "SACEUR: 🌍#Europa preia tot mai multe responsabilități în # NATO după retragerea parțială a 🇺🇸#SUA. 🔗 https:// stirileprotv.ro/stiri/internat ional/saceur-europa-preia-tot-mai-multe-responsabilitati-in-nato-dupa-retragerea-partiala-a-sua.html # Știri # România # UE # UniuneaEuropeană",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/116852277712625861",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Thu, 02 Jul 2026 20:30:57 +0000",
       "matched_countries": [
         "romania"
       ],
@@ -3722,6 +3936,37 @@
       "quality_score": 24,
       "source_reliability": 5,
       "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The Social Democratic Party of # Estonia has proposed Chancellor of Justice Ülle Madise as a candidate for # president . Parties in Estonia's ruling coalition expressed support for Madise, who has not given her consent, however. https:// viabaltica.fi/estonia-social-d emocrats-propose-justice-chancellor-for-president/",
+      "url": "https://mstdn.social/@viabaltica/116852251623624651",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Thu, 02 Jul 2026 20:24:19 +0000",
+      "matched_countries": [
+        "estonia"
+      ],
+      "country_confidence": {
+        "estonia": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 2,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 17,
+      "quality_score": 20,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -4237,10 +4482,47 @@
     },
     {
       "title": "",
+      "text": "# Hackers have stolen large amounts of sensitive # data from the state forest management company in # Latvia . A foreign # ransomware group has claimed responsibility for the attack. https:// viabaltica.fi/latvia-major-dat a-leak-at-state-forest-management-company/",
+      "url": "https://mstdn.social/@viabaltica/116852434142899785",
+      "source": "mastodon",
+      "tag": "latvia",
+      "seen_date": "Thu, 02 Jul 2026 21:10:44 +0000",
+      "matched_countries": [
+        "latvia"
+      ],
+      "country_confidence": {
+        "latvia": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "cyber_disinformation",
+          "label": "Kiber és dezinformáció",
+          "hits": 2,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 28,
+      "quality_score": 31,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "Russia temporarily closes rail border crossings with Estonia, Latvia and Finland Russia's government has decided to temporarily suspend, starting July 1, the movement of people, vehicles, goods and cargo through several rail border crossing points on its borders with Finland, Estonia and Latvia. https:// news.err.ee/1610067124/russia- temporarily-closes-rail",
       "url": "https://mastodon.social/@publicnewsfeed/116845141446974674",
       "source": "mastodon",
-      "tag": "estonia",
+      "tag": "latvia",
       "seen_date": "Wed, 01 Jul 2026 14:16:06 +0000",
       "matched_countries": [
         "estonia",
@@ -4291,7 +4573,7 @@
       "text": "Wednesday, July 1, 2026 Ukraine signs deal with Sweden to purchase 16 Gripen E fighter jets . . . . . Russia to halt multiple railway checkpoints on borders with Finland, Estonia, Latvia . . . . . How Ukraine's ultimatum changed the equation for Belarus . . . . . Behind the lies of the latest guest on Tucker Carlson's podcast: a criminal Russian arms dealer ",
       "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-1-2026/",
       "source": "mastodon",
-      "tag": "estonia",
+      "tag": "latvia",
       "seen_date": "Wed, 01 Jul 2026 13:51:04 +0000",
       "matched_countries": [
         "estonia",
@@ -4380,29 +4662,35 @@
     },
     {
       "title": "",
-      "text": "Join the Conversation | Focus Groups - The Collective Act LGBT House, Wednesday, July 8 at 06:15 PM GMT+3 What does it mean to care for others while also caring for yourself? Are you a youth worker, teacher, facilitator, mentor, NGO worker, psychologist, social scientist, trainer, community organizer, or someone working closely with young people and communit",
-      "url": "https://kviriem.lv/event/join-the-conversation-or-focus-groups-the-collective-act",
+      "text": "The Lithuanian # parliament has approved the appointment of Mindaugas Sinkevicius, chairman of the Social Democratic Party of # Lithuania , as the country's new prime minister. He now has 15 days to present his cabinet of ministers and a # government programme to parliament. https:// viabaltica.fi/lithuania-parlia ment-votes-to-appoint-new-pm/",
+      "url": "https://mstdn.social/@viabaltica/116852518489021097",
       "source": "mastodon",
-      "tag": "latvia",
-      "seen_date": "Wed, 01 Jul 2026 09:50:04 +0000",
+      "tag": "lithuania",
+      "seen_date": "Thu, 02 Jul 2026 21:32:11 +0000",
       "matched_countries": [
-        "latvia"
+        "lithuania"
       ],
       "country_confidence": {
-        "latvia": 5
+        "lithuania": 2
       },
-      "event_category": "eu_rule_of_law",
-      "event_category_label": "EU / jogállamiság",
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
       "event_categories": [
         {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 2,
-          "weight": 5
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 3,
+          "weight": 8
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
         }
       ],
-      "geopolitical_score": 14,
-      "quality_score": 17,
+      "geopolitical_score": 28,
+      "quality_score": 31,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4631,6 +4919,37 @@
     },
     {
       "title": "",
+      "text": "Raport: 🇷🇺#Rusia ar fi spionat cu drone peste 12 state # NATO timp de 18 luni, fără să fie oprită. Cea mai afectată țară. 🔗 https:// stirileprotv.ro/stiri/internat ional/raport-rusia-ar-fi-spionat-cu-drone-peste-12-tari-nato-timp-de-18-luni-fara-sa-fie-oprita-care-a-fost-cea-mai-afectata.html # Știri # România",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/116852246105226919",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Thu, 02 Jul 2026 20:22:54 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 24,
+      "quality_score": 29,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "„Prezident tam bude akorát páté kolo u vozu, ale všichni víme, o co mu jde doopravdy – využije každou příležitost ať už Tón: : mírně negativní # česko # gdelt # konečná # pavel # nato https://www. parlamentnilisty.cz/arena/rozh ovory/Jan-Rosak-ukazal-zvracene-uvazovani-prazske-kavarny-Konecna-se-pustila-do-umelcu-793531",
       "url": "https://rockosbasilisk.com/@slovensko/116851861153336153",
       "source": "mastodon",
@@ -4668,16 +4987,16 @@
     },
     {
       "title": "",
-      "text": "Lithuania to lift ban on nukes, president says https://www.politico.eu/article/lithuanias-leaders-want-lift-ban-nukes-president-says/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Nuclearweapons #Military #Defense #NATO",
-      "url": "https://social.espeweb.net/objects/77ddeaee-d8ca-4cc2-b69f-f41e7f4c8f77",
+      "text": "# NATO , agentul de vânzări al lui # Trump . Înarmarea 🌍#Europei înseamnă 200.000 de joburi și 300 miliarde 💵#USD pentru 🇺🇸#SUA. 🔗 https:// stirileprotv.ro/stiri/internat ional/nato-agentul-de-vanzari-al-lui-trump-inarmarea-europei-inseamna-200-000-de-joburi-si-300-miliarde-de-dolari-pentru-sua.html # Știri # România # UE # UniuneaEuropeană",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/116851620862759866",
       "source": "mastodon",
       "tag": "nato",
-      "seen_date": "Thu, 02 Jul 2026 15:59:43 +0000",
+      "seen_date": "Thu, 02 Jul 2026 17:43:54 +0000",
       "matched_countries": [
-        "lithuania"
+        "romania"
       ],
       "country_confidence": {
-        "lithuania": 1
+        "romania": 5
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -4685,63 +5004,8 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 3,
+          "hits": 1,
           "weight": 10
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 46,
-      "quality_score": 51,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️⛔️More than 70 foreign diplomats visit site of Russian terror strike in Kyiv to bare personal witness to Russia’s war crimes (PHOTOS, more) https://www. ukrinform.net/rubric-ato/41401 79-more-than-70-foreign-diplomats-visit-site-of-russian-strike-in-kyiv.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN",
-      "url": "https://mastodon.online/@SocraticEthics/116851989275812646",
-      "source": "mastodon",
-      "tag": "ukraine",
-      "seen_date": "Thu, 02 Jul 2026 19:17:35 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
         },
         {
           "category": "eu_rule_of_law",
@@ -4750,102 +5014,10 @@
           "weight": 5
         }
       ],
-      "geopolitical_score": 71,
-      "quality_score": 76,
+      "geopolitical_score": 19,
+      "quality_score": 24,
       "source_reliability": 5,
       "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Putin backs additional fuel, airfare, and ferry support for exclave Kaliningrad as gasoline lines grow across the rest of Russia https:// meduza.io/en/news/2026/07/02/p utin-backs-additional-fuel-airfare-and-ferry-support-for-exclave-kaliningrad-as-gasoline-lines-grow-across-the-rest-of-russia # Meduza # Russia # Putin",
-      "url": "https://mastodon.social/@meduza_bot/116851861197867812",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Thu, 02 Jul 2026 18:45:01 +0000",
-      "matched_countries": [
-        "lithuania"
-      ],
-      "country_confidence": {
-        "lithuania": 4
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 21,
-      "quality_score": 24,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Ukrainian President Volodymyr Zelensky vowed Thursday to retaliate for Russia's strikes on Kyiv that killed at least 21 people and wounded dozens, as he visited an apartment block partially destroyed in the attack. Asked by reporters whether Ukraine would retaliate, Zelensky replied: \"Definitely\". FRANCE 24's Antonia Kerrigan reports. # Ukraine # Russia # wa",
-      "url": "https://mastodon.social/@Vittoria/116851852012410286",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Thu, 02 Jul 2026 18:42:41 +0000",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 4
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 70,
-      "quality_score": 73,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
