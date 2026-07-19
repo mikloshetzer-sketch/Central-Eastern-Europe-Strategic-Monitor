@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-19T13:04:40.257029+00:00",
+  "last_update": "2026-07-19T18:59:26.644811+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -7,103 +7,44 @@
     "enabled": true,
     "status": "ok",
     "errors": [],
-    "collected": 20
+    "collected": 16
   },
   "countries": {
     "hungary": {
-      "mentions": 16,
+      "mentions": 17,
       "negative": 5,
       "positive": 3,
       "index": 67,
-      "x_mentions": 1,
-      "reddit_mentions": 2,
-      "mastodon_mentions": 13,
+      "x_mentions": 3,
+      "reddit_mentions": 3,
+      "mastodon_mentions": 11,
       "main_social_topic": "Belpolitikai feszültség",
-      "reliable_sources": 6,
-      "geopolitical_score": 391,
+      "reliable_sources": 7,
+      "geopolitical_score": 376,
       "topics": [
         {
           "name": "Belpolitikai feszültség",
-          "count": 9
+          "count": 14
         },
         {
           "name": "Ukrajna és Oroszország",
-          "count": 4
-        },
-        {
-          "name": "Biztonsági kockázat",
-          "count": 2
-        },
-        {
-          "name": "EU / jogállamiság",
-          "count": 1
+          "count": 3
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 2,
-        "mastodon": 13,
-        "x": 1
+        "reddit": 3,
+        "mastodon": 11,
+        "x": 3
       },
       "category_counts": {
-        "government_crisis": 9,
-        "ukraine_russia": 4,
-        "eu_rule_of_law": 1,
-        "security": 2
+        "government_crisis": 14,
+        "ukraine_russia": 3
       },
-      "engagement_total": 2,
-      "raw_engagement_total": 2,
-      "quality_total": 441,
+      "engagement_total": 5,
+      "raw_engagement_total": 5,
+      "quality_total": 423,
       "top_posts": [
-        {
-          "title": "",
-          "text": "Wednesday, July 15, 2026 As pressure on Crimea heats up, Russian ships in Sea of Azov enter Ukraine's crosshairs . . . . . A missile reaches Kyiv in 2 . . . . . -4 minutes: official explains air alarm lag during Russian ballistic strikes . . . . . June deadliest month for civilians in Ukraine since April 2022 . . . . . Budapest 'closing the door' on Russia, ",
-          "url": "https://activitypub.writeworks.uk/2026/07/wednesday-july-15-2026/",
-          "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Wed, 15 Jul 2026 10:53:02 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 73,
-          "quality_score": 76,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
         {
           "title": "",
           "text": "https:// youtu.be/haL7iF0NAKM ⚡️🇵🇱FM Sikorski backs Fedorov after Zelensky appears to sack the wrong man when made to choose (TVP World - Polish Media VIDEO) # Ukraine # Press # Poland # Warsaw # Kyiv # Lviv # Odesa # Kherson # Kharkiv # LGBT # LGBTQ # Hungary # Budapest # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyK",
@@ -188,6 +129,92 @@
         },
         {
           "title": "",
+          "text": "https://www. theguardian.com/world/2026/jul /18/hungarys-president-agrees-to-stand-down-after-law-change-ends-his-term . It ill-behoves # Orban & his # Fidesz # supporters to talk about # tyranny & threats to the # ruleoflaw , as they were perfectly happy to flout the # law & impose # dictatorship when THEY were in charge! Péter # Magyar & # Tisza are only w",
+          "url": "https://mastodon.social/@rmblaber1956/116947128148693637",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Sun, 19 Jul 2026 14:32:39 +0000",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 11
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 2,
+              "weight": 8
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 29,
+          "quality_score": 34,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "Hungary’s $20B EV industry faces tax and pollution crackdown — China on notice What this means Hungary built a roughly $20 billion EV supply-chain story under Viktor Orban’s protec",
+          "text": "Hungary’s $20B EV industry faces tax and pollution crackdown — China on notice What this means Hungary built a roughly $20 billion EV supply-chain story under Viktor Orban’s protection. Now Prime Minister Peter Magyar’s government is tightening the screws: EU-strict",
+          "url": "https://x.com/i/web/status/2078916591367172289",
+          "source": "x",
+          "tag": "hungary",
+          "seen_date": "2026-07-19T18:55:14.000Z",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 6
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 2,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 28,
+          "quality_score": 29,
+          "source_reliability": 2,
+          "trusted_source_hint": false,
+          "engagement": 1,
+          "raw_engagement": 1,
+          "metrics": {
+            "likes": 1,
+            "reposts": 0,
+            "replies": 0,
+            "quotes": 0
+          },
+          "quality": "x_api_filtered"
+        },
+        {
+          "title": "",
           "text": "Sulyok has signed the 17th constitutional amendment ending his own presidency. His term ends at midnight Sunday, effective Monday. He had five days to sign it or face a \"protracted constitutional crisis and impeachment proceedings.\" Parliament will now elect a new president, serving until a new constitution takes effect or for a maximum of five years. Until ",
           "url": "https://mastodon.social/@AutokratDaily/116945567272839396",
           "source": "mastodon",
@@ -222,87 +249,51 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "BBC News - Hungary's president agrees to stand down after parliament backs removal https://www. bbc.co.uk/news/articles/cpd7q7 eev7po # Hungary",
-          "url": "https://mastodon.social/@franciswashere/116946618931856437",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Sun, 19 Jul 2026 12:23:09 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 1
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 2,
-              "weight": 8
-            }
-          ],
-          "geopolitical_score": 20,
-          "quality_score": 25,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
     "poland": {
-      "mentions": 18,
-      "negative": 15,
-      "positive": 3,
-      "index": 73,
-      "x_mentions": 2,
+      "mentions": 20,
+      "negative": 17,
+      "positive": 1,
+      "index": 79,
+      "x_mentions": 1,
       "reddit_mentions": 0,
-      "mastodon_mentions": 16,
+      "mastodon_mentions": 19,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 9,
-      "geopolitical_score": 943,
+      "reliable_sources": 13,
+      "geopolitical_score": 1172,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 9
+          "count": 12
         },
         {
           "name": "Biztonsági kockázat",
           "count": 8
-        },
-        {
-          "name": "Tiltakozás",
-          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 16,
-        "x": 2
+        "mastodon": 19,
+        "x": 1
       },
       "category_counts": {
-        "ukraine_russia": 9,
-        "protest": 1,
+        "ukraine_russia": 12,
         "security": 8
       },
-      "engagement_total": 5,
-      "raw_engagement_total": 5,
-      "quality_total": 1011,
+      "engagement_total": 4,
+      "raw_engagement_total": 4,
+      "quality_total": 1256,
       "top_posts": [
         {
           "title": "",
-          "text": "https:// t.me/liveukraine_media/41751 ⛔️⚠️Kyiv has been attacked by another Russian war crime ballistic missile strike. Two residential apartment buildings, a private house, and a public shopping center have been damaged; there are casualties, — the mayor (PHOTO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # ",
-          "url": "https://mastodon.online/@SocraticEthics/116943795931089664",
+          "text": "https:// youtu.be/kmz1sYbkN40 ⛔️⚠️LIVE Footage From Kyiv As Western Commercial And Government Run Media Attempt To Describe Russian Ballistic Missile Strikes As Something Other Than Overt War Crime Terrorism (Ukrinform - Ukrainian State Media VIDEO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US ",
+          "url": "https://mastodon.online/@SocraticEthics/116948165624058166",
           "source": "mastodon",
           "tag": "poland",
-          "seen_date": "Sun, 19 Jul 2026 00:25:14 +0000",
+          "seen_date": "Sun, 19 Jul 2026 18:56:30 +0000",
           "matched_countries": [
             "poland"
           ],
@@ -321,14 +312,69 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 5,
+              "hits": 6,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "protest",
               "label": "Tiltakozás",
               "hits": 1,
               "weight": 7
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 98,
+          "quality_score": 103,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "https:// t.me/liveukraine_media/41771 🇵🇭🇺🇦State border guards rescued a Filipino sailor who had been drifting at sea after a Russian drone attacked his vessel. On the evening of July 17, a Russian drone struck the cargo ship Venturo in the (more) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # D",
+          "url": "https://mastodon.online/@SocraticEthics/116947822889475878",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Sun, 19 Jul 2026 17:29:20 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 5
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
             },
             {
               "category": "foreign_influence",
@@ -340,104 +386,6 @@
               "category": "eu_rule_of_law",
               "label": "EU / jogállamiság",
               "hits": 2,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 86,
-          "quality_score": 91,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "https:// t.me/warriorsukrainian/111916 ⛔️⚠️Russian terrorists have launched 36 missiles at Kyiv in the last 30 minutes. This is the largest number for the entire time of the full-scale invasion. In Solomyansky district, according to preliminary information, an apartment building was hit, — Klitschko # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hag",
-          "url": "https://mastodon.online/@SocraticEthics/116943506238811157",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Sat, 18 Jul 2026 23:11:33 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 6,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 83,
-          "quality_score": 88,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "https:// t.me/warriorsukrainian/111919 ⚠️⛔️Civilian areas have been targeted in the latest Russian war crime strikes. This is what a residential yard in the Lukyanivka district of Kyiv looks like now (PHOTOS) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Dublin # Ireland # Olympics # Headlines",
-          "url": "https://mastodon.online/@SocraticEthics/116943784212551551",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Sun, 19 Jul 2026 00:22:15 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 5
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 6,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
               "weight": 5
             }
           ],
@@ -451,11 +399,11 @@
         },
         {
           "title": "",
-          "text": "https:// t.me/liveukraine_media/41752 ⚠️⛔️Kyiv in flames and ruins thanks to Syrskyi’s grand defense strategy: harrowing footage from the capital following the Russian attack. At least 5 districts have been affected. Buildings and vehicles are on fire, as well as a dormitory and an administrative (VIDEOS) # Ukraine # WarCrime # Press # Brussels # Media # ICC",
-          "url": "https://mastodon.online/@SocraticEthics/116944023851601165",
+          "text": "https:// t.me/liveukraine_media/41758 ⛔️⚠️Russian terrorists target civilians hiding in bomb shelters! Lukianivka in Kyiv is devastated: a ballistic missile struck an underground passage. According to the State Emergency Service, the Russian attack in the capital has resulted in one death and 13 injuries (VIDEO, PHOTOS) # Ukraine # WarCrime # Press # Brussel",
+          "url": "https://mastodon.online/@SocraticEthics/116947070377061378",
           "source": "mastodon",
           "tag": "poland",
-          "seen_date": "Sun, 19 Jul 2026 01:23:12 +0000",
+          "seen_date": "Sun, 19 Jul 2026 14:17:58 +0000",
           "matched_countries": [
             "poland"
           ],
@@ -500,11 +448,11 @@
         },
         {
           "title": "",
-          "text": "https:// t.me/liveukraine_media/41743 ⚠️🇺🇦Russia terrorists deliberately struck an amusement park in the Odesa region with a missile. Two people were killed, and four others were injured. A child is among the wounded. There may still be people trapped under the rubble; a search (more) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK ",
-          "url": "https://mastodon.online/@SocraticEthics/116943297368385108",
+          "text": "https:// youtu.be/e8SKD2oSDtw ⚠️🇺🇦Has Putin Lost His Mind? Kyiv Struck Overnight By Ballistic Missile Attack (Silicon Curtain VIDEO) # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Dublin # Ireland # Olympics # Headlines # Poland # Warsaw # Sofia # Bulgaria # LAGames2028 # 12yrInvasionOfUkraine ",
+          "url": "https://mastodon.online/@SocraticEthics/116947989935297924",
           "source": "mastodon",
           "tag": "poland",
-          "seen_date": "Sat, 18 Jul 2026 22:18:26 +0000",
+          "seen_date": "Sun, 19 Jul 2026 18:11:49 +0000",
           "matched_countries": [
             "poland"
           ],
@@ -523,7 +471,7 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 4,
+              "hits": 5,
               "weight": 9
             },
             {
@@ -535,12 +483,61 @@
             {
               "category": "eu_rule_of_law",
               "label": "EU / jogállamiság",
-              "hits": 2,
+              "hits": 1,
               "weight": 5
             }
           ],
-          "geopolitical_score": 70,
-          "quality_score": 75,
+          "geopolitical_score": 74,
+          "quality_score": 79,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "⚠️🇺🇦Russia Carries Out Largest-Scale Ballistic Missile Attack on Kyiv — Statement by Verkhovna Rada (more) https:// english.nv.ua/nation/russia-ca rries-out-largest-scale-ballistic-missile-attack-on-kyiv-statement-by-verkhovna-rada-50625521.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Du",
+          "url": "https://mastodon.online/@SocraticEthics/116947220500110421",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Sun, 19 Jul 2026 14:56:09 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 5
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 5,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 74,
+          "quality_score": 79,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -550,27 +547,23 @@
       ]
     },
     "slovakia": {
-      "mentions": 10,
+      "mentions": 5,
       "negative": 2,
-      "positive": 1,
-      "index": 40,
-      "x_mentions": 5,
-      "reddit_mentions": 1,
+      "positive": 0,
+      "index": 30,
+      "x_mentions": 1,
+      "reddit_mentions": 0,
       "mastodon_mentions": 4,
       "main_social_topic": "Belpolitikai feszültség",
       "reliable_sources": 0,
-      "geopolitical_score": 182,
+      "geopolitical_score": 54,
       "topics": [
         {
           "name": "Belpolitikai feszültség",
-          "count": 5
-        },
-        {
-          "name": "Ukrajna és Oroszország",
           "count": 2
         },
         {
-          "name": "Biztonsági kockázat",
+          "name": "Ukrajna és Oroszország",
           "count": 2
         },
         {
@@ -580,151 +573,33 @@
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 1,
+        "reddit": 0,
         "mastodon": 4,
-        "x": 5
+        "x": 1
       },
       "category_counts": {
-        "government_crisis": 5,
-        "ukraine_russia": 2,
-        "security": 2,
-        "eu_rule_of_law": 1
+        "government_crisis": 2,
+        "eu_rule_of_law": 1,
+        "ukraine_russia": 2
       },
-      "engagement_total": 24,
-      "raw_engagement_total": 24,
-      "quality_total": 198,
+      "engagement_total": 4,
+      "raw_engagement_total": 4,
+      "quality_total": 67,
       "top_posts": [
         {
-          "title": "Hungary, Slovakia, France, Spain, and Belgium within the EU are buying fuel from Russia. Turkey EU's key security partner is the No.1 buyer of petroleum products. China and India a",
-          "text": "Hungary, Slovakia, France, Spain, and Belgium within the EU are buying fuel from Russia. Turkey EU's key security partner is the No.1 buyer of petroleum products. China and India are sustaining the Russian economy by buying crude. But \"a Greek oligarch\" is to blame for everything",
-          "url": "https://x.com/i/web/status/2078788280032661623",
+          "title": "Geon cheki trade!! Trading this 2026 Cologne Geon, looking for a different 2026 Eu tour Geon visual (Warsaw, Wroclaw, Milan or Bratislava) Pls DM if interested Rts appreciated 🫶",
+          "text": "Geon cheki trade!! Trading this 2026 Cologne Geon, looking for a different 2026 Eu tour Geon visual (Warsaw, Wroclaw, Milan or Bratislava) Pls DM if interested Rts appreciated 🫶",
+          "url": "https://x.com/i/web/status/2078910233045286912",
           "source": "x",
-          "tag": "slovakia",
-          "seen_date": "2026-07-19T10:25:22.000Z",
+          "tag": "poland",
+          "seen_date": "2026-07-19T18:29:58.000Z",
           "matched_countries": [
+            "poland",
             "slovakia"
           ],
           "country_confidence": {
-            "slovakia": 2,
-            "hungary": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
-            }
-          ],
-          "geopolitical_score": 51,
-          "quality_score": 52,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 1,
-          "raw_engagement": 1,
-          "metrics": {
-            "likes": 1,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "If you want sanction Russia STOP BUYING RUSSIAN FUEL! Since Hungary, Slovakia, France, Spain, Belgium skyrocket their purchases of Russian fuel + EU's security partner Turkey is no",
-          "text": "If you want sanction Russia STOP BUYING RUSSIAN FUEL! Since Hungary, Slovakia, France, Spain, Belgium skyrocket their purchases of Russian fuel + EU's security partner Turkey is no 1 buyer of russian petroleum products, the fuss on who transports it is hypocritical and suspicious",
-          "url": "https://x.com/i/web/status/2078791134420119708",
-          "source": "x",
-          "tag": "slovakia",
-          "seen_date": "2026-07-19T10:36:43.000Z",
-          "matched_countries": [
-            "slovakia"
-          ],
-          "country_confidence": {
-            "slovakia": 2,
-            "hungary": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 40,
-          "quality_score": 41,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 19,
-          "raw_engagement": 19,
-          "metrics": {
-            "likes": 15,
-            "reposts": 4,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "Εveryday talking against Greece. Hungary, Slovakia, France, Spain, and Belgium within the EU are buying_fuel_from_Russia. His transparent Turkey is the No.1 buyer of petroleum prod",
-          "text": "Εveryday talking against Greece. Hungary, Slovakia, France, Spain, and Belgium within the EU are buying_fuel_from_Russia. His transparent Turkey is the No.1 buyer of petroleum products from Russia But he blames Greece for what other Europeans do.",
-          "url": "https://x.com/i/web/status/2078808221469274496",
-          "source": "x",
-          "tag": "slovakia",
-          "seen_date": "2026-07-19T11:44:37.000Z",
-          "matched_countries": [
-            "slovakia"
-          ],
-          "country_confidence": {
-            "slovakia": 2,
-            "hungary": 1
+            "poland": 4,
+            "slovakia": 4
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -736,27 +611,21 @@
               "weight": 9
             },
             {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
               "category": "eu_rule_of_law",
               "label": "EU / jogállamiság",
               "hits": 1,
               "weight": 5
             }
           ],
-          "geopolitical_score": 21,
-          "quality_score": 22,
+          "geopolitical_score": 17,
+          "quality_score": 18,
           "source_reliability": 2,
           "trusted_source_hint": false,
           "engagement": 4,
           "raw_engagement": 4,
           "metrics": {
-            "likes": 3,
-            "reposts": 1,
+            "likes": 2,
+            "reposts": 2,
             "replies": 0,
             "quotes": 0
           },
@@ -794,19 +663,17 @@
           "quality": "rss_filtered"
         },
         {
-          "title": "Fighting for methane. EU certificates threaten gas prices, Czech Republic and allies, including Slovakia, request deferral",
-          "text": "Fighting for methane. EU certificates threaten gas prices, Czech Republic and allies, including Slovakia, request deferral",
-          "url": "https://x.com/i/web/status/2078769156346847380",
-          "source": "x",
+          "title": "",
+          "text": "Tibor Gašpar (Smer) a Martin Dubéci (PS) sa v ta3 ostro sporili o správu Európskej komisie o právnom štáte. Tón: : mierne negatívny # slovakia # gdelt https://www. pravda.sk/spravy/domace/clanok /2009777-ta3-politicka-diskusia-gaspar-kontra-dubeci-ostre",
+          "url": "https://rockosbasilisk.com/@slovensko/116947176740349747",
+          "source": "mastodon",
           "tag": "slovakia",
-          "seen_date": "2026-07-19T09:09:23.000Z",
+          "seen_date": "Sun, 19 Jul 2026 14:45:01 +0000",
           "matched_countries": [
-            "slovakia",
-            "czechia"
+            "slovakia"
           ],
           "country_confidence": {
-            "slovakia": 2,
-            "czechia": 2
+            "slovakia": 2
           },
           "event_category": "eu_rule_of_law",
           "event_category_label": "EU / jogállamiság",
@@ -822,6 +689,257 @@
               "label": "Energia és gazdaság",
               "hits": 1,
               "weight": 4
+            }
+          ],
+          "geopolitical_score": 9,
+          "quality_score": 12,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Tradiční společenské elity po pandemii covidu selhaly a uvolnily místo spikleneckým teoriím a nenávisti na sociálních sí Tón: : mierne negatívny # slovakia # gdelt # dobrovský # turek # macinka https://www. parlamentnilisty.cz/arena/moni tor/Moralni-krize-spratek-parchant-Miliardari-Dobrovskemu-je-smutno-z-Turka-794244",
+          "url": "https://rockosbasilisk.com/@slovensko/116947825518986680",
+          "source": "mastodon",
+          "tag": "slovakia",
+          "seen_date": "Sun, 19 Jul 2026 17:30:00 +0000",
+          "matched_countries": [
+            "slovakia"
+          ],
+          "country_confidence": {
+            "slovakia": 2
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            }
+          ],
+          "geopolitical_score": 8,
+          "quality_score": 11,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "„Nevím, jak by se Havel cítil, kdyby na Hradě viděl kariérního komouše. Necítil by se dobře též z toho důvodu, že jeho j Tón: : mierne negatívny # slovakia # gdelt # havel # anketa # pavel https://www. parlamentnilisty.cz/arena/moni tor/Pijavice-smejdi-Havel-by-zvracel-Tak-tvrda-slova-o-Pavlovi-jeste-nezaznela-794246",
+          "url": "https://rockosbasilisk.com/@slovensko/116945643230538593",
+          "source": "mastodon",
+          "tag": "slovakia",
+          "seen_date": "Sun, 19 Jul 2026 08:15:01 +0000",
+          "matched_countries": [
+            "slovakia"
+          ],
+          "country_confidence": {
+            "slovakia": 2
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            }
+          ],
+          "geopolitical_score": 8,
+          "quality_score": 11,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        }
+      ]
+    },
+    "czechia": {
+      "mentions": 0,
+      "negative": 0,
+      "positive": 0,
+      "index": 0,
+      "x_mentions": 0,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 0,
+      "main_social_topic": "Social monitoring active, but no strong topic detected",
+      "reliable_sources": 0,
+      "geopolitical_score": 0,
+      "topics": [],
+      "source_status": "active",
+      "source_counts": {
+        "reddit": 0,
+        "mastodon": 0,
+        "x": 0
+      },
+      "category_counts": {},
+      "engagement_total": 0,
+      "raw_engagement_total": 0,
+      "quality_total": 0,
+      "top_posts": []
+    },
+    "romania": {
+      "mentions": 3,
+      "negative": 2,
+      "positive": 0,
+      "index": 30,
+      "x_mentions": 2,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 1,
+      "main_social_topic": "Ukrajna és Oroszország",
+      "reliable_sources": 0,
+      "geopolitical_score": 103,
+      "topics": [
+        {
+          "name": "Ukrajna és Oroszország",
+          "count": 2
+        },
+        {
+          "name": "Biztonsági kockázat",
+          "count": 1
+        }
+      ],
+      "source_status": "active",
+      "source_counts": {
+        "reddit": 0,
+        "mastodon": 1,
+        "x": 2
+      },
+      "category_counts": {
+        "ukraine_russia": 2,
+        "security": 1
+      },
+      "engagement_total": 1,
+      "raw_engagement_total": 1,
+      "quality_total": 108,
+      "top_posts": [
+        {
+          "title": "",
+          "text": "https:// youtu.be/XVfoN7yCeRY ⚠️🇺🇦And despite the ongoing Russian war crimes attacks and political turmoil, Ukrainians continue proving their humanity and morality by rescuing animals in need | Meet Mila and her puppies (LFF - Ukrainian Animal Rescue VIDEO) # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Poland # Romania # Germany # UK",
+          "url": "https://mastodon.online/@SocraticEthics/116948131248452761",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Sun, 19 Jul 2026 18:47:45 +0000",
+          "matched_countries": [
+            "poland",
+            "romania",
+            "latvia"
+          ],
+          "country_confidence": {
+            "poland": 1,
+            "romania": 1,
+            "latvia": 1,
+            "lithuania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 6,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 68,
+          "quality_score": 71,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "Neurotic soviet jew rabid zionist human experiment female president. Say the word and the Romanian army will invade and save you like in 1919.",
+          "text": "Neurotic soviet jew rabid zionist human experiment female president. Say the word and the Romanian army will invade and save you like in 1919.",
+          "url": "https://x.com/i/web/status/2078913192466514326",
+          "source": "x",
+          "tag": "romania",
+          "seen_date": "2026-07-19T18:41:44.000Z",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 2
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 23,
+          "quality_score": 24,
+          "source_reliability": 2,
+          "trusted_source_hint": false,
+          "engagement": 1,
+          "raw_engagement": 1,
+          "metrics": {
+            "likes": 1,
+            "reposts": 0,
+            "replies": 0,
+            "quotes": 0
+          },
+          "quality": "x_api_filtered"
+        },
+        {
+          "title": "The Romanian two-star Major General (retd.) Corneliu Pivariu has written an article in which he says that Romania’s role in any future Intermarium alliance would be crucial due to ",
+          "text": "The Romanian two-star Major General (retd.) Corneliu Pivariu has written an article in which he says that Romania’s role in any future Intermarium alliance would be crucial due to its geography and natural resources. The Intermarium is an interwar-era geopolitical concept that",
+          "url": "https://x.com/i/web/status/2078874485462094317",
+          "source": "x",
+          "tag": "latvia",
+          "seen_date": "2026-07-19T16:07:55.000Z",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 2
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
             }
           ],
           "geopolitical_score": 12,
@@ -840,403 +958,21 @@
         }
       ]
     },
-    "czechia": {
-      "mentions": 9,
-      "negative": 3,
-      "positive": 0,
-      "index": 46,
-      "x_mentions": 7,
-      "reddit_mentions": 0,
-      "mastodon_mentions": 2,
-      "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 0,
-      "geopolitical_score": 190,
-      "topics": [
-        {
-          "name": "Biztonsági kockázat",
-          "count": 4
-        },
-        {
-          "name": "Belpolitikai feszültség",
-          "count": 2
-        },
-        {
-          "name": "Ukrajna és Oroszország",
-          "count": 2
-        },
-        {
-          "name": "EU / jogállamiság",
-          "count": 1
-        }
-      ],
-      "source_status": "active",
-      "source_counts": {
-        "reddit": 0,
-        "mastodon": 2,
-        "x": 7
-      },
-      "category_counts": {
-        "government_crisis": 2,
-        "security": 4,
-        "eu_rule_of_law": 1,
-        "ukraine_russia": 2
-      },
-      "engagement_total": 6,
-      "raw_engagement_total": 6,
-      "quality_total": 203,
-      "top_posts": [
-        {
-          "title": "Ukrainians in Warsaw, Prague, and Vienna are protesting ex-Defense Minister Fedorov's resignation under the slogan \"We care.\" If you actually care, come back to Ukraine. You ran aw",
-          "text": "Ukrainians in Warsaw, Prague, and Vienna are protesting ex-Defense Minister Fedorov's resignation under the slogan \"We care.\" If you actually care, come back to Ukraine. You ran away and now you're trying to dictate how things should run here!",
-          "url": "https://x.com/i/web/status/2078827257833889835",
-          "source": "x",
-          "tag": "poland",
-          "seen_date": "2026-07-19T13:00:15.000Z",
-          "matched_countries": [
-            "poland",
-            "czechia"
-          ],
-          "country_confidence": {
-            "poland": 4,
-            "czechia": 4
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 3,
-              "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 55,
-          "quality_score": 56,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 5,
-          "raw_engagement": 5,
-          "metrics": {
-            "likes": 4,
-            "reposts": 1,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "Hitler✊🏿 attacked Austria🇦🇹, Czechia🇨🇿, Poland🇵🇱, Denmark🇩🇰, Norway🇳🇴, Netherlands🇳🇱, Belgium🇧🇪, Luxembourg🇱🇺, France🇫🇷, Britain🇬🇧, Yugoslavia…then he invaded Ukraine🇺🇦, Belarus🇧🇾,",
-          "text": "Hitler✊🏿 attacked Austria🇦🇹, Czechia🇨🇿, Poland🇵🇱, Denmark🇩🇰, Norway🇳🇴, Netherlands🇳🇱, Belgium🇧🇪, Luxembourg🇱🇺, France🇫🇷, Britain🇬🇧, Yugoslavia…then he invaded Ukraine🇺🇦, Belarus🇧🇾, Russia🇷🇺…then he declared war on 👌🏻AmeriKKKa🇺🇸 right after his PoC🎎 ally Japan bombed Americans.",
-          "url": "https://x.com/i/web/status/2078822684507656595",
-          "source": "x",
-          "tag": "czechia",
-          "seen_date": "2026-07-19T12:42:05.000Z",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 2,
-            "poland": 1,
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 3,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 44,
-          "quality_score": 45,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 1,
-          "raw_engagement": 1,
-          "metrics": {
-            "likes": 1,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "Natalia(Florek)what a big, gypsy family that is. Settled in Ukraine, Poland,Germany,Czech Republic,USA,Canada right now. See-Lesia Bandera, daughter of Ukrainian leader of terroris",
-          "text": "Natalia(Florek)what a big, gypsy family that is. Settled in Ukraine, Poland,Germany,Czech Republic,USA,Canada right now. See-Lesia Bandera, daughter of Ukrainian leader of terrorist group that was killing Poles. Or his wife Jaroslava Bandera (young& old). Julian?🤣",
-          "url": "https://x.com/i/web/status/2078806154755334438",
-          "source": "x",
-          "tag": "czechia",
-          "seen_date": "2026-07-19T11:36:24.000Z",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 2,
-            "poland": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            }
-          ],
-          "geopolitical_score": 18,
-          "quality_score": 19,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "metrics": {
-            "likes": 0,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "Ethereum’s roadmap keeps delivering. Dencun, Prague, and beyond — the layer-1 that actually ships. Scaling solutions are making it faster and cheaper while maintaining security. 🎉 ",
-          "text": "Ethereum’s roadmap keeps delivering. Dencun, Prague, and beyond — the layer-1 that actually ships. Scaling solutions are making it faster and cheaper while maintaining security. 🎉 🔥 🪐",
-          "url": "https://x.com/i/web/status/2078799433429578108",
-          "source": "x",
-          "tag": "czechia",
-          "seen_date": "2026-07-19T11:09:41.000Z",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 4
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 15,
-          "quality_score": 16,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "metrics": {
-            "likes": 0,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        },
-        {
-          "title": "Ethereum’s roadmap keeps delivering. Dencun, Prague, and beyond — the layer-1 that actually ships. Scaling solutions are making it faster and cheaper while maintaining security. 🚀",
-          "text": "Ethereum’s roadmap keeps delivering. Dencun, Prague, and beyond — the layer-1 that actually ships. Scaling solutions are making it faster and cheaper while maintaining security. 🚀",
-          "url": "https://x.com/i/web/status/2078798026521649595",
-          "source": "x",
-          "tag": "czechia",
-          "seen_date": "2026-07-19T11:04:06.000Z",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 4
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 15,
-          "quality_score": 16,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "metrics": {
-            "likes": 0,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
-        }
-      ]
-    },
-    "romania": {
-      "mentions": 2,
-      "negative": 0,
-      "positive": 0,
-      "index": 12,
-      "x_mentions": 0,
-      "reddit_mentions": 0,
-      "mastodon_mentions": 2,
-      "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 0,
-      "geopolitical_score": 23,
-      "topics": [
-        {
-          "name": "Biztonsági kockázat",
-          "count": 1
-        },
-        {
-          "name": "Belpolitikai feszültség",
-          "count": 1
-        }
-      ],
-      "source_status": "active",
-      "source_counts": {
-        "reddit": 0,
-        "mastodon": 2,
-        "x": 0
-      },
-      "category_counts": {
-        "security": 1,
-        "government_crisis": 1
-      },
-      "engagement_total": 0,
-      "raw_engagement_total": 0,
-      "quality_total": 29,
-      "top_posts": [
-        {
-          "title": "",
-          "text": "Vot de blam 🌍#european pentru Lia # Savonea : ⚖️#CEDO (⚖️#CurteaEuropeanăADrepturilorOmului), ⚖️#CurteaDeJustiție 🇪🇺#UE și # ComisiaEuropeană (@EU_Commission@social.network.europa.eu) au invalidat și criticat deciziile șefei Înaltei Curți. ⚖#CSM (⚖#ConsiliulSuperiorAlMagistraturii) a respins criticile, președintele # NicușorDan a aruncat vina pe # Parlament ",
-          "url": "https://mastodon.world/@G4Media/116946039698022315",
-          "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Sun, 19 Jul 2026 09:55:51 +0000",
-          "matched_countries": [
-            "romania"
-          ],
-          "country_confidence": {
-            "romania": 9
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 13,
-          "quality_score": 16,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "De ce a picat programul # MinisterulAfacerilorInterne de drone și antidrone, 100% românesc și rapid. Atacatorii trebuie să ”aștepte” acum Armata. 🔗 https:// stirileprotv.ro/stiri/financia r/de-ce-a-picat-programul-mai-de-drone-si-antidrone-100-romanesc-si-rapid-prin-safe-armata-le-ia-mai-tarziu-din-alte-tari.html # Știri # România",
-          "url": "https://mstdn.social/@RomaniaTeIubesc/116946236396494741",
-          "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Sun, 19 Jul 2026 10:45:52 +0000",
-          "matched_countries": [
-            "romania"
-          ],
-          "country_confidence": {
-            "romania": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            }
-          ],
-          "geopolitical_score": 10,
-          "quality_score": 13,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        }
-      ]
-    },
     "estonia": {
-      "mentions": 11,
+      "mentions": 12,
       "negative": 5,
       "positive": 4,
-      "index": 50,
-      "x_mentions": 1,
+      "index": 54,
+      "x_mentions": 2,
       "reddit_mentions": 0,
       "mastodon_mentions": 10,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 1,
-      "geopolitical_score": 309,
+      "geopolitical_score": 356,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 4
-        },
-        {
-          "name": "EU / jogállamiság",
-          "count": 3
+          "count": 5
         },
         {
           "name": "Biztonsági kockázat",
@@ -1244,24 +980,28 @@
         },
         {
           "name": "Belpolitikai feszültség",
-          "count": 1
+          "count": 2
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 2
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
         "mastodon": 10,
-        "x": 1
+        "x": 2
       },
       "category_counts": {
-        "eu_rule_of_law": 3,
-        "ukraine_russia": 4,
-        "security": 3,
-        "government_crisis": 1
+        "government_crisis": 2,
+        "eu_rule_of_law": 2,
+        "ukraine_russia": 5,
+        "security": 3
       },
-      "engagement_total": 7,
-      "raw_engagement_total": 7,
-      "quality_total": 342,
+      "engagement_total": 11,
+      "raw_engagement_total": 11,
+      "quality_total": 390,
       "top_posts": [
         {
           "title": "",
@@ -1404,6 +1144,37 @@
         },
         {
           "title": "",
+          "text": "Estonia's Chancellor of Justice, Ülle Madise, is the current frontrunner for next # president . The # opposition Social Democrats and the ruling coalition's Estonian Reform Party and # Estonia 200 would back Madise if she agreed to run. Parties expect the president to be elected in the # parliament . https:// viabaltica.fi/estonia-justice- chancellor-frontru",
+          "url": "https://mstdn.social/@viabaltica/116947551369437652",
+          "source": "mastodon",
+          "tag": "estonia",
+          "seen_date": "Sun, 19 Jul 2026 16:20:17 +0000",
+          "matched_countries": [
+            "estonia"
+          ],
+          "country_confidence": {
+            "estonia": 2
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 4,
+              "weight": 8
+            }
+          ],
+          "geopolitical_score": 33,
+          "quality_score": 36,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "Russia has imposed a blanket ban on all commercial freight transport by Estonia-registered trucks, expanding upon existing restrictions on specific EU-origin carriers implemented in October 2022. https:// news.err.ee/1610080570/russia- bans-all-commercial-freight-transport-by-estonia-registered-trucks # Ukraine # Russia # EU # Estonia",
           "url": "https://mastodon.social/@hanse_mina/116945091921442277",
           "source": "mastodon",
@@ -1444,57 +1215,20 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Estonia’s defence industry boom lifts company revenues Äripäev reported strong growth in Estonia’s defence industry, with leading companies including KrattWorks, HEVI Optronics and Threod among the sector’s winners. # EU # Estonia # Defence # Drones # IndustrialTech https://www. aripaev.ee/uudised/2026/07/16/ eesti-kaitsetoostus-buumib-edukamate-kaibed-lenda",
-          "url": "https://mastodon.social/@EU_Economics/116936234706970974",
-          "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Fri, 17 Jul 2026 16:22:19 +0000",
-          "matched_countries": [
-            "estonia"
-          ],
-          "country_confidence": {
-            "estonia": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 26,
-          "quality_score": 29,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
     "latvia": {
       "mentions": 13,
-      "negative": 7,
+      "negative": 6,
       "positive": 0,
-      "index": 78,
-      "x_mentions": 1,
+      "index": 75,
+      "x_mentions": 3,
       "reddit_mentions": 0,
-      "mastodon_mentions": 12,
+      "mastodon_mentions": 10,
       "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 4,
-      "geopolitical_score": 535,
+      "reliable_sources": 3,
+      "geopolitical_score": 505,
       "topics": [
         {
           "name": "Biztonsági kockázat",
@@ -1502,11 +1236,11 @@
         },
         {
           "name": "Ukrajna és Oroszország",
-          "count": 4
+          "count": 5
         },
         {
           "name": "Belpolitikai feszültség",
-          "count": 2
+          "count": 1
         },
         {
           "name": "EU / jogállamiság",
@@ -1516,18 +1250,18 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 12,
-        "x": 1
+        "mastodon": 10,
+        "x": 3
       },
       "category_counts": {
-        "ukraine_russia": 4,
-        "government_crisis": 2,
+        "ukraine_russia": 5,
+        "government_crisis": 1,
         "security": 6,
         "eu_rule_of_law": 1
       },
-      "engagement_total": 0,
-      "raw_engagement_total": 0,
-      "quality_total": 581,
+      "engagement_total": 5,
+      "raw_engagement_total": 5,
+      "quality_total": 545,
       "top_posts": [
         {
           "title": "",
@@ -1592,30 +1326,29 @@
         },
         {
           "title": "",
-          "text": "Zelensky said Ukraine's main priorities are air defense, uninterrupted supplies from partners and full execution of contracts to produce every type of drone. After meeting Mykhailo Drapatyi, Volodymyr Horbatiuk and Oleh Apostol, he reviewed the situation in Sumy, Kharkiv, Luhansk and Donetsk regions, brigade and corps shortages, and airborne operations in th",
-          "url": "https://mstdn.social/@noelreports/116946676950015427",
+          "text": "https:// youtu.be/XVfoN7yCeRY ⚠️🇺🇦And despite the ongoing Russian war crimes attacks and political turmoil, Ukrainians continue proving their humanity and morality by rescuing animals in need | Meet Mila and her puppies (LFF - Ukrainian Animal Rescue VIDEO) # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Poland # Romania # Germany # UK",
+          "url": "https://mastodon.online/@SocraticEthics/116948131248452761",
           "source": "mastodon",
-          "tag": "ukraine",
-          "seen_date": "Sun, 19 Jul 2026 12:37:55 +0000",
+          "tag": "poland",
+          "seen_date": "Sun, 19 Jul 2026 18:47:45 +0000",
           "matched_countries": [
+            "poland",
+            "romania",
             "latvia"
           ],
           "country_confidence": {
-            "latvia": 4
+            "poland": 1,
+            "romania": 1,
+            "latvia": 1,
+            "lithuania": 1
           },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
           "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 4,
+              "hits": 6,
               "weight": 9
             },
             {
@@ -1623,10 +1356,16 @@
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
             }
           ],
-          "geopolitical_score": 63,
-          "quality_score": 66,
+          "geopolitical_score": 68,
+          "quality_score": 71,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1674,67 +1413,6 @@
           ],
           "geopolitical_score": 61,
           "quality_score": 66,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "🇱🇻 # Latvia has increased security around a hydroelectric dam upstream ‌from its capital Riga and at a huge underground gas storage facility due to intelligence pointing to a threat from # Russia , Prime Minister Andris Kulbergs told Reuters on Thursday. https://www. reuters.com/world/latvia-boost s-security-dam-gas-storage-facility-due-russian-threat-pm-say",
-          "url": "https://mastodon.social/@rvps2001/116930994626497560",
-          "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Thu, 16 Jul 2026 18:09:41 +0000",
-          "matched_countries": [
-            "latvia"
-          ],
-          "country_confidence": {
-            "latvia": 5
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
-            }
-          ],
-          "geopolitical_score": 59,
-          "quality_score": 64,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1789,92 +1467,28 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        }
-      ]
-    },
-    "lithuania": {
-      "mentions": 10,
-      "negative": 4,
-      "positive": 2,
-      "index": 64,
-      "x_mentions": 2,
-      "reddit_mentions": 0,
-      "mastodon_mentions": 8,
-      "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 4,
-      "geopolitical_score": 363,
-      "topics": [
-        {
-          "name": "Ukrajna és Oroszország",
-          "count": 4
         },
-        {
-          "name": "Biztonsági kockázat",
-          "count": 3
-        },
-        {
-          "name": "Belpolitikai feszültség",
-          "count": 1
-        },
-        {
-          "name": "Migráció és határnyomás",
-          "count": 1
-        },
-        {
-          "name": "EU / jogállamiság",
-          "count": 1
-        }
-      ],
-      "source_status": "active",
-      "source_counts": {
-        "reddit": 0,
-        "mastodon": 8,
-        "x": 2
-      },
-      "category_counts": {
-        "ukraine_russia": 4,
-        "security": 3,
-        "government_crisis": 1,
-        "migration_border": 1,
-        "eu_rule_of_law": 1
-      },
-      "engagement_total": 1,
-      "raw_engagement_total": 1,
-      "quality_total": 397,
-      "top_posts": [
         {
           "title": "",
-          "text": "Gerhard Mersmann des tages Ein als österreichischer Aktivist auf den Suchmaschinen Bezeichneter fordert auf einem aufwendig gestalteten Plakat dazu auf: „Make Kaliningrad Prussia again!“ Das ein österreichischer Tollkopf für preußische Imperialträume wirbt, ist eine zu vernachlässigende Kuriosität. Dass er diesen beabsichtigten Kriegseintritt gegen Russland ",
-          "url": "https://schwerdtfegr.wordpress.com/2026/07/19/gerhard-mersmann-des-tages/",
+          "text": "⚡️🇱🇻Latvia tells EU capitals they cannot have both war profits and lasting peace (more) https:// english.nv.ua/nation/latvia-sl ams-stalled-russian-bans-in-eu-50625137.html # Ukraine # Latvia # Brussels # PACE # CoE # Press # Media # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+          "url": "https://mastodon.online/@SocraticEthics/116936227117266230",
           "source": "mastodon",
-          "tag": "ukraine",
-          "seen_date": "Sun, 19 Jul 2026 12:23:11 +0000",
+          "tag": "latvia",
+          "seen_date": "Fri, 17 Jul 2026 16:20:23 +0000",
           "matched_countries": [
-            "lithuania"
+            "latvia"
           ],
           "country_confidence": {
-            "lithuania": 4
+            "latvia": 1
           },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
           "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 3,
+              "hits": 4,
               "weight": 9
-            },
-            {
-              "category": "cyber_disinformation",
-              "label": "Kiber és dezinformáció",
-              "hits": 1,
-              "weight": 8
             },
             {
               "category": "foreign_influence",
@@ -1885,18 +1499,65 @@
             {
               "category": "eu_rule_of_law",
               "label": "EU / jogállamiság",
-              "hits": 1,
+              "hits": 2,
               "weight": 5
             }
           ],
-          "geopolitical_score": 64,
-          "quality_score": 69,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
+          "geopolitical_score": 56,
+          "quality_score": 59,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
+        }
+      ]
+    },
+    "lithuania": {
+      "mentions": 9,
+      "negative": 3,
+      "positive": 2,
+      "index": 50,
+      "x_mentions": 2,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 7,
+      "main_social_topic": "Biztonsági kockázat",
+      "reliable_sources": 2,
+      "geopolitical_score": 305,
+      "topics": [
+        {
+          "name": "Biztonsági kockázat",
+          "count": 4
         },
+        {
+          "name": "Ukrajna és Oroszország",
+          "count": 3
+        },
+        {
+          "name": "Belpolitikai feszültség",
+          "count": 1
+        },
+        {
+          "name": "Migráció és határnyomás",
+          "count": 1
+        }
+      ],
+      "source_status": "active",
+      "source_counts": {
+        "reddit": 0,
+        "mastodon": 7,
+        "x": 2
+      },
+      "category_counts": {
+        "ukraine_russia": 3,
+        "security": 4,
+        "government_crisis": 1,
+        "migration_border": 1
+      },
+      "engagement_total": 7,
+      "raw_engagement_total": 7,
+      "quality_total": 332,
+      "top_posts": [
         {
           "title": "",
           "text": "# Russia may be planning # military provocations against the # Baltic States or # Poland to test # NATO unity, # Latvia and # Lithuania warned. At the same time, Russia intends to sue the Baltic States at the International Court of Justice for alleged \"systematic # discrimination \" against # Russians . https:// viabaltica.fi/baltic-russia-pl anning-provocati",
@@ -1946,18 +1607,16 @@
         },
         {
           "title": "",
-          "text": "# Russia may be preparing limited attacks aimed at critical infrastructure in # Poland and the # Baltic states, according to # Lithuanian intelligence. The provocations are likely aimed at testing NATO’s unity, and # Lithuania has tightened security to prevent disruptions in the system. https://www. lrt.lt/en/news-in-english/19/2 991046/intelligence-indicate",
-          "url": "https://journa.host/@timkmak/116929961015687031",
+          "text": "The new # government of # Lithuania will not make any major changes in # foreignpolicy . PM Mindaugas Sinkevicius named regional # security , # Baltic cooperation, and stronger ties with # USA as priorities. Policy towards # Belarus will remain unchanged, but the government will seek to normalise relations with # China . https:// viabaltica.fi/lithuania-new-",
+          "url": "https://mstdn.social/@viabaltica/116948114940319114",
           "source": "mastodon",
           "tag": "lithuania",
-          "seen_date": "Thu, 16 Jul 2026 13:46:50 +0000",
+          "seen_date": "Sun, 19 Jul 2026 18:43:37 +0000",
           "matched_countries": [
-            "lithuania",
-            "poland"
+            "lithuania"
           ],
           "country_confidence": {
-            "lithuania": 2,
-            "poland": 1
+            "lithuania": 2
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -1965,7 +1624,7 @@
             {
               "category": "security",
               "label": "Biztonsági kockázat",
-              "hits": 2,
+              "hits": 1,
               "weight": 10
             },
             {
@@ -1983,14 +1642,20 @@
             {
               "category": "foreign_influence",
               "label": "Külső befolyás",
-              "hits": 1,
+              "hits": 2,
               "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
             }
           ],
-          "geopolitical_score": 51,
-          "quality_score": 56,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
+          "geopolitical_score": 49,
+          "quality_score": 52,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
@@ -2043,53 +1708,84 @@
           "quality": "rss_filtered"
         },
         {
-          "title": "Maybe Gabrielius Landsbergis wisens up with his little vacation, stops antagonizing over half of Lithuanian society, gets even more redpilled about Russia (and stops getting distra",
-          "text": "Maybe Gabrielius Landsbergis wisens up with his little vacation, stops antagonizing over half of Lithuanian society, gets even more redpilled about Russia (and stops getting distracted by China) and comes back actually being useful and wiser, not just an eurowarrior fool.",
-          "url": "https://x.com/i/web/status/2078822535974592714",
-          "source": "x",
+          "title": "",
+          "text": "The Lithuanian # parliament has approved the programme of Prime Minister Mindaugas Sinkevicius's new coalition # government with 72 votes for, 29 against, and 4 abstaining. Sinkevicius said that his government would work to create \"a socially fair and an economically strong\" # Lithuania . https:// viabaltica.fi/lithuania-parlia ment-approves-new-coalition-go",
+          "url": "https://mstdn.social/@viabaltica/116938697124272334",
+          "source": "mastodon",
           "tag": "lithuania",
-          "seen_date": "2026-07-19T12:41:29.000Z",
+          "seen_date": "Sat, 18 Jul 2026 02:48:32 +0000",
           "matched_countries": [
             "lithuania"
           ],
           "country_confidence": {
             "lithuania": 2
           },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
           "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 4,
+              "weight": 8
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 36,
+          "quality_score": 39,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Die Grenze Russlands mit Belarus ist 1.239 km lang, die mit der Ukraine 2.295 km. Russland würde damit 1.239 km + 2.295 km = 3.534 km (das Baltikums und Finland nicht mit eingerechnet) direkt an NATO-Gebiet grenzen. Wegen dem perspektivischen # NATO -Beitritt der Ukraine führt Russland gerade auf einer Frontlänge von 2.295 km # Krieg … es ist nicht anzunehme",
+          "url": "https://ruhr.social/@Heribert/116947009297907783",
+          "source": "mastodon",
+          "tag": "nato",
+          "seen_date": "Sun, 19 Jul 2026 14:02:26 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 2,
+              "hits": 1,
               "weight": 9
             },
             {
               "category": "foreign_influence",
               "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
               "hits": 1,
-              "weight": 5
+              "weight": 7
             }
           ],
-          "geopolitical_score": 40,
-          "quality_score": 41,
-          "source_reliability": 2,
-          "trusted_source_hint": false,
-          "engagement": 1,
-          "raw_engagement": 1,
-          "metrics": {
-            "likes": 0,
-            "reposts": 0,
-            "replies": 1,
-            "quotes": 0
-          },
-          "quality": "x_api_filtered"
+          "geopolitical_score": 30,
+          "quality_score": 35,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
         }
       ]
     }
