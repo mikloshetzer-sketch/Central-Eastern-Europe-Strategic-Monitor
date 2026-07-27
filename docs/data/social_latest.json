@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26 19:05 UTC",
+  "updated_at": "2026-07-27 02:12 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -20,19 +20,23 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 2,
+        "mentions": 3,
         "negative": 0,
-        "positive": 0,
-        "index": 12,
+        "positive": 1,
+        "index": 16,
         "x_mentions": 0,
         "reddit_mentions": 1,
-        "mastodon_mentions": 1,
+        "mastodon_mentions": 2,
         "main_social_topic": "Belpolitikai feszültség",
         "reliable_sources": 0,
-        "geopolitical_score": 20,
+        "geopolitical_score": 73,
         "topics": [
           {
             "name": "Belpolitikai feszültség",
+            "count": 1
+          },
+          {
+            "name": "Biztonsági kockázat",
             "count": 1
           },
           {
@@ -43,17 +47,71 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 1,
-          "mastodon": 1,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
           "government_crisis": 1,
+          "security": 1,
           "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 22,
+        "quality_total": 78,
         "top_posts": [
+          {
+            "title": "",
+            "text": "⚡President Vladimir Putin stated that # Ukraine 🇺🇦 will eventually lose its western territories to # Hungary 🇭🇺, # Romania 🇷🇴, and # Poland 🇵🇱. This assertion is viewed by critics as a \"new story\" intended to distract from the lack of progress regarding # Russian 🇷🇺 military objectives. [РеальнаВійна] We’ll share updates as they are confirmed",
+            "url": "https://mastodon.social/@thepathtopeace/116987946627911813",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Sun, 26 Jul 2026 19:33:20 +0000",
+            "matched_countries": [
+              "hungary",
+              "poland",
+              "romania"
+            ],
+            "country_confidence": {
+              "hungary": 1,
+              "poland": 1,
+              "romania": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 53,
+            "quality_score": 56,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Hungary opens its annual 4.5-hectare corn maze for visitors to explore. Since 2008, a group of local enthusiasts has been picking up hoes and measuring tools each year to create one of the region’s biggest attractions. https:// mediafaro.org/article/20260725 -hungary-opens-its-annual-45-hectare-corn-maze-for-visitors-to-explore?mf_channel=mastodon&action=for",
@@ -126,16 +184,16 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 14,
-        "negative": 5,
+        "mentions": 13,
+        "negative": 3,
         "positive": 1,
-        "index": 66,
+        "index": 54,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 14,
+        "mastodon_mentions": 13,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 1,
-        "geopolitical_score": 489,
+        "reliable_sources": 0,
+        "geopolitical_score": 351,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
@@ -143,7 +201,7 @@
           },
           {
             "name": "Biztonsági kockázat",
-            "count": 4
+            "count": 3
           },
           {
             "name": "Külső befolyás",
@@ -153,79 +211,18 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
-          "security": 4,
-          "foreign_influence": 2,
-          "ukraine_russia": 8
+          "security": 3,
+          "ukraine_russia": 8,
+          "foreign_influence": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 533,
+        "quality_total": 390,
         "top_posts": [
-          {
-            "title": "",
-            "text": "Il Tempo: Droni di Kiev colpiscono nel Caspio: un marinaio morto, Iran imbufalito. Scontro totale Non resterà senza risposta l'attacco ucraino a una nave mercantile iraniana, costato un morto. È il monito affidato a X dal ministro degli Esteri iraniano, Abbas Araghchi, che punta il dito direttamente sul leader di Kiev. \"Volodymyr Zelensky ha attaccato una na",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/116987622071873132",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Sun, 26 Jul 2026 18:10:48 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 6,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 2,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 125,
-            "quality_score": 130,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Polish Drone Guides Ukrainian Strike on Russian Ammo Depot In brief: A Polish-manufactured FlyEye reconnaissance drone was utilized by Ukraine’s 26th Separate Artillery Brigade to identify and destroy a Russian ammunition storage facility in the Bakhmut sector. The drone guided a HIMARS missile strike, resulting in a secondary detonation that destroyed the w",
@@ -271,6 +268,59 @@
             ],
             "geopolitical_score": 101,
             "quality_score": 104,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "⚡President Vladimir Putin stated that # Ukraine 🇺🇦 will eventually lose its western territories to # Hungary 🇭🇺, # Romania 🇷🇴, and # Poland 🇵🇱. This assertion is viewed by critics as a \"new story\" intended to distract from the lack of progress regarding # Russian 🇷🇺 military objectives. [РеальнаВійна] We’ll share updates as they are confirmed",
+            "url": "https://mastodon.social/@thepathtopeace/116987946627911813",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Sun, 26 Jul 2026 19:33:20 +0000",
+            "matched_countries": [
+              "hungary",
+              "poland",
+              "romania"
+            ],
+            "country_confidence": {
+              "hungary": 1,
+              "poland": 1,
+              "romania": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 53,
+            "quality_score": 56,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -326,16 +376,21 @@
           },
           {
             "title": "",
-            "text": "A popular argument among Western tankies and “political realists” raised since 2000’s and even more now: The West humiliated #Russia in the 1990s. This war is the consequence In reality, what most humiliated Russia in 1991 - and all nations part of USSR - was the diehard ideological persistence of the CPSU who ruined all economic reforms proposed since 1960’",
-            "url": "https://agora.echelon.pl/objects/48a7d994-5c7c-4791-a67a-334e92c18920",
+            "text": "@ ukraine │ 💀 │ 🇷🇺 🇷🇺 🇷🇺 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... Vladimir Putin's a MONSTER! 💀 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 💀 Please keep this post «alive» by Boosting it! 🌿 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # net",
+            "url": "https://mastodon.social/@Ezpen/116981248575577738",
             "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Sun, 26 Jul 2026 00:06:37 +0000",
+            "tag": "estonia",
+            "seen_date": "Sat, 25 Jul 2026 15:09:56 +0000",
             "matched_countries": [
-              "poland"
+              "poland",
+              "estonia",
+              "latvia"
             ],
             "country_confidence": {
-              "poland": 1
+              "poland": 1,
+              "estonia": 1,
+              "latvia": 1,
+              "lithuania": 1
             },
             "event_category": "ukraine_russia",
             "event_category_label": "Ukrajna és Oroszország",
@@ -343,7 +398,7 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 3,
+                "hits": 2,
                 "weight": 9
               },
               {
@@ -359,8 +414,8 @@
                 "weight": 5
               }
             ],
-            "geopolitical_score": 43,
-            "quality_score": 46,
+            "geopolitical_score": 30,
+            "quality_score": 33,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -369,26 +424,20 @@
           },
           {
             "title": "",
-            "text": "Daily podcast: Chick-fil-A, Estée Lauder, Hugging Face, OpenAI and more are all part of this week's breaches! # News # TechNews # Cybersecurity # DataBreach # Privacy # Ransomware # Malware # podcast https:// open.spotify.com/episode/25UlI LqOWYN05I7EskaoIE?si=wDOkE491Ruml_7aThMbwbw",
-            "url": "https://mastodon.social/@NickAEsp/116987674623460984",
+            "text": "Adnkronos - ultimoratop: Pirlo rompe il silenzio sul caso Russia: \"Collaborazione commerciale non c'entra con politica\" (Adnkronos) - L'ex centrocampista e la candidatura a ct della Nazionale: \"Ringrazio Maldini e Leonardo per la stima\" Pirlo breaks the silence on the Russia case: “Commercial collaboration has nothing to do with politics.” (Adnkronos) – Form",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116988720746600635",
             "source": "mastodon",
-            "tag": "cybersecurity",
-            "seen_date": "Sun, 26 Jul 2026 18:24:09 +0000",
+            "tag": "russia",
+            "seen_date": "Sun, 26 Jul 2026 22:50:12 +0000",
             "matched_countries": [
               "poland"
             ],
             "country_confidence": {
               "poland": 1
             },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
             "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
@@ -396,14 +445,14 @@
                 "weight": 9
               },
               {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
               }
             ],
-            "geopolitical_score": 38,
-            "quality_score": 41,
+            "geopolitical_score": 16,
+            "quality_score": 19,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -712,47 +761,52 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 8,
-        "negative": 2,
-        "positive": 0,
-        "index": 49,
+        "mentions": 12,
+        "negative": 4,
+        "positive": 1,
+        "index": 73,
         "x_mentions": 0,
         "reddit_mentions": 1,
-        "mastodon_mentions": 7,
+        "mastodon_mentions": 11,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 3,
-        "geopolitical_score": 255,
+        "reliable_sources": 5,
+        "geopolitical_score": 549,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 8
+            "count": 11
+          },
+          {
+            "name": "Ukrajna és Oroszország",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 1,
-          "mastodon": 7,
+          "mastodon": 11,
           "x": 0
         },
         "category_counts": {
-          "security": 8
+          "security": 11,
+          "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 281,
+        "quality_total": 591,
         "top_posts": [
           {
             "title": "",
-            "text": "\"Romanian forces shoot down third drone in three days\" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # Economy # Drones # NATO # Hybrid # Romania https://www. euronews.com/my-europe/2026/07 /26/romanian-forces-shoot-down-third-drone-in-three-days",
-            "url": "https://mstdn.social/@ManyRoads/116986018978593215",
+            "text": "A Romanian F-16 fighter jet pilot shot down a Russian drone over the Black Sea, the defence ​ministry said on Sunday, the latest in a series of breaches of the NATO member's ‌airspace that President Nicusor Dan called \"inadmissible and intolerable\". https://www. reuters.com/business/aerospace -defense/romania-shoots-down-third-russian-drone-president-calls-b",
+            "url": "https://mastodon.social/@hanse_mina/116989063764561335",
             "source": "mastodon",
-            "tag": "nato",
-            "seen_date": "Sun, 26 Jul 2026 11:23:06 +0000",
+            "tag": "romania",
+            "seen_date": "Mon, 27 Jul 2026 00:17:26 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 2
+              "romania": 5
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -760,7 +814,7 @@
               {
                 "category": "security",
                 "label": "Biztonsági kockázat",
-                "hits": 3,
+                "hits": 5,
                 "weight": 10
               },
               {
@@ -770,8 +824,8 @@
                 "weight": 9
               },
               {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
                 "hits": 1,
                 "weight": 8
               },
@@ -786,16 +840,10 @@
                 "label": "EU / jogállamiság",
                 "hits": 1,
                 "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 88,
-            "quality_score": 93,
+            "geopolitical_score": 101,
+            "quality_score": 106,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -853,16 +901,16 @@
           },
           {
             "title": "",
-            "text": "Traian # Băsescu : ”Trebuie convocat # NATO pe 📜#Articolul4”. ”Să fim pregătiți să ne apărăm. Cu ce avem, cu bâte, cu 🛦#F16, cu aliații care să facă poliție aeriană…”. 🔗 https:// g4media.ro/?p=1294658 # Știri # România # G4Media",
-            "url": "https://mastodon.world/@G4Media/116987672869534888",
+            "text": "Ukraine war briefing: Air ceasefire talk ahead of Trump-Zelenskyy meeting By Warren Murray with Guardian writers and agencies Romania summons Russian ambassador after shooting down three drones; Zelenskyy to meet Andy Burnham in UK. What we know on day 1,615 https://www. theguardian.com/world/2026/jul /27/ukraine-war-briefing-air-ceasefire-talk-ahead-of-trum",
+            "url": "https://rssfeed.media/@guardianfeeds/116989270644489980",
             "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Sun, 26 Jul 2026 18:23:43 +0000",
+            "tag": "ukraine",
+            "seen_date": "Mon, 27 Jul 2026 01:10:03 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 5
+              "romania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -872,10 +920,28 @@
                 "label": "Biztonsági kockázat",
                 "hits": 1,
                 "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 19,
+            "geopolitical_score": 65,
+            "quality_score": 70,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -884,35 +950,41 @@
           },
           {
             "title": "",
-            "text": "„Reperat, identificat, angajat și neutralizat”. 🛡️#MinisterulApărării a publicat imagini din timpul doborârii celei de-a treia drone. FOTO. 🔗 https:// stirileprotv.ro/stiri/actualit ate/reperat-identificat-angajat-si-neutralizat-primele-imagini-surprinse-in-timpul-doborarii-celei-de-a-treia-drone-foto.html # Știri # România",
-            "url": "https://mstdn.social/@RomaniaTeIubesc/116987613736733429",
+            "text": "📰 Civilian grain ship sinks in Black Sea following Russian strike 🔗 https:// kyivindependent.com/civilian-g rain-ship-sinks-in-black-sea-following-russian-strike/ # News # RussianInvasion # RussianWar # Ukraine",
+            "url": "https://masto.ai/@ukraine/116989385520546852",
             "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Sun, 26 Jul 2026 18:08:40 +0000",
+            "tag": "ukraine",
+            "seen_date": "Mon, 27 Jul 2026 01:39:16 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 5
+              "romania": 3
             },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
             "event_categories": [
               {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 5,
+                "weight": 9
               },
               {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
+                "category": "protest",
+                "label": "Tiltakozás",
                 "hits": 1,
-                "weight": 5
+                "weight": 7
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 18,
+            "geopolitical_score": 62,
+            "quality_score": 65,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -921,16 +993,16 @@
           },
           {
             "title": "",
-            "text": "ANIMAȚIE. Traseul celei de-a treia drone doborâte în spațiul aerian al României. Cum a fost interceptată în doar cinci minute. 🔗 https:// stirileprotv.ro/stiri/actualit ate/animattie-grafica-traseul-celei-de-a-treia-drone-doborata-in-romania-cum-a-fost-interceptata-in-doar-cinci-minute.html # Știri # România",
-            "url": "https://mstdn.social/@RomaniaTeIubesc/116987377958988465",
+            "text": "A civilian cargo ship sank on July 26 in the Black Sea near Odesa after being struck by Russian missiles days earlier on July 19 while it was transporting grain, authorities reported. https:// kyivindependent.com/civilian-g rain-ship-sinks-in-black-sea-following-russian-strike/ # Ukraine # Russia",
+            "url": "https://mastodon.social/@hanse_mina/116989111788982950",
             "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Sun, 26 Jul 2026 17:08:43 +0000",
+            "tag": "russia",
+            "seen_date": "Mon, 27 Jul 2026 00:29:39 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 6
+              "romania": 3
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -942,14 +1014,26 @@
                 "weight": 10
               },
               {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "label": "Tiltakozás",
                 "hits": 1,
-                "weight": 5
+                "weight": 7
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 18,
+            "geopolitical_score": 60,
+            "quality_score": 63,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -964,34 +1048,39 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 6,
+        "mentions": 7,
         "negative": 0,
         "positive": 0,
-        "index": 22,
+        "index": 32,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 6,
+        "mastodon_mentions": 7,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 0,
-        "geopolitical_score": 100,
+        "reliable_sources": 1,
+        "geopolitical_score": 124,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
             "count": 6
+          },
+          {
+            "name": "Biztonsági kockázat",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 7,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 6
+          "ukraine_russia": 6,
+          "security": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 118,
+        "quality_total": 147,
         "top_posts": [
           {
             "title": "",
@@ -1037,6 +1126,37 @@
             "quality_score": 33,
             "source_reliability": 3,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🟡 Military Deployment | 5/10 🇹🇷 🇪🇪 Turkey to deploy 5 F-16 fighters to Estonia in August Turkey will deploy five F-16 multirole fighters and 76 personnel to Estonia in August as part of NATO's Baltic Air Policing mission. # OSINT # NewsGroup # NATO # BalticAirPolicing # F16 # Turkey",
+            "url": "https://social.vir.group/@analytics/116988462150890547",
+            "source": "mastodon",
+            "tag": "nato",
+            "seen_date": "Sun, 26 Jul 2026 21:44:26 +0000",
+            "matched_countries": [
+              "estonia"
+            ],
+            "country_confidence": {
+              "estonia": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 2,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1132,48 +1252,6 @@
             "source": "mastodon",
             "tag": "estonia",
             "seen_date": "Sat, 25 Jul 2026 14:48:40 +0000",
-            "matched_countries": [
-              "poland",
-              "estonia",
-              "latvia"
-            ],
-            "country_confidence": {
-              "poland": 1,
-              "estonia": 1,
-              "latvia": 1,
-              "lithuania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 17,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "@ noelreports 🇺🇦 🇺🇦 👌 🇺🇦 🇺🇦 « E X C E L L E N T » ! ! ! 👍 💀 👌 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands",
-            "url": "https://mastodon.social/@Ezpen/116981144758037170",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Sat, 25 Jul 2026 14:43:32 +0000",
             "matched_countries": [
               "poland",
               "estonia",
@@ -1487,25 +1565,21 @@
         "mentions": 4,
         "negative": 2,
         "positive": 0,
-        "index": 32,
+        "index": 30,
         "x_mentions": 0,
         "reddit_mentions": 0,
         "mastodon_mentions": 4,
-        "main_social_topic": "Külső befolyás",
+        "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 0,
-        "geopolitical_score": 120,
+        "geopolitical_score": 79,
         "topics": [
           {
-            "name": "Külső befolyás",
+            "name": "Biztonsági kockázat",
             "count": 2
           },
           {
-            "name": "Biztonsági kockázat",
-            "count": 1
-          },
-          {
-            "name": "Ukrajna és Oroszország",
-            "count": 1
+            "name": "Külső befolyás",
+            "count": 2
           }
         ],
         "source_status": "active",
@@ -1515,60 +1589,13 @@
           "x": 0
         },
         "category_counts": {
-          "security": 1,
-          "foreign_influence": 2,
-          "ukraine_russia": 1
+          "security": 2,
+          "foreign_influence": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 132,
+        "quality_total": 91,
         "top_posts": [
-          {
-            "title": "",
-            "text": "Putin claimed Ukraine would eventually lose its western territories, calling them a “gift from Stalin” that would return to Hungary, Romania and Poland. The Russian president made the same claim in December 2023. Speaking at Russia’s Main Admiralty, he also said Moscow would use all available capabilities to defend Kaliningrad and that the Baltic Fleet shoul",
-            "url": "https://mastodon.online/@sfgmedia/116987541781717406",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Sun, 26 Jul 2026 17:50:23 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 4,
-              "hungary": 1,
-              "poland": 1,
-              "romania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 51,
-            "quality_score": 54,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Poland promised a 700-kilometer shield against Russia—two years on, satellites show four short ditches. Warsaw has spent since October 2024 on the project, yet only about 10 kilometres of actual linear fortifications have gone up. The situation in the Baltic States is even worse, a French analyst says. https:// mediafaro.org/article/20260726 -poland-promised",
@@ -1687,6 +1714,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "https://www. youtube.com/watch?v=boknLDLS7yE So like, have y'all watched that new women self defense championship show yet? I know the ultimate self defense championship is amazing, but let's be real, while there are some important scenarios that aren't 100% fighting, it's WAY different when it's about women surviving than men surviving. Highly recommend che",
+            "url": "https://uwu.social/@Cushee_Foofee/116989159165157116",
+            "source": "mastodon",
+            "tag": "lithuania",
+            "seen_date": "Mon, 27 Jul 2026 00:41:42 +0000",
+            "matched_countries": [
+              "lithuania"
+            ],
+            "country_confidence": {
+              "lithuania": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1765,6 +1823,59 @@
     },
     {
       "title": "",
+      "text": "⚡President Vladimir Putin stated that # Ukraine 🇺🇦 will eventually lose its western territories to # Hungary 🇭🇺, # Romania 🇷🇴, and # Poland 🇵🇱. This assertion is viewed by critics as a \"new story\" intended to distract from the lack of progress regarding # Russian 🇷🇺 military objectives. [РеальнаВійна] We’ll share updates as they are confirmed",
+      "url": "https://mastodon.social/@thepathtopeace/116987946627911813",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Sun, 26 Jul 2026 19:33:20 +0000",
+      "matched_countries": [
+        "hungary",
+        "poland",
+        "romania"
+      ],
+      "country_confidence": {
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 53,
+      "quality_score": 56,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "Hungary opens its annual 4.5-hectare corn maze for visitors to explore. Since 2008, a group of local enthusiasts has been picking up hoes and measuring tools each year to create one of the region’s biggest attractions. https:// mediafaro.org/article/20260725 -hungary-opens-its-annual-45-hectare-corn-maze-for-visitors-to-explore?mf_channel=mastodon&action=for",
       "url": "https://mastodon.mediafaro.org/@mf_magazine/116985705955772533",
       "source": "mastodon",
@@ -1775,6 +1886,37 @@
       ],
       "country_confidence": {
         "hungary": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 12,
+      "quality_score": 15,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The desperate are the Devil's best customers. # Poland # folktale # folklore # Devil https:// wiki.sunkencastles.com/wiki/Th e_Large_Brewing_Pan_near_the_Village_of_Warthau",
+      "url": "https://mementomori.social/@juergen_hubert/116988997685494122",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Mon, 27 Jul 2026 00:00:38 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
       },
       "event_category": "ukraine_russia",
       "event_category_label": "Ukrajna és Oroszország",
@@ -2008,80 +2150,6 @@
     },
     {
       "title": "",
-      "text": "CF Signals: Bongo King – ESTUARY [ITMV] Cult techno reaches its highest sophistication when it manages to mediate hardware’s industrial violence through patient compositional rigor. The ITMV Records platform introduces the formal debut of Polish producer BongoKing , an artist whose vision of the genre is built at the exact intersection between the brute forc",
-      "url": "https://clubfuries.com.mx/2026/07/25/cfs-bongo-king-estuary-itmv006/",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Sun, 26 Jul 2026 02:48:12 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 13,
-      "quality_score": 16,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "A popular argument among Western tankies and “political realists” raised since 2000’s and even more now: The West humiliated #Russia in the 1990s. This war is the consequence In reality, what most humiliated Russia in 1991 - and all nations part of USSR - was the diehard ideological persistence of the CPSU who ruined all economic reforms proposed since 1960’",
-      "url": "https://agora.echelon.pl/objects/48a7d994-5c7c-4791-a67a-334e92c18920",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Sun, 26 Jul 2026 00:06:37 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 43,
-      "quality_score": 46,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "🥷🐔⚠️🚷 # czechia # brno # photo # security # chicken",
       "url": "https://mastodonczech.cz/@pepa/116985378474531972",
       "source": "mastodon",
@@ -2292,6 +2360,110 @@
     },
     {
       "title": "",
+      "text": "A Romanian F-16 fighter jet pilot shot down a Russian drone over the Black Sea, the defence ​ministry said on Sunday, the latest in a series of breaches of the NATO member's ‌airspace that President Nicusor Dan called \"inadmissible and intolerable\". https://www. reuters.com/business/aerospace -defense/romania-shoots-down-third-russian-drone-president-calls-b",
+      "url": "https://mastodon.social/@hanse_mina/116989063764561335",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Mon, 27 Jul 2026 00:17:26 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 5,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 101,
+      "quality_score": 106,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Romanian forces shoot down third drone in three days The Romanian Prosecutor General's Office has determined that a drone intercepted by Romanian forces on Friday was of the Shahed-type used by Russia in its war against Ukraine, officials have said. # EuropeNews https://www. euronews.com/my-europe/2026/07 /26/romanian-forces-shoot-down-third-drone-in-three-d",
+      "url": "https://mastodon.social/@top_news/116988626484730095",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Sun, 26 Jul 2026 22:26:14 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 56,
+      "quality_score": 61,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "# Băsescu , despre dronele doborâte: „Cred că testează capacitatea de ripostă. Suntem aproape de o situație de război”. 🔗 https:// stirileprotv.ro/stiri/politic/ basescu-despre-dronele-doborate-cred-ca-testeaza-capacitatea-de-riposta-suntem-aproape-de-o-situatie-de-razboi.html # Știri # România",
       "url": "https://mstdn.social/@RomaniaTeIubesc/116987748089159054",
       "source": "mastodon",
@@ -2414,43 +2586,6 @@
       ],
       "geopolitical_score": 10,
       "quality_score": 13,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "ANIMAȚIE. Traseul celei de-a treia drone doborâte în spațiul aerian al României. Cum a fost interceptată în doar cinci minute. 🔗 https:// stirileprotv.ro/stiri/actualit ate/animattie-grafica-traseul-celei-de-a-treia-drone-doborata-in-romania-cum-a-fost-interceptata-in-doar-cinci-minute.html # Știri # România",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/116987377958988465",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Sun, 26 Jul 2026 17:08:43 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 15,
-      "quality_score": 18,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -2675,16 +2810,16 @@
     },
     {
       "title": "",
-      "text": "\"Romanian forces shoot down third drone in three days\" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # Economy # Drones # NATO # Hybrid # Romania https://www. euronews.com/my-europe/2026/07 /26/romanian-forces-shoot-down-third-drone-in-three-days",
-      "url": "https://mstdn.social/@ManyRoads/116986018978593215",
+      "text": "https://www. youtube.com/watch?v=boknLDLS7yE So like, have y'all watched that new women self defense championship show yet? I know the ultimate self defense championship is amazing, but let's be real, while there are some important scenarios that aren't 100% fighting, it's WAY different when it's about women surviving than men surviving. Highly recommend che",
+      "url": "https://uwu.social/@Cushee_Foofee/116989159165157116",
       "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Sun, 26 Jul 2026 11:23:06 +0000",
+      "tag": "lithuania",
+      "seen_date": "Mon, 27 Jul 2026 00:41:42 +0000",
       "matched_countries": [
-        "romania"
+        "lithuania"
       ],
       "country_confidence": {
-        "romania": 2
+        "lithuania": 1
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -2692,42 +2827,43 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 3,
+          "hits": 1,
           "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
         }
       ],
-      "geopolitical_score": 88,
-      "quality_score": 93,
+      "geopolitical_score": 10,
+      "quality_score": 13,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🟡 Military Deployment | 5/10 🇹🇷 🇪🇪 Turkey to deploy 5 F-16 fighters to Estonia in August Turkey will deploy five F-16 multirole fighters and 76 personnel to Estonia in August as part of NATO's Baltic Air Policing mission. # OSINT # NewsGroup # NATO # BalticAirPolicing # F16 # Turkey",
+      "url": "https://social.vir.group/@analytics/116988462150890547",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Sun, 26 Jul 2026 21:44:26 +0000",
+      "matched_countries": [
+        "estonia"
+      ],
+      "country_confidence": {
+        "estonia": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 24,
+      "quality_score": 29,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -2785,16 +2921,59 @@
     },
     {
       "title": "",
-      "text": "Il Tempo: Droni di Kiev colpiscono nel Caspio: un marinaio morto, Iran imbufalito. Scontro totale Non resterà senza risposta l'attacco ucraino a una nave mercantile iraniana, costato un morto. È il monito affidato a X dal ministro degli Esteri iraniano, Abbas Araghchi, che punta il dito direttamente sul leader di Kiev. \"Volodymyr Zelensky ha attaccato una na",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/116987622071873132",
+      "text": "📰 Civilian grain ship sinks in Black Sea following Russian strike 🔗 https:// kyivindependent.com/civilian-g rain-ship-sinks-in-black-sea-following-russian-strike/ # News # RussianInvasion # RussianWar # Ukraine",
+      "url": "https://masto.ai/@ukraine/116989385520546852",
       "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Sun, 26 Jul 2026 18:10:48 +0000",
+      "tag": "ukraine",
+      "seen_date": "Mon, 27 Jul 2026 01:39:16 +0000",
       "matched_countries": [
-        "poland"
+        "romania"
       ],
       "country_confidence": {
-        "poland": 1
+        "romania": 3
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 62,
+      "quality_score": 65,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Ukraine war briefing: Air ceasefire talk ahead of Trump-Zelenskyy meeting By Warren Murray with Guardian writers and agencies Romania summons Russian ambassador after shooting down three drones; Zelenskyy to meet Andy Burnham in UK. What we know on day 1,615 https://www. theguardian.com/world/2026/jul /27/ukraine-war-briefing-air-ceasefire-talk-ahead-of-trum",
+      "url": "https://rssfeed.media/@guardianfeeds/116989270644489980",
+      "source": "mastodon",
+      "tag": "ukraine",
+      "seen_date": "Mon, 27 Jul 2026 01:10:03 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 1
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -2802,26 +2981,14 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 3,
+          "hits": 1,
           "weight": 10
         },
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 6,
+          "hits": 4,
           "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 2,
-          "weight": 7
         },
         {
           "category": "foreign_influence",
@@ -2836,8 +3003,8 @@
           "weight": 5
         }
       ],
-      "geopolitical_score": 125,
-      "quality_score": 130,
+      "geopolitical_score": 65,
+      "quality_score": 70,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -2846,62 +3013,16 @@
     },
     {
       "title": "",
-      "text": "Putin claimed Ukraine would eventually lose its western territories, calling them a “gift from Stalin” that would return to Hungary, Romania and Poland. The Russian president made the same claim in December 2023. Speaking at Russia’s Main Admiralty, he also said Moscow would use all available capabilities to defend Kaliningrad and that the Baltic Fleet shoul",
-      "url": "https://mastodon.online/@sfgmedia/116987541781717406",
+      "text": "A civilian cargo ship sank on July 26 in the Black Sea near Odesa after being struck by Russian missiles days earlier on July 19 while it was transporting grain, authorities reported. https:// kyivindependent.com/civilian-g rain-ship-sinks-in-black-sea-following-russian-strike/ # Ukraine # Russia",
+      "url": "https://mastodon.social/@hanse_mina/116989111788982950",
       "source": "mastodon",
       "tag": "russia",
-      "seen_date": "Sun, 26 Jul 2026 17:50:23 +0000",
+      "seen_date": "Mon, 27 Jul 2026 00:29:39 +0000",
       "matched_countries": [
-        "lithuania"
+        "romania"
       ],
       "country_confidence": {
-        "lithuania": 4,
-        "hungary": 1,
-        "poland": 1,
-        "romania": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 51,
-      "quality_score": 54,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Daily podcast: Chick-fil-A, Estée Lauder, Hugging Face, OpenAI and more are all part of this week's breaches! # News # TechNews # Cybersecurity # DataBreach # Privacy # Ransomware # Malware # podcast https:// open.spotify.com/episode/25UlI LqOWYN05I7EskaoIE?si=wDOkE491Ruml_7aThMbwbw",
-      "url": "https://mastodon.social/@NickAEsp/116987674623460984",
-      "source": "mastodon",
-      "tag": "cybersecurity",
-      "seen_date": "Sun, 26 Jul 2026 18:24:09 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
+        "romania": 3
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -2915,18 +3036,61 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 60,
+      "quality_score": 63,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Adnkronos - ultimoratop: Pirlo rompe il silenzio sul caso Russia: \"Collaborazione commerciale non c'entra con politica\" (Adnkronos) - L'ex centrocampista e la candidatura a ct della Nazionale: \"Ringrazio Maldini e Leonardo per la stima\" Pirlo breaks the silence on the Russia case: “Commercial collaboration has nothing to do with politics.” (Adnkronos) – Form",
+      "url": "https://mastodon.ozioso.online/@ItalianNews/116988720746600635",
+      "source": "mastodon",
+      "tag": "russia",
+      "seen_date": "Sun, 26 Jul 2026 22:50:12 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
           "hits": 1,
           "weight": 9
         },
         {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 2,
-          "weight": 8
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
         }
       ],
-      "geopolitical_score": 38,
-      "quality_score": 41,
+      "geopolitical_score": 16,
+      "quality_score": 19,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
