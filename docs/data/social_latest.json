@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 13:46 UTC",
+  "updated_at": "2026-07-30 19:19 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -20,19 +20,27 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 2,
-        "negative": 0,
+        "mentions": 7,
+        "negative": 1,
         "positive": 0,
-        "index": 10,
+        "index": 36,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 2,
-        "main_social_topic": "Energia és gazdaság",
-        "reliable_sources": 0,
-        "geopolitical_score": 40,
+        "mastodon_mentions": 7,
+        "main_social_topic": "Belpolitikai feszültség",
+        "reliable_sources": 1,
+        "geopolitical_score": 112,
         "topics": [
           {
+            "name": "Belpolitikai feszültség",
+            "count": 3
+          },
+          {
             "name": "Energia és gazdaság",
+            "count": 2
+          },
+          {
+            "name": "EU / jogállamiság",
             "count": 1
           },
           {
@@ -43,16 +51,18 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 7,
           "x": 0
         },
         "category_counts": {
-          "energy_economy": 1,
+          "eu_rule_of_law": 1,
+          "energy_economy": 2,
+          "government_crisis": 3,
           "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 46,
+        "quality_total": 135,
         "top_posts": [
           {
             "title": "",
@@ -107,11 +117,125 @@
           },
           {
             "title": "",
-            "text": "Telex: A következő 24-72 órában teljesen le kell állítani a Paksi Atomerőművet https:// telex.hu/belfold/2026/07/30/ho seg-aszaly-veszhelyzet-idojaras-rendkivuli-keszultseg-percrol-percre # hungary # energy # heatwave # nuclear",
-            "url": "https://c.im/@shonin/117009163589996173",
+            "text": "There's a third lender too: the Hungarian branch of Bank of China, which gave Agrofert hundreds of millions of crowns in loans between 2018-2025, including €35.8M in 2022. Hungary's long been called \"China's gateway to Europe\" under Orbán — a dependency the new Magyar government has been trying to rebalance since taking power in May 2026. # Hungary # China",
+            "url": "https://mastodon.social/@AutokratDaily/117009722071652999",
             "source": "mastodon",
             "tag": "hungary",
-            "seen_date": "Thu, 30 Jul 2026 13:29:05 +0000",
+            "seen_date": "Thu, 30 Jul 2026 15:51:07 +0000",
+            "matched_countries": [
+              "hungary"
+            ],
+            "country_confidence": {
+              "hungary": 7
+            },
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 23,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "The lender behind much of this: MKB Bank (now MBH Bank), 15% Hungarian state-owned, with Orbán's own childhood friend Lőrinc Mészáros as a major shareholder. Same bank gave Agrofert its largest-ever loan (€71M) in 2023 — and separately funded Spain's Vox (€9.2M) and Marine Le Pen's National Rally (€10M) election campaigns. # Hungary # corruption",
+            "url": "https://mastodon.social/@AutokratDaily/117009719755455005",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Thu, 30 Jul 2026 15:50:32 +0000",
+            "matched_countries": [
+              "hungary"
+            ],
+            "country_confidence": {
+              "hungary": 6
+            },
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "New investigation from investigace.cz/VSqua…: Czech PM Andrej Babiš's company Agrofert built a lucrative business empire in Orbán's Hungary — state subsidies, EU-funded grants, and in 2023 a stake in a Romanian company co-owned by a Hungarian group whose board includes a top Orbán ally and controls funds once run by two former Orbán ministers. → Follow @ Aut",
+            "url": "https://mastodon.social/@AutokratDaily/117009715256359602",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Thu, 30 Jul 2026 15:49:23 +0000",
+            "matched_countries": [
+              "hungary",
+              "romania"
+            ],
+            "country_confidence": {
+              "hungary": 6,
+              "romania": 2,
+              "czechia": 1
+            },
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# BBCNews - Danube's record low levels force shutdown of Hungary's only nuclear plant https://www. bbc.co.uk/news/articles/cn0nqv 05g0do # Hungary # Paks",
+            "url": "https://journa.host/@fulelo/117010224649838225",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Thu, 30 Jul 2026 17:58:56 +0000",
             "matched_countries": [
               "hungary"
             ],
@@ -124,14 +248,14 @@
               {
                 "category": "energy_economy",
                 "label": "Energia és gazdaság",
-                "hits": 2,
+                "hits": 1,
                 "weight": 4
               }
             ],
             "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "quality_score": 13,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -144,52 +268,52 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 38,
-        "negative": 16,
-        "positive": 2,
-        "index": 76,
+        "mentions": 33,
+        "negative": 14,
+        "positive": 0,
+        "index": 82,
         "x_mentions": 0,
-        "reddit_mentions": 4,
-        "mastodon_mentions": 34,
+        "reddit_mentions": 5,
+        "mastodon_mentions": 28,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 18,
-        "geopolitical_score": 2084,
+        "reliable_sources": 14,
+        "geopolitical_score": 1561,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 30
+            "count": 23
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 8
+            "count": 10
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 4,
-          "mastodon": 34,
+          "reddit": 5,
+          "mastodon": 28,
           "x": 0
         },
         "category_counts": {
-          "security": 30,
-          "ukraine_russia": 8
+          "ukraine_russia": 10,
+          "security": 23
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 2218,
+        "quality_total": 1668,
         "top_posts": [
           {
             "title": "",
-            "text": "\" Tusk: ‘Everything indicates’ Russian cruise missile hit Poland The object left a 10-meter crater but no casualties in Poland’s Lublin province near the Ukrainian border. \" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # escalation # Economy # Drones # NATO # Hybrid # Poland https://www. politico",
-            "url": "https://mstdn.social/@ManyRoads/117008654006341143",
+            "text": "🔴 BREAKING Russian missile detonates in Poland triggering NATO scramble A Russian missile detonated in Poland, prompting NATO jets to scramble. This incident raises concerns about potential escalation of the war in Ukraine and highlights growing tensions regarding airspace violations by Russian forces. 📰 https://www. aljazeera.com/news/2026/7/30/n ato-jets-s",
+            "url": "https://mastodon.social/@GeoWire/117009973764315980",
             "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Thu, 30 Jul 2026 11:19:29 +0000",
+            "tag": "eu",
+            "seen_date": "Thu, 30 Jul 2026 16:55:07 +0000",
             "matched_countries": [
               "poland"
             ],
             "country_confidence": {
-              "poland": 5
+              "poland": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -197,20 +321,63 @@
               {
                 "category": "security",
                 "label": "Biztonsági kockázat",
-                "hits": 5,
+                "hits": 4,
                 "weight": 10
               },
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 5,
+                "hits": 4,
                 "weight": 9
               },
               {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
                 "hits": 1,
-                "weight": 8
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 95,
+            "quality_score": 100,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Domani: Le provocazioni di Mosca: un missile russo si “perde” e precipita in Polonia La prima volta in un paese Nato. L’Ue: «Inaccettabile violazione dello spazio aereo». Pesante raid sulle città ucraine. Vicino a Kryvyi Rih sterminata un’intera famiglia Moscow's provocations: a Russian missile \"lost\" and crashed into Poland The first time in a country born.",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117010348289306134",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Thu, 30 Jul 2026 18:30:22 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 3,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
               },
               {
                 "category": "protest",
@@ -229,16 +396,10 @@
                 "label": "EU / jogállamiság",
                 "hits": 1,
                 "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 133,
-            "quality_score": 138,
+            "geopolitical_score": 89,
+            "quality_score": 94,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -247,65 +408,16 @@
           },
           {
             "title": "",
-            "text": "🟠 UPDATE Russian missile breaches NATO airspace in Poland Polish authorities confirmed a Russian ballistic missile crashed within its borders during overnight attacks on Ukraine. No injuries were reported, and Kyiv warned that air defense in the region needs boosting. 📰 https://www. dw.com/en/poland-says-russian- ballistic-missile-violated-airspace/a-7817228",
-            "url": "https://mastodon.social/@GeoWire/117008723649306561",
-            "source": "mastodon",
-            "tag": "eu",
-            "seen_date": "Thu, 30 Jul 2026 11:37:12 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 2
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 6,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 124,
-            "quality_score": 129,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "\"Russian Missile Likely Crashed in Eastern Poland, PM Tusk Says\" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # escalation # Economy # Drones # NATO # Hybrid # Poland https://www. themoscowtimes.com/2026/07/30/ russian-missile-likely-crashed-in-eastern-poland-pm-tusk-says-a93379",
-            "url": "https://mstdn.social/@ManyRoads/117008706608396225",
+            "text": "\"Exactly, more defence! Give # Ukraine what it needs!\" 👏👏👏 From https:// t.me/pravdaGerashchenko_en # Polish_PM_Tusk : # Poland 's security depends directly on the effective actions of the # Ukrainian military, including in the air. If # Ukrainians had much more of what they've been asking for all along, perhaps that [#Russian_Kh_101 cruise missile] wouldn't",
+            "url": "https://mastodon.online/@kardinal691/117009873367552685",
             "source": "mastodon",
             "tag": "poland",
-            "seen_date": "Thu, 30 Jul 2026 11:32:52 +0000",
+            "seen_date": "Thu, 30 Jul 2026 16:29:35 +0000",
             "matched_countries": [
               "poland"
             ],
             "country_confidence": {
-              "poland": 5
+              "poland": 6
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -319,68 +431,7 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 116,
-            "quality_score": 121,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Primo piano ANSA - ANSA.it: Raid sull'Ucraina, 'un missile russo caduto in Polonia'. Tusk: 'Violato il nostro spazio aereo' Decolla un F-16. Mosca: 'Massiccio attacco su obiettivi militari ucraini'. Otto morto, tra le vittime due bambine Attack on Ukraine, ‘Russian missile fell in Poland’. Tusk: ‘Our airspace has been violated’ An F-16 takes off. Moscow: ‘Ma",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117008745263021928",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Thu, 30 Jul 2026 11:42:42 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 5
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
+                "hits": 4,
                 "weight": 9
               },
               {
@@ -388,16 +439,10 @@
                 "label": "Külső befolyás",
                 "hits": 1,
                 "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
               }
             ],
-            "geopolitical_score": 90,
-            "quality_score": 93,
+            "geopolitical_score": 83,
+            "quality_score": 86,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -406,16 +451,59 @@
           },
           {
             "title": "",
-            "text": "Cruise missile crashes in Poland: – Europe's security at risk On Thursday morning, Polish Prime Minister Donald Tusk confirmed that a missile had fallen on Polish soil. Ukrainian Foreign Minister Andriy Sybiha writes that the object was a Russian Kh-101 cruise missile: #NATO RE: https://bsky.app/profile/did:plc:zm64jthu5rlho6qjjwem4qq7/post/3mmjuyzqmes24 Kry",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:zm64jthu5rlho6qjjwem4qq7/post/3mru3q5ng3k2d",
+            "text": "NATO jets scramble as Russian missile detonates in Poland The growing series of NATO airspace violations is raising concern that Russia's war on Ukraine could escalate. https://www. aljazeera.com/news/2026/7/30/n ato-jets-scramble-as-russian-missile-detonates-in-poland # TopNews # News # NATO # Russia # Russian",
+            "url": "https://mastodon.social/@top_news/117010022361559938",
             "source": "mastodon",
             "tag": "nato",
-            "seen_date": "Thu, 30 Jul 2026 09:09:00 +0000",
+            "seen_date": "Thu, 30 Jul 2026 17:07:29 +0000",
             "matched_countries": [
               "poland"
             ],
             "country_confidence": {
-              "poland": 6
+              "poland": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 3,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 80,
+            "quality_score": 85,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "⚡ # Russian 🇷🇺 strikes across # Ukraine 🇺🇦 killed at least nine civilians and injured over 50 others, prompting NATO to scramble jets after a missile landed in # Poland 🇵🇱. The incident occurred during a widespread series of # Russian 🇷🇺 missile and drone attacks throughout # Ukraine 🇺🇦. [The Hindu] Follow to stay in the loop",
+            "url": "https://mastodon.social/@thepathtopeace/117010014095435198",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Thu, 30 Jul 2026 17:05:23 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -433,32 +521,20 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
+                "category": "protest",
+                "label": "Tiltakozás",
                 "hits": 1,
-                "weight": 8
+                "weight": 7
               },
               {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
                 "hits": 1,
                 "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 88,
-            "quality_score": 93,
+            "geopolitical_score": 78,
+            "quality_score": 83,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -473,39 +549,34 @@
       "name_en": "Slovakia",
       "name_hu": "Szlovákia",
       "social_signal": {
-        "mentions": 2,
+        "mentions": 1,
         "negative": 0,
         "positive": 0,
-        "index": 15,
+        "index": 10,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 2,
+        "mastodon_mentions": 1,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 1,
-        "geopolitical_score": 50,
+        "geopolitical_score": 34,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 1
-          },
-          {
-            "name": "Külső befolyás",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 1,
           "x": 0
         },
         "category_counts": {
-          "security": 1,
-          "foreign_influence": 1
+          "security": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 58,
+        "quality_total": 39,
         "top_posts": [
           {
             "title": "",
@@ -554,43 +625,6 @@
             "quality_score": 39,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Cina-Slovacchia: premier Li a Pellegrini, pronti a rafforzare scambi su energia verde e Ia 30 lug 02:40 - (Agenzia Nova) - La Cina e' pronta a collaborare con la Slovacchia per rafforzare la cooperazione lungo la Nuova via della seta... (Cip) China-Slovakia: Premier Li meets with Pellegrini, ready to strengthen trade in green energy and IA July",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117006376183882883",
-            "source": "mastodon",
-            "tag": "slovakia",
-            "seen_date": "Thu, 30 Jul 2026 01:40:13 +0000",
-            "matched_countries": [
-              "slovakia"
-            ],
-            "country_confidence": {
-              "slovakia": 2
-            },
-            "event_category": "foreign_influence",
-            "event_category_label": "Külső befolyás",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 19,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -689,52 +723,102 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 9,
-        "negative": 0,
+        "mentions": 10,
+        "negative": 1,
         "positive": 0,
-        "index": 42,
+        "index": 53,
         "x_mentions": 0,
         "reddit_mentions": 1,
-        "mastodon_mentions": 8,
+        "mastodon_mentions": 9,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 3,
-        "geopolitical_score": 162,
+        "reliable_sources": 5,
+        "geopolitical_score": 209,
         "topics": [
           {
             "name": "Biztonsági kockázat",
             "count": 5
           },
           {
-            "name": "Energia és gazdaság",
-            "count": 2
+            "name": "Ukrajna és Oroszország",
+            "count": 3
           },
           {
-            "name": "Ukrajna és Oroszország",
-            "count": 2
+            "name": "Energia és gazdaság",
+            "count": 1
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 1,
-          "mastodon": 8,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
-          "energy_economy": 2,
-          "ukraine_russia": 2,
+          "energy_economy": 1,
+          "government_crisis": 1,
+          "ukraine_russia": 3,
           "security": 5
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 191,
+        "quality_total": 245,
         "top_posts": [
           {
             "title": "",
-            "text": "🟡 Naval Movement | 6/10 🇺🇦 🇷🇺 Russian Black Sea Fleet deploys three more ships, shipping in Ukrainian ports halted The Russian Black Sea Fleet has deployed three additional ships, leading to a halt of shipping in Ukrainian ports. # OSINT # NewsGroup # BlackSeaFleet # NavalBlockade # Ukraine # Russia",
-            "url": "https://social.vir.group/@analytics/117008907229159131",
+            "text": "I totally don't buy the argument of \"there is a Russian rocket flying 100 km into Poland but we are just watching, ready to shoot it down if it turns out hostile\". Russian rockets (or any other unknown rocket) flying at you are by definition hostile. There was no immediate threat as it had not landed in a built-up area, he said, adding that \"we were prepared",
+            "url": "https://tldr.nettime.org/@undltd/117009484671593291",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Thu, 30 Jul 2026 14:50:44 +0000",
+            "matched_countries": [
+              "romania",
+              "poland"
+            ],
+            "country_confidence": {
+              "romania": 2,
+              "poland": 1
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 51,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# WW3 # Ukraine # invasion - # Russia Strikes 2 Ukrainian Ships In Black Sea & Another Vessel In Port Of Mykolaiv - Marine Insight https://www. marineinsight.com/russia-strik es-2-ukrainian-ships-in-black-sea-another-vessel-in-port-of-mykolaiv/",
+            "url": "https://piaille.fr/@jeromeollier/117010287055847611",
             "source": "mastodon",
             "tag": "russia",
-            "seen_date": "Thu, 30 Jul 2026 12:23:53 +0000",
+            "seen_date": "Thu, 30 Jul 2026 18:14:48 +0000",
             "matched_countries": [
               "romania"
             ],
@@ -747,8 +831,14 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 4,
+                "hits": 3,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "label": "Tiltakozás",
+                "hits": 1,
+                "weight": 7
               },
               {
                 "category": "foreign_influence",
@@ -757,8 +847,8 @@
                 "weight": 7
               }
             ],
-            "geopolitical_score": 43,
-            "quality_score": 46,
+            "geopolitical_score": 41,
+            "quality_score": 44,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -818,75 +908,51 @@
           },
           {
             "title": "",
-            "text": "Reacția # NATO după ce o rachetă rusească a încălcat spațiul aerian al Poloniei. Ce spune Donald # Tusk . 🔗 https:// stirileprotv.ro/stiri/internat ional/reactia-nato-dupa-ce-o-racheta-ruseasca-a-incalcat-spatiul-aerian-al-poloniei-ce-spune-donald-tusk.html # Știri # România # Polonia",
-            "url": "https://mstdn.social/@RomaniaTeIubesc/117009096182628261",
+            "text": "New investigation from investigace.cz/VSqua…: Czech PM Andrej Babiš's company Agrofert built a lucrative business empire in Orbán's Hungary — state subsidies, EU-funded grants, and in 2023 a stake in a Romanian company co-owned by a Hungarian group whose board includes a top Orbán ally and controls funds once run by two former Orbán ministers. → Follow @ Aut",
+            "url": "https://mastodon.social/@AutokratDaily/117009715256359602",
             "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Thu, 30 Jul 2026 13:11:57 +0000",
+            "tag": "hungary",
+            "seen_date": "Thu, 30 Jul 2026 15:49:23 +0000",
             "matched_countries": [
-              "romania",
-              "poland"
-            ],
-            "country_confidence": {
-              "romania": 5,
-              "poland": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 19,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🇪🇸#Spania trimite la # Kogălniceanu șapte avioane de vânătoare 🛦#F18, trei elicoptere echipate antidronă și o aeronavă de realimentare în aer, alături de 200 de militari ai ✈️#ForțeleAerieneSpaniole. Aeronavele 🛦#F16 românești, dislocate din # Martie în 🇱🇹#Lituania, se întorc acasă, iar # NATO transmite că rotația marchează “trecerea de la misiunile de poliț",
-            "url": "https://mastodon.world/@biziday/117009088075919504",
-            "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Thu, 30 Jul 2026 13:09:53 +0000",
-            "matched_countries": [
+              "hungary",
               "romania"
             ],
             "country_confidence": {
-              "romania": 5
+              "hungary": 6,
+              "romania": 2,
+              "czechia": 1
             },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
             "event_categories": [
               {
-                "category": "security",
-                "label": "Biztonsági kockázat",
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
                 "hits": 1,
-                "weight": 10
+                "weight": 8
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
               }
             ],
-            "geopolitical_score": 14,
+            "geopolitical_score": 16,
             "quality_score": 19,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "⚖#CSM (⚖#ConsiliulSuperiorAlMagistraturii) „îi apără reputația” lui Marius Voineag. Senatorul # USR (#UniuneaSalvațiRomânia) Cristian # Ghinea l-a numit „gibon borfaș” și „ticălos”. 🔗 https:// stirileprotv.ro/stiri/actualit ate/csm-ii-apara-reputatia-lui-marius-voineag-senatorul-usr-ghinea-l-a-numit-gibon-borfas-si-ticalos.html # Știri # România",
-            "url": "https://mstdn.social/@RomaniaTeIubesc/117008912465711038",
+            "text": "⚖#CSM (⚖#ConsiliulSuperiorAlMagistraturii) îi apără reputația lui Marius Voineag, adjunctul pentru ⚖️#ParchetulGeneral. Fostul șef # DNA fusese numit „ticălos”, ”psihopat”, ”gibon borfaș”, ”cocalar”, ”manelist” de senatorul # USR (#UniuneaSalvațiRomânia) Cristian # Ghinea : ”Depășește cu mult libertatea de exprimare”. 🔗 https:// wp.me/p9KpFA-5rqJ # Știri # R",
+            "url": "https://mastodon.world/@G4Media/117010292631131530",
             "source": "mastodon",
             "tag": "romania",
-            "seen_date": "Thu, 30 Jul 2026 12:25:13 +0000",
+            "seen_date": "Thu, 30 Jul 2026 18:16:13 +0000",
             "matched_countries": [
               "romania"
             ],
@@ -919,24 +985,24 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 9,
+        "mentions": 10,
         "negative": 0,
         "positive": 2,
-        "index": 38,
+        "index": 42,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 9,
-        "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 3,
-        "geopolitical_score": 182,
+        "mastodon_mentions": 10,
+        "main_social_topic": "Biztonsági kockázat",
+        "reliable_sources": 4,
+        "geopolitical_score": 196,
         "topics": [
           {
-            "name": "Ukrajna és Oroszország",
+            "name": "Biztonsági kockázat",
             "count": 4
           },
           {
-            "name": "Biztonsági kockázat",
-            "count": 3
+            "name": "Ukrajna és Oroszország",
+            "count": 4
           },
           {
             "name": "Belpolitikai feszültség",
@@ -946,17 +1012,17 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
+          "mastodon": 10,
           "x": 0
         },
         "category_counts": {
-          "security": 3,
+          "security": 4,
           "government_crisis": 2,
           "ukraine_russia": 4
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 215,
+        "quality_total": 234,
         "top_posts": [
           {
             "title": "",
@@ -1168,20 +1234,24 @@
       "name_en": "Latvia",
       "name_hu": "Lettország",
       "social_signal": {
-        "mentions": 5,
+        "mentions": 6,
         "negative": 0,
         "positive": 1,
-        "index": 20,
+        "index": 24,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 5,
+        "mastodon_mentions": 6,
         "main_social_topic": "Ukrajna és Oroszország",
         "reliable_sources": 0,
-        "geopolitical_score": 103,
+        "geopolitical_score": 111,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
             "count": 4
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           },
           {
             "name": "EU / jogállamiság",
@@ -1191,16 +1261,17 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
+          "mastodon": 6,
           "x": 0
         },
         "category_counts": {
           "ukraine_russia": 4,
+          "government_crisis": 1,
           "eu_rule_of_law": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 118,
+        "quality_total": 129,
         "top_posts": [
           {
             "title": "",
@@ -1424,16 +1495,16 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 11,
-        "negative": 3,
+        "mentions": 12,
+        "negative": 2,
         "positive": 2,
         "index": 50,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 11,
+        "mastodon_mentions": 12,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 0,
-        "geopolitical_score": 353,
+        "reliable_sources": 1,
+        "geopolitical_score": 358,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -1445,7 +1516,7 @@
           },
           {
             "name": "Belpolitikai feszültség",
-            "count": 1
+            "count": 2
           },
           {
             "name": "Külső befolyás",
@@ -1455,18 +1526,18 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
+          "mastodon": 12,
           "x": 0
         },
         "category_counts": {
-          "security": 5,
           "ukraine_russia": 4,
-          "government_crisis": 1,
+          "government_crisis": 2,
+          "security": 5,
           "foreign_influence": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 386,
+        "quality_total": 396,
         "top_posts": [
           {
             "title": "",
@@ -1562,20 +1633,16 @@
           },
           {
             "title": "",
-            "text": "Poland promised a 700-kilometer shield against Russia—two years on, satellites show four short ditches. Warsaw has spent since October 2024 on the project, yet only about 10 kilometres of actual linear fortifications have gone up. The situation in the Baltic States is even worse, a French analyst says. https:// mediafaro.org/article/20260726 -poland-promised",
-            "url": "https://mastodon.mediafaro.org/@mf_analysis/116987573796055745",
+            "text": "🏒 # Russia and Belarus will remain excluded from most major international ice hockey tournaments next season, the sport's world governing body said on Thursday, citing \"ongoing safety, security and sporting ​integrity concerns\". The decision means Russia's teams will not compete in IIHF events during the 2026-27 season, including ‌the men's World Championshi",
+            "url": "https://mastodon.social/@rvps2001/117010486414958483",
             "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Sun, 26 Jul 2026 17:58:31 +0000",
+            "tag": "russia",
+            "seen_date": "Thu, 30 Jul 2026 19:05:30 +0000",
             "matched_countries": [
-              "lithuania",
-              "poland"
+              "lithuania"
             ],
             "country_confidence": {
-              "lithuania": 6,
-              "poland": 5,
-              "estonia": 1,
-              "latvia": 1
+              "lithuania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -1589,7 +1656,7 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
@@ -1597,12 +1664,18 @@
                 "label": "Külső befolyás",
                 "hits": 2,
                 "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
               }
             ],
-            "geopolitical_score": 45,
-            "quality_score": 48,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 42,
+            "quality_score": 47,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1701,42 +1774,36 @@
   ],
   "posts": [
     {
-      "title": "Russian cruise missile (Ch-101) crashes in Poland -Tarnawa-Kolonia. Leaving massive crater.",
-      "text": "&#32; submitted by &#32; /u/Temporary_xx_account [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1van9tz/russian_cruise_missile_ch101_crashes_in_poland/",
+      "title": "Attacks on Ukrainians in Poland are rising. Disinformation fuels the flames",
+      "text": "&#32; submitted by &#32; /u/Motor_Professor_917 [link] &#32; [comments]",
+      "url": "https://www.reddit.com/r/europe/comments/1vaqjss/attacks_on_ukrainians_in_poland_are_rising/",
       "source": "reddit",
       "tag": "europe",
-      "seen_date": "2026-07-30T08:05:10+00:00",
+      "seen_date": "2026-07-30T11:08:06+00:00",
       "matched_countries": [
         "poland"
       ],
       "country_confidence": {
         "poland": 1
       },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
       "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 2,
+          "hits": 1,
           "weight": 9
         },
         {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
+          "category": "cyber_disinformation",
+          "label": "Kiber és dezinformáció",
           "hits": 1,
-          "weight": 7
+          "weight": 8
         }
       ],
-      "geopolitical_score": 35,
-      "quality_score": 34,
+      "geopolitical_score": 20,
+      "quality_score": 19,
       "source_reliability": 1,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -1775,36 +1842,42 @@
       "quality": "rss_filtered"
     },
     {
-      "title": "Attacks on Ukrainians in Poland are rising. Disinformation fuels the flames",
-      "text": "&#32; submitted by &#32; /u/Motor_Professor_917 [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1vaqjss/attacks_on_ukrainians_in_poland_are_rising/",
+      "title": "Russian cruise missile (Ch-101) crashes in Poland -Tarnawa-Kolonia. Leaving massive crater.",
+      "text": "&#32; submitted by &#32; /u/Temporary_xx_account [link] &#32; [comments]",
+      "url": "https://www.reddit.com/r/europe/comments/1van9tz/russian_cruise_missile_ch101_crashes_in_poland/",
       "source": "reddit",
       "tag": "europe",
-      "seen_date": "2026-07-30T11:08:06+00:00",
+      "seen_date": "2026-07-30T08:05:10+00:00",
       "matched_countries": [
         "poland"
       ],
       "country_confidence": {
         "poland": 1
       },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
       "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 1,
+          "hits": 2,
           "weight": 9
         },
         {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
           "hits": 1,
-          "weight": 8
+          "weight": 7
         }
       ],
-      "geopolitical_score": 20,
-      "quality_score": 19,
+      "geopolitical_score": 35,
+      "quality_score": 34,
       "source_reliability": 1,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -1855,6 +1928,37 @@
       "quality": "rss_filtered"
     },
     {
+      "title": "Cruise missile that crashed in Poland had 'significant' amount of explosives",
+      "text": "&#32; submitted by &#32; /u/Easy-Ad1996 [link] &#32; [comments]",
+      "url": "https://www.reddit.com/r/europe/comments/1vayn7f/cruise_missile_that_crashed_in_poland_had/",
+      "source": "reddit",
+      "tag": "europe",
+      "seen_date": "2026-07-30T16:32:29+00:00",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 10,
+      "quality_score": 9,
+      "source_reliability": 1,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
       "title": "Air raid sirens sound in Poland amid possible Russian missile incursion",
       "text": "&#32; submitted by &#32; /u/14zona [link] &#32; [comments]",
       "url": "https://www.reddit.com/r/europe/comments/1vagvob/air_raid_sirens_sound_in_poland_amid_possible/",
@@ -1892,6 +1996,188 @@
       "geopolitical_score": 35,
       "quality_score": 34,
       "source_reliability": 1,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The # Danube is experiencing a historic # drought throughout Central Europe. As somebody living walking distance from its banks in # Budapest I went to investigate - and document. This is a story of something both very local and global - effecting millions of people in different ways. On one hand, watersports and fishing have become impossible for locals (an",
+      "url": "https://convo.casa/@ajtocsugo/117010375395023423",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 30 Jul 2026 18:37:16 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 5
+      },
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
+      "event_categories": [
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 9,
+      "quality_score": 12,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# BBCNews - Danube's record low levels force shutdown of Hungary's only nuclear plant https://www. bbc.co.uk/news/articles/cn0nqv 05g0do # Hungary # Paks",
+      "url": "https://journa.host/@fulelo/117010224649838225",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 30 Jul 2026 17:58:56 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 1
+      },
+      "event_category": "energy_economy",
+      "event_category_label": "Energia és gazdaság",
+      "event_categories": [
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 13,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "There's a third lender too: the Hungarian branch of Bank of China, which gave Agrofert hundreds of millions of crowns in loans between 2018-2025, including €35.8M in 2022. Hungary's long been called \"China's gateway to Europe\" under Orbán — a dependency the new Magyar government has been trying to rebalance since taking power in May 2026. # Hungary # China",
+      "url": "https://mastodon.social/@AutokratDaily/117009722071652999",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 30 Jul 2026 15:51:07 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 7
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 20,
+      "quality_score": 23,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The lender behind much of this: MKB Bank (now MBH Bank), 15% Hungarian state-owned, with Orbán's own childhood friend Lőrinc Mészáros as a major shareholder. Same bank gave Agrofert its largest-ever loan (€71M) in 2023 — and separately funded Spain's Vox (€9.2M) and Marine Le Pen's National Rally (€10M) election campaigns. # Hungary # corruption",
+      "url": "https://mastodon.social/@AutokratDaily/117009719755455005",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 30 Jul 2026 15:50:32 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 6
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 2,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 19,
+      "quality_score": 22,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "New investigation from investigace.cz/VSqua…: Czech PM Andrej Babiš's company Agrofert built a lucrative business empire in Orbán's Hungary — state subsidies, EU-funded grants, and in 2023 a stake in a Romanian company co-owned by a Hungarian group whose board includes a top Orbán ally and controls funds once run by two former Orbán ministers. → Follow @ Aut",
+      "url": "https://mastodon.social/@AutokratDaily/117009715256359602",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Thu, 30 Jul 2026 15:49:23 +0000",
+      "matched_countries": [
+        "hungary",
+        "romania"
+      ],
+      "country_confidence": {
+        "hungary": 6,
+        "romania": 2,
+        "czechia": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 16,
+      "quality_score": 19,
+      "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
@@ -2032,6 +2318,695 @@
     },
     {
       "title": "",
+      "text": "Polish Prime Minister Donald Tusk says a Russian missile landed in Polish territory overnight, prompting fighter jets to secure its airspace. Russia carried out a missile barrage on neighbor Ukraine, and Tusk says there’s no reason to believe that Poland was targeted. Read more from @ USAToday https:// flip.it/4E8ip4 # Poland # Ukraine # Russia",
+      "url": "https://flipboard.social/@NewsDesk/117010410229327223",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 18:46:07 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 6
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 62,
+      "quality_score": 65,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Domani: Le provocazioni di Mosca: un missile russo si “perde” e precipita in Polonia La prima volta in un paese Nato. L’Ue: «Inaccettabile violazione dello spazio aereo». Pesante raid sulle città ucraine. Vicino a Kryvyi Rih sterminata un’intera famiglia Moscow's provocations: a Russian missile \"lost\" and crashed into Poland The first time in a country born.",
+      "url": "https://mastodon.ozioso.online/@ItalianNews/117010348289306134",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 18:30:22 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 89,
+      "quality_score": 94,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "NATO on alert as Russian missile hits Poland | Midday Report https:// video.echelon.pl/w/bsQHGhDfdnV 1gGaQBNncja",
+      "url": "https://video.echelon.pl/w/bsQHGhDfdnV1gGaQBNncja",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 18:06:47 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 49,
+      "quality_score": 54,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russia hit Poland, a NATO country, with a cruise missile. I think this was test. The kh-101 cruise missile guidance systems are not easy to jam, and the missile landed more than 50km inside Poland, which makes it not a mistake but deliberate targeting. This is Russia escalating, and if there’s a weak response like this, it’ll take that as weakness and escala",
+      "url": "https://mastodon.green/@gimulnautti/117010250271198976",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 18:05:27 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 61,
+      "quality_score": 66,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Unknown object crashed in Poland amid massive Russian attack on Ukraine | Morning Report https:// video.echelon.pl/w/eVRaMpj6NMS W3X8TsBEHbn",
+      "url": "https://video.echelon.pl/w/eVRaMpj6NMSW3X8TsBEHbn",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 18:05:01 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 37,
+      "quality_score": 40,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "⚡ # Russian 🇷🇺 strikes across # Ukraine 🇺🇦 killed at least nine civilians and injured over 50 others, prompting NATO to scramble jets after a missile landed in # Poland 🇵🇱. The incident occurred during a widespread series of # Russian 🇷🇺 missile and drone attacks throughout # Ukraine 🇺🇦. [The Hindu] Follow to stay in the loop",
+      "url": "https://mastodon.social/@thepathtopeace/117010014095435198",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 17:05:23 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 78,
+      "quality_score": 83,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Primo piano ANSA - ANSA.it: Ucraina, Zelensky mostra la foto della famiglia uccisa in un raid russo 'Un missile russo caduto in Polonia'. Tusk: 'Violato il nostro spazio aereo' Ukraine, Zelensky shows photo of family killed in Russian strike. Russian missile crashed into Poland. Tusk: ‘Our airspace violated’ # Ukraine # Zelensky # Russian # Poland https://ww",
+      "url": "https://mastodon.ozioso.online/@ItalianNews/117009958088990643",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 16:51:08 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 66,
+      "quality_score": 69,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "A Russian cruise # missile appears to have missed its target in # Ukraine and crashed inside # Poland . https://www. youtube.com/shorts/Smql1BH4vkE ?utm_source=dlvr.it&utm_medium=mastodon",
+      "url": "https://mas.corq.co/@rogue_corq/117009907095895063",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 16:38:10 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 44,
+      "quality_score": 47,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# Poland 🫵 Attack on Ukraine is an attack on all of us. # Ukraine # Russia # Europe https://www. bbc.com/news/articles/cwymkgen v2ro",
+      "url": "https://mastodon.nu/@ricoroswallpedersen/117009888477610393",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 16:33:26 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 37,
+      "quality_score": 42,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# Ukrainian fighter jets monitored and attempted to intercept the missiles heading toward the # Polish border all the way to the border itself. There is no reason to believe that # Poland was the target, but two of these objects violated # Polish airspace. One definitely did, because we have evidence of it here, and the other was near the # Polish border, bu",
+      "url": "https://mastodon.online/@kardinal691/117009875775304482",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 16:30:12 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 60,
+      "quality_score": 63,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "\"Exactly, more defence! Give # Ukraine what it needs!\" 👏👏👏 From https:// t.me/pravdaGerashchenko_en # Polish_PM_Tusk : # Poland 's security depends directly on the effective actions of the # Ukrainian military, including in the air. If # Ukrainians had much more of what they've been asking for all along, perhaps that [#Russian_Kh_101 cruise missile] wouldn't",
+      "url": "https://mastodon.online/@kardinal691/117009873367552685",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 16:29:35 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 6
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 4,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 83,
+      "quality_score": 86,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "I totally don't buy the argument of \"there is a Russian rocket flying 100 km into Poland but we are just watching, ready to shoot it down if it turns out hostile\". Russian rockets (or any other unknown rocket) flying at you are by definition hostile. There was no immediate threat as it had not landed in a built-up area, he said, adding that \"we were prepared",
+      "url": "https://tldr.nettime.org/@undltd/117009484671593291",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 14:50:44 +0000",
+      "matched_countries": [
+        "romania",
+        "poland"
+      ],
+      "country_confidence": {
+        "romania": 2,
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 46,
+      "quality_score": 51,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# POLAND SUSPECTS A RUSSIAN MISSILE HAS FALLEN ON ITS TERRITORY: In the Lublin region, experts are examining the crash site of an unidentified object, which is believed to be a Russian missile that flew into # Ukraine during a massive attack on Ukraine on the night of July 30. https://www. eurointegration.com.ua/news/20 26/07/30/7242600/",
+      "url": "https://journa.host/@timkmak/117009290040169055",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 14:01:15 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 52,
+      "quality_score": 55,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Attacks on Ukrainians in # Poland are rising. # Disinformation fuels the flames https:// kyivindependent.com/attacks-on -ukrainians-in-poland-are-rising-disinformation-fuels-the-flames/",
+      "url": "https://c.im/@shonin/117009266276389705",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 13:55:12 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "cyber_disinformation",
+          "label": "Kiber és dezinformáció",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 29,
+      "quality_score": 32,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "PUTIN STRIKES POLAND A huge crater, reportedly caused by a Russian Kh-101 missile that entered Polish airspace during last night's Russian attack on Ukraine, was discovered near the village of Targowisko. # AureFreePress # News # Poland # NATO # BreakingNews",
+      "url": "https://mstdn.social/@Free_Press/117009258255254719",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Thu, 30 Jul 2026 13:53:10 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 78,
+      "quality_score": 83,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "Repubblica.it: Ucraina, così un missile russo ha sterminato la famiglia Voronov: morti i genitori e i sette figli Nei massicci raid di ieri notte, un Iskander-M ha raso al suolo la palazzina a Radushne dove vivevano. Con loro è scomparso anche un nipotino. A ricostruire la loro storia è la drammatica testimonianza di un altro figlio che vive in Polonia e ved",
       "url": "https://mastodon.ozioso.online/@ItalianNews/117009215825758397",
       "source": "mastodon",
@@ -2069,668 +3044,6 @@
       "quality_score": 63,
       "source_reliability": 5,
       "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "RUSSIA ATTACKS POLAND! An unidentified (so far) object struck in Poland during last night's Russian attack on Ukraine. It created a crater about 10 meters in diameter with debris nearby. It fell about 80 km inside Poland. It's likely that it was a Russian X-101 missile. Reportedly, a Polish F-16 attempted to shoot down an unidentified air target but it disap",
-      "url": "https://mstdn.social/@Free_Press/117009184203515441",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 13:34:20 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 62,
-      "quality_score": 67,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "‘Ryanair refused to let us on’: how a couple who’ve lived in UK for 80 years got stuck in Krakow https://www. theguardian.com/politics/2026/ jul/30/how-couple-lived-in-uk-80-years-got-stuck-in-krakow # Brexit # HomeOffice # UkNews # ImmigrationAndAsylum # EuropeanUnion # ForeignPolicy # Europe # Politics # WorldNews # SecondWorldWar # Ryanair # Poland",
-      "url": "https://halo.nu/@theguardian_world_news/117009132024946330",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 13:21:03 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "migration_border",
-          "label": "Migráció és határnyomás",
-          "hits": 2,
-          "weight": 6
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 33,
-      "quality_score": 38,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "‘Ryanair refused to let us on’: how a couple who’ve lived in UK for 80 years got stuck in Krakow By Lisa O’Carroll Senior correspondent Maria and Czeslaw Krupa, who arrived in 1947 and 1948 as dependents of displaced Polish service members, were told they did not have post-Brexit rights to return to UK https://www. theguardian.com/politics/2026/ jul/30/how-c",
-      "url": "https://rssfeed.media/@guardianfeeds/117009128287618490",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 13:20:06 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "migration_border",
-          "label": "Migráció és határnyomás",
-          "hits": 2,
-          "weight": 6
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 33,
-      "quality_score": 38,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "NATO confirms Russian missile landed inside Poland | DW News https://www. youtube.com/watch?v=B86FWr1dNqo # Europe # Russia # Poland",
-      "url": "https://mas.to/@meganL/117009078738856299",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 13:07:30 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 54,
-      "quality_score": 59,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚡ # Polish 🇵🇱 Prime Minister Donald Tusk stated that # Poland 's 🇵🇱 security is directly linked to the effectiveness of the # Ukrainian 🇺🇦 armed forces. He suggested that if # Ukraine 🇺🇦 had received more of the military equipment it requested, a ballistic missile might not have entered # Polish 🇵🇱 airspace. [TabZ] We’ll continue to share developments as the",
-      "url": "https://mastodon.social/@thepathtopeace/117008948002290532",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 12:34:15 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 4,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 67,
-      "quality_score": 70,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Tusk: 'Everything indicates' russian cruise missile hit # Poland 🖊️ Wojciech Kości The object left a 10-meter crater but no casualties in Poland's Lublin province near the Ukrainian border. https://www. politico.eu/article/unidentifi ed-object-crashes-poland-russia-strikes-ukraine",
-      "url": "https://mastodon.ie/@EugeneMcParland/117008881351664308",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 12:17:18 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 79,
-      "quality_score": 84,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "# Article5 Missile that left crater in # Poland probably # Russian - PM https://www. rte.ie/news/world/2026/0730/15 85730-russia-ukraine-strike/",
-      "url": "https://toot.io/@TimFinnerty/117008860724288546",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 12:12:04 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 51,
-      "quality_score": 54,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Primo piano ANSA - ANSA.it: Raid sull'Ucraina, 'un missile russo caduto in Polonia'. Tusk: 'Violato il nostro spazio aereo' Decolla un F-16. Mosca: 'Massiccio attacco su obiettivi militari ucraini'. Otto morto, tra le vittime due bambine Attack on Ukraine, ‘Russian missile fell in Poland’. Tusk: ‘Our airspace has been violated’ An F-16 takes off. Moscow: ‘Ma",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117008745263021928",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 11:42:42 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 90,
-      "quality_score": 93,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "\"Russian Missile Likely Crashed in Eastern Poland, PM Tusk Says\" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # escalation # Economy # Drones # NATO # Hybrid # Poland https://www. themoscowtimes.com/2026/07/30/ russian-missile-likely-crashed-in-eastern-poland-pm-tusk-says-a93379",
-      "url": "https://mstdn.social/@ManyRoads/117008706608396225",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 11:32:52 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 4,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 116,
-      "quality_score": 121,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "\" Tusk: ‘Everything indicates’ Russian cruise missile hit Poland The object left a 10-meter crater but no casualties in Poland’s Lublin province near the Ukrainian border. \" # News # Politics # UN # War # ww3 # Military # Fascism # USA # Escalation # Europe # EU # Ukraine # Russia # escalation # Economy # Drones # NATO # Hybrid # Poland https://www. politico",
-      "url": "https://mstdn.social/@ManyRoads/117008654006341143",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 11:19:29 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 5,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 133,
-      "quality_score": 138,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "\"The # russian terrorist state causes pain and misery, far and wide!\"🤮🤮🤮 From https:// t.me/pravdaGerashchenko_en An unidentified (so far) object fell in # Poland during last night's # Russian attack on # Ukraine . It created a crater about 10 meters in diameter with debris nearby. It fell about 80 km inside # Poland . It's likely that it was a # Russian_X_1",
-      "url": "https://mastodon.online/@kardinal691/117008608269290279",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 11:07:52 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 47,
-      "quality_score": 50,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "RE: https:// journa.host/@ScottLucas/117007 709904940003 Polish PM Donald Tusk: Object that crashed into a field in eastern # Poland overnight is probably # Russia Kh-101 missile During Russia's attacks across # Ukraine , air raid sirens sounded in # Lublin region, F-16 fighter jets scrambled, and explosion reported # UkraineWar",
-      "url": "https://journa.host/@ScottLucas/117008475214006424",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 10:34:01 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 47,
-      "quality_score": 50,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "RE: https:// journa.host/@ScottLucas/117007 709904940003 # Zelensky and # Poland counterpart Donald Tusk meet in Lublin 1st Zelensky visit,to Poland since backlash over naming of serving Ukrainian military unit after Ukrainian Insurgent Army Discussion of bilateral ties, historical dialogue, & defense cooperation: \"Anti-ballistic defense is key priority\"",
-      "url": "https://journa.host/@ScottLucas/117008452113715948",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Thu, 30 Jul 2026 10:28:09 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 40,
-      "quality_score": 43,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Agenzia Nova: Cina-Slovacchia: premier Li a Pellegrini, pronti a rafforzare scambi su energia verde e Ia 30 lug 02:40 - (Agenzia Nova) - La Cina e' pronta a collaborare con la Slovacchia per rafforzare la cooperazione lungo la Nuova via della seta... (Cip) China-Slovakia: Premier Li meets with Pellegrini, ready to strengthen trade in green energy and IA July",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117006376183882883",
-      "source": "mastodon",
-      "tag": "slovakia",
-      "seen_date": "Thu, 30 Jul 2026 01:40:13 +0000",
-      "matched_countries": [
-        "slovakia"
-      ],
-      "country_confidence": {
-        "slovakia": 2
-      },
-      "event_category": "foreign_influence",
-      "event_category_label": "Külső befolyás",
-      "event_categories": [
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 2,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 16,
-      "quality_score": 19,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -2786,112 +3099,11 @@
     },
     {
       "title": "",
-      "text": "🇪🇺#UE a deblocat 3,47 miliarde 💶#EUR pentru 🇺🇦#Ucraina pentru achiziționarea de drone, rachete și avioane de luptă. 🔗 https:// stirileprotv.ro/stiri/internat ional/ue-a-deblocat-3-47-miliarde-de-euro-pentru-ucraina-pentru-achizi-ionarea-de-drone-rachete-si-avioane-de-lupta.html # Știri # România # UniuneaEuropeană",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117009208016567667",
+      "text": "Două avioane 🛦#F16 au fost ridicate pentru monitorizarea unui grup de drone de la granița cu 🇺🇦#Ucraina, anunță 🛡️#MinisterulApărării. 🚨#RoAlert în județul # Tulcea . 🔗 https:// wp.me/p9KpFA-5rr4 # Știri # România # Dobrogea # Tulcea",
+      "url": "https://mastodon.world/@G4Media/117010439334521330",
       "source": "mastodon",
       "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 13:40:23 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 15,
-      "quality_score": 18,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Reacția # NATO după ce o rachetă rusească a încălcat spațiul aerian al Poloniei. Ce spune Donald # Tusk . 🔗 https:// stirileprotv.ro/stiri/internat ional/reactia-nato-dupa-ce-o-racheta-ruseasca-a-incalcat-spatiul-aerian-al-poloniei-ce-spune-donald-tusk.html # Știri # România # Polonia",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117009096182628261",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 13:11:57 +0000",
-      "matched_countries": [
-        "romania",
-        "poland"
-      ],
-      "country_confidence": {
-        "romania": 5,
-        "poland": 4
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 14,
-      "quality_score": 19,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🇪🇸#Spania trimite la # Kogălniceanu șapte avioane de vânătoare 🛦#F18, trei elicoptere echipate antidronă și o aeronavă de realimentare în aer, alături de 200 de militari ai ✈️#ForțeleAerieneSpaniole. Aeronavele 🛦#F16 românești, dislocate din # Martie în 🇱🇹#Lituania, se întorc acasă, iar # NATO transmite că rotația marchează “trecerea de la misiunile de poliț",
-      "url": "https://mastodon.world/@biziday/117009088075919504",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 13:09:53 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 14,
-      "quality_score": 19,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Dronele cad, oamenii se uită. 🔗 https:// youtube.com/watch?v=jgJJCjgBRhs # România # Video # Declic",
-      "url": "https://mas.to/@declic/117009070526253762",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 13:05:25 +0000",
+      "seen_date": "Thu, 30 Jul 2026 18:53:31 +0000",
       "matched_countries": [
         "romania"
       ],
@@ -2918,11 +3130,11 @@
     },
     {
       "title": "",
-      "text": "⚖#CSM (⚖#ConsiliulSuperiorAlMagistraturii) „îi apără reputația” lui Marius Voineag. Senatorul # USR (#UniuneaSalvațiRomânia) Cristian # Ghinea l-a numit „gibon borfaș” și „ticălos”. 🔗 https:// stirileprotv.ro/stiri/actualit ate/csm-ii-apara-reputatia-lui-marius-voineag-senatorul-usr-ghinea-l-a-numit-gibon-borfas-si-ticalos.html # Știri # România",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117008912465711038",
+      "text": "⚖#CSM (⚖#ConsiliulSuperiorAlMagistraturii) îi apără reputația lui Marius Voineag, adjunctul pentru ⚖️#ParchetulGeneral. Fostul șef # DNA fusese numit „ticălos”, ”psihopat”, ”gibon borfaș”, ”cocalar”, ”manelist” de senatorul # USR (#UniuneaSalvațiRomânia) Cristian # Ghinea : ”Depășește cu mult libertatea de exprimare”. 🔗 https:// wp.me/p9KpFA-5rqJ # Știri # R",
+      "url": "https://mastodon.world/@G4Media/117010292631131530",
       "source": "mastodon",
       "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 12:25:13 +0000",
+      "seen_date": "Thu, 30 Jul 2026 18:16:13 +0000",
       "matched_countries": [
         "romania"
       ],
@@ -2949,31 +3161,62 @@
     },
     {
       "title": "",
-      "text": "Agenzia Nova: Speciale energia: Romania, fermato anche secondo reattore centrale nucleare di Cernavoda per siccita' Danubio 30 lug 14:15 - (Agenzia Nova) - Per la prima volta nella storia recente, la Romania ha dovuto fermare entrambi i reattori della centrale nucleare... (Rob) Special energy: Romania, halted even with the Danube central nuclear reactor in C",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117008892885964881",
+      "text": "Tot mai mulți angajați de la Sanatoriul Balnear # Techirghiol au cancer. Manager: ”În fiecare lună mai aud de câte un angajat care trebuie să urmeze tratament oncologic, care merge la intervenții chirurgicale în acest sens”. 🔗 https:// wp.me/p9KpFA-5rqD # Știri # România # Dobrogea # Techirghiol # Sănătate # Oncologie # Cancer",
+      "url": "https://mastodon.world/@G4Media/117010213999281393",
       "source": "mastodon",
       "tag": "romania",
-      "seen_date": "Thu, 30 Jul 2026 12:20:14 +0000",
+      "seen_date": "Thu, 30 Jul 2026 17:56:13 +0000",
       "matched_countries": [
         "romania"
       ],
       "country_confidence": {
-        "romania": 1
+        "romania": 5
       },
-      "event_category": "energy_economy",
-      "event_category_label": "Energia és gazdaság",
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
       "event_categories": [
         {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 3,
-          "weight": 4
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
         }
       ],
-      "geopolitical_score": 12,
-      "quality_score": 15,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "geopolitical_score": 14,
+      "quality_score": 19,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Histórico triunfo de Armenia en el Campeonato Mundial de Tiro en Estonia tras conquistar 5 medallas de oro, 1 de plata y 3 de bronce. # AidaAzatyan # AregSaribekyan # armenia # CampeonatoMundialDeTiro # ereván # estonia # GorKhachatryan # HaykMinasyan # HovhannesMargaryan # LilitPoghosyan # NarineShahbazyan # TiroDeportivo # ZhannaAndreasyan https:// soyarme",
+      "url": "https://mastodon.social/@soyarmernio/117010232388067079",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Thu, 30 Jul 2026 18:00:54 +0000",
+      "matched_countries": [
+        "estonia"
+      ],
+      "country_confidence": {
+        "estonia": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 14,
+      "quality_score": 19,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -3328,45 +3571,29 @@
     },
     {
       "title": "",
-      "text": "Poland promised a 700-kilometer shield against Russia—two years on, satellites show four short ditches. Warsaw has spent since October 2024 on the project, yet only about 10 kilometres of actual linear fortifications have gone up. The situation in the Baltic States is even worse, a French analyst says. https:// mediafaro.org/article/20260726 -poland-promised",
-      "url": "https://mastodon.mediafaro.org/@mf_analysis/116987573796055745",
+      "text": "The # government of # Latvia has discussed the Ministry of Transport's report on the current situation of the country's national airline, airBaltic. # Transport Minister Rihards Kozlovskis said that the goal was to attract private # capital to ensure airBaltic's continuing operations. https:// viabaltica.fi/latvia-governmen t-hears-report-on-airbaltic/",
+      "url": "https://mstdn.social/@viabaltica/117010514477896550",
       "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Sun, 26 Jul 2026 17:58:31 +0000",
+      "tag": "latvia",
+      "seen_date": "Thu, 30 Jul 2026 19:12:38 +0000",
       "matched_countries": [
-        "lithuania",
-        "poland"
+        "latvia"
       ],
       "country_confidence": {
-        "lithuania": 6,
-        "poland": 5,
-        "estonia": 1,
         "latvia": 1
       },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
       "event_categories": [
         {
-          "category": "security",
-          "label": "Biztonsági kockázat",
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
           "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 2,
-          "weight": 7
+          "weight": 8
         }
       ],
-      "geopolitical_score": 45,
-      "quality_score": 48,
+      "geopolitical_score": 8,
+      "quality_score": 11,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -3449,6 +3676,37 @@
       ],
       "geopolitical_score": 39,
       "quality_score": 42,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Kazimira Prunskiene, first prime minister of # Lithuania after the restoration of independence, has died at the age of 83. She helped establish the country's pro-independence movement, Sajudis, and was appointed prime minister in March 1990. https:// viabaltica.fi/lithuania-former -pm-kazimira-prunskiene-dies/",
+      "url": "https://mstdn.social/@viabaltica/117009574949416490",
+      "source": "mastodon",
+      "tag": "lithuania",
+      "seen_date": "Thu, 30 Jul 2026 15:13:42 +0000",
+      "matched_countries": [
+        "lithuania"
+      ],
+      "country_confidence": {
+        "lithuania": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 11,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -3822,6 +4080,123 @@
     },
     {
       "title": "",
+      "text": "NATO jets scramble as Russian missile detonates in Poland The growing series of NATO airspace violations is raising concern that Russia's war on Ukraine could escalate. https://www. aljazeera.com/news/2026/7/30/n ato-jets-scramble-as-russian-missile-detonates-in-poland # TopNews # News # NATO # Russia # Russian",
+      "url": "https://mastodon.social/@top_news/117010022361559938",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Thu, 30 Jul 2026 17:07:29 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 80,
+      "quality_score": 85,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🇪🇸#Spania trimite în 🇷🇴#România avioane de vânătoare, elicoptere și 200 de militari. Detașamentele de apărare aeriană italiene, spaniole și turcești înlocuiesc avioanele franceze, portugheze și românești desemnate pentru misiunea # NATO de poliție aeriană de-a lungul flancului estic. 🔗 https:// wp.me/p9KpFA-5roT # Știri # Franța # Portugalia",
+      "url": "https://mastodon.world/@G4Media/117009504159082500",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Thu, 30 Jul 2026 14:55:42 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 14,
+      "quality_score": 19,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "RUSSIA ATTACKS POLAND! An unidentified (so far) object struck in Poland during last night's Russian attack on Ukraine. It created a crater about 10 meters in diameter with debris nearby. It fell about 80 km inside Poland. It's likely that it was a Russian X-101 missile. Reportedly, a Polish F-16 attempted to shoot down an unidentified air target but it disap",
+      "url": "https://mstdn.social/@Free_Press/117009184203515441",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Thu, 30 Jul 2026 13:34:20 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 62,
+      "quality_score": 67,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "I wonder what a totally different response would accomplish: “ #Russia is sending attack weapons towards NATO countries. We will therefore now establish #skyshield over #Ukraine in order to protect #NATO territories. “￼ - Alternate-timeline-Tusk RE: https://bsky.app/profile/did:plc:4aqzua5vsewimmusg66fyajl/post/3mruithwyxc2m",
       "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:qciejmtc5bvv4p6bbs4evqct/post/3mrujlddcz22m",
       "source": "mastodon",
@@ -3865,16 +4240,18 @@
     },
     {
       "title": "",
-      "text": "On Thursday, an object entered Polish airspace and subsequently crashed near the village of Tarnawa-Kolonia, approximately 80 kilometers from the Polish-Ukraini... https:// news.osna.fm/?p=57324 | # news # airspace # crash # missile # nato",
-      "url": "https://mastodon.social/@osnafm/117008739670939765",
+      "text": "Reacția # NATO după ce o rachetă rusească a încălcat spațiul aerian al Poloniei. Ce spune Donald # Tusk . 🔗 https:// stirileprotv.ro/stiri/internat ional/reactia-nato-dupa-ce-o-racheta-ruseasca-a-incalcat-spatiul-aerian-al-poloniei-ce-spune-donald-tusk.html # Știri # România # Polonia",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/117009096182628261",
       "source": "mastodon",
       "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 11:41:17 +0000",
+      "seen_date": "Thu, 30 Jul 2026 13:11:57 +0000",
       "matched_countries": [
+        "romania",
         "poland"
       ],
       "country_confidence": {
-        "poland": 1
+        "romania": 5,
+        "poland": 4
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -3882,12 +4259,12 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 3,
+          "hits": 1,
           "weight": 10
         }
       ],
-      "geopolitical_score": 34,
-      "quality_score": 39,
+      "geopolitical_score": 14,
+      "quality_score": 19,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -3896,11 +4273,11 @@
     },
     {
       "title": "",
-      "text": "🔴 BREAKING Russian missile breaches NATO airspace in Poland Poland confirms a Russian missile landed on its territory, breaching NATO airspace during an attack on Ukraine. This incident raises significant geopolitical tensions as it involves a direct violation of the alliance's sovereign airspace by Russian forces. 📰 https://www. aljazeera.com/video/newsfeed",
-      "url": "https://mastodon.social/@GeoWire/117008474763986668",
+      "text": "🔴 BREAKING Russian missile detonates in Poland triggering NATO scramble A Russian missile detonated in Poland, prompting NATO jets to scramble. This incident raises concerns about potential escalation of the war in Ukraine and highlights growing tensions regarding airspace violations by Russian forces. 📰 https://www. aljazeera.com/news/2026/7/30/n ato-jets-s",
+      "url": "https://mastodon.social/@GeoWire/117009973764315980",
       "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 10:33:54 +0000",
+      "tag": "eu",
+      "seen_date": "Thu, 30 Jul 2026 16:55:07 +0000",
       "matched_countries": [
         "poland"
       ],
@@ -3919,7 +4296,7 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 3,
+          "hits": 4,
           "weight": 9
         },
         {
@@ -3927,10 +4304,16 @@
           "label": "Külső befolyás",
           "hits": 1,
           "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
         }
       ],
-      "geopolitical_score": 81,
-      "quality_score": 86,
+      "geopolitical_score": 95,
+      "quality_score": 100,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -3939,109 +4322,11 @@
     },
     {
       "title": "",
-      "text": "🟡 Missile Incident | 8/10 🇵🇱 🇷🇺 🇺🇦 Missile falls on Polish territory, looks like Russian one, says PM Tusk Polish Prime Minister Donald Tusk stated that the missile that landed on Polish territory appears to be Russian, but there is no certainty. The government has lied in similar past incidents, according to reports. # OSINT # NewsGroup # Poland # Missile #",
-      "url": "https://social.vir.group/@analytics/117008286412456088",
+      "text": "Russia strikes targets across Ukraine, NATO says a missile fell in Poland https:// fed.brid.gy/r/https://globalne ws.ca/news/12003289/russia-strikes-ukraine-nato-missile-poland/",
+      "url": "https://fed.brid.gy/r/https://globalnews.ca/news/12003289/russia-strikes-ukraine-nato-missile-poland/",
       "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 09:46:00 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 2,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 68,
-      "quality_score": 73,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🟡 Cross-Border Incident | 8/10 🇵🇱 🇷🇺 Crater deep inside Poland likely from Russian missile, says Polish PM The Polish prime minister stated that a missile that left a deep crater inside Poland was probably Russian. The incident has heightened tensions on NATO's eastern flank. # OSINT # NewsGroup # Poland # Russia # Missile # NATO",
-      "url": "https://social.vir.group/@analytics/117008199510944860",
-      "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 09:23:54 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 70,
-      "quality_score": 75,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "‘Russian missile’ leaves 33ft crater in Nato territory after hitting Polish field https:// fed.brid.gy/r/https://metro.co .uk/2026/07/30/russian-missile-leaves-33ft-crater-nato-territory-hitting-polish-field-29258077/",
-      "url": "https://fed.brid.gy/r/https://metro.co.uk/2026/07/30/russian-missile-leaves-33ft-crater-nato-territory-hitting-polish-field-29258077/",
-      "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 08:45:38 +0000",
+      "tag": "ukraine",
+      "seen_date": "Thu, 30 Jul 2026 18:33:57 +0000",
       "matched_countries": [
         "poland"
       ],
@@ -4064,110 +4349,6 @@
           "weight": 9
         },
         {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 49,
-      "quality_score": 54,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Cruise missile crashes in Poland: – Europe's security at risk On Thursday morning, Polish Prime Minister Donald Tusk confirmed that a missile had fallen on Polish soil. Ukrainian Foreign Minister Andriy Sybiha writes that the object was a Russian Kh-101 cruise missile: #NATO RE: https://bsky.app/profile/did:plc:zm64jthu5rlho6qjjwem4qq7/post/3mmjuyzqmes24 Kry",
-      "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:zm64jthu5rlho6qjjwem4qq7/post/3mru3q5ng3k2d",
-      "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 09:09:00 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 88,
-      "quality_score": 93,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🔴 Missile Strike | 10/10 🇵🇱 🇷🇺 🇺🇦 Russian X-101 missile struck Polish territory near Lublin On the morning of July 30, 2026, a Russian X-101 cruise missile, likely targeting western Ukraine, penetrated 90 km into Polish airspace and struck an empty field 40 km south of Lublin. The true target remains unknown. # OSINT # NewsGroup # Missile # Poland # Escalati",
-      "url": "https://social.vir.group/@analytics/117008109990585786",
-      "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Thu, 30 Jul 2026 09:01:08 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
           "category": "protest",
           "label": "Tiltakozás",
           "hits": 1,
@@ -4180,76 +4361,21 @@
           "weight": 7
         }
       ],
-      "geopolitical_score": 75,
-      "quality_score": 80,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚡ NEWS Russian missile debris found in eastern Poland Polish Prime Minister Donald Tusk stated that an object crashing in eastern Poland appears to be a Russian missile. Authorities discovered a crater and scattered debris in a field following reports of an explosion overnight. 📰 https://www. france24.com/en/video/20260730 -pm-tusk-says-russian-missile-appea",
-      "url": "https://mastodon.social/@GeoWire/117009033113223330",
-      "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Thu, 30 Jul 2026 12:55:54 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 58,
+      "geopolitical_score": 56,
       "quality_score": 61,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
     },
     {
       "title": "",
-      "text": "⚡An unidentified object entered # Polish 🇵🇱 airspace and crashed into a field during a # Russian 🇷🇺 aerial attack on # Ukraine 🇺🇦. President Volodymyr Zelensky urged allies to provide anti-ballistic missiles to counter what he described as \" # Russian 🇷🇺 terror,\" while the # EU 🇪🇺 condemned the strikes. [France 24] For the latest information, check back here",
-      "url": "https://mastodon.social/@thepathtopeace/117008764061467894",
+      "text": "Russian missile kills family in Ukraine as another hits Poland | Ukraine Brief https:// video.echelon.pl/w/1DY12i13WL4 fmu2uoBnYZ7",
+      "url": "https://video.echelon.pl/w/1DY12i13WL4fmu2uoBnYZ7",
       "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Thu, 30 Jul 2026 11:47:29 +0000",
+      "tag": "ukraine",
+      "seen_date": "Thu, 30 Jul 2026 18:40:48 +0000",
       "matched_countries": [
         "poland"
       ],
@@ -4262,7 +4388,7 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 2,
+          "hits": 1,
           "weight": 10
         },
         {
@@ -4272,32 +4398,14 @@
           "weight": 9
         },
         {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
           "category": "foreign_influence",
           "label": "Külső befolyás",
           "hits": 1,
           "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
         }
       ],
-      "geopolitical_score": 77,
-      "quality_score": 80,
+      "geopolitical_score": 44,
+      "quality_score": 47,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4306,146 +4414,11 @@
     },
     {
       "title": "",
-      "text": "🟠 UPDATE Russian missile breaches NATO airspace in Poland Polish authorities confirmed a Russian ballistic missile crashed within its borders during overnight attacks on Ukraine. No injuries were reported, and Kyiv warned that air defense in the region needs boosting. 📰 https://www. dw.com/en/poland-says-russian- ballistic-missile-violated-airspace/a-7817228",
-      "url": "https://mastodon.social/@GeoWire/117008723649306561",
-      "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Thu, 30 Jul 2026 11:37:12 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 6,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 124,
-      "quality_score": 129,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "NEARLY 300 DRONES AND “ZIRCONS”! Russia unleashed a bloody hell: Poland scrambled aircraft! #Ukraine - YouTube",
-      "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:yx2nfpytmmze4fau2qxw2c5a/post/cccubz5mivalk",
+      "text": "'Get Off The Bus, Get Out Of The Country.' Ukrainians Took Refuge In Poland. Now They're Increasingly Fearful. https:// fed.brid.gy/r/https://www.rfer l.org/a/ukraine-poland-war-refugees-hate-crimes/33818435.html",
+      "url": "https://fed.brid.gy/r/https://www.rferl.org/a/ukraine-poland-war-refugees-hate-crimes/33818435.html",
       "source": "mastodon",
       "tag": "ukraine",
-      "seen_date": "Thu, 30 Jul 2026 13:26:02 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 35,
-      "quality_score": 38,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "KYIV POST: ‘We Were Ready to Shoot It Down’: Tusk Says Russian Kh-101 Missile Entered Poland https://www. kyivpost.com/post/81396 Donald Tusk said evidence indicated that a Russian Kh-101 cruise missile violated Polish airspace during Moscow’s overnight assault on Ukraine. No casualties or damage were reported in Poland, while the initial toll from the attac",
-      "url": "https://mstdn.social/@ukrdef/117009136777104119",
-      "source": "mastodon",
-      "tag": "ukraine",
-      "seen_date": "Thu, 30 Jul 2026 13:22:16 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 75,
-      "quality_score": 78,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Interesting hearing a # Russian dissident claiming that # Russia has 'already lost' the # UkraineWar . I don't think I entirely believe this, but it certainly isn't going well for them. The Bunker – News without the nonsense: Russia is doomed Episode webpage: https:// shows.acast.com/the-bunker/epi sodes/russia-is-doomed Media file: https:// sphinx.acast.com",
-      "url": "https://mastodon.scot/@simon_brooke/117009158802284629",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Thu, 30 Jul 2026 13:27:52 +0000",
+      "seen_date": "Thu, 30 Jul 2026 16:42:47 +0000",
       "matched_countries": [
         "poland"
       ],
@@ -4458,18 +4431,18 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 4,
+          "hits": 3,
           "weight": 9
         },
         {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
+          "category": "migration_border",
+          "label": "Migráció és határnyomás",
           "hits": 1,
-          "weight": 7
+          "weight": 6
         }
       ],
-      "geopolitical_score": 46,
-      "quality_score": 49,
+      "geopolitical_score": 36,
+      "quality_score": 39,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4478,11 +4451,60 @@
     },
     {
       "title": "",
-      "text": "🟡 Naval Movement | 6/10 🇺🇦 🇷🇺 Russian Black Sea Fleet deploys three more ships, shipping in Ukrainian ports halted The Russian Black Sea Fleet has deployed three additional ships, leading to a halt of shipping in Ukrainian ports. # OSINT # NewsGroup # BlackSeaFleet # NavalBlockade # Ukraine # Russia",
-      "url": "https://social.vir.group/@analytics/117008907229159131",
+      "text": "🏒 # Russia and Belarus will remain excluded from most major international ice hockey tournaments next season, the sport's world governing body said on Thursday, citing \"ongoing safety, security and sporting ​integrity concerns\". The decision means Russia's teams will not compete in IIHF events during the 2026-27 season, including ‌the men's World Championshi",
+      "url": "https://mastodon.social/@rvps2001/117010486414958483",
       "source": "mastodon",
       "tag": "russia",
-      "seen_date": "Thu, 30 Jul 2026 12:23:53 +0000",
+      "seen_date": "Thu, 30 Jul 2026 19:05:30 +0000",
+      "matched_countries": [
+        "lithuania"
+      ],
+      "country_confidence": {
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 2,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 42,
+      "quality_score": 47,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# WW3 # Ukraine # invasion - # Russia Strikes 2 Ukrainian Ships In Black Sea & Another Vessel In Port Of Mykolaiv - Marine Insight https://www. marineinsight.com/russia-strik es-2-ukrainian-ships-in-black-sea-another-vessel-in-port-of-mykolaiv/",
+      "url": "https://piaille.fr/@jeromeollier/117010287055847611",
+      "source": "mastodon",
+      "tag": "russia",
+      "seen_date": "Thu, 30 Jul 2026 18:14:48 +0000",
       "matched_countries": [
         "romania"
       ],
@@ -4495,8 +4517,14 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 4,
+          "hits": 3,
           "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
         },
         {
           "category": "foreign_influence",
@@ -4505,8 +4533,8 @@
           "weight": 7
         }
       ],
-      "geopolitical_score": 43,
-      "quality_score": 46,
+      "geopolitical_score": 41,
+      "quality_score": 44,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
