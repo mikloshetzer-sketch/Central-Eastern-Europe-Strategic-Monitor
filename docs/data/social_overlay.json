@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-10T18:50:03.221673+00:00",
+  "last_update": "2026-08-11T01:11:29.903118+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -52,23 +52,27 @@
   },
   "countries": {
     "hungary": {
-      "mentions": 7,
-      "negative": 4,
+      "mentions": 10,
+      "negative": 5,
       "positive": 0,
-      "index": 60,
+      "index": 70,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 7,
-      "main_social_topic": "Külső befolyás",
+      "mastodon_mentions": 10,
+      "main_social_topic": "EU / jogállamiság",
       "reliable_sources": 6,
-      "geopolitical_score": 238,
+      "geopolitical_score": 279,
       "topics": [
         {
-          "name": "Külső befolyás",
+          "name": "EU / jogállamiság",
+          "count": 3
+        },
+        {
+          "name": "Belpolitikai feszültség",
           "count": 2
         },
         {
-          "name": "EU / jogállamiság",
+          "name": "Külső befolyás",
           "count": 2
         },
         {
@@ -76,25 +80,26 @@
           "count": 2
         },
         {
-          "name": "Belpolitikai feszültség",
+          "name": "Ukrajna és Oroszország",
           "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 7,
+        "mastodon": 10,
         "x": 0
       },
       "category_counts": {
-        "government_crisis": 1,
+        "eu_rule_of_law": 3,
+        "government_crisis": 2,
+        "ukraine_russia": 1,
         "foreign_influence": 2,
-        "eu_rule_of_law": 2,
         "security": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 271,
+      "quality_total": 321,
       "top_posts": [
         {
           "title": "",
@@ -210,6 +215,43 @@
         },
         {
           "title": "",
+          "text": "🚨 WARNELY SAFETY ALERT Paks, Hungary · Incident Hungary shuts nuclear plant due to Danube water levels Hungary's Paks nuclear plant shut down due to record-low water levels on the Danube, risking energy supply. https://www. warnely.com/news/hungary-shuts -nuclear-plant-due-to-danube-water-levels-df8d467b-e05b-44a8-b923-929224b961a6?utm_source=mastodon&utm_me",
+          "url": "https://mastodon.social/@warnely/117073639562398385",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Mon, 10 Aug 2026 22:46:10 +0000",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 2,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 20,
+          "quality_score": 23,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "Weather tracker: Europe breaks more heat records as temperatures soar By Magdalena Shopova for MetDesk Drought and wildfires intensify across continent, while tropical storms bring heavy rain and disruption to east Asia https://www. theguardian.com/environment/20 26/aug/10/weather-tracker-europe-break-heat-records-temperatures-drought-wildfires # Europe # En",
           "url": "https://rssfeed.media/@guardianfeeds/117070587856399115",
           "source": "mastodon",
@@ -285,85 +327,58 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "If in # America , as happened in # Hungary popular reaction to # corruption / # fascism will be strong enough to wipe out Trump and # MAGAs ... Americans will see a 60/70% of MAGA 'politician' resign quickly 'to spend more time with their family' They will try to 'disappear' as quickly as possible from the public stage They will do so in the hope of not bein",
-          "url": "https://mastodon.world/@chiamaluca/117071032954227335",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Mon, 10 Aug 2026 11:43:17 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 1
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
-            }
-          ],
-          "geopolitical_score": 15,
-          "quality_score": 18,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
     "poland": {
-      "mentions": 27,
-      "negative": 7,
-      "positive": 2,
-      "index": 75,
+      "mentions": 24,
+      "negative": 8,
+      "positive": 1,
+      "index": 78,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 27,
+      "mastodon_mentions": 24,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 9,
-      "geopolitical_score": 773,
+      "reliable_sources": 5,
+      "geopolitical_score": 737,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 16
+          "count": 13
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 9
+          "count": 8
+        },
+        {
+          "name": "Kiber és dezinformáció",
+          "count": 1
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 1
         },
         {
           "name": "Belpolitikai feszültség",
-          "count": 2
+          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 27,
+        "mastodon": 24,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 16,
-        "security": 9,
-        "government_crisis": 2
+        "cyber_disinformation": 1,
+        "eu_rule_of_law": 1,
+        "ukraine_russia": 13,
+        "security": 8,
+        "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 872,
+      "quality_total": 819,
       "top_posts": [
         {
           "title": "",
@@ -545,6 +560,55 @@
         },
         {
           "title": "",
+          "text": "RaiNews: Droni ucraini colpiscono la regione del Tatarstan, in fiamme impianti di raffinazione La guerra asimmetrica di Kyiv contro la Russia Ukrainian drones strike the Tatarstan region, refineries on fire. Kyiv's asymmetric war against Russia # Ukrainian # Tatarstan # Russia https://www. rainews.it/video/2026/08/droni -ucraini-colpiscono-la-regione-del-tat",
+          "url": "https://mastodon.ozioso.online/@ItalianNews/117074127101974933",
+          "source": "mastodon",
+          "tag": "russia",
+          "seen_date": "Tue, 11 Aug 2026 00:50:10 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 63,
+          "quality_score": 66,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "NEWS: For nearly 20 years, Epstein moved over $1B through the major banks. The banks looked away. Sen. Wyden’s 3-year probe exposes it all. But most damning? How Trump & the GOP tried to bury it. Senator Wyden: \"Big news from my investigators on # Epstein 's sex trafficking operation: the Trump administration has an Epstein file detailing 4,725 wire transfer",
           "url": "https://sfba.social/@skykiss/117069567007016014",
           "source": "mastodon",
@@ -592,55 +656,6 @@
           ],
           "geopolitical_score": 52,
           "quality_score": 57,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Poland now 6th-largest EU economy, ahead of Switzerland and Belgium https://www. euronews.com/business/2026/08/ 09/poland-now-sixth-largest-eu-economy-ahead-of-switzerland-and-belgium Comments: https:// news.ycombinator.com/item?id=4 9235323 # HackerNews # Poland # EU # economy # Switzerland # Belgium # growth",
-          "url": "https://mastodon.social/@h4ckernews/117067415081877406",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Sun, 09 Aug 2026 20:23:12 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "cyber_disinformation",
-              "label": "Kiber és dezinformáció",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
-            }
-          ],
-          "geopolitical_score": 32,
-          "quality_score": 37,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -874,16 +889,16 @@
       ]
     },
     "czechia": {
-      "mentions": 9,
+      "mentions": 7,
       "negative": 4,
       "positive": 1,
-      "index": 64,
+      "index": 58,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 9,
+      "mastodon_mentions": 7,
       "main_social_topic": "Biztonsági kockázat",
       "reliable_sources": 4,
-      "geopolitical_score": 304,
+      "geopolitical_score": 245,
       "topics": [
         {
           "name": "Biztonsági kockázat",
@@ -894,34 +909,24 @@
           "count": 3
         },
         {
-          "name": "Ukrajna és Oroszország",
-          "count": 1
-        },
-        {
           "name": "Tiltakozás",
-          "count": 1
-        },
-        {
-          "name": "Belpolitikai feszültség",
           "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 9,
+        "mastodon": 7,
         "x": 0
       },
       "category_counts": {
         "security": 3,
         "eu_rule_of_law": 3,
-        "ukraine_russia": 1,
-        "protest": 1,
-        "government_crisis": 1
+        "protest": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 339,
+      "quality_total": 274,
       "top_posts": [
         {
           "title": "",
@@ -1037,43 +1042,6 @@
         },
         {
           "title": "",
-          "text": "Колишній російський гауляйтер ЧР Вацлав # Клаус старший посперечався з ведучою ТБ Нова щодо того, хто винен у початку російсько-української війни. Вона беззаперечно стверджувала, що # росія - то агресор. Клаус, навпаки, наполягав, що не все так однозначно, і хоча росія дійсно напала 24.2.2022, але її до цього підштовхнули як керівники України, так і інших кр",
-          "url": "https://mastodon.social/@rkovbasjuk/117050128725163126",
-          "source": "mastodon",
-          "tag": "czechia",
-          "seen_date": "Thu, 06 Aug 2026 19:07:03 +0000",
-          "matched_countries": [
-            "czechia"
-          ],
-          "country_confidence": {
-            "czechia": 2
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 46,
-          "quality_score": 49,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
           "text": "🚨 WARNELY SAFETY ALERT Prague, Czechia · Civil unrest Berlin Pride observed security after van ramming Thousands attended Prague Pride, observing silence for van ramming victims at Berlin’s CSD parade. https://www. warnely.com/news/berlin-pride- observed-security-after-van-ramming-8d2ed1b7-3dfc-4120-8fe5-79fd8c2c1ab2?utm_source=mastodon&utm_medium=social&utm",
           "url": "https://mastodon.social/@warnely/117068134600438797",
           "source": "mastodon",
@@ -1151,6 +1119,42 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Extreme heat breaks temperature records in central and eastern Europe By Matthew Taylor and Ajit Niranjan Slovakia reaches new high of 42C as authorities in Poland forced to shut down Kozienice and Połaniec power plants https://www. theguardian.com/world/2026/aug /07/extreme-heat-breaks-temperature-records-central-eastern-europe # Extremeweather # Climatecri",
+          "url": "https://rssfeed.media/@guardianfeeds/117052539119222088",
+          "source": "mastodon",
+          "tag": "czechia",
+          "seen_date": "Fri, 07 Aug 2026 05:20:03 +0000",
+          "matched_countries": [
+            "slovakia",
+            "czechia",
+            "hungary"
+          ],
+          "country_confidence": {
+            "slovakia": 2,
+            "czechia": 2,
+            "hungary": 1,
+            "poland": 1
+          },
+          "event_category": "eu_rule_of_law",
+          "event_category_label": "EU / jogállamiság",
+          "event_categories": [
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 12,
+          "quality_score": 17,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
         }
       ]
     },
@@ -1158,20 +1162,20 @@
       "mentions": 3,
       "negative": 0,
       "positive": 0,
-      "index": 18,
+      "index": 22,
       "x_mentions": 0,
       "reddit_mentions": 0,
       "mastodon_mentions": 3,
-      "main_social_topic": "Külső befolyás",
+      "main_social_topic": "Belpolitikai feszültség",
       "reliable_sources": 1,
-      "geopolitical_score": 34,
+      "geopolitical_score": 35,
       "topics": [
         {
-          "name": "Külső befolyás",
+          "name": "Belpolitikai feszültség",
           "count": 1
         },
         {
-          "name": "Energia és gazdaság",
+          "name": "Kiber és dezinformáció",
           "count": 1
         },
         {
@@ -1186,13 +1190,13 @@
         "x": 0
       },
       "category_counts": {
-        "foreign_influence": 1,
-        "energy_economy": 1,
+        "government_crisis": 1,
+        "cyber_disinformation": 1,
         "security": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 45,
+      "quality_total": 46,
       "top_posts": [
         {
           "title": "",
@@ -1233,25 +1237,25 @@
         },
         {
           "title": "",
-          "text": "Nivelul Dunării la # Cernavodă a pierdut luni cinci centimetri, după ce ieri crescuse cu patru centimetri, ca urmare a operațiunilor de scufundare a barjelor. Apele Române prognozează scăderea în continuare a apei și recomandă continuarea dragării. Riscul de oprire completă a centralei nucleare rămâne. 🔗 https:// biziday.ro/?p=365656 # Știri # România # Cons",
-          "url": "https://mastodon.world/@biziday/117072345395830870",
+          "text": "Președintele # ANCOM , care se ocupă de fake news pe rețelele sociale, convocat în # Parlament în cazul ”ambulanței negre”. 🔗 https:// stirileprotv.ro/stiri/politic/ presedintele-ancom-care-se-ocupa-de-fake-news-pe-retelele-sociale-convocat-in-parlament-in-cazul-ambulantei-negre.html # Știri # România",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/117073284442943168",
           "source": "mastodon",
           "tag": "romania",
-          "seen_date": "Mon, 10 Aug 2026 17:17:03 +0000",
+          "seen_date": "Mon, 10 Aug 2026 21:15:52 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
             "romania": 5
           },
-          "event_category": "energy_economy",
-          "event_category_label": "Energia és gazdaság",
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
           "event_categories": [
             {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 2,
-              "weight": 4
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             }
           ],
           "geopolitical_score": 8,
@@ -1264,29 +1268,29 @@
         },
         {
           "title": "",
-          "text": "Peste un milion de oameni evacuați în 🇨🇳#China, din cauza taifunului Dolphin. Rafale de 150 km/h. 🔗 https:// stirileprotv.ro/stiri/internat ional/peste-un-milion-de-oameni-evacuati-in-china-din-cauza-taifunului-dolphin-rafale-de-150-km-h.html # Știri # România",
-          "url": "https://mstdn.social/@RomaniaTeIubesc/117072415403452845",
+          "text": "Reacție dură a României la acuzațiile Rusiei: Propagandă stalinistă. Cum să mai iei în serios orice vine de la # Moscova ? 🔗 https:// stirileprotv.ro/stiri/actualit ate/reactie-dura-a-romaniei-la-acuzatiile-rusiei-propaganda-stalinista-cum-sa-mai-iei-in-serios-orice-vine-de-la-moscova.html # Știri # România # Rusia",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/117073056394667125",
           "source": "mastodon",
           "tag": "romania",
-          "seen_date": "Mon, 10 Aug 2026 17:34:51 +0000",
+          "seen_date": "Mon, 10 Aug 2026 20:17:52 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
             "romania": 5
           },
-          "event_category": "foreign_influence",
-          "event_category_label": "Külső befolyás",
+          "event_category": "cyber_disinformation",
+          "event_category_label": "Kiber és dezinformáció",
           "event_categories": [
             {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
+              "category": "cyber_disinformation",
+              "label": "Kiber és dezinformáció",
               "hits": 1,
-              "weight": 7
+              "weight": 8
             }
           ],
-          "geopolitical_score": 7,
-          "quality_score": 10,
+          "geopolitical_score": 8,
+          "quality_score": 11,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1296,44 +1300,49 @@
       ]
     },
     "estonia": {
-      "mentions": 13,
-      "negative": 1,
+      "mentions": 12,
+      "negative": 3,
       "positive": 3,
-      "index": 43,
+      "index": 52,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 13,
+      "mastodon_mentions": 12,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 1,
-      "geopolitical_score": 340,
+      "reliable_sources": 2,
+      "geopolitical_score": 318,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 9
+          "count": 6
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Belpolitikai feszültség",
           "count": 2
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 13,
+        "mastodon": 12,
         "x": 0
       },
       "category_counts": {
-        "security": 2,
+        "security": 3,
+        "eu_rule_of_law": 1,
         "government_crisis": 2,
-        "ukraine_russia": 9
+        "ukraine_russia": 6
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 381,
+      "quality_total": 358,
       "top_posts": [
         {
           "title": "",
@@ -1395,6 +1404,49 @@
           ],
           "geopolitical_score": 96,
           "quality_score": 101,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "NATO, AI Startup Gain Power to Track Software Vulnerabilities The cybersecurity landscape just got a major boost: NATO's Cyber Security Centre and AI startup AISLE have joined forces with ENISA to supercharge vulnerability management, bringing the total number of CVE numbering authorities to 20. This powerful collaboration aims to revolutionize the way we tr",
+          "url": "https://mastodon.social/@Analyst207/117072993360879766",
+          "source": "mastodon",
+          "tag": "nato",
+          "seen_date": "Mon, 10 Aug 2026 20:01:50 +0000",
+          "matched_countries": [
+            "estonia"
+          ],
+          "country_confidence": {
+            "estonia": 3
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "cyber_disinformation",
+              "label": "Kiber és dezinformáció",
+              "hits": 1,
+              "weight": 8
+            }
+          ],
+          "geopolitical_score": 44,
+          "quality_score": 49,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1488,94 +1540,29 @@
         },
         {
           "title": "",
-          "text": "@ zelenskyyua │ 💀 │ 💀 │ 🇷🇺 🇺🇸 │ 💀 │ 💀 │ ◽ Russia is a Terrorist State!... Donald Trump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # li",
-          "url": "https://mastodon.social/@Ezpen/117060126062927830",
+          "text": "Estonia's two-party ruling coalition has lost its majority in # parliament after two MPs resigned from their parties. The coalition now has 50 votes in the 101-seat parliament: Estonian Reform Party with 38 and # Estonia 200 with 12 MPs. https:// viabaltica.fi/estonia-ruling-c oalition-loses-majority-in-parliament/",
+          "url": "https://mstdn.social/@viabaltica/117070329735333602",
           "source": "mastodon",
           "tag": "estonia",
-          "seen_date": "Sat, 08 Aug 2026 13:29:31 +0000",
+          "seen_date": "Mon, 10 Aug 2026 08:44:26 +0000",
           "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
+            "estonia"
           ],
           "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
+            "estonia": 2
           },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
           "event_categories": [
             {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
               "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
+              "weight": 8
             }
           ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "@ kardinal691 │ 💀 │ 🇷🇺 🇷🇺 🇷🇺 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... and Vladimir Putin's a MONSTER! 💀 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 ❤️ Please keep this post «alive» by Boosting it! 🌿 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # polit",
-          "url": "https://mastodon.social/@Ezpen/117059860132184325",
-          "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Sat, 08 Aug 2026 12:21:53 +0000",
-          "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
-          ],
-          "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
+          "geopolitical_score": 17,
+          "quality_score": 20,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1585,24 +1572,24 @@
       ]
     },
     "latvia": {
-      "mentions": 12,
+      "mentions": 8,
       "negative": 1,
       "positive": 0,
-      "index": 53,
+      "index": 41,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 12,
+      "mastodon_mentions": 8,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 1,
-      "geopolitical_score": 366,
+      "geopolitical_score": 222,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 9
+          "count": 6
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 2
+          "count": 1
         },
         {
           "name": "Belpolitikai feszültség",
@@ -1612,17 +1599,17 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 12,
+        "mastodon": 8,
         "x": 0
       },
       "category_counts": {
-        "security": 2,
-        "ukraine_russia": 9,
+        "security": 1,
+        "ukraine_russia": 6,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 404,
+      "quality_total": 248,
       "top_posts": [
         {
           "title": "",
@@ -1692,55 +1679,6 @@
         },
         {
           "title": "",
-          "text": "Ukraine's Azov Brigade says its unmanned systems battalion destroyed a Russian military transport column nearly 20 km behind the line of contact. The strike shows Ukrainian drone reach extending deeper into the rear, where Russian forces had apparently expected greater safety. # Ukraine",
-          "url": "https://mstdn.social/@noelreports/117072617181269564",
-          "source": "mastodon",
-          "tag": "ukraine",
-          "seen_date": "Mon, 10 Aug 2026 18:26:10 +0000",
-          "matched_countries": [
-            "latvia"
-          ],
-          "country_confidence": {
-            "latvia": 4
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 70,
-          "quality_score": 73,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
           "text": "@ zelenskyyua │ 💀 │ 💀 │ 🇷🇺 🇺🇸 🇷🇺 │ 💀 │ 💀 │ ◽ Russia is a Terrorist State!... Donald Trump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia #",
           "url": "https://mastodon.social/@Ezpen/117060151510107523",
           "source": "mastodon",
@@ -1789,46 +1727,41 @@
         },
         {
           "title": "",
-          "text": "@ zelenskyyua │ 💀 │ 💀 │ 🇷🇺 🇺🇸 │ 💀 │ 💀 │ ◽ Russia is a Terrorist State!... Donald Trump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # li",
-          "url": "https://mastodon.social/@Ezpen/117060126062927830",
+          "text": "The National Alliance of # Latvia , part of the country's current coalition # government , has been embroiled in controversy due to accusations of # racism . Several National Alliance politicians have spread false information and social media content insulting # migrants . https:// viabaltica.fi/latvia-national- alliance-embroiled-in-racism-row/",
+          "url": "https://mstdn.social/@viabaltica/117067611541853243",
           "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Sat, 08 Aug 2026 13:29:31 +0000",
+          "tag": "latvia",
+          "seen_date": "Sun, 09 Aug 2026 21:13:10 +0000",
           "matched_countries": [
-            "poland",
-            "estonia",
             "latvia"
           ],
           "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
+            "latvia": 1
           },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
           "event_categories": [
             {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
               "hits": 2,
-              "weight": 9
+              "weight": 8
             },
             {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
+              "category": "migration_border",
+              "label": "Migráció és határnyomás",
               "hits": 1,
-              "weight": 7
+              "weight": 6
             },
             {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
               "hits": 1,
-              "weight": 5
+              "weight": 4
             }
           ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
+          "geopolitical_score": 26,
+          "quality_score": 29,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1837,11 +1770,11 @@
         },
         {
           "title": "",
-          "text": "@ kardinal691 │ 💀 │ 🇷🇺 🇷🇺 🇷🇺 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... and Vladimir Putin's a MONSTER! 💀 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 ❤️ Please keep this post «alive» by Boosting it! 🌿 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # polit",
-          "url": "https://mastodon.social/@Ezpen/117059860132184325",
+          "text": "@ faab64 💀 💀 💀 🇮🇱 💀 💀 💀 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands # israel # palestine # gaza",
+          "url": "https://mastodon.social/@Millox/117065767707177488",
           "source": "mastodon",
           "tag": "estonia",
-          "seen_date": "Sat, 08 Aug 2026 12:21:53 +0000",
+          "seen_date": "Sun, 09 Aug 2026 13:24:15 +0000",
           "matched_countries": [
             "poland",
             "estonia",
@@ -1859,14 +1792,8 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
               "hits": 1,
-              "weight": 7
+              "weight": 9
             },
             {
               "category": "eu_rule_of_law",
@@ -1875,8 +1802,50 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 30,
-          "quality_score": 33,
+          "geopolitical_score": 14,
+          "quality_score": 17,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "@ SocraticEthics 💀 💀 💀 💀 🇷🇺 💀 💀 💀 💀 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands",
+          "url": "https://mastodon.social/@Millox/117065687412110855",
+          "source": "mastodon",
+          "tag": "estonia",
+          "seen_date": "Sun, 09 Aug 2026 13:03:50 +0000",
+          "matched_countries": [
+            "poland",
+            "estonia",
+            "latvia"
+          ],
+          "country_confidence": {
+            "poland": 1,
+            "estonia": 1,
+            "latvia": 1,
+            "lithuania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 14,
+          "quality_score": 17,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1886,16 +1855,16 @@
       ]
     },
     "lithuania": {
-      "mentions": 4,
+      "mentions": 5,
       "negative": 1,
       "positive": 1,
-      "index": 27,
+      "index": 28,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 4,
+      "mastodon_mentions": 5,
       "main_social_topic": "Biztonsági kockázat",
       "reliable_sources": 1,
-      "geopolitical_score": 91,
+      "geopolitical_score": 100,
       "topics": [
         {
           "name": "Biztonsági kockázat",
@@ -1904,21 +1873,26 @@
         {
           "name": "Ukrajna és Oroszország",
           "count": 2
+        },
+        {
+          "name": "EU / jogállamiság",
+          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 4,
+        "mastodon": 5,
         "x": 0
       },
       "category_counts": {
+        "eu_rule_of_law": 1,
         "security": 2,
         "ukraine_russia": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 105,
+      "quality_total": 117,
       "top_posts": [
         {
           "title": "",
@@ -2068,6 +2042,43 @@
           ],
           "geopolitical_score": 12,
           "quality_score": 15,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "European # credit rating agency Scope Ratings has affirmed the long-term credit rating of # Lithuania at A+ with a stable outlook. The agency pointed to Lithuania's resilient and increasingly diversified # economy , sound public finances, and strong institutional framework. https:// viabaltica.fi/lithuania-scope- affirms-a-credit-rating-with-stable-outlook/",
+          "url": "https://mstdn.social/@viabaltica/117074201351328461",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Tue, 11 Aug 2026 01:09:03 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "eu_rule_of_law",
+          "event_category_label": "EU / jogállamiság",
+          "event_categories": [
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 9,
+          "quality_score": 12,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
