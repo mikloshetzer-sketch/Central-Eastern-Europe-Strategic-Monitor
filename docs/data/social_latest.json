@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 18:56 UTC",
+  "updated_at": "2026-08-13 01:21 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -55,88 +55,50 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 12,
+        "mentions": 10,
         "negative": 3,
         "positive": 0,
-        "index": 58,
+        "index": 49,
         "x_mentions": 0,
-        "reddit_mentions": 1,
-        "mastodon_mentions": 11,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 10,
         "main_social_topic": "Belpolitikai feszültség",
-        "reliable_sources": 1,
-        "geopolitical_score": 302,
+        "reliable_sources": 0,
+        "geopolitical_score": 223,
         "topics": [
           {
             "name": "Belpolitikai feszültség",
-            "count": 8
-          },
-          {
-            "name": "Biztonsági kockázat",
-            "count": 2
+            "count": 6
           },
           {
             "name": "Ukrajna és Oroszország",
             "count": 2
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
+          },
+          {
+            "name": "Biztonsági kockázat",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 11,
+          "reddit": 0,
+          "mastodon": 10,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 8,
-          "security": 2,
+          "eu_rule_of_law": 1,
+          "security": 1,
+          "government_crisis": 6,
           "ukraine_russia": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 336,
+        "quality_total": 253,
         "top_posts": [
-          {
-            "title": "",
-            "text": "Agi: Baka è il nuovo presidente dell'Ungheria. E il governo fa causa a Orban AGI - Andras Baka è stato eletto Presidente della Repubblica di Ungheria. L'ex Presidente della Corte Suprema licenziato dall'ex premier Viktor Orbán, nominato presidente dalla fazione di governo Tisza, è stato eletto dai deputati a scrutinio segreto con 140 voti favorevoli e 6 cont",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117077746822200703",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Tue, 11 Aug 2026 16:10:42 +0000",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 14
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 4,
-                "weight": 8
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 2,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 56,
-            "quality_score": 61,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "In 2011, András Baka was removed by then-Prime Minister Viktor Orbán from his position as the head of Hungary's high court. Today, he was elected president by the country's parliament. @ TheBulwark takes a look at how Prime Minister Péter Magyar, who ousted Orbán four months ago, is restoring optimism, tackling corruption, and trying to solidify Hungary's tr",
@@ -300,6 +262,49 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "\"Super Reliable Nuclear Power meets Climate Change\" update from # Hungary : For an entire week only a single turbine (out of two) in a single block (out of 4) was operational, producing ~260MW out of the full 2000MW capacity. Yesterday the water levels of the Danube allowed for the second turbine to restart¹, raising production to ~339MW. However, that's jus",
+            "url": "https://flaki.social/@flaki/117078514153542201",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Tue, 11 Aug 2026 19:25:51 +0000",
+            "matched_countries": [
+              "hungary"
+            ],
+            "country_confidence": {
+              "hungary": 2
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -309,44 +314,39 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 18,
+        "mentions": 15,
         "negative": 9,
         "positive": 1,
         "index": 75,
         "x_mentions": 0,
-        "reddit_mentions": 1,
-        "mastodon_mentions": 17,
+        "reddit_mentions": 0,
+        "mastodon_mentions": 15,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 6,
-        "geopolitical_score": 547,
+        "reliable_sources": 4,
+        "geopolitical_score": 513,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 14
+            "count": 13
           },
           {
             "name": "Biztonsági kockázat",
-            "count": 2
-          },
-          {
-            "name": "EU / jogállamiság",
             "count": 2
           }
         ],
         "source_status": "active",
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 17,
+          "reddit": 0,
+          "mastodon": 15,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 14,
-          "security": 2,
-          "eu_rule_of_law": 2
+          "ukraine_russia": 13,
+          "security": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 609,
+        "quality_total": 566,
         "top_posts": [
           {
             "title": "",
@@ -912,16 +912,16 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 12,
+        "mentions": 8,
         "negative": 4,
         "positive": 0,
-        "index": 73,
+        "index": 68,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 12,
+        "mastodon_mentions": 8,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 6,
-        "geopolitical_score": 348,
+        "reliable_sources": 7,
+        "geopolitical_score": 374,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -929,32 +929,22 @@
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 3
-          },
-          {
-            "name": "Belpolitikai feszültség",
-            "count": 1
-          },
-          {
-            "name": "Energia és gazdaság",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
+          "mastodon": 8,
           "x": 0
         },
         "category_counts": {
           "security": 7,
-          "government_crisis": 1,
-          "energy_economy": 1,
-          "ukraine_russia": 3
+          "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 396,
+        "quality_total": 412,
         "top_posts": [
           {
             "title": "",
@@ -1013,6 +1003,110 @@
           },
           {
             "title": "",
+            "text": "Ukraine strikes Novorossiysk, Russia's last Black Sea sanctuary Ukraine’s strike on Novorossiysk demonstrates Kyiv’s ability to threaten Russian military infrastructure far beyond the frontline and challenges the assumption that shifting vessels from Crimea can keep them safe. # EuropeNews https://www. euronews.com/my-europe/2026/08 /12/ukraine-strikes-novor",
+            "url": "https://mastodon.social/@top_news/117084673975468990",
+            "source": "mastodon",
+            "tag": "russia",
+            "seen_date": "Wed, 12 Aug 2026 21:32:22 +0000",
+            "matched_countries": [
+              "romania"
+            ],
+            "country_confidence": {
+              "romania": 3
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "label": "Tiltakozás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 72,
+            "quality_score": 77,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# Ukraine president # Zelensky reports a combined missile and drone attack has damage # Russia 's Black Sea naval stronghold. https:// apnews.com/article/russia-ukra ine-black-sea-attack-9eadff0d7590923e3d98c99e2b61150b",
+            "url": "https://kolektiva.social/@maeve_bkk/117085351791308151",
+            "source": "mastodon",
+            "tag": "ukraine",
+            "seen_date": "Thu, 13 Aug 2026 00:24:45 +0000",
+            "matched_countries": [
+              "romania"
+            ],
+            "country_confidence": {
+              "romania": 3
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 2,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 60,
+            "quality_score": 65,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Wednesday, August 12, 2026 Explosions rock Russia's Novorossiysk, occupied Crimea amid reported drone attack . . . . . Ukraine faces race against time as Russia chokes Black Sea ports . . . . . Belgium LNG imports in July 100% Russian . . . . . Russia prepares its 'final push' of the war this fall . . . . . and more https:// activitypub.writeworks.uk/2026 /0",
             "url": "https://activitypub.writeworks.uk/2026/08/wednesday-august-12-2026/",
             "source": "mastodon",
@@ -1056,87 +1150,11 @@
           },
           {
             "title": "",
-            "text": "Major Russian grain export terminals hit in # Ukraine Black Sea port attack Grain exports from both # Russia and Ukraine are falling as both countries attack each other's shipping facilities and ports. https://www. bbc.co.uk/news/articles/c5y49x p2wrno?at_medium=RSS&at_campaign=rss (c) # BBC # News",
-            "url": "https://mastodonapp.uk/@bbcnewsfeed/117084016075446467",
-            "source": "mastodon",
-            "tag": "ukraine",
-            "seen_date": "Wed, 12 Aug 2026 18:45:03 +0000",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 3
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Russia: Zelensky, a Novorossijsk colpite fregate Ammiraglio Essen e Ammiraglio Makarov 12 ago 20:01 - (Agenzia Nova) - Le forze ucraine hanno colpito diverse unita' della Flotta russa del Mar Nero nella baia di Novorossijsk, tra... (Kiu) Russia: Zelensky, a Novorossijsk hit frigate Admiral Essen and Admiral Makarova August 12 20:01 - (Agenzia N",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117084036578731764",
+            "text": "# WW3 # invasion - # Ukraine strikes Novorossiysk, putting # Russia 's last Black Sea sanctuary within reach - Sasha VAKULINA @ euronews https://www. euronews.com/my-europe/2026/08 /12/ukraine-strikes-novorossiysk-putting-russias-last-black-sea-sanctuary-within-reach",
+            "url": "https://piaille.fr/@jeromeollier/117084716808293939",
             "source": "mastodon",
             "tag": "russia",
-            "seen_date": "Wed, 12 Aug 2026 18:50:16 +0000",
-            "matched_countries": [
-              "latvia",
-              "romania"
-            ],
-            "country_confidence": {
-              "latvia": 4,
-              "romania": 3
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 34,
-            "quality_score": 37,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "# WW3 # Russia # invasion - # Ukraine Halts Attacks On Oil Tankers & Infrastructure On Black Sea Coast After U.S Intervention - Marine Insight https://www. marineinsight.com/ukraine-halt s-attacks-on-oil-tankers-infrastructure-on-black-sea-coast-after-u-s-intervention/",
-            "url": "https://piaille.fr/@jeromeollier/117083925162286135",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Wed, 12 Aug 2026 18:21:56 +0000",
+            "seen_date": "Wed, 12 Aug 2026 21:43:16 +0000",
             "matched_countries": [
               "romania"
             ],
@@ -1153,22 +1171,28 @@
                 "weight": 9
               },
               {
+                "category": "protest",
+                "label": "Tiltakozás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
                 "hits": 1,
                 "weight": 7
               },
               {
-                "category": "energy_economy",
-                "label": "Energia és gazdaság",
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
                 "hits": 1,
-                "weight": 4
+                "weight": 5
               }
             ],
-            "geopolitical_score": 32,
-            "quality_score": 35,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 41,
+            "quality_score": 46,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1456,39 +1480,49 @@
       "name_en": "Latvia",
       "name_hu": "Lettország",
       "social_signal": {
-        "mentions": 20,
-        "negative": 7,
+        "mentions": 19,
+        "negative": 6,
         "positive": 0,
-        "index": 74,
+        "index": 72,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 20,
+        "mastodon_mentions": 19,
         "main_social_topic": "Ukrajna és Oroszország",
         "reliable_sources": 2,
-        "geopolitical_score": 671,
+        "geopolitical_score": 529,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 14
+            "count": 12
           },
           {
             "name": "Biztonsági kockázat",
-            "count": 6
+            "count": 5
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 20,
+          "mastodon": 19,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 14,
-          "security": 6
+          "ukraine_russia": 12,
+          "security": 5,
+          "eu_rule_of_law": 1,
+          "government_crisis": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 735,
+        "quality_total": 590,
         "top_posts": [
           {
             "title": "",
@@ -1620,92 +1654,6 @@
           },
           {
             "title": "",
-            "text": "\"That’s nice, # russia has put on a firework show to celebrate # Ukrainian success!\" 🤣🤣🤣 From https:// t.me/pravdaGerashchenko_en ⚡️ # Ukraine 's Defence Forces struck four # Russian warships during an attack on the naval base in # Novorossiysk , # Russia . The # Admiral_Makarov and # Admiral_Essen frigates, a # Project_21631_Buyan_M small missile ship, and ",
-            "url": "https://mastodon.online/@kardinal691/117083922559644521",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Wed, 12 Aug 2026 18:21:16 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 75,
-            "quality_score": 78,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "RE: https:// journa.host/@ScottLucas/117081 145865294969 # Zelensky : In addition to knocking out 2 grain terminals, # Ukraine missile and drone attack on # Russia 's # BlackSea port of # Novorossyisk hit Admiral Essen and Admiral Makarov frigates, large landing ship, corvette, and other vessels as well as\"other Russian facilities that were helping finance w",
-            "url": "https://journa.host/@ScottLucas/117083952582965730",
-            "source": "mastodon",
-            "tag": "russia",
-            "seen_date": "Wed, 12 Aug 2026 18:28:55 +0000",
-            "matched_countries": [
-              "latvia"
-            ],
-            "country_confidence": {
-              "latvia": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 66,
-            "quality_score": 69,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "The # government of # Latvia has launched \"Operation Werewolf\" to stop illegal # border crossings from # Belarus and # Russia , Prime Minister Andris Kulbergs announced. Meanwhile, border guards found an illegal underground tunnel used by # migrants to enter the country illegally from Belarus. https:// viabaltica.fi/latvia-border-se curity-strengthened-as-mi",
             "url": "https://mstdn.social/@viabaltica/117077462863235555",
             "source": "mastodon",
@@ -1760,6 +1708,94 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🚨 WARNELY SAFETY ALERT Kherson, Ukraine · Incident Ukrainian platoon stranded at front calls for help Servicemen from the 121st Territorial Defence Brigade stranded at the front for months are calling for assistance. https://www. warnely.com/news/ukrainian-pla toon-stranded-at-front-calls-for-help-6716dd7d-d93f-422c-a7d2-ba1bf3494480?utm_source=mastodon&utm_",
+            "url": "https://mastodon.social/@warnely/117085377175658967",
+            "source": "mastodon",
+            "tag": "ukraine",
+            "seen_date": "Thu, 13 Aug 2026 00:31:12 +0000",
+            "matched_countries": [
+              "latvia"
+            ],
+            "country_confidence": {
+              "latvia": 4
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 43,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🇱🇻 🇧🇾 # Latvia said on Tuesday a tunnel had been discovered under the border with # Belarus and announced plans to combat networks that it says are helping a growing number of migrants cross the frontier illegally. https://www. reuters.com/world/europe/latvi a-finds-tunnel-under-belarus-border-vows-combat-people-smugglers-2026-08-11/",
+            "url": "https://mastodon.social/@rvps2001/117076244195002114",
+            "source": "mastodon",
+            "tag": "latvia",
+            "seen_date": "Tue, 11 Aug 2026 09:48:34 +0000",
+            "matched_countries": [
+              "latvia",
+              "lithuania"
+            ],
+            "country_confidence": {
+              "latvia": 1,
+              "lithuania": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "migration_border",
+                "label": "Migráció és határnyomás",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1769,16 +1805,16 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 7,
-        "negative": 1,
+        "mentions": 8,
+        "negative": 2,
         "positive": 0,
-        "index": 42,
+        "index": 48,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
+        "mastodon_mentions": 8,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 1,
-        "geopolitical_score": 293,
+        "geopolitical_score": 303,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -1787,21 +1823,26 @@
           {
             "name": "Ukrajna és Oroszország",
             "count": 2
+          },
+          {
+            "name": "Külső befolyás",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
+          "mastodon": 8,
           "x": 0
         },
         "category_counts": {
           "security": 5,
-          "ukraine_russia": 2
+          "ukraine_russia": 2,
+          "foreign_influence": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 316,
+        "quality_total": 329,
         "top_posts": [
           {
             "title": "",
@@ -2056,62 +2097,37 @@
   ],
   "posts": [
     {
-      "title": "Zelensky calls election of new president \"another important step in Hungary’s renewal\"",
-      "text": "&#32; submitted by &#32; /u/mgtsz009 [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1vmckod/zelensky_calls_election_of_new_president_another/",
-      "source": "reddit",
-      "tag": "europe",
-      "seen_date": "2026-08-12T12:21:03+00:00",
+      "title": "",
+      "text": "Hungary is raising the level of the Danube River to keep the country’s only nuclear power plant operating. The water’s levels are at record lows as Europe swelters in heat and drought. Read more from @ NBCNews https:// flip.it/jD-JbB # Hungary # Danube # Nuclear",
+      "url": "https://flipboard.social/@NewsDesk/117084093779045527",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Wed, 12 Aug 2026 19:04:49 +0000",
       "matched_countries": [
         "hungary"
       ],
       "country_confidence": {
         "hungary": 1
       },
-      "event_category": "government_crisis",
-      "event_category_label": "Belpolitikai feszültség",
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
       "event_categories": [
         {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 2,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 16,
-      "quality_score": 15,
-      "source_reliability": 1,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "Poland unveils first warship under major naval modernisation programme",
-      "text": "&#32; submitted by &#32; /u/dat_9600gt_user [link] &#32; [comments]",
-      "url": "https://www.reddit.com/r/europe/comments/1vmehpt/poland_unveils_first_warship_under_major_naval/",
-      "source": "reddit",
-      "tag": "europe",
-      "seen_date": "2026-08-12T13:41:15+00:00",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
           "hits": 1,
-          "weight": 9
+          "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
         }
       ],
-      "geopolitical_score": 12,
-      "quality_score": 11,
-      "source_reliability": 1,
+      "geopolitical_score": 9,
+      "quality_score": 12,
+      "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
@@ -2474,72 +2490,29 @@
     },
     {
       "title": "",
-      "text": "Agi: Baka è il nuovo presidente dell'Ungheria. E il governo fa causa a Orban AGI - Andras Baka è stato eletto Presidente della Repubblica di Ungheria. L'ex Presidente della Corte Suprema licenziato dall'ex premier Viktor Orbán, nominato presidente dalla fazione di governo Tisza, è stato eletto dai deputati a scrutinio segreto con 140 voti favorevoli e 6 cont",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117077746822200703",
+      "text": "Poland’s foreign minister just threatened to defund Ukraine’s Starlink lifeline — to settle a score with Elon Musk https:// meduza.io/en/news/2026/08/12/p oland-s-foreign-minister-just-threatened-to-defund-ukraine-s-starlink-lifeline-to-settle-a-score-with-elon-musk # Meduza # Ukraine # Poland",
+      "url": "https://mastodon.social/@meduza_bot/117084192895248251",
       "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Tue, 11 Aug 2026 16:10:42 +0000",
+      "tag": "poland",
+      "seen_date": "Wed, 12 Aug 2026 19:30:01 +0000",
       "matched_countries": [
-        "hungary"
+        "poland"
       ],
       "country_confidence": {
-        "hungary": 14
+        "poland": 1
       },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
       "event_categories": [
         {
-          "category": "security",
-          "label": "Biztonsági kockázat",
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
           "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 4,
-          "weight": 8
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 2,
-          "weight": 5
+          "weight": 9
         }
       ],
-      "geopolitical_score": 56,
-      "quality_score": 61,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚡ # Hungary 🇭🇺’s parliament has elected former Supreme Court chief András Baka as the country’s next president. Baka previously served as the head of the Supreme Court before his transition to this new role. [The Global Eye] For reliable updates, check back here",
-      "url": "https://mastodon.social/@thepathtopeace/117077710518555241",
-      "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Tue, 11 Aug 2026 16:01:28 +0000",
-      "matched_countries": [
-        "hungary"
-      ],
-      "country_confidence": {
-        "hungary": 1
-      },
-      "event_category": "government_crisis",
-      "event_category_label": "Belpolitikai feszültség",
-      "event_categories": [
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 2,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 16,
-      "quality_score": 19,
+      "geopolitical_score": 12,
+      "quality_score": 15,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -3059,161 +3032,6 @@
     },
     {
       "title": "",
-      "text": "Atac ucrainean masiv asupra # Novorossisk , fortăreața flotei ruse din 🌊#MareaNeagră. # Putin amenință 🌍#Occidentul cu represalii. 🔗 https:// stirileprotv.ro/stiri/internat ional/atac-ucrainean-masiv-asupra-novorossiisk-fortareata-flotei-ruse-din-marea-neagra-putin-ameninta-occidentul-cu-represalii.html # Știri # România # Rusia # Ucraina # NATO # ArmataUcra",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117084034336535721",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Wed, 12 Aug 2026 18:49:42 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 14,
-      "quality_score": 19,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Miza celor șapte hidrocentrale disputate între # PSD (#PartidulSocialDemocrat) și Palatul 🏰#Cotroceni. Cel mai vechi proiect datează din 1989. 🔗 https:// stirileprotv.ro/stiri/politic/ cele-7-hidrocentrale-pentru-care-se-lupta-parlamentul-si-palatul-cotroceni-cata-energie-ar-putea-produce.html # Știri # România",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117083860332122717",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Wed, 12 Aug 2026 18:05:27 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "government_crisis",
-      "event_category_label": "Belpolitikai feszültség",
-      "event_categories": [
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 8,
-      "quality_score": 11,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Energia vântului ține locul cu succes, deocamdată, celei nucleare. Măsuri speciale de economisire. 🔗 https:// stirileprotv.ro/stiri/actualit ate/energia-vantului-tine-locul-cu-succes-deocamdata-celei-nucleare-masuri-speciale-de-economisire.html # Știri # România # Energie # EnergiaNucleară # EnergiaVerde",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117083783883887356",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Wed, 12 Aug 2026 17:46:00 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "energy_economy",
-      "event_category_label": "Energia és gazdaság",
-      "event_categories": [
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 2,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 8,
-      "quality_score": 11,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Forțele Navale: Dronele descoperite lângă Neptun Deep erau rusești. Avem 159 de mine marine distruse. 🔗 https:// stirileprotv.ro/stiri/actualit ate/armata-romana-dronele-descoperite-langa-neptun-deep-erau-rusesti-fortele-navale-159-de-mine-marine-au-fost-distruse.html # Știri # România # Rusia",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117083594778438596",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Wed, 12 Aug 2026 16:57:55 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 10,
-      "quality_score": 13,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "# NATO a condamnat violarea spațiului aerian al României și Poloniei de către dronele rusești, considerată ”inacceptabilă”, și a anunțat că aliații sunt ”uniți și hotărâți în apărarea teritoriului”. 🔗 https:// wp.me/p9KpFA-5sHv # Știri # Polonia # România # Rusia",
-      "url": "https://mastodon.world/@G4Media/117083578088617987",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Wed, 12 Aug 2026 16:53:40 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 5
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 24,
-      "quality_score": 29,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "In # Estonia , parliamentary parties are meeting with the two presidential frontrunners, justice chancellor Ülle Madise and Tallinn University of Technology rector Tiit Land. Madise said that she would agree to run for # president if MPs from across political lines accepted her as an impartial figure. https:// viabaltica.fi/estonia-parties- meeting-with-pres",
       "url": "https://mstdn.social/@viabaltica/117083853852491471",
       "source": "mastodon",
@@ -3693,6 +3511,74 @@
     },
     {
       "title": "",
+      "text": "Harvest is Here, Prices Are Not: The Autumn Equilibrium of the Grain Market Latvian grain producers face challenges as market prices remain low despite a successful harvest, highlighting concerns over profitability and sustainability in the agricultural sector. # EU # Latvia # Agriculture # Energy # Economy https:// db.lv/zinas/raza-ir-cenas-nav- jeb-graudu-",
+      "url": "https://mastodon.social/@EU_Economics/117084094947308491",
+      "source": "mastodon",
+      "tag": "latvia",
+      "seen_date": "Wed, 12 Aug 2026 19:05:07 +0000",
+      "matched_countries": [
+        "latvia"
+      ],
+      "country_confidence": {
+        "latvia": 2
+      },
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
+      "event_categories": [
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 2,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 13,
+      "quality_score": 16,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The government of # Latvia said that the financial situation of the country's national # airline , airBaltic, was \"very serious.\" However, PM Andris Kulbergs insisted that the company must \"live off its own # business .\" Earlier, S&P lowered airBaltic's # credit rating to CCC- with a negative outlook. https:// viabaltica.fi/latvia-airbaltic s-situation-very-",
+      "url": "https://mstdn.social/@viabaltica/117084080734976282",
+      "source": "mastodon",
+      "tag": "latvia",
+      "seen_date": "Wed, 12 Aug 2026 19:01:30 +0000",
+      "matched_countries": [
+        "latvia"
+      ],
+      "country_confidence": {
+        "latvia": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 11,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "@ zelenskyyua ☠️ 🇷🇺 ☠️ 🇰🇵 ☠️ 🇰🇵 ☠️ 🇷🇺 ☠️ Pootin & Kim... an alliance of \"isolated\" nations built over decades! Two of a kind! Two dictators!... both paranoid and constantly involved in some kind of conflict! 💥 🚀 Please \"kick\" this post around the net by Boosting it! 🦊 # ukraine # europe # eu # canada # uk # france # trump # usa # latvia # politics",
       "url": "https://mastodon.social/@Dimaxx/117082207244191722",
       "source": "mastodon",
@@ -4126,6 +4012,37 @@
     },
     {
       "title": "",
+      "text": "The co-chairs of the US Congressional Taiwan Caucus urged # Lithuania to resist pressure and coercion from communist # China and to maintain close relations with democratic # Taiwan . In response, the Lithuanian Foreign Ministry stated that Taiwan remained a \"significant regional partner.\" https:// viabaltica.fi/lithuania-us-law makers-urge-close-ties-with-t",
+      "url": "https://mstdn.social/@viabaltica/117084595037910194",
+      "source": "mastodon",
+      "tag": "lithuania",
+      "seen_date": "Wed, 12 Aug 2026 21:12:18 +0000",
+      "matched_countries": [
+        "lithuania"
+      ],
+      "country_confidence": {
+        "lithuania": 2
+      },
+      "event_category": "foreign_influence",
+      "event_category_label": "Külső befolyás",
+      "event_categories": [
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 10,
+      "quality_score": 13,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "\"The things countries have to do to protect itself from criminal states!\"🤬🤬🤬 From https:// t.me/pravdaGerashchenko_en # Lithuania will dig 20-meter-wide trenches along its borders with # Russia and # Belarus . The obstacles are planned to be dug from the patrol path deeper into # Lithuanian territory. The construction of the defensive lines is expected to be",
       "url": "https://mastodon.online/@kardinal691/117083808441827531",
       "source": "mastodon",
@@ -4255,6 +4172,68 @@
     },
     {
       "title": "",
+      "text": "Atac ucrainean masiv asupra # Novorossisk , fortăreața flotei ruse din 🌊#MareaNeagră. # Putin amenință 🌍#Occidentul cu represalii. 🔗 https:// stirileprotv.ro/stiri/internat ional/atac-ucrainean-masiv-asupra-novorossiisk-fortareata-flotei-ruse-din-marea-neagra-putin-ameninta-occidentul-cu-represalii.html # Știri # România # Rusia # Ucraina # NATO # ArmataUcra",
+      "url": "https://mstdn.social/@RomaniaTeIubesc/117084034336535721",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Wed, 12 Aug 2026 18:49:42 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 14,
+      "quality_score": 19,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# NATO a condamnat violarea spațiului aerian al României și Poloniei de către dronele rusești, considerată ”inacceptabilă”, și a anunțat că aliații sunt ”uniți și hotărâți în apărarea teritoriului”. 🔗 https:// wp.me/p9KpFA-5sHv # Știri # Polonia # România # Rusia",
+      "url": "https://mastodon.world/@G4Media/117083578088617987",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Wed, 12 Aug 2026 16:53:40 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 24,
+      "quality_score": 29,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "# NATO , reuniune de urgență după încălcările spațiului aerian din 🇷🇴#România și 🇵🇱#Polonia. Mesaj ferm pentru 🇷🇺#Rusia. 🔗 https:// stirileprotv.ro/stiri/internat ional/nato-reuniune-de-urgenta-dupa-incalcarile-spatiului-aerian-din-romania-si-polonia-rusia-poarta-intreaga-responsabilitate.html # Știri",
       "url": "https://mstdn.social/@RomaniaTeIubesc/117083546124493955",
       "source": "mastodon",
@@ -4347,16 +4326,16 @@
     },
     {
       "title": "",
-      "text": "# Trump a confirmat că a fost transferat în secret într-un alt avion după summitul # NATO . Ce amenințare ar fi existat. 🔗 https:// stirileprotv.ro/stiri/internat ional/trump-transferat-in-secret-intr-un-alt-avion-dupa-summitul-nato-ce-amenintare-ar-fi-existat.html # Știri # România # SUA",
-      "url": "https://mstdn.social/@RomaniaTeIubesc/117082457639045513",
+      "text": "🚨 WARNELY SAFETY ALERT Kherson, Ukraine · Incident Ukrainian platoon stranded at front calls for help Servicemen from the 121st Territorial Defence Brigade stranded at the front for months are calling for assistance. https://www. warnely.com/news/ukrainian-pla toon-stranded-at-front-calls-for-help-6716dd7d-d93f-422c-a7d2-ba1bf3494480?utm_source=mastodon&utm_",
+      "url": "https://mastodon.social/@warnely/117085377175658967",
       "source": "mastodon",
-      "tag": "nato",
-      "seen_date": "Wed, 12 Aug 2026 12:08:44 +0000",
+      "tag": "ukraine",
+      "seen_date": "Thu, 13 Aug 2026 00:31:12 +0000",
       "matched_countries": [
-        "romania"
+        "latvia"
       ],
       "country_confidence": {
-        "romania": 5
+        "latvia": 4
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -4366,85 +4345,78 @@
           "label": "Biztonsági kockázat",
           "hits": 1,
           "weight": 10
-        }
-      ],
-      "geopolitical_score": 14,
-      "quality_score": 19,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "So ruddy, bloody brave… # brexit # BrexitLies # politics # toryscum # tories # conservatives # ukpolitics # bbc # news # EU # Labour # labourparty # RejoinEU # TaxTheRich # usa # uspolitics # uspol # trump # DonaldTrump # MAGA # ai # iran # gaza # israel # netanyahu # epstein # epsteinfiles # TrumpIsAPedo # gaza # gazagenocide # IsraelTerroristState",
-      "url": "https://mastodonapp.uk/@TJ1001/117084010990985732",
-      "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Wed, 12 Aug 2026 18:43:46 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "eu_rule_of_law",
-      "event_category_label": "EU / jogállamiság",
-      "event_categories": [
+        },
         {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
         }
       ],
-      "geopolitical_score": 9,
-      "quality_score": 14,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
+      "geopolitical_score": 40,
+      "quality_score": 43,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
     },
     {
       "title": "",
-      "text": "I assume this new strategy involves a large white flag… # brexit # BrexitLies # politics # toryscum # tories # conservatives # ukpolitics # bbc # news # EU # Labour # labourparty # RejoinEU # TaxTheRich # usa # uspolitics # uspol # trump # DonaldTrump # MAGA # ai # iran # gaza # israel # netanyahu # epstein # epsteinfiles # TrumpIsAPedo # gaza # gazagenocide",
-      "url": "https://mastodonapp.uk/@TJ1001/117083264496683057",
-      "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Wed, 12 Aug 2026 15:33:55 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "eu_rule_of_law",
-      "event_category_label": "EU / jogállamiság",
-      "event_categories": [
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 9,
-      "quality_score": 14,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Major Russian grain export terminals hit in # Ukraine Black Sea port attack Grain exports from both # Russia and Ukraine are falling as both countries attack each other's shipping facilities and ports. https://www. bbc.co.uk/news/articles/c5y49x p2wrno?at_medium=RSS&at_campaign=rss (c) # BBC # News",
-      "url": "https://mastodonapp.uk/@bbcnewsfeed/117084016075446467",
+      "text": "# Ukraine president # Zelensky reports a combined missile and drone attack has damage # Russia 's Black Sea naval stronghold. https:// apnews.com/article/russia-ukra ine-black-sea-attack-9eadff0d7590923e3d98c99e2b61150b",
+      "url": "https://kolektiva.social/@maeve_bkk/117085351791308151",
       "source": "mastodon",
       "tag": "ukraine",
-      "seen_date": "Wed, 12 Aug 2026 18:45:03 +0000",
+      "seen_date": "Thu, 13 Aug 2026 00:24:45 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 3
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 60,
+      "quality_score": 65,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "# WW3 # invasion - # Ukraine strikes Novorossiysk, putting # Russia 's last Black Sea sanctuary within reach - Sasha VAKULINA @ euronews https://www. euronews.com/my-europe/2026/08 /12/ukraine-strikes-novorossiysk-putting-russias-last-black-sea-sanctuary-within-reach",
+      "url": "https://piaille.fr/@jeromeollier/117084716808293939",
+      "source": "mastodon",
+      "tag": "russia",
+      "seen_date": "Wed, 12 Aug 2026 21:43:16 +0000",
       "matched_countries": [
         "romania"
       ],
@@ -4457,14 +4429,26 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 3,
+          "hits": 2,
           "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
         },
         {
           "category": "foreign_influence",
           "label": "Külső befolyás",
           "hits": 1,
           "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
         }
       ],
       "geopolitical_score": 41,
@@ -4477,129 +4461,16 @@
     },
     {
       "title": "",
-      "text": "Agenzia Nova: Russia: Zelensky, a Novorossijsk colpite fregate Ammiraglio Essen e Ammiraglio Makarov 12 ago 20:01 - (Agenzia Nova) - Le forze ucraine hanno colpito diverse unita' della Flotta russa del Mar Nero nella baia di Novorossijsk, tra... (Kiu) Russia: Zelensky, a Novorossijsk hit frigate Admiral Essen and Admiral Makarova August 12 20:01 - (Agenzia N",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117084036578731764",
+      "text": "Ukraine strikes Novorossiysk, Russia's last Black Sea sanctuary Ukraine’s strike on Novorossiysk demonstrates Kyiv’s ability to threaten Russian military infrastructure far beyond the frontline and challenges the assumption that shifting vessels from Crimea can keep them safe. # EuropeNews https://www. euronews.com/my-europe/2026/08 /12/ukraine-strikes-novor",
+      "url": "https://mastodon.social/@top_news/117084673975468990",
       "source": "mastodon",
       "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 18:50:16 +0000",
+      "seen_date": "Wed, 12 Aug 2026 21:32:22 +0000",
       "matched_countries": [
-        "latvia",
         "romania"
       ],
       "country_confidence": {
-        "latvia": 4,
         "romania": 3
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 34,
-      "quality_score": 37,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Agenzia Nova: Russia: Zelensky, a Novorossijsk colpite fregate Ammiraglio Essen e Ammiraglio Makarov (2) 12 ago 20:01 - (Agenzia Nova) - \"Tra i risultati dell'operazione e' importante sottolineare gli attacchi contro le navi della flotta russa... (Kiu) Russia: Zelensky, a Novorossijsk hit frigate Admiral Essen and Admiral Makarov (2) August 12 20:01 – (Agenz",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117083997328018818",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 18:40:17 +0000",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 4
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 28,
-      "quality_score": 31,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Pisioneiros ucranianos relatam violência sexual e tortura https:// fed.brid.gy/r/https://observad or.pt/2026/08/12/tortura-violencia-sexual-e-espancamentos-onu-denuncia-maus-tratos-sistematicos-a-prisioneiros-ucranianos-na-russia/",
-      "url": "https://fed.brid.gy/r/https://observador.pt/2026/08/12/tortura-violencia-sexual-e-espancamentos-onu-denuncia-maus-tratos-sistematicos-a-prisioneiros-ucranianos-na-russia/",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 17:21:35 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 16,
-      "quality_score": 19,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "RE: https:// journa.host/@ScottLucas/117081 145865294969 # Zelensky : In addition to knocking out 2 grain terminals, # Ukraine missile and drone attack on # Russia 's # BlackSea port of # Novorossyisk hit Admiral Essen and Admiral Makarov frigates, large landing ship, corvette, and other vessels as well as\"other Russian facilities that were helping finance w",
-      "url": "https://journa.host/@ScottLucas/117083952582965730",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 18:28:55 +0000",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 4
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -4607,7 +4478,7 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 2,
+          "hits": 1,
           "weight": 10
         },
         {
@@ -4617,41 +4488,10 @@
           "weight": 9
         },
         {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
+          "category": "protest",
+          "label": "Tiltakozás",
           "hits": 1,
           "weight": 7
-        }
-      ],
-      "geopolitical_score": 66,
-      "quality_score": 69,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "# WW3 # Russia # invasion - # Ukraine Halts Attacks On Oil Tankers & Infrastructure On Black Sea Coast After U.S Intervention - Marine Insight https://www. marineinsight.com/ukraine-halt s-attacks-on-oil-tankers-infrastructure-on-black-sea-coast-after-u-s-intervention/",
-      "url": "https://piaille.fr/@jeromeollier/117083925162286135",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 18:21:56 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 3
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
         },
         {
           "category": "foreign_influence",
@@ -4660,59 +4500,16 @@
           "weight": 7
         },
         {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
           "hits": 1,
-          "weight": 4
+          "weight": 5
         }
       ],
-      "geopolitical_score": 32,
-      "quality_score": 35,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "\"That’s nice, # russia has put on a firework show to celebrate # Ukrainian success!\" 🤣🤣🤣 From https:// t.me/pravdaGerashchenko_en ⚡️ # Ukraine 's Defence Forces struck four # Russian warships during an attack on the naval base in # Novorossiysk , # Russia . The # Admiral_Makarov and # Admiral_Essen frigates, a # Project_21631_Buyan_M small missile ship, and ",
-      "url": "https://mastodon.online/@kardinal691/117083922559644521",
-      "source": "mastodon",
-      "tag": "russia",
-      "seen_date": "Wed, 12 Aug 2026 18:21:16 +0000",
-      "matched_countries": [
-        "latvia"
-      ],
-      "country_confidence": {
-        "latvia": 4
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 5,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 75,
-      "quality_score": 78,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "geopolitical_score": 72,
+      "quality_score": 77,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
