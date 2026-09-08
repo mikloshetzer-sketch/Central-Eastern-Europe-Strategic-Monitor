@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-08T02:23:26.708542+00:00",
+  "last_update": "2026-09-08T10:26:27.955965+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -52,40 +52,137 @@
   },
   "countries": {
     "hungary": {
-      "mentions": 4,
-      "negative": 0,
+      "mentions": 6,
+      "negative": 1,
       "positive": 0,
-      "index": 26,
+      "index": 40,
       "x_mentions": 0,
-      "reddit_mentions": 0,
+      "reddit_mentions": 2,
       "mastodon_mentions": 4,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 2,
-      "geopolitical_score": 79,
+      "geopolitical_score": 199,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 3
+          "count": 5
         },
         {
-          "name": "EU / jogállamiság",
+          "name": "Biztonsági kockázat",
           "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 0,
+        "reddit": 2,
         "mastodon": 4,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 3,
-        "eu_rule_of_law": 1
+        "ukraine_russia": 5,
+        "security": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 95,
+      "quality_total": 213,
       "top_posts": [
+        {
+          "title": "",
+          "text": "Oil depots do not burn on their own. Madyar's Birds fly the drones; their fundraiser is open to anyone. https:// magyarbirds.army # RosHlopok # Ukraine # Russia # war",
+          "url": "https://mastodon.social/@roshlopok/117234834279938081",
+          "source": "mastodon",
+          "tag": "russia",
+          "seen_date": "Tue, 08 Sep 2026 10:00:07 +0000",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 61,
+          "quality_score": 64,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "POLITICO Europe: \"Europe is short of corn — and Ukraine desperately needs ways to get its grain to market. Yet some of the farmers best placed to cash in may be thousands of kilometers away, in the U.S.\" # Europe # Ukraine # USA # Agriculture # Corn # Grains # Hungary # Iran # Italy # Poland # Romania # Russia # Slovakia # Spain # TheNetherlands # EU # farme",
+          "url": "https://mastodon.social/@mse_eu/117234409316531427",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 08:12:02 +0000",
+          "matched_countries": [
+            "slovakia",
+            "hungary",
+            "poland"
+          ],
+          "country_confidence": {
+            "slovakia": 2,
+            "hungary": 1,
+            "poland": 1,
+            "romania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 2,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 34,
+          "quality_score": 39,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
         {
           "title": "",
           "text": "russia's rosatom expects more delays to # Hungary nuclear plant, document shows 🖊️ Ben Makuch It's the latest in a series of hold-ups that have plagued the controversial project since it was conceived in 2014. https://www. politico.eu/article/russias-ro satom-expects-more-delays-to-hungary-nuclear-plant-paks-ii-document-shows",
@@ -137,18 +234,16 @@
         },
         {
           "title": "",
-          "text": "@ tzimmer_history This is not an immediate desaster but given a fascist # afd govmt of a German federal state gets real, the dismantling of democracy, human rights and plurality starts from day one. See # usa See # poland See # hungary and above all See # russia",
-          "url": "https://social.anoxinon.de/@solaris/117225128353201394",
+          "text": "🇭🇺 # Hungary has expelled 10 Russian diplomats who \"were engaged in activities in Hungary that are unacceptable for diplomats under the Vienna Convention,\" Foreign Minister Anita Orbán said in a statement on Tuesday. https:// tvpworld.com/95280737/hungary- expels-10-russian-diplomats-foreign-minister-says",
+          "url": "https://mastodon.social/@rvps2001/117234804744720083",
           "source": "mastodon",
           "tag": "hungary",
-          "seen_date": "Sun, 06 Sep 2026 16:51:46 +0000",
+          "seen_date": "Tue, 08 Sep 2026 09:52:36 +0000",
           "matched_countries": [
-            "hungary",
-            "poland"
+            "hungary"
           ],
           "country_confidence": {
-            "hungary": 1,
-            "poland": 1
+            "hungary": 5
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -156,7 +251,7 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 1,
+              "hits": 2,
               "weight": 9
             },
             {
@@ -164,16 +259,10 @@
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
             }
           ],
-          "geopolitical_score": 21,
-          "quality_score": 24,
+          "geopolitical_score": 25,
+          "quality_score": 28,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -181,17 +270,17 @@
           "quality": "rss_filtered"
         },
         {
-          "title": "",
-          "text": "Hungary begins a hunt for the corrupt regime’s billions. Hungary’s new prime minister promised he would recover billions stolen or diverted by the previous administration. A new “super authority” is about to begin that work. Its success or failure will have a big impact. https:// mediafaro.org/article/20260906 -hungary-begins-a-hunt-for-the-corrupt-regimes-b",
-          "url": "https://mastodon.mediafaro.org/@mf_analysis/117223483265808176",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Sun, 06 Sep 2026 09:53:24 +0000",
+          "title": "Anita Orbán Expelled Ten Russian Diplomats",
+          "text": "&#32; submitted by &#32; /u/Worth_Ad_7305 [link] &#32; [comments]",
+          "url": "https://www.reddit.com/r/europe/comments/1wajnbw/anita_orbán_expelled_ten_russian_diplomats/",
+          "source": "reddit",
+          "tag": "europe",
+          "seen_date": "2026-09-08T09:35:44+00:00",
           "matched_countries": [
             "hungary"
           ],
           "country_confidence": {
-            "hungary": 6
+            "hungary": 4
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -199,51 +288,20 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 1,
+              "hits": 2,
               "weight": 9
             },
             {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
               "hits": 1,
-              "weight": 8
+              "weight": 7
             }
           ],
-          "geopolitical_score": 20,
-          "quality_score": 23,
-          "source_reliability": 3,
+          "geopolitical_score": 25,
+          "quality_score": 24,
+          "source_reliability": 1,
           "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Dying to win: Gravediggers compete in championship Gravediggers competed to prove they were the fastest and best in the business in the northern Hungarian town of Nyergesújfalu. # hungary # europe # lifestyle # News # Reuters # Newsfeed 👉 Subscribe: Keep up with the latest news from around the world: Follow Reuters on Facebook: Follow Reuters on X: Follow Re",
-          "url": "https://mastodon.social/@fllics/117224538877416385",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Sun, 06 Sep 2026 14:21:51 +0000",
-          "matched_countries": [
-            "hungary"
-          ],
-          "country_confidence": {
-            "hungary": 2
-          },
-          "event_category": "eu_rule_of_law",
-          "event_category_label": "EU / jogállamiság",
-          "event_categories": [
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 9,
-          "quality_score": 14,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
@@ -251,24 +309,24 @@
       ]
     },
     "poland": {
-      "mentions": 23,
-      "negative": 8,
+      "mentions": 18,
+      "negative": 6,
       "positive": 0,
-      "index": 82,
+      "index": 81,
       "x_mentions": 0,
       "reddit_mentions": 1,
-      "mastodon_mentions": 22,
+      "mastodon_mentions": 17,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 6,
-      "geopolitical_score": 982,
+      "reliable_sources": 5,
+      "geopolitical_score": 768,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 16
+          "count": 12
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 6
+          "count": 5
         },
         {
           "name": "Belpolitikai feszültség",
@@ -278,17 +336,17 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 1,
-        "mastodon": 22,
+        "mastodon": 17,
         "x": 0
       },
       "category_counts": {
-        "security": 6,
-        "ukraine_russia": 16,
+        "security": 5,
+        "ukraine_russia": 12,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 1061,
+      "quality_total": 830,
       "top_posts": [
         {
           "title": "",
@@ -427,7 +485,7 @@
           "text": "💬 Ukraine’s military intelligence believes that a Russian Kh-101 cruise missile that struck # Poland on July 30 was deliberately directed into # NATO territory as part of Moscow’s effort to test the Alliance’s response to a potential armed attack. https:// united24media.com/war-in-ukrai ne/russia-deliberately-fired-kh-101-into-poland-to-test-natos-red-lines-",
           "url": "https://mastodon.social/@rvps2001/117229893874228115",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "nato",
           "seen_date": "Mon, 07 Sep 2026 13:03:42 +0000",
           "matched_countries": [
             "poland"
@@ -467,65 +525,21 @@
         },
         {
           "title": "",
-          "text": "❗️ Poland is preparing to test long-range attack drones In the coming days, the military will begin testing Deep Precision Strike class systems, Defense24 reports. One of the possible test participants will be the Fly Focus Striker with a stated range of about 1000 km. We are talking about a system for striking targets far behind the front line. #Ukraine #Ru",
-          "url": "https://en.tg.anyfeed.cc/post/nexta_live-123307",
+          "text": "│ 💀 │ 🇺🇸 🇷🇺 │ 💀 │ «Ukraine: Zelenskyy says war looks set to go on winter!» 😮 Anyone surprised?!.. I'm not! 😔 «Air Force One» is not on a peace-talk mission. Witkoff and Kushner's visit to the 🇷🇺 Russian Devil's war zone, is more of a «bizarre» business trip!.. «dressed up» as diplomacy! 👀 # ukraine # europe # eu # canada # uk # france # turkey # poland # est",
+          "url": "https://mastodon.social/@Ezpen/117229353305219123",
           "source": "mastodon",
-          "tag": "russia",
-          "seen_date": "Mon, 07 Sep 2026 17:40:55 +0000",
+          "tag": "estonia",
+          "seen_date": "Mon, 07 Sep 2026 10:46:14 +0000",
           "matched_countries": [
-            "poland"
+            "poland",
+            "estonia",
+            "latvia"
           ],
           "country_confidence": {
-            "poland": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 3,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
-            },
-            {
-              "category": "protest",
-              "label": "Tiltakozás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 65,
-          "quality_score": 68,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "⛔️🇵🇱Tusk slams Poles celebrating Neo-Nazi far-right win in Germany (more) https:// english.nv.ua/nation/donald-tu sk-slams-poles-who-are-celebrating-triumph-of-far-right-afd-in-eastern-germany-50639093.html # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News",
-          "url": "https://mastodon.online/@SocraticEthics/117230417860565370",
-          "source": "mastodon",
-          "tag": "poland",
-          "seen_date": "Mon, 07 Sep 2026 15:16:57 +0000",
-          "matched_countries": [
-            "poland"
-          ],
-          "country_confidence": {
-            "poland": 9
+            "poland": 1,
+            "estonia": 1,
+            "latvia": 1,
+            "lithuania": 1
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -535,12 +549,6 @@
               "label": "Ukrajna és Oroszország",
               "hits": 4,
               "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
             },
             {
               "category": "foreign_influence",
@@ -555,8 +563,56 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 59,
-          "quality_score": 62,
+          "geopolitical_score": 51,
+          "quality_score": 54,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "@ top_news │ 💀 │ 🇺🇸 🇷🇺 │ 💀 │ «Ukraine: Zelenskyy says war looks set to go on winter» 😮 Anyone surprised?!.. I'm not! 😔 «Air Force One» is not on a peace-talk mission. Witkoff and Kushner's visit to the Russian Devil's war zone, is more of a bizarre business trip!... dressed up as diplomacy! 👀 # ukraine # europe # eu # canada # uk # france # turkey # poland #",
+          "url": "https://mastodon.social/@Ezpen/117229231394991422",
+          "source": "mastodon",
+          "tag": "estonia",
+          "seen_date": "Mon, 07 Sep 2026 10:15:13 +0000",
+          "matched_countries": [
+            "poland",
+            "estonia",
+            "latvia"
+          ],
+          "country_confidence": {
+            "poland": 1,
+            "estonia": 1,
+            "latvia": 1,
+            "lithuania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 51,
+          "quality_score": 54,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -566,35 +622,83 @@
       ]
     },
     "slovakia": {
-      "mentions": 1,
+      "mentions": 2,
       "negative": 1,
       "positive": 0,
-      "index": 10,
+      "index": 21,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 1,
+      "mastodon_mentions": 2,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 0,
-      "geopolitical_score": 12,
+      "reliable_sources": 1,
+      "geopolitical_score": 46,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 1
+          "count": 2
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 1,
+        "mastodon": 2,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 1
+        "ukraine_russia": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 15,
+      "quality_total": 54,
       "top_posts": [
+        {
+          "title": "",
+          "text": "POLITICO Europe: \"Europe is short of corn — and Ukraine desperately needs ways to get its grain to market. Yet some of the farmers best placed to cash in may be thousands of kilometers away, in the U.S.\" # Europe # Ukraine # USA # Agriculture # Corn # Grains # Hungary # Iran # Italy # Poland # Romania # Russia # Slovakia # Spain # TheNetherlands # EU # farme",
+          "url": "https://mastodon.social/@mse_eu/117234409316531427",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 08:12:02 +0000",
+          "matched_countries": [
+            "slovakia",
+            "hungary",
+            "poland"
+          ],
+          "country_confidence": {
+            "slovakia": 2,
+            "hungary": 1,
+            "poland": 1,
+            "romania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 2,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 34,
+          "quality_score": 39,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
         {
           "title": "",
           "text": "Tribeč (Slovakia: mountains), 1919 Nyitra: I nyitai sikszita és turbiná malom Regional geography, Lakes, Mountains, Buildings Graphic, Local postcards Schwarz Armin From Digital Library and Digital Archive of Slovak National Library https://dikda.snk.sk/view/uuid:609f04d6-d885-42fd-… #Slovakia #Slovensko #SVK #SK #history #image #photography #photo #postcard",
@@ -734,44 +838,89 @@
       ]
     },
     "romania": {
-      "mentions": 0,
+      "mentions": 1,
       "negative": 0,
       "positive": 0,
-      "index": 0,
+      "index": 6,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 0,
-      "main_social_topic": "Social monitoring active, but no strong topic detected",
+      "mastodon_mentions": 1,
+      "main_social_topic": "Belpolitikai feszültség",
       "reliable_sources": 0,
-      "geopolitical_score": 0,
-      "topics": [],
+      "geopolitical_score": 13,
+      "topics": [
+        {
+          "name": "Belpolitikai feszültség",
+          "count": 1
+        }
+      ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 0,
+        "mastodon": 1,
         "x": 0
       },
-      "category_counts": {},
+      "category_counts": {
+        "government_crisis": 1
+      },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 0,
-      "top_posts": []
+      "quality_total": 16,
+      "top_posts": [
+        {
+          "title": "",
+          "text": "Europarlamentarul Siegfried # Mureș an (#PNL (#PartidulNaționalLiberal)): Ați observat că pesediștii, când zboară „în interes de serviciu”, nu au niciodată treabă prin zone cu temperaturi mai scăzute? Ei zboară mereu în zone calde: 🇲🇨#Monaco, Nisa, # Dubai , Mykonos. 🔗 https:// wp.me/p9KpFA-5vLf # Știri # EAU # EmirateleArabeUnite # România # UE # UniuneaEur",
+          "url": "https://mastodon.world/@G4Media/117234618659957633",
+          "source": "mastodon",
+          "tag": "romania",
+          "seen_date": "Tue, 08 Sep 2026 09:05:16 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 5
+          },
+          "event_category": "government_crisis",
+          "event_category_label": "Belpolitikai feszültség",
+          "event_categories": [
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 13,
+          "quality_score": 16,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        }
+      ]
     },
     "estonia": {
-      "mentions": 16,
+      "mentions": 14,
       "negative": 4,
       "positive": 0,
-      "index": 71,
+      "index": 70,
       "x_mentions": 0,
       "reddit_mentions": 1,
-      "mastodon_mentions": 15,
+      "mastodon_mentions": 13,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 2,
-      "geopolitical_score": 590,
+      "geopolitical_score": 546,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 12
+          "count": 10
         },
         {
           "name": "Biztonsági kockázat",
@@ -789,18 +938,18 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 1,
-        "mastodon": 15,
+        "mastodon": 13,
         "x": 0
       },
       "category_counts": {
         "eu_rule_of_law": 1,
+        "ukraine_russia": 10,
         "security": 2,
-        "ukraine_russia": 12,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 638,
+      "quality_total": 588,
       "top_posts": [
         {
           "title": "",
@@ -1035,7 +1184,7 @@
           "text": "@ top_news «substantive plans’ on ending war»... Really?! 🤣 │ 💀 │ 💀 │ 🇺🇸 🇷🇺 🇺🇸 │ 💀 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... Ronald Dump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # cana",
           "url": "https://mastodon.social/@Ezpen/117224354447161966",
           "source": "mastodon",
-          "tag": "estonia",
+          "tag": "latvia",
           "seen_date": "Sun, 06 Sep 2026 13:34:57 +0000",
           "matched_countries": [
             "poland",
@@ -1081,20 +1230,20 @@
       ]
     },
     "latvia": {
-      "mentions": 15,
+      "mentions": 14,
       "negative": 4,
       "positive": 0,
-      "index": 71,
+      "index": 70,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 15,
+      "mastodon_mentions": 14,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 2,
-      "geopolitical_score": 566,
+      "geopolitical_score": 531,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 14
+          "count": 13
         },
         {
           "name": "Biztonsági kockázat",
@@ -1104,16 +1253,16 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 15,
+        "mastodon": 14,
         "x": 0
       },
       "category_counts": {
-        "security": 1,
-        "ukraine_russia": 14
+        "ukraine_russia": 13,
+        "security": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 615,
+      "quality_total": 577,
       "top_posts": [
         {
           "title": "",
@@ -1186,7 +1335,7 @@
           "text": "⚠️🇧🇾Russia deploys Oreshnik-armed brigade units to Belarus (more) https:// newsukraine.rbc.ua/news/russia -deploys-oreshnik-armed-brigade-units-1788783012.html # Ukraine # Press # Media # Poland # Latvia # Lithuania # Estonia # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
           "url": "https://mastodon.online/@SocraticEthics/117230309702186487",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 14:49:27 +0000",
           "matched_countries": [
             "latvia",
@@ -1372,39 +1521,39 @@
       ]
     },
     "lithuania": {
-      "mentions": 3,
+      "mentions": 5,
       "negative": 1,
-      "positive": 0,
-      "index": 36,
+      "positive": 1,
+      "index": 38,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 3,
+      "mastodon_mentions": 5,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 2,
-      "geopolitical_score": 210,
+      "geopolitical_score": 249,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 1
+          "count": 2
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 3,
+        "mastodon": 5,
         "x": 0
       },
       "category_counts": {
-        "security": 1,
-        "ukraine_russia": 2
+        "security": 2,
+        "ukraine_russia": 3
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 223,
+      "quality_total": 268,
       "top_posts": [
         {
           "title": "",
@@ -1477,7 +1626,7 @@
           "text": "⚠️🇧🇾Russia deploys Oreshnik-armed brigade units to Belarus (more) https:// newsukraine.rbc.ua/news/russia -deploys-oreshnik-armed-brigade-units-1788783012.html # Ukraine # Press # Media # Poland # Latvia # Lithuania # Estonia # News # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
           "url": "https://mastodon.online/@SocraticEthics/117230309702186487",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 14:49:27 +0000",
           "matched_countries": [
             "latvia",
@@ -1560,6 +1709,80 @@
           "quality_score": 53,
           "source_reliability": 5,
           "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Я не была в этом яблоневом саду, не надевала красный свитер. Меня не мучил фотограф - «чуть поверните голову, взгляд в сторону». Всё это сделал AI. И вот что забавно. Раньше я вообще не любила фотографироваться. Особенно крупным планом. Казалось, что камера обязательно найдёт всё, что хотелось бы от неё спрятать. Видимо, я всё-таки меняюсь. Причём странными ",
+          "url": "https://mastodon.social/@mvhomenko/117234746954986992",
+          "source": "mastodon",
+          "tag": "russia",
+          "seen_date": "Tue, 08 Sep 2026 09:37:54 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 2,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 23,
+          "quality_score": 26,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Lithuania signs ammunition-technology transfer agreement with Hirtenberger Defence manufacturing and technology transfer # EU # Lithuania https:// archyvai.lrt.lt/naujienos/liet uvoje/2/3046091/kam-su-austru-gynybos-pramones-imone-susitare-del-technologiju-perdavimo",
+          "url": "https://mastodon.social/@EU_Economics/117234748929887821",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Tue, 08 Sep 2026 09:38:24 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 16,
+          "quality_score": 19,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
