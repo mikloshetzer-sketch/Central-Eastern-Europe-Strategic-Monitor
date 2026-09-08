@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-08T10:26:27.955965+00:00",
+  "last_update": "2026-09-08T15:49:49.630120+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -52,62 +52,94 @@
   },
   "countries": {
     "hungary": {
-      "mentions": 6,
-      "negative": 1,
+      "mentions": 14,
+      "negative": 2,
       "positive": 0,
-      "index": 40,
+      "index": 64,
       "x_mentions": 0,
-      "reddit_mentions": 2,
-      "mastodon_mentions": 4,
+      "reddit_mentions": 3,
+      "mastodon_mentions": 11,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 2,
-      "geopolitical_score": 199,
+      "reliable_sources": 5,
+      "geopolitical_score": 500,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 5
-        },
-        {
-          "name": "Biztonsági kockázat",
-          "count": 1
+          "count": 14
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 2,
-        "mastodon": 4,
+        "reddit": 3,
+        "mastodon": 11,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 5,
-        "security": 1
+        "ukraine_russia": 14
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 213,
+      "quality_total": 540,
       "top_posts": [
         {
           "title": "",
-          "text": "Oil depots do not burn on their own. Madyar's Birds fly the drones; their fundraiser is open to anyone. https:// magyarbirds.army # RosHlopok # Ukraine # Russia # war",
-          "url": "https://mastodon.social/@roshlopok/117234834279938081",
+          "text": "Moscow says it will have a 'harsh and painful' response to Hungarian move to expel 10 diplomats - https://www. theguardian.com/world/live/202 6/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates?page=with%3Ablock-6a9fe1828f0892c7693afad0#block-6a9fe1828f0892c7693afad0 another great move fr",
+          "url": "https://mastodon.social/@glynmoody/117235520467196400",
           "source": "mastodon",
-          "tag": "russia",
-          "seen_date": "Tue, 08 Sep 2026 10:00:07 +0000",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 12:54:37 +0000",
+          "matched_countries": [
+            "hungary"
+          ],
+          "country_confidence": {
+            "hungary": 2
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 55,
+          "quality_score": 60,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Hungary expels 10 Russian diplomats as relations worsen For years, Hungary was viewed as Russia's closest ally in the EU, but the new government has dropped the pro-Kremlin stance. https://www. bbc.co.uk/news/articles/cddvzd 1z53lo?at_medium=RSS&at_campaign=rss # HungaryNews # Russia # Hungary # News # RussiaNews",
+          "url": "https://mastodon.social/@publicnewsfeed/117236076751742473",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 15:16:05 +0000",
           "matched_countries": [
             "hungary"
           ],
           "country_confidence": {
             "hungary": 1
           },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
           "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 2,
-              "weight": 10
-            },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
@@ -115,52 +147,10 @@
               "weight": 9
             },
             {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
               "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
-            }
-          ],
-          "geopolitical_score": 61,
-          "quality_score": 64,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "POLITICO Europe: \"Europe is short of corn — and Ukraine desperately needs ways to get its grain to market. Yet some of the farmers best placed to cash in may be thousands of kilometers away, in the U.S.\" # Europe # Ukraine # USA # Agriculture # Corn # Grains # Hungary # Iran # Italy # Poland # Romania # Russia # Slovakia # Spain # TheNetherlands # EU # farme",
-          "url": "https://mastodon.social/@mse_eu/117234409316531427",
-          "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Tue, 08 Sep 2026 08:12:02 +0000",
-          "matched_countries": [
-            "slovakia",
-            "hungary",
-            "poland"
-          ],
-          "country_confidence": {
-            "slovakia": 2,
-            "hungary": 1,
-            "poland": 1,
-            "romania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 2,
-              "weight": 9
+              "weight": 8
             },
             {
               "category": "foreign_influence",
@@ -175,8 +165,8 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 34,
-          "quality_score": 39,
+          "geopolitical_score": 51,
+          "quality_score": 56,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -185,11 +175,11 @@
         },
         {
           "title": "",
-          "text": "russia's rosatom expects more delays to # Hungary nuclear plant, document shows 🖊️ Ben Makuch It's the latest in a series of hold-ups that have plagued the controversial project since it was conceived in 2014. https://www. politico.eu/article/russias-ro satom-expects-more-delays-to-hungary-nuclear-plant-paks-ii-document-shows",
-          "url": "https://mastodon.ie/@EugeneMcParland/117228661115486448",
+          "text": "⚡ NEWS Hungary Expels Russian Diplomats Amid Diplomatic Shift Hungary's new government has expelled 10 Russian diplomats, marking a significant departure from its previous role as Russia's closest ally within the EU. This action signals a worsening of bilateral relations and a strategic pivot away from pro-Kremlin policies. 📰 https://www. bbc.co.uk/news/arti",
+          "url": "https://mastodon.social/@GeoWire/117235981381349790",
           "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Mon, 07 Sep 2026 07:50:12 +0000",
+          "tag": "eu",
+          "seen_date": "Tue, 08 Sep 2026 14:51:50 +0000",
           "matched_countries": [
             "hungary"
           ],
@@ -202,8 +192,14 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 1,
+              "hits": 3,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "foreign_influence",
@@ -216,16 +212,10 @@
               "label": "EU / jogállamiság",
               "hits": 1,
               "weight": 5
-            },
-            {
-              "category": "energy_economy",
-              "label": "Energia és gazdaság",
-              "hits": 1,
-              "weight": 4
             }
           ],
-          "geopolitical_score": 29,
-          "quality_score": 34,
+          "geopolitical_score": 51,
+          "quality_score": 56,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -234,11 +224,11 @@
         },
         {
           "title": "",
-          "text": "🇭🇺 # Hungary has expelled 10 Russian diplomats who \"were engaged in activities in Hungary that are unacceptable for diplomats under the Vienna Convention,\" Foreign Minister Anita Orbán said in a statement on Tuesday. https:// tvpworld.com/95280737/hungary- expels-10-russian-diplomats-foreign-minister-says",
-          "url": "https://mastodon.social/@rvps2001/117234804744720083",
+          "text": "⚠️🇭🇺Russia threatens Hungary with \"harsh response\" over expulsion of Russian diplomats/ spies (more) https://www. pravda.com.ua/eng/news/2026/09 /08/8052426/ # Ukraine # Press # Media # News # Budapest # Hungary # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+          "url": "https://mastodon.online/@SocraticEthics/117235698432164201",
           "source": "mastodon",
           "tag": "hungary",
-          "seen_date": "Tue, 08 Sep 2026 09:52:36 +0000",
+          "seen_date": "Tue, 08 Sep 2026 13:39:52 +0000",
           "matched_countries": [
             "hungary"
           ],
@@ -251,7 +241,7 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 2,
+              "hits": 4,
               "weight": 9
             },
             {
@@ -261,8 +251,8 @@
               "weight": 7
             }
           ],
-          "geopolitical_score": 25,
-          "quality_score": 28,
+          "geopolitical_score": 46,
+          "quality_score": 49,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -270,17 +260,17 @@
           "quality": "rss_filtered"
         },
         {
-          "title": "Anita Orbán Expelled Ten Russian Diplomats",
-          "text": "&#32; submitted by &#32; /u/Worth_Ad_7305 [link] &#32; [comments]",
-          "url": "https://www.reddit.com/r/europe/comments/1wajnbw/anita_orbán_expelled_ten_russian_diplomats/",
-          "source": "reddit",
-          "tag": "europe",
-          "seen_date": "2026-09-08T09:35:44+00:00",
+          "title": "",
+          "text": "Agi: L'Ungheria ha espulso dieci dipendenti dell'ambasciata russa. Mosca: \"Daremo una risposta ... AGI - Il governo ungherese ha espulso dieci dipendenti dell'ambasciata russa a Budapest per avere svolto attività considerate \"inaccettabili\" ai sensi della Convenzione di Vienna. Lo ha annunciato la ministra degli Esteri Anita Orbán. \"Oggi il ministero degli E",
+          "url": "https://mastodon.ozioso.online/@ItalianNews/117235071178231101",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 11:00:21 +0000",
           "matched_countries": [
             "hungary"
           ],
           "country_confidence": {
-            "hungary": 4
+            "hungary": 13
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -288,8 +278,14 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 2,
+              "hits": 3,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "foreign_influence",
@@ -298,9 +294,9 @@
               "weight": 7
             }
           ],
-          "geopolitical_score": 25,
-          "quality_score": 24,
-          "source_reliability": 1,
+          "geopolitical_score": 42,
+          "quality_score": 45,
+          "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
@@ -309,24 +305,24 @@
       ]
     },
     "poland": {
-      "mentions": 18,
-      "negative": 6,
-      "positive": 0,
-      "index": 81,
+      "mentions": 22,
+      "negative": 11,
+      "positive": 1,
+      "index": 79,
       "x_mentions": 0,
-      "reddit_mentions": 1,
-      "mastodon_mentions": 17,
+      "reddit_mentions": 0,
+      "mastodon_mentions": 22,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 5,
-      "geopolitical_score": 768,
+      "reliable_sources": 9,
+      "geopolitical_score": 1054,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 12
+          "count": 14
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 5
+          "count": 7
         },
         {
           "name": "Belpolitikai feszültség",
@@ -335,25 +331,25 @@
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 1,
-        "mastodon": 17,
+        "reddit": 0,
+        "mastodon": 22,
         "x": 0
       },
       "category_counts": {
-        "security": 5,
-        "ukraine_russia": 12,
+        "ukraine_russia": 14,
+        "security": 7,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 830,
+      "quality_total": 1138,
       "top_posts": [
         {
           "title": "",
           "text": "LA NOTIZIA: Cia e misteri russi Non ho capito perché il capo della Cia Ratcliffe è volato a Mosca e che cosa si sono detti lui e Putin. Con quali risultati? Aldo Torelli via email Gentile lettore, il 25 agosto John Ratcliffe non è stato ricevuto da Putin né dal ministro degli Esteri Lavrov, che ha preferito incontrare l’inviato del Vaticano (e in questo sicu",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117232003820116275",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 22:00:17 +0000",
           "matched_countries": [
             "poland",
@@ -419,7 +415,7 @@
           "text": "Agi: La Finlandia 'chiude' il confine con la Russia, eretta una recinzione lunga 200 chilometri AGI - La Finlandia ha eretto una recinzione di 200 chilometri lungo il confine con la Russia, nel tentativo di dissuadere Mosca dall'utilizzare i migranti per destabilizzare il Paese. Il governo di Helsinki aveva già chiuso il suo confine di 1.340 chilometri con l",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117231217586151026",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 18:40:20 +0000",
           "matched_countries": [
             "lithuania",
@@ -482,16 +478,16 @@
         },
         {
           "title": "",
-          "text": "💬 Ukraine’s military intelligence believes that a Russian Kh-101 cruise missile that struck # Poland on July 30 was deliberately directed into # NATO territory as part of Moscow’s effort to test the Alliance’s response to a potential armed attack. https:// united24media.com/war-in-ukrai ne/russia-deliberately-fired-kh-101-into-poland-to-test-natos-red-lines-",
-          "url": "https://mastodon.social/@rvps2001/117229893874228115",
+          "text": "⚠️🇺🇦Drone Strikes Journalists During Live Broadcast during Attack on We Are Ukraine TV Channel Building (PHOTOS, more) https:// english.nv.ua/nation/drone-str ikes-journalists-during-live-broadcast-during-attack-on-we-are-ukraine-tv-channel-building-50639553.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # ",
+          "url": "https://mastodon.online/@SocraticEthics/117235583045944237",
           "source": "mastodon",
-          "tag": "nato",
-          "seen_date": "Mon, 07 Sep 2026 13:03:42 +0000",
+          "tag": "poland",
+          "seen_date": "Tue, 08 Sep 2026 13:10:32 +0000",
           "matched_countries": [
             "poland"
           ],
           "country_confidence": {
-            "poland": 1
+            "poland": 5
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -499,9 +495,58 @@
             {
               "category": "security",
               "label": "Biztonsági kockázat",
-              "hits": 3,
+              "hits": 1,
               "weight": 10
             },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 72,
+          "quality_score": 77,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "⛔️⚠️Russian terrorists commit blatant war crimes targeting civilians in 14 apartment blocks and metro station during attack on Kyiv (PHOTOS, VIDEO, more) https://www. pravda.com.ua/eng/news/2026/09 /08/8052377/ # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Dublin # Ireland # Olympics # Headlin",
+          "url": "https://mastodon.online/@SocraticEthics/117235719870006526",
+          "source": "mastodon",
+          "tag": "poland",
+          "seen_date": "Tue, 08 Sep 2026 13:45:20 +0000",
+          "matched_countries": [
+            "poland"
+          ],
+          "country_confidence": {
+            "poland": 5
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
@@ -513,10 +558,16 @@
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
             }
           ],
-          "geopolitical_score": 89,
-          "quality_score": 94,
+          "geopolitical_score": 64,
+          "quality_score": 69,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -525,21 +576,16 @@
         },
         {
           "title": "",
-          "text": "│ 💀 │ 🇺🇸 🇷🇺 │ 💀 │ «Ukraine: Zelenskyy says war looks set to go on winter!» 😮 Anyone surprised?!.. I'm not! 😔 «Air Force One» is not on a peace-talk mission. Witkoff and Kushner's visit to the 🇷🇺 Russian Devil's war zone, is more of a «bizarre» business trip!.. «dressed up» as diplomacy! 👀 # ukraine # europe # eu # canada # uk # france # turkey # poland # est",
-          "url": "https://mastodon.social/@Ezpen/117229353305219123",
+          "text": "⚠️🇺🇦Russian terrorists commit another war crime, deliberately striking Dnipro-Zaporizhzhia passenger train, killing attendant (more) https:// english.nv.ua/russian-war/russ ia-deliberately-strikes-dnipro-zaporizhzhia-passenger-train-50639534.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # D",
+          "url": "https://mastodon.online/@SocraticEthics/117235673082633595",
           "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Mon, 07 Sep 2026 10:46:14 +0000",
+          "tag": "poland",
+          "seen_date": "Tue, 08 Sep 2026 13:33:26 +0000",
           "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
+            "poland"
           ],
           "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
+            "poland": 5
           },
           "event_category": "ukraine_russia",
           "event_category_label": "Ukrajna és Oroszország",
@@ -549,6 +595,12 @@
               "label": "Ukrajna és Oroszország",
               "hits": 4,
               "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
             },
             {
               "category": "foreign_influence",
@@ -563,58 +615,10 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 51,
-          "quality_score": 54,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "@ top_news │ 💀 │ 🇺🇸 🇷🇺 │ 💀 │ «Ukraine: Zelenskyy says war looks set to go on winter» 😮 Anyone surprised?!.. I'm not! 😔 «Air Force One» is not on a peace-talk mission. Witkoff and Kushner's visit to the Russian Devil's war zone, is more of a bizarre business trip!... dressed up as diplomacy! 👀 # ukraine # europe # eu # canada # uk # france # turkey # poland #",
-          "url": "https://mastodon.social/@Ezpen/117229231394991422",
-          "source": "mastodon",
-          "tag": "estonia",
-          "seen_date": "Mon, 07 Sep 2026 10:15:13 +0000",
-          "matched_countries": [
-            "poland",
-            "estonia",
-            "latvia"
-          ],
-          "country_confidence": {
-            "poland": 1,
-            "estonia": 1,
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 51,
-          "quality_score": 54,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
+          "geopolitical_score": 62,
+          "quality_score": 67,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
@@ -733,20 +737,20 @@
       ]
     },
     "czechia": {
-      "mentions": 2,
-      "negative": 0,
+      "mentions": 4,
+      "negative": 1,
       "positive": 0,
-      "index": 12,
+      "index": 26,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 2,
+      "mastodon_mentions": 4,
       "main_social_topic": "Biztonsági kockázat",
       "reliable_sources": 0,
-      "geopolitical_score": 29,
+      "geopolitical_score": 72,
       "topics": [
         {
           "name": "Biztonsági kockázat",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Belpolitikai feszültség",
@@ -756,17 +760,97 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 2,
+        "mastodon": 4,
         "x": 0
       },
       "category_counts": {
-        "security": 1,
+        "security": 3,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 35,
+      "quality_total": 84,
       "top_posts": [
+        {
+          "title": "",
+          "text": "📰 Researcher 'Nightmare Eclipse' Drops Three LPE Zero-Day Exploits Researcher 'Nightmare Eclipse' drops 3 LPE zero-day exploits for CrowdStrike Falcon, Avast Antivirus & Nvidia components. PoCs released for 'FalconFlank', 'PrettyPrague' & 'GreenSection' bugs, enabling SYSTEM-level access. # CyberSecurity # ZeroDay 🔗 https:// cyber.netsecops.io/articles/ni gh",
+          "url": "https://mastodon.social/@netsecio/117236103265693036",
+          "source": "mastodon",
+          "tag": "cybersecurity",
+          "seen_date": "Tue, 08 Sep 2026 15:22:50 +0000",
+          "matched_countries": [
+            "czechia"
+          ],
+          "country_confidence": {
+            "czechia": 4
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "cyber_disinformation",
+              "label": "Kiber és dezinformáció",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 25,
+          "quality_score": 28,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Czech PM’s Balkan Schengen Illusion Is a Security Risk for Europe https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/08/czech-pms-balkan-schengen-illusion-is-a-security-risk-for-europe/rd/",
+          "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/08/czech-pms-balkan-schengen-illusion-is-a-security-risk-for-europe/rd/",
+          "source": "mastodon",
+          "tag": "hungary",
+          "seen_date": "Tue, 08 Sep 2026 05:56:45 +0000",
+          "matched_countries": [
+            "czechia"
+          ],
+          "country_confidence": {
+            "czechia": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 18,
+          "quality_score": 21,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
         {
           "title": "",
           "text": "📅 Upcoming # infosec events in the next 14 days: • BSidesFrankfurt @ bsidesfra — Sep 10-11, 2026, Frankfurt 🇩🇪 # Germany • SEC-T @ SEC_T — Sep 10-11, 2026, Stockholm 🇸🇪 # Sweden • PraSec # Prasec — Sep 10-11, 2026, Prague 🇨🇿 # Czechia • Blue Team Con @ BlueTeamCon — Sep 10-13, 2026, Chicago (IL) 🇺🇸 # USA Full list & calendar subscription → https:// xsa.githu",
@@ -838,17 +922,276 @@
       ]
     },
     "romania": {
-      "mentions": 1,
-      "negative": 0,
+      "mentions": 7,
+      "negative": 4,
       "positive": 0,
-      "index": 6,
+      "index": 54,
+      "x_mentions": 0,
+      "reddit_mentions": 1,
+      "mastodon_mentions": 6,
+      "main_social_topic": "Biztonsági kockázat",
+      "reliable_sources": 2,
+      "geopolitical_score": 202,
+      "topics": [
+        {
+          "name": "Biztonsági kockázat",
+          "count": 5
+        },
+        {
+          "name": "Energia és gazdaság",
+          "count": 1
+        },
+        {
+          "name": "Ukrajna és Oroszország",
+          "count": 1
+        }
+      ],
+      "source_status": "active",
+      "source_counts": {
+        "reddit": 1,
+        "mastodon": 6,
+        "x": 0
+      },
+      "category_counts": {
+        "security": 5,
+        "energy_economy": 1,
+        "ukraine_russia": 1
+      },
+      "engagement_total": 0,
+      "raw_engagement_total": 0,
+      "quality_total": 223,
+      "top_posts": [
+        {
+          "title": "",
+          "text": "Romanian intelligence foils russian sabotage plans targeting military bases and critical infrastructure # intelligence # Romania # russia # sabotage # Ukraine # war https:// uatribune.com/en/romanian-inte lligence-prevents-russian-sabotage-plans-targeting-military-bases-and-critical-infrastructure/",
+          "url": "https://mastodon.social/@uatribune/117235961701560086",
+          "source": "mastodon",
+          "tag": "romania",
+          "seen_date": "Tue, 08 Sep 2026 14:46:50 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 2
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 4,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 60,
+          "quality_score": 63,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "Suspected Russian spy captured in Romania; intel services foil plan to sabotage military bases and critical infrastructure",
+          "text": "&#32; submitted by &#32; /u/adyrip1 [link] &#32; [comments]",
+          "url": "https://www.reddit.com/r/europe/comments/1wanc21/suspected_russian_spy_captured_in_romania_intel/",
+          "source": "reddit",
+          "tag": "europe",
+          "seen_date": "2026-09-08T12:41:31+00:00",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 2,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 2,
+              "weight": 7
+            },
+            {
+              "category": "energy_economy",
+              "label": "Energia és gazdaság",
+              "hits": 1,
+              "weight": 4
+            }
+          ],
+          "geopolitical_score": 49,
+          "quality_score": 48,
+          "source_reliability": 1,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "🔴 Air Raid | 10/10 🇷🇴 Air raid sirens in Suceava and Iași Air raid sirens activated in Suceava and Iași. Reports indicate Banderol drones are heading towards these cities. # OSINT # NewsGroup # Romania # AirAlert # DroneStrike",
+          "url": "https://social.vir.group/@analytics/117236134893721543",
+          "source": "mastodon",
+          "tag": "romania",
+          "seen_date": "Tue, 08 Sep 2026 15:30:52 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 29,
+          "quality_score": 32,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Agenzia Nova: Romania: arrestato cittadino russo accusato di aver preparato piano di sabotaggio 08 set 15:43 - (Agenzia Nova) - Il Servizio romeno di informazioni (Sri), in collaborazione con la Direzione per la lotta alla criminalita'... (Rob) Romania: Russian citizen arrested on suspicion of preparing a sabotage plan. September 8, 3:43 PM – (Agenzia Nova) ",
+          "url": "https://mastodon.ozioso.online/@ItalianNews/117235857202396806",
+          "source": "mastodon",
+          "tag": "romania",
+          "seen_date": "Tue, 08 Sep 2026 14:20:15 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 2
+          },
+          "event_category": "ukraine_russia",
+          "event_category_label": "Ukrajna és Oroszország",
+          "event_categories": [
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 2,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 28,
+          "quality_score": 31,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "🕵🏻‍♂️#SRI și 👮🏻#DIICOT anunță că au prins un spion rus care pregătea acte de sabotaj împotriva bazelor # NATO din 🇷🇴#România. A fost urmărit mai multe luni, timp în care acesta a fotografiat obiective militare din # Cluj , # Constanța , # Călărași , # Ilfov și # București . 🔗 https:// biziday.ro/?p=368233 # Știri # Constanța # Dobrogea # Transilvania # Cluj ",
+          "url": "https://mastodon.world/@biziday/117236128948839237",
+          "source": "mastodon",
+          "tag": "nato",
+          "seen_date": "Tue, 08 Sep 2026 15:29:22 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 9
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 1,
+              "weight": 10
+            }
+          ],
+          "geopolitical_score": 14,
+          "quality_score": 19,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        }
+      ]
+    },
+    "estonia": {
+      "mentions": 10,
+      "negative": 2,
+      "positive": 0,
+      "index": 58,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 1,
-      "main_social_topic": "Belpolitikai feszültség",
-      "reliable_sources": 0,
-      "geopolitical_score": 13,
+      "mastodon_mentions": 10,
+      "main_social_topic": "Ukrajna és Oroszország",
+      "reliable_sources": 2,
+      "geopolitical_score": 452,
       "topics": [
+        {
+          "name": "Ukrajna és Oroszország",
+          "count": 7
+        },
+        {
+          "name": "Biztonsági kockázat",
+          "count": 2
+        },
         {
           "name": "Belpolitikai feszültség",
           "count": 1
@@ -857,106 +1200,24 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 1,
+        "mastodon": 10,
         "x": 0
       },
       "category_counts": {
-        "government_crisis": 1
-      },
-      "engagement_total": 0,
-      "raw_engagement_total": 0,
-      "quality_total": 16,
-      "top_posts": [
-        {
-          "title": "",
-          "text": "Europarlamentarul Siegfried # Mureș an (#PNL (#PartidulNaționalLiberal)): Ați observat că pesediștii, când zboară „în interes de serviciu”, nu au niciodată treabă prin zone cu temperaturi mai scăzute? Ei zboară mereu în zone calde: 🇲🇨#Monaco, Nisa, # Dubai , Mykonos. 🔗 https:// wp.me/p9KpFA-5vLf # Știri # EAU # EmirateleArabeUnite # România # UE # UniuneaEur",
-          "url": "https://mastodon.world/@G4Media/117234618659957633",
-          "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Tue, 08 Sep 2026 09:05:16 +0000",
-          "matched_countries": [
-            "romania"
-          ],
-          "country_confidence": {
-            "romania": 5
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 13,
-          "quality_score": 16,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        }
-      ]
-    },
-    "estonia": {
-      "mentions": 14,
-      "negative": 4,
-      "positive": 0,
-      "index": 70,
-      "x_mentions": 0,
-      "reddit_mentions": 1,
-      "mastodon_mentions": 13,
-      "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 2,
-      "geopolitical_score": 546,
-      "topics": [
-        {
-          "name": "Ukrajna és Oroszország",
-          "count": 10
-        },
-        {
-          "name": "Biztonsági kockázat",
-          "count": 2
-        },
-        {
-          "name": "EU / jogállamiság",
-          "count": 1
-        },
-        {
-          "name": "Belpolitikai feszültség",
-          "count": 1
-        }
-      ],
-      "source_status": "active",
-      "source_counts": {
-        "reddit": 1,
-        "mastodon": 13,
-        "x": 0
-      },
-      "category_counts": {
-        "eu_rule_of_law": 1,
-        "ukraine_russia": 10,
+        "ukraine_russia": 7,
         "security": 2,
         "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 588,
+      "quality_total": 486,
       "top_posts": [
         {
           "title": "",
           "text": "LA NOTIZIA: Cia e misteri russi Non ho capito perché il capo della Cia Ratcliffe è volato a Mosca e che cosa si sono detti lui e Putin. Con quali risultati? Aldo Torelli via email Gentile lettore, il 25 agosto John Ratcliffe non è stato ricevuto da Putin né dal ministro degli Esteri Lavrov, che ha preferito incontrare l’inviato del Vaticano (e in questo sicu",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117232003820116275",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 22:00:17 +0000",
           "matched_countries": [
             "poland",
@@ -1022,7 +1283,7 @@
           "text": "Agi: La Finlandia 'chiude' il confine con la Russia, eretta una recinzione lunga 200 chilometri AGI - La Finlandia ha eretto una recinzione di 200 chilometri lungo il confine con la Russia, nel tentativo di dissuadere Mosca dall'utilizzare i migranti per destabilizzare il Paese. Il governo di Helsinki aveva già chiuso il suo confine di 1.340 chilometri con l",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117231217586151026",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 18:40:20 +0000",
           "matched_countries": [
             "lithuania",
@@ -1181,11 +1442,11 @@
         },
         {
           "title": "",
-          "text": "@ top_news «substantive plans’ on ending war»... Really?! 🤣 │ 💀 │ 💀 │ 🇺🇸 🇷🇺 🇺🇸 │ 💀 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... Ronald Dump's a fuckin TRAITOR! 💀 Check out the TRAITOR!! ●-----► https:// mastodon.social/@Ezpen/1144553 06117172611 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 # ukraine # europe # eu # cana",
-          "url": "https://mastodon.social/@Ezpen/117224354447161966",
+          "text": "@ MAKS23 │ 💀 │ 🇷🇺 🇷🇺 🇷🇺 │ 💀 │ 🇷🇺 Russia is a Terrorist State!... Vladimir Putin's a DEVIL! 💀 Putin's dirty track-record! ●-----► https:// mastodon.social/@Ezpen/1158260 84037391065 💀 Please keep this post «alive» by Boosting it! 🌿 # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # nether",
+          "url": "https://mastodon.social/@Ezpen/117229798306439387",
           "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Sun, 06 Sep 2026 13:34:57 +0000",
+          "tag": "estonia",
+          "seen_date": "Mon, 07 Sep 2026 12:39:24 +0000",
           "matched_countries": [
             "poland",
             "estonia",
@@ -1203,7 +1464,7 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 3,
+              "hits": 2,
               "weight": 9
             },
             {
@@ -1219,8 +1480,8 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 42,
-          "quality_score": 45,
+          "geopolitical_score": 30,
+          "quality_score": 33,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1230,46 +1491,46 @@
       ]
     },
     "latvia": {
-      "mentions": 14,
+      "mentions": 13,
       "negative": 4,
-      "positive": 0,
+      "positive": 1,
       "index": 70,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 14,
+      "mastodon_mentions": 13,
       "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 2,
-      "geopolitical_score": 531,
+      "reliable_sources": 3,
+      "geopolitical_score": 549,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
-          "count": 13
+          "count": 11
         },
         {
           "name": "Biztonsági kockázat",
-          "count": 1
+          "count": 2
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 14,
+        "mastodon": 13,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 13,
-        "security": 1
+        "ukraine_russia": 11,
+        "security": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 577,
+      "quality_total": 594,
       "top_posts": [
         {
           "title": "",
           "text": "LA NOTIZIA: Cia e misteri russi Non ho capito perché il capo della Cia Ratcliffe è volato a Mosca e che cosa si sono detti lui e Putin. Con quali risultati? Aldo Torelli via email Gentile lettore, il 25 agosto John Ratcliffe non è stato ricevuto da Putin né dal ministro degli Esteri Lavrov, che ha preferito incontrare l’inviato del Vaticano (e in questo sicu",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117232003820116275",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 22:00:17 +0000",
           "matched_countries": [
             "poland",
@@ -1324,6 +1585,50 @@
           ],
           "geopolitical_score": 131,
           "quality_score": 136,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "Tuesday, September 8, 2026 Can women solve Ukraine's manpower problem? . . . . . Putin may seek to give Trump diplomatic win before US midterms, Zelensky says . . . . . Units of Russian missile brigade equipped with Oreshniks deployed in Belarus . . . . . NATO jets scrambled multiple times over Baltic region in one week . . . . . and more https:// activitypu",
+          "url": "https://activitypub.writeworks.uk/2026/09/tuesday-september-8-2026/",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Tue, 08 Sep 2026 13:59:09 +0000",
+          "matched_countries": [
+            "latvia"
+          ],
+          "country_confidence": {
+            "latvia": 4,
+            "lithuania": 1
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 2,
+              "weight": 7
+            }
+          ],
+          "geopolitical_score": 65,
+          "quality_score": 70,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1466,101 +1771,50 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "🇱🇻 # Latvia 's government plans to impose a ​300% tariff on grain arriving from # Russia and Belarus, the Baltic country's Prime Minister Andris Kulbergs said on Monday. https://www. reuters.com/business/latvia-pl ans-300-tariff-grain-russia-belarus-2026-09-07/",
-          "url": "https://mastodon.social/@rvps2001/117230829935315488",
-          "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Mon, 07 Sep 2026 17:01:45 +0000",
-          "matched_countries": [
-            "latvia",
-            "lithuania"
-          ],
-          "country_confidence": {
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 1,
-              "weight": 9
-            },
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 2,
-              "weight": 8
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 48,
-          "quality_score": 53,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
         }
       ]
     },
     "lithuania": {
-      "mentions": 5,
+      "mentions": 4,
       "negative": 1,
       "positive": 1,
-      "index": 38,
+      "index": 35,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 5,
-      "main_social_topic": "Ukrajna és Oroszország",
+      "mastodon_mentions": 4,
+      "main_social_topic": "Biztonsági kockázat",
       "reliable_sources": 2,
-      "geopolitical_score": 249,
+      "geopolitical_score": 226,
       "topics": [
         {
-          "name": "Ukrajna és Oroszország",
-          "count": 3
+          "name": "Biztonsági kockázat",
+          "count": 2
         },
         {
-          "name": "Biztonsági kockázat",
+          "name": "Ukrajna és Oroszország",
           "count": 2
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 5,
+        "mastodon": 4,
         "x": 0
       },
       "category_counts": {
         "security": 2,
-        "ukraine_russia": 3
+        "ukraine_russia": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 268,
+      "quality_total": 242,
       "top_posts": [
         {
           "title": "",
           "text": "Agi: La Finlandia 'chiude' il confine con la Russia, eretta una recinzione lunga 200 chilometri AGI - La Finlandia ha eretto una recinzione di 200 chilometri lungo il confine con la Russia, nel tentativo di dissuadere Mosca dall'utilizzare i migranti per destabilizzare il Paese. Il governo di Helsinki aveva già chiuso il suo confine di 1.340 chilometri con l",
           "url": "https://mastodon.ozioso.online/@ItalianNews/117231217586151026",
           "source": "mastodon",
-          "tag": "poland",
+          "tag": "estonia",
           "seen_date": "Mon, 07 Sep 2026 18:40:20 +0000",
           "matched_countries": [
             "lithuania",
@@ -1709,43 +1963,6 @@
           "quality_score": 53,
           "source_reliability": 5,
           "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Я не была в этом яблоневом саду, не надевала красный свитер. Меня не мучил фотограф - «чуть поверните голову, взгляд в сторону». Всё это сделал AI. И вот что забавно. Раньше я вообще не любила фотографироваться. Особенно крупным планом. Казалось, что камера обязательно найдёт всё, что хотелось бы от неё спрятать. Видимо, я всё-таки меняюсь. Причём странными ",
-          "url": "https://mastodon.social/@mvhomenko/117234746954986992",
-          "source": "mastodon",
-          "tag": "russia",
-          "seen_date": "Tue, 08 Sep 2026 09:37:54 +0000",
-          "matched_countries": [
-            "lithuania"
-          ],
-          "country_confidence": {
-            "lithuania": 1
-          },
-          "event_category": "ukraine_russia",
-          "event_category_label": "Ukrajna és Oroszország",
-          "event_categories": [
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 1,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 2,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 23,
-          "quality_score": 26,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
