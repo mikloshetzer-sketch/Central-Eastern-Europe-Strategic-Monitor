@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-17T16:03:12.728702+00:00",
+  "last_update": "2026-09-17T20:53:32.734471+00:00",
   "source_status": "active",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
@@ -52,16 +52,16 @@
   },
   "countries": {
     "hungary": {
-      "mentions": 7,
-      "negative": 6,
+      "mentions": 6,
+      "negative": 5,
       "positive": 0,
-      "index": 70,
+      "index": 68,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 7,
+      "mastodon_mentions": 6,
       "main_social_topic": "Ukrajna és Oroszország",
       "reliable_sources": 5,
-      "geopolitical_score": 458,
+      "geopolitical_score": 437,
       "topics": [
         {
           "name": "Ukrajna és Oroszország",
@@ -70,26 +70,21 @@
         {
           "name": "Biztonsági kockázat",
           "count": 2
-        },
-        {
-          "name": "Belpolitikai feszültség",
-          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 7,
+        "mastodon": 6,
         "x": 0
       },
       "category_counts": {
         "ukraine_russia": 4,
-        "security": 2,
-        "government_crisis": 1
+        "security": 2
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 489,
+      "quality_total": 465,
       "top_posts": [
         {
           "title": "",
@@ -349,44 +344,39 @@
       ]
     },
     "poland": {
-      "mentions": 18,
-      "negative": 12,
-      "positive": 0,
-      "index": 82,
+      "mentions": 27,
+      "negative": 17,
+      "positive": 1,
+      "index": 79,
       "x_mentions": 0,
-      "reddit_mentions": 1,
-      "mastodon_mentions": 17,
-      "main_social_topic": "Ukrajna és Oroszország",
-      "reliable_sources": 8,
-      "geopolitical_score": 985,
+      "reddit_mentions": 2,
+      "mastodon_mentions": 25,
+      "main_social_topic": "Biztonsági kockázat",
+      "reliable_sources": 15,
+      "geopolitical_score": 1372,
       "topics": [
+        {
+          "name": "Biztonsági kockázat",
+          "count": 17
+        },
         {
           "name": "Ukrajna és Oroszország",
           "count": 10
-        },
-        {
-          "name": "Biztonsági kockázat",
-          "count": 7
-        },
-        {
-          "name": "Tiltakozás",
-          "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
-        "reddit": 1,
-        "mastodon": 17,
+        "reddit": 2,
+        "mastodon": 25,
         "x": 0
       },
       "category_counts": {
-        "ukraine_russia": 10,
-        "security": 7,
-        "protest": 1
+        "security": 17,
+        "ukraine_russia": 10
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 1051,
+      "quality_total": 1477,
       "top_posts": [
         {
           "title": "",
@@ -459,18 +449,16 @@
         },
         {
           "title": "",
-          "text": "Today: Caccia italiani abbattono un drone armato in Lituania, arriva Crosetto: \"Nostra presenza su fianco est Nato fondamentale\" Dall'intervento degli Eurofighter italiani nei cieli della Lituania alla guerra ibrida, passando per gli attacchi cyber, la propaganda russa e gli investimenti militari. Il ministro della Difesa Guido Crosetto vola sul Fianco Est d",
-          "url": "https://mastodon.ozioso.online/@ItalianNews/117276362600454588",
+          "text": "Agi: Tusk: \"Rischio di attacchi ibridi russi contro i Paesi della Nato\" AGI - Le informazioni di intelligence indicano che la Russia stia preparando \"attacchi ibridi con droni e missili\" contro i Paesi che sostengono l'Ucraina, tra cui la Polonia. Lo ha dichiarato il premier polacco, Donald Tusk, definendo le valutazioni ricevute \"molto coerenti e convincent",
+          "url": "https://mastodon.ozioso.online/@ItalianNews/117287447522611871",
           "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Tue, 15 Sep 2026 18:01:18 +0000",
+          "tag": "poland",
+          "seen_date": "Thu, 17 Sep 2026 17:00:21 +0000",
           "matched_countries": [
-            "poland",
-            "latvia",
-            "lithuania"
+            "poland"
           ],
           "country_confidence": {
-            "poland": 1,
+            "poland": 7,
             "latvia": 1,
             "lithuania": 1
           },
@@ -486,30 +474,36 @@
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 3,
+              "hits": 5,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "cyber_disinformation",
               "label": "Kiber és dezinformáció",
-              "hits": 3,
+              "hits": 1,
               "weight": 8
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
             },
             {
               "category": "foreign_influence",
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
             }
           ],
-          "geopolitical_score": 111,
-          "quality_score": 116,
+          "geopolitical_score": 123,
+          "quality_score": 128,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -570,18 +564,16 @@
         },
         {
           "title": "",
-          "text": "⚠️🇺🇦Russian terrorists bomb civilians aboard a passenger bus in Dnipropetrovsk region, killing five (more) https:// newsukraine.rbc.ua/news/russia n-drone-hits-passenger-bus-in-dnipropetrovsk-1789543772.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Dublin # Ireland # Olympics # Headlines ",
-          "url": "https://mastodon.online/@SocraticEthics/117281252145021942",
+          "text": "🔴 BREAKING Poland Reports Russian Strikes Near Border and Scrambles Jets Poland has reported that Russia's military plans may include strikes against Ukraine's allies. Warsaw confirmed scrambling military planes in response to a Russian attack in western Ukraine near the Polish border, signaling heightened tensions... 📰 https://www. aljazeera.com/news/2026/9",
+          "url": "https://mastodon.social/@GeoWire/117288197467531286",
           "source": "mastodon",
-          "tag": "hungary",
-          "seen_date": "Wed, 16 Sep 2026 14:44:47 +0000",
+          "tag": "eu",
+          "seen_date": "Thu, 17 Sep 2026 20:11:04 +0000",
           "matched_countries": [
-            "hungary",
             "poland"
           ],
           "country_confidence": {
-            "hungary": 5,
-            "poland": 5
+            "poland": 6
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -589,7 +581,7 @@
             {
               "category": "security",
               "label": "Biztonsági kockázat",
-              "hits": 1,
+              "hits": 2,
               "weight": 10
             },
             {
@@ -597,6 +589,12 @@
               "label": "Ukrajna és Oroszország",
               "hits": 4,
               "weight": 9
+            },
+            {
+              "category": "protest",
+              "label": "Tiltakozás",
+              "hits": 1,
+              "weight": 7
             },
             {
               "category": "foreign_influence",
@@ -611,8 +609,8 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 65,
-          "quality_score": 70,
+          "geopolitical_score": 82,
+          "quality_score": 87,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -621,18 +619,18 @@
         },
         {
           "title": "",
-          "text": "Counterintelligence services have disrupted a russian assassination plot in Washington DC. russia continues to grow bolder, encouraged by the weakness of the US convicted felon administration’s approach toward russia. $40,000 for a killing in the # usa and $25,000 in Lithuania: US authorities uncover russian intelligence network. One episode took place in th",
-          "url": "https://sfba.social/@skykiss/117282959397824747",
+          "text": "⚠️🇺🇦Russian terrorists bomb civilians aboard a passenger bus in Dnipropetrovsk region, killing five (more) https:// newsukraine.rbc.ua/news/russia n-drone-hits-passenger-bus-in-dnipropetrovsk-1789543772.html # Ukraine # WarCrime # Press # Brussels # Media # ICC # Hague # PACE # UK # OSCE # CoE # News # UN # IOC # US # Dublin # Ireland # Olympics # Headlines ",
+          "url": "https://mastodon.online/@SocraticEthics/117281252145021942",
           "source": "mastodon",
-          "tag": "lithuania",
-          "seen_date": "Wed, 16 Sep 2026 21:58:58 +0000",
+          "tag": "hungary",
+          "seen_date": "Wed, 16 Sep 2026 14:44:47 +0000",
           "matched_countries": [
-            "poland",
-            "lithuania"
+            "hungary",
+            "poland"
           ],
           "country_confidence": {
-            "poland": 1,
-            "lithuania": 1
+            "hungary": 5,
+            "poland": 5
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -999,98 +997,147 @@
       ]
     },
     "romania": {
-      "mentions": 8,
-      "negative": 0,
-      "positive": 0,
-      "index": 29,
+      "mentions": 4,
+      "negative": 1,
+      "positive": 1,
+      "index": 31,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 8,
-      "main_social_topic": "Belpolitikai feszültség",
-      "reliable_sources": 0,
-      "geopolitical_score": 92,
+      "mastodon_mentions": 4,
+      "main_social_topic": "Biztonsági kockázat",
+      "reliable_sources": 2,
+      "geopolitical_score": 112,
       "topics": [
         {
-          "name": "Belpolitikai feszültség",
-          "count": 7
+          "name": "Biztonsági kockázat",
+          "count": 2
         },
         {
-          "name": "Kiber és dezinformáció",
+          "name": "Külső befolyás",
+          "count": 1
+        },
+        {
+          "name": "Belpolitikai feszültség",
           "count": 1
         }
       ],
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 8,
+        "mastodon": 4,
         "x": 0
       },
       "category_counts": {
-        "government_crisis": 7,
-        "cyber_disinformation": 1
+        "security": 2,
+        "foreign_influence": 1,
+        "government_crisis": 1
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 116,
+      "quality_total": 128,
       "top_posts": [
         {
           "title": "",
-          "text": "Agenzia Nova: Romania: Dan designa Muresan come primo ministro incaricato 17 set 17:39 - (Agenzia Nova) - Il presidente romeno Nicusor Dan ha scelto l' eurodeputato liberale Siegfried Muresan come primo ministro... (Rob) Romania: Dan designates Muresan as caretaker prime minister. September 17, 5:39 PM – (Agenzia Nova) – Romanian President Nicusor Dan has ch",
-          "url": "https://mastodon.ozioso.online/@ItalianNews/117287171907346948",
+          "text": "Trump’s pressure on # NATO is reshaping # europe defenses. Will it break the alliance? Mihail Kogalniceanu Air Base in # romania has hosted U.S. troops since 1999 and supported America’s wars in Iraq and Afghanistan. Last year, about half of the approximately 2,000 American troops in Romania, most of them living at the base, departed as the Trump administrat",
+          "url": "https://mastodon.world/@formuchdeliberation/117287272134544030",
           "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Thu, 17 Sep 2026 15:50:15 +0000",
+          "tag": "nato",
+          "seen_date": "Thu, 17 Sep 2026 16:15:45 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
-            "romania": 2
+            "romania": 1
           },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
           "event_categories": [
             {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 4,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 1,
+              "weight": 9
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 62,
+          "quality_score": 67,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "# PrimMinistrulPoloniei avertizează: 🇷🇺#Rusia pregătește atacuri cu drone și rachete asupra statelor # NATO care sprijină 🇺🇦#Ucraina. 🔗 https:// stirileprotv.ro/premierul-polo niei-avertizeaza-rusia-pregateste-atacuri-cu-drone-si-rachete-asupra-tarilor-nato-care-sprijina-ucraina.html # Știri # România # Polonia",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/117288064683322932",
+          "source": "mastodon",
+          "tag": "romania",
+          "seen_date": "Thu, 17 Sep 2026 19:37:18 +0000",
+          "matched_countries": [
+            "romania"
+          ],
+          "country_confidence": {
+            "romania": 5
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
               "hits": 2,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
+              "weight": 10
             }
           ],
-          "geopolitical_score": 21,
-          "quality_score": 24,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
+          "geopolitical_score": 24,
+          "quality_score": 29,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
         },
         {
           "title": "",
-          "text": "Romanian presidentti nimitti jälleen uuden pääministeriehdokkaan Romania vältti niukasti luottoluokituksen alentamisen heinäkuussa. https:// yle.fi/a/74-20246896 # Euroopanunioni # Romania # Pääministerit # Romanianpolitiikka # Romanialaisetpoliitikot # Ulkomaat",
-          "url": "https://social.ahlroos.me/@yle_fi_bot/117287194784040711",
+          "text": "Ofensivă subterană la frontiera 🇪🇺#UE: 🇱🇹#Lituania a descoperit 12 tuneluri pentru migranți, săpate dinspre 🇧🇾#Belarus. 🔗 https:// stirileprotv.ro/ofensiva-subte rana-la-frontiera-ue-lituania-a-descoperit-12-tuneluri-pentru-migranti-sapate-dinspre-belarus.html # Știri # România # UniuneaEuropeană",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/117287963886230416",
           "source": "mastodon",
           "tag": "romania",
-          "seen_date": "Thu, 17 Sep 2026 15:58:14 +0000",
+          "seen_date": "Thu, 17 Sep 2026 19:11:40 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
-            "romania": 2
+            "romania": 5,
+            "lithuania": 1
           },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
+          "event_category": "foreign_influence",
+          "event_category_label": "Külső befolyás",
           "event_categories": [
             {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
               "hits": 1,
-              "weight": 8
+              "weight": 7
+            },
+            {
+              "category": "migration_border",
+              "label": "Migráció és határnyomás",
+              "hits": 1,
+              "weight": 6
             },
             {
               "category": "eu_rule_of_law",
@@ -1099,8 +1146,8 @@
               "weight": 5
             }
           ],
-          "geopolitical_score": 13,
-          "quality_score": 16,
+          "geopolitical_score": 18,
+          "quality_score": 21,
           "source_reliability": 3,
           "trusted_source_hint": false,
           "engagement": 0,
@@ -1109,90 +1156,16 @@
         },
         {
           "title": "",
-          "text": "Cine este Siegfried # Mureș an, europarlamentarul desemnat premier de # NicușorDan . A fost lansat de Traian # Băsescu . 🔗 https:// stirileprotv.ro/stiri/politic/ cine-este-siegfried-muresan-europarlamentarul-desemnat-premier-de-presedintele-nicusor-dan-lansat-de-traian-basescu.html # Știri # România # UE # UniuneaEuropeană # Europa # ParlamentulEuropean # T",
-          "url": "https://mstdn.social/@RomaniaTeIubesc/117287063461269648",
+          "text": "🗳️#AlegerileParlamentare din 🇷🇺#Rusia, primele de la începutul războiului din 🇺🇦#Ucraina. Mesajul transmis de Vladimir # Putin rușilor. 🔗 https:// stirileprotv.ro/stiri/internat ional/alegeri-parlamentare-in-rusia-primele-de-la-inceputul-razboiului-din-ucraina-mesajul-transmis-de-vladimir-putin-pentru-rusi.html # Știri # România",
+          "url": "https://mstdn.social/@RomaniaTeIubesc/117287865498118257",
           "source": "mastodon",
           "tag": "romania",
-          "seen_date": "Thu, 17 Sep 2026 15:22:41 +0000",
+          "seen_date": "Thu, 17 Sep 2026 18:46:39 +0000",
           "matched_countries": [
             "romania"
           ],
           "country_confidence": {
-            "romania": 9
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 13,
-          "quality_score": 16,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Reacția imediată a lui Siegfried # Mureș an după ce # NicușorDan l-a desemnat premier. Ce a spus europarlamentarul # PNL (#PartidulNaționalLiberal). 🔗 https:// stirileprotv.ro/reactia-imedia ta-a-lui-siegfried-muresan-dupa-ce-nicusor-dan-l-a-desemnat-premier-ce-a-spus-europarlamentarul-pnl.html # Știri # România # UE # UniuneaEuropeană # Europa # Parlamentul",
-          "url": "https://mstdn.social/@RomaniaTeIubesc/117287050143732610",
-          "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Thu, 17 Sep 2026 15:19:17 +0000",
-          "matched_countries": [
-            "romania"
-          ],
-          "country_confidence": {
-            "romania": 9
-          },
-          "event_category": "government_crisis",
-          "event_category_label": "Belpolitikai feszültség",
-          "event_categories": [
-            {
-              "category": "government_crisis",
-              "label": "Belpolitikai feszültség",
-              "hits": 1,
-              "weight": 8
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 13,
-          "quality_score": 16,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Primii parlamentari care resping # PrimMinistrul desemnat de # NicușorDan . „Nu susținem un guvern Siegfried # Mureș an”. 🔗 https:// stirileprotv.ro/stiri/politic/ primii-parlamentari-care-resping-premierul-desemnat-de-nicusor-dan-nu-sustinem-un-guvern-siegfried-muresan.html # Știri # România # Transilvania # Mureș # București",
-          "url": "https://mstdn.social/@RomaniaTeIubesc/117287201264889737",
-          "source": "mastodon",
-          "tag": "romania",
-          "seen_date": "Thu, 17 Sep 2026 15:57:43 +0000",
-          "matched_countries": [
-            "romania"
-          ],
-          "country_confidence": {
-            "romania": 9
+            "romania": 5
           },
           "event_category": "government_crisis",
           "event_category_label": "Belpolitikai feszültség",
@@ -1496,20 +1469,20 @@
       ]
     },
     "latvia": {
-      "mentions": 13,
-      "negative": 3,
+      "mentions": 11,
+      "negative": 2,
       "positive": 2,
-      "index": 67,
+      "index": 60,
       "x_mentions": 0,
       "reddit_mentions": 0,
-      "mastodon_mentions": 13,
+      "mastodon_mentions": 11,
       "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 5,
-      "geopolitical_score": 590,
+      "reliable_sources": 4,
+      "geopolitical_score": 423,
       "topics": [
         {
           "name": "Biztonsági kockázat",
-          "count": 8
+          "count": 6
         },
         {
           "name": "Ukrajna és Oroszország",
@@ -1519,76 +1492,17 @@
       "source_status": "active",
       "source_counts": {
         "reddit": 0,
-        "mastodon": 13,
+        "mastodon": 11,
         "x": 0
       },
       "category_counts": {
         "ukraine_russia": 5,
-        "security": 8
+        "security": 6
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 639,
+      "quality_total": 464,
       "top_posts": [
-        {
-          "title": "",
-          "text": "Today: Caccia italiani abbattono un drone armato in Lituania, arriva Crosetto: \"Nostra presenza su fianco est Nato fondamentale\" Dall'intervento degli Eurofighter italiani nei cieli della Lituania alla guerra ibrida, passando per gli attacchi cyber, la propaganda russa e gli investimenti militari. Il ministro della Difesa Guido Crosetto vola sul Fianco Est d",
-          "url": "https://mastodon.ozioso.online/@ItalianNews/117276362600454588",
-          "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Tue, 15 Sep 2026 18:01:18 +0000",
-          "matched_countries": [
-            "poland",
-            "latvia",
-            "lithuania"
-          ],
-          "country_confidence": {
-            "poland": 1,
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 4,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 3,
-              "weight": 9
-            },
-            {
-              "category": "cyber_disinformation",
-              "label": "Kiber és dezinformáció",
-              "hits": 3,
-              "weight": 8
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 111,
-          "quality_score": 116,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
         {
           "title": "",
           "text": "\"A drone crosses into Lithuania from Belarus. A Russian frigate fires flares towards a Danish military helicopter. What they share is context: an increasingly assertive security environment shaped by years of Russian and Belarusian hybrid activity.\" - EUvsDisinfo # Russia # Belarus # Lithuania # NATO # EUvsDisinfo",
@@ -1695,49 +1609,6 @@
         },
         {
           "title": "",
-          "text": "Ukrainian attack drones struck the headquarters of the Russian 4th Separate Guards Motor Rifle Brigade on Saturday, killing the brigade’s commander, Major General Anton Grunis. # Ukraine # Ukraina # Russia # Россия # русские",
-          "url": "https://mastodon.social/@maknol/117286951274971437",
-          "source": "mastodon",
-          "tag": "russia",
-          "seen_date": "Thu, 17 Sep 2026 14:54:09 +0000",
-          "matched_countries": [
-            "latvia"
-          ],
-          "country_confidence": {
-            "latvia": 4
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 1,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 4,
-              "weight": 9
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            }
-          ],
-          "geopolitical_score": 56,
-          "quality_score": 59,
-          "source_reliability": 3,
-          "trusted_source_hint": false,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
           "text": "@ MAKS23 \"Who would have thought that a country could absorb such enormous losses?\" 🇷🇺 🧑‍🤝‍🧑 The Russian people... soldiers included, are nothing but \"disposable accessories\" to the Russian Devil. Putin is not \"absorbing\" any losses!... this war is just what he needed to \"stay in power forever\"... a permanent enemy, a war that doesn't threaten him personally",
           "url": "https://mastodon.social/@Davexxx/117274021103663381",
           "source": "mastodon",
@@ -1783,20 +1654,106 @@
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "🟡 TroopDeployment | 7/10 🇩🇪 🇱🇻 Germany deploys Eurofighters to Latvia Germany will deploy four Eurofighters to Lielvārde Air Base (Latvia) for about a week from late September. This follows Riga's request for additional NATO support to secure airspace ahead of the October 3 parliamentary election. # OSINT # NewsGroup # Latvia # Germany # NATO",
+          "url": "https://social.vir.group/@analytics/117281989486314377",
+          "source": "mastodon",
+          "tag": "latvia",
+          "seen_date": "Wed, 16 Sep 2026 17:52:18 +0000",
+          "matched_countries": [
+            "latvia"
+          ],
+          "country_confidence": {
+            "latvia": 5
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 2,
+              "weight": 8
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 46,
+          "quality_score": 51,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
+          "text": "🟡 TroopDeployment | 8/10 🇩🇪 🇱🇻 Deployment of German Eurofighters to Latvia Germany will deploy four Eurofighters to Lielvārde Air Base (Latvia) for about a week from late September. This follows Riga's request for additional NATO support due to drone incidents ahead of the October 3 elections. # OSINT # NewsGroup # Latvia # Germany # NATO",
+          "url": "https://social.vir.group/@analytics/117281904710120200",
+          "source": "mastodon",
+          "tag": "latvia",
+          "seen_date": "Wed, 16 Sep 2026 17:30:44 +0000",
+          "matched_countries": [
+            "latvia"
+          ],
+          "country_confidence": {
+            "latvia": 5
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 2,
+              "weight": 10
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 1,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 38,
+          "quality_score": 43,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
         }
       ]
     },
     "lithuania": {
       "mentions": 18,
-      "negative": 8,
+      "negative": 6,
       "positive": 0,
       "index": 82,
       "x_mentions": 0,
       "reddit_mentions": 0,
       "mastodon_mentions": 18,
       "main_social_topic": "Biztonsági kockázat",
-      "reliable_sources": 13,
-      "geopolitical_score": 1230,
+      "reliable_sources": 11,
+      "geopolitical_score": 1128,
       "topics": [
         {
           "name": "Biztonsági kockázat",
@@ -1819,7 +1776,7 @@
       },
       "engagement_total": 0,
       "raw_engagement_total": 0,
-      "quality_total": 1310,
+      "quality_total": 1204,
       "top_posts": [
         {
           "title": "",
@@ -1871,65 +1828,6 @@
           ],
           "geopolitical_score": 113,
           "quality_score": 118,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
-          "engagement": 0,
-          "raw_engagement": 0,
-          "quality": "rss_filtered"
-        },
-        {
-          "title": "",
-          "text": "Today: Caccia italiani abbattono un drone armato in Lituania, arriva Crosetto: \"Nostra presenza su fianco est Nato fondamentale\" Dall'intervento degli Eurofighter italiani nei cieli della Lituania alla guerra ibrida, passando per gli attacchi cyber, la propaganda russa e gli investimenti militari. Il ministro della Difesa Guido Crosetto vola sul Fianco Est d",
-          "url": "https://mastodon.ozioso.online/@ItalianNews/117276362600454588",
-          "source": "mastodon",
-          "tag": "latvia",
-          "seen_date": "Tue, 15 Sep 2026 18:01:18 +0000",
-          "matched_countries": [
-            "poland",
-            "latvia",
-            "lithuania"
-          ],
-          "country_confidence": {
-            "poland": 1,
-            "latvia": 1,
-            "lithuania": 1
-          },
-          "event_category": "security",
-          "event_category_label": "Biztonsági kockázat",
-          "event_categories": [
-            {
-              "category": "security",
-              "label": "Biztonsági kockázat",
-              "hits": 4,
-              "weight": 10
-            },
-            {
-              "category": "ukraine_russia",
-              "label": "Ukrajna és Oroszország",
-              "hits": 3,
-              "weight": 9
-            },
-            {
-              "category": "cyber_disinformation",
-              "label": "Kiber és dezinformáció",
-              "hits": 3,
-              "weight": 8
-            },
-            {
-              "category": "foreign_influence",
-              "label": "Külső befolyás",
-              "hits": 1,
-              "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
-            }
-          ],
-          "geopolitical_score": 111,
-          "quality_score": 116,
           "source_reliability": 5,
           "trusted_source_hint": true,
           "engagement": 0,
@@ -1995,6 +1893,61 @@
         },
         {
           "title": "",
+          "text": "Agi: Jet russi nei cieli lituani, decollano aerei italiani. Meloni: \"Non reagire alle provocazioni\" AGI - Secondo quanto si apprende, due Eurofighter italiani schierati nella missione di difesa aerea NATO a Šiauliai, in Lituania, sono decollati d'urgenza (modalità scramble) nel pomeriggio di oggi dopo che due jet russi avevano violato lo spazio aereo del Pae",
+          "url": "https://mastodon.ozioso.online/@ItalianNews/117287997799369801",
+          "source": "mastodon",
+          "tag": "lithuania",
+          "seen_date": "Thu, 17 Sep 2026 19:20:17 +0000",
+          "matched_countries": [
+            "lithuania"
+          ],
+          "country_confidence": {
+            "lithuania": 2
+          },
+          "event_category": "security",
+          "event_category_label": "Biztonsági kockázat",
+          "event_categories": [
+            {
+              "category": "security",
+              "label": "Biztonsági kockázat",
+              "hits": 3,
+              "weight": 10
+            },
+            {
+              "category": "ukraine_russia",
+              "label": "Ukrajna és Oroszország",
+              "hits": 3,
+              "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 2,
+              "weight": 8
+            },
+            {
+              "category": "foreign_influence",
+              "label": "Külső befolyás",
+              "hits": 1,
+              "weight": 7
+            },
+            {
+              "category": "eu_rule_of_law",
+              "label": "EU / jogállamiság",
+              "hits": 3,
+              "weight": 5
+            }
+          ],
+          "geopolitical_score": 99,
+          "quality_score": 104,
+          "source_reliability": 5,
+          "trusted_source_hint": true,
+          "engagement": 0,
+          "raw_engagement": 0,
+          "quality": "rss_filtered"
+        },
+        {
+          "title": "",
           "text": "⚠️🇧🇾A day after US lifts sanctions, Belarus moves troops to Suwalki corridor, raising NATO alarm (more) https:// newsukraine.rbc.ua/news/belaru s-moves-troops-to-suwalki-corridor-1789602341.html # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # Poland # Latvia # Lithuania # Warsaw # US # PACE # CoE # Pa",
           "url": "https://mastodon.online/@SocraticEthics/117287024982369501",
           "source": "mastodon",
@@ -2047,16 +2000,16 @@
         },
         {
           "title": "",
-          "text": "NATO jet shoots down suspected Russian drone over Lithuania EU chief warns of wider conflict as border incursions stoke fears that Ukraine war is spilling into neighbouring states. https://www. aljazeera.com/news/2026/9/15/n ato-jet-shoots-down-suspected-russian-drone-over-lithuania # TopNews # News # Russian # Russia # Lithuania",
-          "url": "https://mastodon.social/@top_news/117279825783156931",
+          "text": "Ukrainian electronic warfare apparently knocked a Russian attack drone off course and into Lithuanian airspace, the country’s president says https:// meduza.io/en/news/2026/09/16/u krainian-electronic-warfare-apparently-knocked-a-russian-attack-drone-off-course-and-into-lithuanian-airspace-the-country-s-president-says # Meduza # Lithuania # Ukraine # Russia",
+          "url": "https://mastodon.social/@meduza_bot/117281725448722438",
           "source": "mastodon",
           "tag": "lithuania",
-          "seen_date": "Wed, 16 Sep 2026 08:42:02 +0000",
+          "seen_date": "Wed, 16 Sep 2026 16:45:09 +0000",
           "matched_countries": [
             "lithuania"
           ],
           "country_confidence": {
-            "lithuania": 1
+            "lithuania": 2
           },
           "event_category": "security",
           "event_category_label": "Biztonsági kockázat",
@@ -2064,32 +2017,32 @@
             {
               "category": "security",
               "label": "Biztonsági kockázat",
-              "hits": 3,
+              "hits": 2,
               "weight": 10
             },
             {
               "category": "ukraine_russia",
               "label": "Ukrajna és Oroszország",
-              "hits": 4,
+              "hits": 5,
               "weight": 9
+            },
+            {
+              "category": "government_crisis",
+              "label": "Belpolitikai feszültség",
+              "hits": 1,
+              "weight": 8
             },
             {
               "category": "foreign_influence",
               "label": "Külső befolyás",
               "hits": 1,
               "weight": 7
-            },
-            {
-              "category": "eu_rule_of_law",
-              "label": "EU / jogállamiság",
-              "hits": 1,
-              "weight": 5
             }
           ],
-          "geopolitical_score": 85,
-          "quality_score": 90,
-          "source_reliability": 5,
-          "trusted_source_hint": true,
+          "geopolitical_score": 83,
+          "quality_score": 86,
+          "source_reliability": 3,
+          "trusted_source_hint": false,
           "engagement": 0,
           "raw_engagement": 0,
           "quality": "rss_filtered"
