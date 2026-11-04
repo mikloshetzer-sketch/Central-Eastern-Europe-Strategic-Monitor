@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 22:48 UTC",
+  "updated_at": "2026-11-04 04:13 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -55,24 +55,28 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 9,
+        "mentions": 11,
         "negative": 3,
-        "positive": 0,
-        "index": 60,
+        "positive": 1,
+        "index": 62,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 9,
-        "main_social_topic": "Belpolitikai feszültség",
-        "reliable_sources": 5,
-        "geopolitical_score": 228,
+        "mastodon_mentions": 11,
+        "main_social_topic": "Biztonsági kockázat",
+        "reliable_sources": 6,
+        "geopolitical_score": 290,
         "topics": [
           {
-            "name": "Belpolitikai feszültség",
-            "count": 3
+            "name": "Biztonsági kockázat",
+            "count": 4
           },
           {
-            "name": "Biztonsági kockázat",
-            "count": 3
+            "name": "Belpolitikai feszültség",
+            "count": 4
+          },
+          {
+            "name": "Migráció és határnyomás",
+            "count": 1
           },
           {
             "name": "EU / jogállamiság",
@@ -81,35 +85,31 @@
           {
             "name": "Tiltakozás",
             "count": 1
-          },
-          {
-            "name": "Ukrajna és Oroszország",
-            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
+          "mastodon": 11,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 3,
+          "security": 4,
+          "government_crisis": 4,
+          "migration_border": 1,
           "eu_rule_of_law": 1,
-          "security": 3,
-          "protest": 1,
-          "ukraine_russia": 1
+          "protest": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 265,
+        "quality_total": 335,
         "top_posts": [
           {
             "title": "",
             "text": "Russia exploits ceasefire to mask military movements # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Trump # Musk # Starlink # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Sp",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117547343414954092",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "czechia",
             "seen_date": "Mon, 02 Nov 2026 14:35:18 +0000",
             "matched_countries": [
               "slovakia",
@@ -156,6 +156,64 @@
             ],
             "geopolitical_score": 63,
             "quality_score": 68,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Canada to block Russian team from World Junior Hockey Championship # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
+            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117555877138870459",
+            "source": "mastodon",
+            "tag": "hungary",
+            "seen_date": "Wed, 04 Nov 2026 02:45:32 +0000",
+            "matched_countries": [
+              "slovakia",
+              "czechia",
+              "hungary"
+            ],
+            "country_confidence": {
+              "slovakia": 2,
+              "czechia": 2,
+              "hungary": 1,
+              "poland": 1,
+              "romania": 1,
+              "estonia": 1,
+              "latvia": 1,
+              "lithuania": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 67,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -295,43 +353,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Hungary rebuilds what Orbán captured: Monday: Constitutional Court judges elected their own president. Tuesday: parliament made Péter Fejes chief prosecutor, 139-6, for 9 years. Fidesz didn’t vote. In 2012, Orbán’s chief prosecutor fired him without explanation. Now he says closed cases could be reopened. # Hungary # Europe",
-            "url": "https://epsilon.social/@AutokratDaily/117553697789774303",
-            "source": "mastodon",
-            "tag": "hungary",
-            "seen_date": "Tue, 03 Nov 2026 17:31:18 +0000",
-            "matched_countries": [
-              "hungary"
-            ],
-            "country_confidence": {
-              "hungary": 9
-            },
-            "event_category": "government_crisis",
-            "event_category_label": "Belpolitikai feszültség",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -341,24 +362,24 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 17,
-        "negative": 8,
-        "positive": 1,
-        "index": 76,
+        "mentions": 14,
+        "negative": 5,
+        "positive": 0,
+        "index": 73,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 17,
+        "mastodon_mentions": 14,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 5,
-        "geopolitical_score": 587,
+        "reliable_sources": 3,
+        "geopolitical_score": 390,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 8
+            "count": 6
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 5
+            "count": 4
           },
           {
             "name": "Belpolitikai feszültség",
@@ -376,88 +397,33 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
+          "mastodon": 14,
           "x": 0
         },
         "category_counts": {
           "protest": 1,
-          "ukraine_russia": 5,
-          "security": 8,
+          "security": 6,
           "government_crisis": 2,
+          "ukraine_russia": 4,
           "eu_rule_of_law": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 648,
+        "quality_total": 438,
         "top_posts": [
           {
             "title": "",
-            "text": "⚠️🇵🇱Poland reports suspicious activity by \"people with torches\" on border with Russia (more) https://www. pravda.com.ua/eng/news/2026/11 /03/8061046/ # Ukraine # Poland # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News # Headlines # NATO # USAIsAStateSponsorofTerror",
-            "url": "https://mastodon.online/@SocraticEthics/117553400864990289",
+            "text": "Polish security forces mobilized near the Kaliningrad border after detecting unusual movement, including people with flashlights, shortly after midnight. Prime Minister Donald Tusk stated the intervention helped prevent potential provocations. https://www. bloomberg.com/news/articles/20 26-11-03/premier-tusk-says-poland-foiled-possible-provocation-at-russia-",
+            "url": "https://mastodon.social/@hanse_mina/117555822981282509",
             "source": "mastodon",
             "tag": "poland",
-            "seen_date": "Tue, 03 Nov 2026 16:15:47 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 74,
-            "quality_score": 79,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Tusk Stated That Poland Thwarted A Provocation By Russia At The Border https:// charter97.org/en/news/2026/11/ 3/704142/ # WarOfAggression # Europe # Ukraine # Poland # Kaliningrad # Provocation # Exclave # Hinterland # Drones # War # Russia # WarCriminals # StateTerrorism # Occupiers # Invaders # CombatCasualties # GloryToUkraine # DeathToTheOccupiers !",
-            "url": "https://social.tchncs.de/@Gehtso/117553547226760560",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Tue, 03 Nov 2026 16:53:00 +0000",
+            "seen_date": "Wed, 04 Nov 2026 02:31:45 +0000",
             "matched_countries": [
               "poland",
               "lithuania"
             ],
             "country_confidence": {
-              "poland": 5,
+              "poland": 6,
               "lithuania": 4
             },
             "event_category": "security",
@@ -472,8 +438,14 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 3,
+                "hits": 2,
                 "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
               },
               {
                 "category": "foreign_influence",
@@ -486,59 +458,16 @@
                 "label": "EU / jogállamiság",
                 "hits": 1,
                 "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
               }
             ],
             "geopolitical_score": 62,
             "quality_score": 65,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "terms of behavior toward # Poland and # Europe , and, of course, above all, # Ukraine . We have reports from other # European countries as well as our own reports, including from the internal security agencies of # European nations. They clearly point to the # Russian method of stoking every possible conflict. That was the case in the # UK , # Spain , # Fran",
-            "url": "https://mastodon.online/@kardinal691/117553397131988357",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Tue, 03 Nov 2026 16:14:50 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 61,
-            "quality_score": 64,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -598,20 +527,79 @@
           },
           {
             "title": "",
-            "text": "💬 Polish Prime Minister Donald Tusk accused # Russia on Tuesday of seeking to fuel \"instability\" in # Poland by meddling in a dispute between his government and the president ‌over the Constitutional Tribunal. https://www. reuters.com/world/russia-tryin g-foment-instability-poland-pm-tusk-says-2026-11-03/",
-            "url": "https://mastodon.social/@rvps2001/117553817412602008",
+            "text": "Tusk says Poland thwarted possible provocation on Kaliningrad border overnight Polish Prime Minister Donald Tusk says Poland successfully prevented an attempted provocation on its border with Russia's Kaliningrad exclave https:// abcnews.com/International/wire Story/tusk-poland-thwarted-provocation-kaliningrad-border-overnight-137804660 # TopNews # News # Po",
+            "url": "https://mastodon.social/@top_news/117555260599826121",
             "source": "mastodon",
             "tag": "poland",
-            "seen_date": "Tue, 03 Nov 2026 18:01:43 +0000",
+            "seen_date": "Wed, 04 Nov 2026 00:08:44 +0000",
             "matched_countries": [
-              "poland"
+              "poland",
+              "lithuania"
             ],
             "country_confidence": {
-              "poland": 6
+              "poland": 6,
+              "lithuania": 4
             },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
             "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 49,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Prime Minister Donald Tusk says Poland prevented a possible provocation on the border with Russia’s Kaliningrad exclave after spotting ‘people with flashlights’ https:// meduza.io/en/news/2026/11/03/p rime-minister-donald-tusk-says-poland-prevented-a-possible-provocation-on-the-border-with-russia-s-kaliningrad-exclave-after-spotting-people-with-flashlights #",
+            "url": "https://mastodon.social/@meduza_bot/117554223663445284",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Tue, 03 Nov 2026 19:45:02 +0000",
+            "matched_countries": [
+              "poland",
+              "lithuania"
+            ],
+            "country_confidence": {
+              "poland": 5,
+              "lithuania": 4
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              },
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
@@ -621,8 +609,45 @@
               {
                 "category": "government_crisis",
                 "label": "Belpolitikai feszültség",
-                "hits": 3,
+                "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 34,
+            "quality_score": 37,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Hallo Brüssel, Berlin – jemand zuhause? Es fibt da eine deutsche Regierungspartei, die sich das, worauf ich Sie hier hinweise, nicht mehr lange leisten kann. Ihre parteinahe Friedrich-Ebert-Stiftung beschäftigt noch Wissenschaftler*innen mit internationaler Expertise, obwohl ihre Partei doch das Auswärtige Amt schon lange weggegeben hat. Für kurze Zeit noch ",
+            "url": "https://extradienst.net/2026/11/04/hallo-bruessel-berlin-jemand-zuhause/",
+            "source": "mastodon",
+            "tag": "eu",
+            "seen_date": "Tue, 03 Nov 2026 23:02:59 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 1
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
               },
               {
                 "category": "foreign_influence",
@@ -637,10 +662,10 @@
                 "weight": 5
               }
             ],
-            "geopolitical_score": 53,
-            "quality_score": 58,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 33,
+            "quality_score": 36,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -654,23 +679,27 @@
       "name_hu": "Szlovákia",
       "social_signal": {
         "mentions": 8,
-        "negative": 1,
-        "positive": 0,
-        "index": 52,
+        "negative": 0,
+        "positive": 1,
+        "index": 45,
         "x_mentions": 0,
         "reddit_mentions": 1,
         "mastodon_mentions": 7,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 3,
-        "geopolitical_score": 344,
+        "geopolitical_score": 353,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 6
+            "count": 5
           },
           {
             "name": "Belpolitikai feszültség",
             "count": 2
+          },
+          {
+            "name": "Migráció és határnyomás",
+            "count": 1
           }
         ],
         "source_status": "active",
@@ -681,11 +710,12 @@
         },
         "category_counts": {
           "government_crisis": 2,
-          "security": 6
+          "security": 5,
+          "migration_border": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 370,
+        "quality_total": 379,
         "top_posts": [
           {
             "title": "",
@@ -802,7 +832,7 @@
             "text": "Russia exploits ceasefire to mask military movements # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Trump # Musk # Starlink # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Sp",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117547343414954092",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "czechia",
             "seen_date": "Mon, 02 Nov 2026 14:35:18 +0000",
             "matched_countries": [
               "slovakia",
@@ -857,25 +887,25 @@
           },
           {
             "title": "",
-            "text": "Trump pressures Lithuania to crack EU potash sanctions on Belarus # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel ",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117529903937391124",
+            "text": "Canada to block Russian team from World Junior Hockey Championship # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
+            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117555877138870459",
             "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Fri, 30 Oct 2026 12:40:12 +0000",
+            "tag": "hungary",
+            "seen_date": "Wed, 04 Nov 2026 02:45:32 +0000",
             "matched_countries": [
               "slovakia",
               "czechia",
-              "lithuania"
+              "hungary"
             ],
             "country_confidence": {
               "slovakia": 2,
               "czechia": 2,
-              "lithuania": 2,
               "hungary": 1,
               "poland": 1,
               "romania": 1,
               "estonia": 1,
-              "latvia": 1
+              "latvia": 1,
+              "lithuania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -889,7 +919,7 @@
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
-                "hits": 2,
+                "hits": 4,
                 "weight": 9
               },
               {
@@ -905,8 +935,8 @@
                 "weight": 5
               }
             ],
-            "geopolitical_score": 47,
-            "quality_score": 52,
+            "geopolitical_score": 62,
+            "quality_score": 67,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -973,20 +1003,20 @@
       "name_en": "Czechia",
       "name_hu": "Csehország",
       "social_signal": {
-        "mentions": 13,
-        "negative": 7,
-        "positive": 1,
-        "index": 74,
+        "mentions": 12,
+        "negative": 6,
+        "positive": 2,
+        "index": 69,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 13,
+        "mastodon_mentions": 12,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 4,
-        "geopolitical_score": 423,
+        "geopolitical_score": 355,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 5
+            "count": 4
           },
           {
             "name": "Tiltakozás",
@@ -994,7 +1024,11 @@
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 3
+            "count": 2
+          },
+          {
+            "name": "Migráció és határnyomás",
+            "count": 1
           },
           {
             "name": "Belpolitikai feszültség",
@@ -1004,18 +1038,19 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
+          "mastodon": 12,
           "x": 0
         },
         "category_counts": {
-          "security": 5,
+          "security": 4,
+          "migration_border": 1,
           "government_crisis": 1,
           "protest": 4,
-          "ukraine_russia": 3
+          "ukraine_russia": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 470,
+        "quality_total": 399,
         "top_posts": [
           {
             "title": "",
@@ -1077,7 +1112,7 @@
             "text": "Russia exploits ceasefire to mask military movements # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Trump # Musk # Starlink # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Sp",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117547343414954092",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "czechia",
             "seen_date": "Mon, 02 Nov 2026 14:35:18 +0000",
             "matched_countries": [
               "slovakia",
@@ -1132,25 +1167,25 @@
           },
           {
             "title": "",
-            "text": "Trump pressures Lithuania to crack EU potash sanctions on Belarus # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel ",
-            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117529903937391124",
+            "text": "Canada to block Russian team from World Junior Hockey Championship # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
+            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117555877138870459",
             "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Fri, 30 Oct 2026 12:40:12 +0000",
+            "tag": "hungary",
+            "seen_date": "Wed, 04 Nov 2026 02:45:32 +0000",
             "matched_countries": [
               "slovakia",
               "czechia",
-              "lithuania"
+              "hungary"
             ],
             "country_confidence": {
               "slovakia": 2,
               "czechia": 2,
-              "lithuania": 2,
               "hungary": 1,
               "poland": 1,
               "romania": 1,
               "estonia": 1,
-              "latvia": 1
+              "latvia": 1,
+              "lithuania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -1161,51 +1196,6 @@
                 "hits": 1,
                 "weight": 10
               },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 52,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "https:// youtu.be/0GkG8SQ6Z4k ⛔️⚠️Are Elon Musk, Your Tesla and ‘X’ Memberships fueling hate crimes against Ukraine: Who amplifies and funds Ukraine Hate (The Kyiv Independent Media VIDEO) # Ukraine # Press # Tesla # BoycottTesla # X # Musk # ElonMusk # Czechia # Poland # BoycottMusk # StarLink # SpaceX # StarShield # Media # VOTE # VOTE2026 # America # USA ",
-            "url": "https://mastodon.online/@SocraticEthics/117531157848764194",
-            "source": "mastodon",
-            "tag": "czechia",
-            "seen_date": "Fri, 30 Oct 2026 17:59:05 +0000",
-            "matched_countries": [
-              "czechia",
-              "poland"
-            ],
-            "country_confidence": {
-              "czechia": 2,
-              "poland": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
               {
                 "category": "ukraine_russia",
                 "label": "Ukrajna és Oroszország",
@@ -1225,8 +1215,53 @@
                 "weight": 5
               }
             ],
-            "geopolitical_score": 48,
-            "quality_score": 51,
+            "geopolitical_score": 62,
+            "quality_score": 67,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "\"UPDATE: the # Czech_Republic has also joined the boycott and # Swedish company # AJ_Products has said it will end its sponsorship!\" 🤔 From https:// t.me/pravdaGerashchenko_en Ice hockey federations of five # European countries - # Denmark , # Latvia , # Norway , # Finland , and # Sweden - have refused to play against the # Russian national team at the 2027 ",
+            "url": "https://mastodon.online/@kardinal691/117554138372035990",
+            "source": "mastodon",
+            "tag": "latvia",
+            "seen_date": "Tue, 03 Nov 2026 19:23:20 +0000",
+            "matched_countries": [
+              "czechia",
+              "latvia"
+            ],
+            "country_confidence": {
+              "czechia": 1,
+              "latvia": 1
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 39,
+            "quality_score": 42,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1235,18 +1270,25 @@
           },
           {
             "title": "",
-            "text": "DCG420 MeetUp Praha, Kavárna Liberál, Wednesday, November 4 at 05:30 PM GMT+1 DCG420 MeetUp Web & Registration: https://www.eventbrite.com/e/dcg420-meetup-lectures-blitztalks-social-club-cse-2026v-prague-tickets-1995037016421 Let's talk and listen about cyber security, active defense, hacking and play Backdoors&Breaches. Event is focused on visitors privacy.",
-            "url": "https://akce.cyberladies.cz/event/dcg420-meetup-5",
+            "text": "Trump vows to protect Musk, floats pre-emptive staff pardons # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel # NAT",
+            "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117549248037761659",
             "source": "mastodon",
-            "tag": "cybersecurity",
-            "seen_date": "Tue, 03 Nov 2026 22:47:53 +0000",
+            "tag": "hungary",
+            "seen_date": "Mon, 02 Nov 2026 22:39:40 +0000",
             "matched_countries": [
+              "slovakia",
               "czechia",
-              "estonia"
+              "hungary"
             ],
             "country_confidence": {
-              "czechia": 4,
-              "estonia": 3
+              "slovakia": 2,
+              "czechia": 2,
+              "hungary": 1,
+              "poland": 1,
+              "romania": 1,
+              "estonia": 1,
+              "latvia": 1,
+              "lithuania": 1
             },
             "event_category": "security",
             "event_category_label": "Biztonsági kockázat",
@@ -1254,20 +1296,26 @@
               {
                 "category": "security",
                 "label": "Biztonsági kockázat",
-                "hits": 3,
+                "hits": 1,
                 "weight": 10
               },
               {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
               }
             ],
-            "geopolitical_score": 47,
-            "quality_score": 50,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 28,
+            "quality_score": 33,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -1280,49 +1328,49 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 6,
-        "negative": 2,
+        "mentions": 7,
+        "negative": 0,
         "positive": 0,
-        "index": 45,
+        "index": 42,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 6,
+        "mastodon_mentions": 7,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 3,
-        "geopolitical_score": 156,
+        "reliable_sources": 4,
+        "geopolitical_score": 163,
         "topics": [
           {
             "name": "Biztonsági kockázat",
             "count": 3
           },
           {
-            "name": "Tiltakozás",
-            "count": 1
+            "name": "Ukrajna és Oroszország",
+            "count": 2
           },
           {
             "name": "EU / jogállamiság",
             "count": 1
           },
           {
-            "name": "Ukrajna és Oroszország",
+            "name": "Kiber és dezinformáció",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 7,
           "x": 0
         },
         "category_counts": {
-          "security": 3,
-          "protest": 1,
           "eu_rule_of_law": 1,
-          "ukraine_russia": 1
+          "cyber_disinformation": 1,
+          "security": 3,
+          "ukraine_russia": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 180,
+        "quality_total": 192,
         "top_posts": [
           {
             "title": "",
@@ -1491,35 +1539,35 @@
           },
           {
             "title": "",
-            "text": "📰 Prof. univ. dr. Nicolae Radu: Se destramă Uniunea Europeană? Cât de implicate sunt serviciile secrete în așezarea Noii Ordini Mondiale? In timp ce Europa fierbe, protestele se extind, guvernele sunt contestate, iar instituțiile pierd încrederea cetățenilor! De ce tensiunile politice ating un nivel tot mai greu de ignorat? De la Paris și Roma până la Varșov",
-            "url": "https://mastodon.social/@rodispatch/117554758241014374",
+            "text": "Rubio said the U.S. is exploring a limited Black Sea ceasefire for grain and energy shipments while admitting a broader Ukraine peace deal isn’t close. After years of “peace soon,” diplomacy has discovered the sampler platter. # Ukraine",
+            "url": "https://mastodon.social/@realTuckFrumper/117556155279793485",
             "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Tue, 03 Nov 2026 22:00:59 +0000",
+            "tag": "ukraine",
+            "seen_date": "Wed, 04 Nov 2026 03:56:16 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 1
+              "romania": 3
             },
-            "event_category": "protest",
-            "event_category_label": "Tiltakozás",
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
             "event_categories": [
               {
-                "category": "protest",
-                "label": "Tiltakozás",
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
                 "hits": 1,
-                "weight": 7
+                "weight": 9
               },
               {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
                 "hits": 1,
-                "weight": 5
+                "weight": 4
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 18,
+            "geopolitical_score": 13,
+            "quality_score": 16,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1534,105 +1582,55 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 13,
-        "negative": 6,
+        "mentions": 9,
+        "negative": 5,
         "positive": 0,
-        "index": 77,
+        "index": 64,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 13,
+        "mastodon_mentions": 9,
         "main_social_topic": "Ukrajna és Oroszország",
-        "reliable_sources": 5,
-        "geopolitical_score": 431,
+        "reliable_sources": 3,
+        "geopolitical_score": 255,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 5
-          },
-          {
-            "name": "Kiber és dezinformáció",
             "count": 4
           },
           {
-            "name": "Biztonsági kockázat",
-            "count": 3
+            "name": "Kiber és dezinformáció",
+            "count": 2
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 1
           },
           {
             "name": "EU / jogállamiság",
+            "count": 1
+          },
+          {
+            "name": "Biztonsági kockázat",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 5,
-          "cyber_disinformation": 4,
-          "security": 3,
-          "eu_rule_of_law": 1
+          "ukraine_russia": 4,
+          "government_crisis": 1,
+          "cyber_disinformation": 2,
+          "eu_rule_of_law": 1,
+          "security": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 480,
+        "quality_total": 288,
         "top_posts": [
-          {
-            "title": "",
-            "text": "‼️🇪🇪Estonia expels suspected spy with ties to the Russian secret services (more) https://www. pravda.com.ua/eng/news/2026/11 /02/8060839/#Ukraine # Estonia # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News # Headlines # NATO # USAIsAStateSponsorofTerror # 12yrInvasi",
-            "url": "https://mastodon.online/@SocraticEthics/117547620739393544",
-            "source": "mastodon",
-            "tag": "estonia",
-            "seen_date": "Mon, 02 Nov 2026 15:45:49 +0000",
-            "matched_countries": [
-              "estonia"
-            ],
-            "country_confidence": {
-              "estonia": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 2,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 80,
-            "quality_score": 85,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Baltic volunteer forces play a vital role in countering the Russian threat. Thirty-five years after challenging Soviet rule in the name of democracy, Estonia, Latvia and Lithuania now rely in part on volunteer citizen organisations that attract tens of thousands of members to help defend their countries. https:// mediafaro.org/article/20261101 -baltic-volunt",
@@ -1680,45 +1678,6 @@
             ],
             "geopolitical_score": 52,
             "quality_score": 55,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "DCG420 MeetUp Praha, Kavárna Liberál, Wednesday, November 4 at 05:30 PM GMT+1 DCG420 MeetUp Web & Registration: https://www.eventbrite.com/e/dcg420-meetup-lectures-blitztalks-social-club-cse-2026v-prague-tickets-1995037016421 Let's talk and listen about cyber security, active defense, hacking and play Backdoors&Breaches. Event is focused on visitors privacy.",
-            "url": "https://akce.cyberladies.cz/event/dcg420-meetup-5",
-            "source": "mastodon",
-            "tag": "cybersecurity",
-            "seen_date": "Tue, 03 Nov 2026 22:47:53 +0000",
-            "matched_countries": [
-              "czechia",
-              "estonia"
-            ],
-            "country_confidence": {
-              "czechia": 4,
-              "estonia": 3
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 3,
-                "weight": 10
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 50,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1815,6 +1774,85 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Who is hacking Europe’s supermarket fridges and freezers, and why? By Robert Booth and Miatta Mbriwa After a second apparent cyber-attack in as many weeks, we examine possible culprits and their motives https://www. theguardian.com/technology/202 6/nov/02/europe-supermarket-fridges-freezers-who-hacking-why # Cybercrime # Supermarkets # Retailindustry # Europ",
+            "url": "https://rssfeed.media/@guardianfeeds/117548464619157843",
+            "source": "mastodon",
+            "tag": "estonia",
+            "seen_date": "Mon, 02 Nov 2026 19:20:26 +0000",
+            "matched_countries": [
+              "estonia"
+            ],
+            "country_confidence": {
+              "estonia": 1
+            },
+            "event_category": "cyber_disinformation",
+            "event_category_label": "Kiber és dezinformáció",
+            "event_categories": [
+              {
+                "category": "cyber_disinformation",
+                "label": "Kiber és dezinformáció",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 33,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "@ MAKS23 │ 💀 │ 🇮🇱 💀 🇮🇱 │ 💀 │ 🇮🇱 Israel is a Terrorist State!... Benjamin Netanyahu's a warmonger! # ukraine # europe # eu # canada # uk # france # turkey # poland # estonia # lithuania # trump # usa # latvia # politics # netherlands # gaza # palestine # genocide # israel",
+            "url": "https://mastodon.social/@Dimaxx/117554397383904199",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Tue, 03 Nov 2026 20:29:13 +0000",
+            "matched_countries": [
+              "poland",
+              "estonia",
+              "latvia"
+            ],
+            "country_confidence": {
+              "poland": 1,
+              "estonia": 1,
+              "latvia": 1,
+              "lithuania": 1
+            },
+            "event_category": "ukraine_russia",
+            "event_category_label": "Ukrajna és Oroszország",
+            "event_categories": [
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -1824,20 +1862,20 @@
       "name_en": "Latvia",
       "name_hu": "Lettország",
       "social_signal": {
-        "mentions": 12,
-        "negative": 4,
+        "mentions": 13,
+        "negative": 5,
         "positive": 0,
-        "index": 75,
+        "index": 78,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 12,
+        "mastodon_mentions": 13,
         "main_social_topic": "Ukrajna és Oroszország",
         "reliable_sources": 4,
-        "geopolitical_score": 455,
+        "geopolitical_score": 495,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 6
+            "count": 7
           },
           {
             "name": "Biztonsági kockázat",
@@ -1855,18 +1893,18 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 6,
-          "security": 4,
+          "ukraine_russia": 7,
           "government_crisis": 1,
+          "security": 4,
           "eu_rule_of_law": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 499,
+        "quality_total": 542,
         "top_posts": [
           {
             "title": "",
@@ -2110,16 +2148,16 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 16,
-        "negative": 10,
-        "positive": 1,
-        "index": 73,
+        "mentions": 14,
+        "negative": 7,
+        "positive": 0,
+        "index": 75,
         "x_mentions": 0,
         "reddit_mentions": 2,
-        "mastodon_mentions": 14,
+        "mastodon_mentions": 12,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 3,
-        "geopolitical_score": 566,
+        "geopolitical_score": 525,
         "topics": [
           {
             "name": "Biztonsági kockázat",
@@ -2127,7 +2165,7 @@
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 7
+            "count": 5
           },
           {
             "name": "EU / jogállamiság",
@@ -2141,77 +2179,26 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 2,
-          "mastodon": 14,
+          "mastodon": 12,
           "x": 0
         },
         "category_counts": {
           "security": 7,
-          "ukraine_russia": 7,
+          "ukraine_russia": 5,
           "eu_rule_of_law": 1,
           "government_crisis": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 612,
+        "quality_total": 565,
         "top_posts": [
           {
             "title": "",
-            "text": "Tusk Stated That Poland Thwarted A Provocation By Russia At The Border https:// charter97.org/en/news/2026/11/ 3/704142/ # WarOfAggression # Europe # Ukraine # Poland # Kaliningrad # Provocation # Exclave # Hinterland # Drones # War # Russia # WarCriminals # StateTerrorism # Occupiers # Invaders # CombatCasualties # GloryToUkraine # DeathToTheOccupiers !",
-            "url": "https://social.tchncs.de/@Gehtso/117553547226760560",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Tue, 03 Nov 2026 16:53:00 +0000",
-            "matched_countries": [
-              "poland",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "poland": 5,
-              "lithuania": 4
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 65,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Prime Minister says Russia will not be allowed to compete at 2026 world juniors in Alberta https://www. cbc.ca/sports/hockey/norway-ho ckey-world-championships-refusal-russia-9.7406832 &gt; Prime Minister Mark Carney says Russia will not be allowed to compete at next month's world junior hockey championship in Alberta. Carney, speaking in Antigua at the Comm",
-            "url": "https://pouet.chapril.org/@dallo/117554913247777403",
+            "text": "KYIV INDEPENDENT: Canada to block Russian team from World Junior Hockey Championship, Carney says https:// kyivindependent.com/canada-to- block-russian-team-from-world-junior-hockey-championship-carney-says/ The Canadian government said it would use its authority under the Immigration and Refugee Protection Act to prevent Russian and Belarusian athletes and ",
+            "url": "https://mstdn.social/@ukrdef/117556147181336575",
             "source": "mastodon",
             "tag": "ukraine",
-            "seen_date": "Tue, 03 Nov 2026 22:40:24 +0000",
+            "seen_date": "Wed, 04 Nov 2026 03:54:12 +0000",
             "matched_countries": [
               "lithuania"
             ],
@@ -2238,10 +2225,79 @@
                 "label": "Külső befolyás",
                 "hits": 2,
                 "weight": 7
+              },
+              {
+                "category": "migration_border",
+                "label": "Migráció és határnyomás",
+                "hits": 2,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 61,
-            "quality_score": 64,
+            "geopolitical_score": 70,
+            "quality_score": 73,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Polish security forces mobilized near the Kaliningrad border after detecting unusual movement, including people with flashlights, shortly after midnight. Prime Minister Donald Tusk stated the intervention helped prevent potential provocations. https://www. bloomberg.com/news/articles/20 26-11-03/premier-tusk-says-poland-foiled-possible-provocation-at-russia-",
+            "url": "https://mastodon.social/@hanse_mina/117555822981282509",
+            "source": "mastodon",
+            "tag": "poland",
+            "seen_date": "Wed, 04 Nov 2026 02:31:45 +0000",
+            "matched_countries": [
+              "poland",
+              "lithuania"
+            ],
+            "country_confidence": {
+              "poland": 6,
+              "lithuania": 4
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 2,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 65,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -2491,6 +2547,137 @@
       "geopolitical_score": 19,
       "quality_score": 18,
       "source_reliability": 1,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Canada to block Russian team from World Junior Hockey Championship # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117555877138870459",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Wed, 04 Nov 2026 02:45:32 +0000",
+      "matched_countries": [
+        "slovakia",
+        "czechia",
+        "hungary"
+      ],
+      "country_confidence": {
+        "slovakia": 2,
+        "czechia": 2,
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 62,
+      "quality_score": 67,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "These # midterms need to be a trouncing, just like # Hungary to minimize, de-legitimize, and quash any certain challenges by the Executive Branch, who have no authority over elections in any instance. So please, don’t stay home because of early results. Go out and # vote in these # elections",
+      "url": "https://mastodon.social/@myrtlewyckoff/117555671688498290",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Wed, 04 Nov 2026 01:53:17 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 11,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Institute of Economic Research SAS: New Database Mapping Foreign Nationals across Regions of Czechia, Slovakia, Hungary and Poland. “The Institute of Economic Research of the Slovak Academy of Sciences, in cooperation with partners from Mendel University in Brno, the University of Łódź, and the Kopint Foundation for Economic Research in Budapest, has publish",
+      "url": "https://rbfirehose.com/2026/11/03/institute-of-economic-research-sas-new-database-mapping-foreign-nationals-across-regions-of-czechia-slovakia-hungary-and-poland/",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Wed, 04 Nov 2026 00:07:49 +0000",
+      "matched_countries": [
+        "hungary",
+        "slovakia",
+        "czechia"
+      ],
+      "country_confidence": {
+        "hungary": 5,
+        "slovakia": 2,
+        "czechia": 2,
+        "poland": 1
+      },
+      "event_category": "migration_border",
+      "event_category_label": "Migráció és határnyomás",
+      "event_categories": [
+        {
+          "category": "migration_border",
+          "label": "Migráció és határnyomás",
+          "hits": 1,
+          "weight": 6
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 12,
+      "quality_score": 15,
+      "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
@@ -2762,62 +2949,18 @@
     },
     {
       "title": "",
-      "text": "A post-Orbán Hungary faces the challenge of rebuilding public trust. Civil society, which had been the target of constant denigration campaigns and a particularly repressive legislative arsenal under Viktor Orbán, is breathing more freely since the change in power. However, all its stakeholders remain cautious regarding the new government led by Péter Magyar",
-      "url": "https://mastodon.mediafaro.org/@mf_analysis/117547453941543594",
+      "text": "Polish security forces mobilized near the Kaliningrad border after detecting unusual movement, including people with flashlights, shortly after midnight. Prime Minister Donald Tusk stated the intervention helped prevent potential provocations. https://www. bloomberg.com/news/articles/20 26-11-03/premier-tusk-says-poland-foiled-possible-provocation-at-russia-",
+      "url": "https://mastodon.social/@hanse_mina/117555822981282509",
       "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Mon, 02 Nov 2026 15:03:24 +0000",
+      "tag": "poland",
+      "seen_date": "Wed, 04 Nov 2026 02:31:45 +0000",
       "matched_countries": [
-        "hungary"
+        "poland",
+        "lithuania"
       ],
       "country_confidence": {
-        "hungary": 10
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 20,
-      "quality_score": 23,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Russia exploits ceasefire to mask military movements # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Trump # Musk # Starlink # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Sp",
-      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117547343414954092",
-      "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Mon, 02 Nov 2026 14:35:18 +0000",
-      "matched_countries": [
-        "slovakia",
-        "czechia",
-        "hungary"
-      ],
-      "country_confidence": {
-        "slovakia": 2,
-        "czechia": 2,
-        "hungary": 1,
-        "poland": 1,
-        "romania": 1,
-        "estonia": 1,
-        "latvia": 1,
-        "lithuania": 1
+        "poland": 6,
+        "lithuania": 4
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -2831,8 +2974,14 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 3,
+          "hits": 2,
           "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
         },
         {
           "category": "foreign_influence",
@@ -2845,12 +2994,100 @@
           "label": "EU / jogállamiság",
           "hits": 1,
           "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
         }
       ],
-      "geopolitical_score": 63,
-      "quality_score": 68,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
+      "geopolitical_score": 62,
+      "quality_score": 65,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Tusk says Poland thwarted possible provocation on Kaliningrad border overnight Polish Prime Minister Donald Tusk says Poland successfully prevented an attempted provocation on its border with Russia's Kaliningrad exclave https:// abcnews.com/International/wire Story/tusk-poland-thwarted-provocation-kaliningrad-border-overnight-137804660 # TopNews # News # Po",
+      "url": "https://mastodon.social/@top_news/117555260599826121",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Wed, 04 Nov 2026 00:08:44 +0000",
+      "matched_countries": [
+        "poland",
+        "lithuania"
+      ],
+      "country_confidence": {
+        "poland": 6,
+        "lithuania": 4
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 46,
+      "quality_score": 49,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "il manifesto: Polonia, il presidente non molla: attacco a Tusk L’esecutivo del premier liberale Donald Tusk è stato convocato dal presidente Karol Nawrocki, sostenuto invece dal Pis e dalle altre forze di destra nel Paese sulla Vistola, a una riunione […] The post Polonia, il presidente non molla: attacco a Tusk first appeared on il manifesto. Polonia, the p",
+      "url": "https://mastodon.ozioso.online/@ItalianNews/117555110514553904",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Tue, 03 Nov 2026 23:30:34 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 6
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 2,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 20,
+      "quality_score": 23,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -3148,329 +3385,6 @@
     },
     {
       "title": "",
-      "text": "💬 Polish Prime Minister Donald Tusk accused # Russia on Tuesday of seeking to fuel \"instability\" in # Poland by meddling in a dispute between his government and the president ‌over the Constitutional Tribunal. https://www. reuters.com/world/russia-tryin g-foment-instability-poland-pm-tusk-says-2026-11-03/",
-      "url": "https://mastodon.social/@rvps2001/117553817412602008",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 18:01:43 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 3,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 53,
-      "quality_score": 58,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Series - 9 clocks around #Poland . Various time keeping devices. Warsaw, Woj. Mazowieckie, Poland 2026 #Sundial #Astrology #RomanNumerals #Architecture #TimeTelling",
-      "url": "https://pixey.org/p/iolaire/1023286520591316192",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 17:35:18 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 5
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 12,
-      "quality_score": 15,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🟡 TroopMovement | 8/10 Poland deploys special forces to the border with Kaliningrad Oblast (RF) Poland deployed special forces to the border with the Kaliningrad Oblast (RF) due to reports of disturbing movements of people with flashlights. Prime Minister Donald Tusk stated that the situation required an immediate response and mobilization of significant for",
-      "url": "https://social.vir.group/@analytics/117553686013041953",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 17:28:18 +0000",
-      "matched_countries": [
-        "poland",
-        "lithuania"
-      ],
-      "country_confidence": {
-        "poland": 5,
-        "lithuania": 4
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 44,
-      "quality_score": 47,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Tusk Stated That Poland Thwarted A Provocation By Russia At The Border https:// charter97.org/en/news/2026/11/ 3/704142/ # WarOfAggression # Europe # Ukraine # Poland # Kaliningrad # Provocation # Exclave # Hinterland # Drones # War # Russia # WarCriminals # StateTerrorism # Occupiers # Invaders # CombatCasualties # GloryToUkraine # DeathToTheOccupiers !",
-      "url": "https://social.tchncs.de/@Gehtso/117553547226760560",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 16:53:00 +0000",
-      "matched_countries": [
-        "poland",
-        "lithuania"
-      ],
-      "country_confidence": {
-        "poland": 5,
-        "lithuania": 4
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 62,
-      "quality_score": 65,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🇵🇱 Poland: European Parliament nowcast (2/11/2026) 53 seats: 🟦 KO 20 (EPP) ⬛ PiS 13 (ECR) 🟦 Konfederacja 8 (PfE 5, ESN 3) ⬜ KKP 5 (NI) 🟥 Lewica 4 (S&D) ⬛ R+ 3 (ECR) Since 2024 by group: PfE +5, ECR −4, EPP −3, NI +2, Renew −1, S&D +1 🔗 https:// nowcast.eu/en/countries/poland /?utm_source=s&utm_medium=ms&utm_campaign=c # EP2029 # nowcasteu # Poland",
-      "url": "https://mastodon.social/@nowcast_eu/117553459171626608",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 16:30:37 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 2
-      },
-      "event_category": "government_crisis",
-      "event_category_label": "Belpolitikai feszültség",
-      "event_categories": [
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 13,
-      "quality_score": 16,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "⚠️🇵🇱Poland reports suspicious activity by \"people with torches\" on border with Russia (more) https://www. pravda.com.ua/eng/news/2026/11 /03/8061046/ # Ukraine # Poland # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News # Headlines # NATO # USAIsAStateSponsorofTerror",
-      "url": "https://mastodon.online/@SocraticEthics/117553400864990289",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 16:15:47 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 74,
-      "quality_score": 79,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "terms of behavior toward # Poland and # Europe , and, of course, above all, # Ukraine . We have reports from other # European countries as well as our own reports, including from the internal security agencies of # European nations. They clearly point to the # Russian method of stoking every possible conflict. That was the case in the # UK , # Spain , # Fran",
-      "url": "https://mastodon.online/@kardinal691/117553397131988357",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Tue, 03 Nov 2026 16:14:50 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 61,
-      "quality_score": 64,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "# Fico ’s # government has lost its guaranteed parliamentary # majority # Slovakia https:// hnonline.sk/slovensko/96311379 -koalicia-stratila-v-parlamente-vacsinu-malatinec-opustil-huliaka-a-pridal-sa-k-tarabovi",
       "url": "https://mastodon.social/@uatribune/117553051753918777",
       "source": "mastodon",
@@ -3741,6 +3655,64 @@
     },
     {
       "title": "",
+      "text": "Russia exploits ceasefire to mask military movements # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Trump # Musk # Starlink # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Sp",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117547343414954092",
+      "source": "mastodon",
+      "tag": "czechia",
+      "seen_date": "Mon, 02 Nov 2026 14:35:18 +0000",
+      "matched_countries": [
+        "slovakia",
+        "czechia",
+        "hungary"
+      ],
+      "country_confidence": {
+        "slovakia": 2,
+        "czechia": 2,
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 63,
+      "quality_score": 68,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "Більше в статті про можливість бойкоту ігр з росіянами з боку чеських гравців https:// tn.nova.cz/sport/clanek/660266 -hadamczik-promluvil-o-bojkotu-ms-kvuli-rusum-cesku-hrozi-tvrdy-trest # хокей # Чехія # росія # хокеїсти # hockey # Czechia # russia # russiaisaterroriststate # sport # politics",
       "url": "https://mastodon.social/@rkovbasjuk/117535204799345925",
       "source": "mastodon",
@@ -3772,109 +3744,6 @@
       "quality_score": 19,
       "source_reliability": 3,
       "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "https:// youtu.be/0GkG8SQ6Z4k ⛔️⚠️Are Elon Musk, Your Tesla and ‘X’ Memberships fueling hate crimes against Ukraine: Who amplifies and funds Ukraine Hate (The Kyiv Independent Media VIDEO) # Ukraine # Press # Tesla # BoycottTesla # X # Musk # ElonMusk # Czechia # Poland # BoycottMusk # StarLink # SpaceX # StarShield # Media # VOTE # VOTE2026 # America # USA ",
-      "url": "https://mastodon.online/@SocraticEthics/117531157848764194",
-      "source": "mastodon",
-      "tag": "czechia",
-      "seen_date": "Fri, 30 Oct 2026 17:59:05 +0000",
-      "matched_countries": [
-        "czechia",
-        "poland"
-      ],
-      "country_confidence": {
-        "czechia": 2,
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 48,
-      "quality_score": 51,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Trump pressures Lithuania to crack EU potash sanctions on Belarus # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel ",
-      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117529903937391124",
-      "source": "mastodon",
-      "tag": "czechia",
-      "seen_date": "Fri, 30 Oct 2026 12:40:12 +0000",
-      "matched_countries": [
-        "slovakia",
-        "czechia",
-        "lithuania"
-      ],
-      "country_confidence": {
-        "slovakia": 2,
-        "czechia": 2,
-        "lithuania": 2,
-        "hungary": 1,
-        "poland": 1,
-        "romania": 1,
-        "estonia": 1,
-        "latvia": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 47,
-      "quality_score": 52,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -3974,6 +3843,69 @@
     },
     {
       "title": "",
+      "text": "📰 Atacul la frigiderele supermarketurilor lovește și România În noaptea de 2 noiembrie, frigiderele din peste 100 de magazine din Europa au încetat să funcționeze în urma unor presupuse atacuri cibernetice. Conform ultimelor rapoarte, întreruperile au afectat magazine din cel puțin 11 țări: Belgia, Luxemburg, Italia, Germania și Irlanda, potrivit Reuters, pr",
+      "url": "https://mastodon.social/@rodispatch/117555112076811470",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Tue, 03 Nov 2026 23:30:58 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 6,
+        "estonia": 1
+      },
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
+      "event_categories": [
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 9,
+      "quality_score": 14,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "📰 Lovitura de la Binance de 6,34 miliarde dolari: Cum au lovit hackerii Platforma de schimb de criptomonede Binance a publicat un raport preliminar despre atacul cibernetic care a avut loc în noaptea de 29 până în 30 octombrie și a costat compania 6,34 miliarde de dolari. Potrivit Binance, hackerii pregăteau atacul de câteva luni, obținând treptat acces la c",
+      "url": "https://mastodon.social/@rodispatch/117554994091587039",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Tue, 03 Nov 2026 23:00:58 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 1
+      },
+      "event_category": "cyber_disinformation",
+      "event_category_label": "Kiber és dezinformáció",
+      "event_categories": [
+        {
+          "category": "cyber_disinformation",
+          "label": "Kiber és dezinformáció",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 11,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "📰 Petrișor Peiu (liderul senatorilor AUR): Relațiile dintre România și SUA au ajuns la un nivel catastrofal Liderul senatorilor AUR, Petrișor Peiu, susține că relațiile economice dintre România și Statele Unite au ajuns la un „nivel catastrofal”, în ciuda declarațiilor optimiste ale politicienilor de la București. 🔗 https://www. activenews.ro/stiri/Petrisor-",
       "url": "https://mastodon.social/@rodispatch/117554876176936028",
       "source": "mastodon",
@@ -4005,66 +3937,29 @@
     },
     {
       "title": "",
-      "text": "📰 Prof. univ. dr. Nicolae Radu: Se destramă Uniunea Europeană? Cât de implicate sunt serviciile secrete în așezarea Noii Ordini Mondiale? In timp ce Europa fierbe, protestele se extind, guvernele sunt contestate, iar instituțiile pierd încrederea cetățenilor! De ce tensiunile politice ating un nivel tot mai greu de ignorat? De la Paris și Roma până la Varșov",
-      "url": "https://mastodon.social/@rodispatch/117554758241014374",
+      "text": "Estonia's most popular party combination for the country's next # government is a coalition of the two # opposition parties, Fatherland and Centre Party, according to a new # poll . In three recent polls, the Centre Party has overtaken Fatherland as the most popular party in # Estonia . https:// viabaltica.fi/estonia-fatherla nd-centre-coalition-most-popular",
+      "url": "https://mstdn.social/@viabaltica/117555412659649760",
       "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Tue, 03 Nov 2026 22:00:59 +0000",
+      "tag": "estonia",
+      "seen_date": "Wed, 04 Nov 2026 00:47:24 +0000",
       "matched_countries": [
-        "romania"
+        "estonia"
       ],
       "country_confidence": {
-        "romania": 1
+        "estonia": 1
       },
-      "event_category": "protest",
-      "event_category_label": "Tiltakozás",
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
       "event_categories": [
         {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 3,
+          "weight": 8
         }
       ],
-      "geopolitical_score": 15,
-      "quality_score": 18,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "📰 Lavrov: Nu vrem război cu Europa, dar dacă țările europene vor începe un conflict răspunsul „va fi diferit și foarte scurt” Ministrul rus de Externe, Serghei Lavrov, a declarat astăzi că Rusia nu dorește și nu plănuiește un război cu Europa, dar dacă țările europene vor începe un conflict, răspunsul Moscovei va fi „diferit și foarte scurt”. La conferința p",
-      "url": "https://mastodon.social/@rodispatch/117554640219099841",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Tue, 03 Nov 2026 21:30:58 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 1
-      },
-      "event_category": "eu_rule_of_law",
-      "event_category_label": "EU / jogállamiság",
-      "event_categories": [
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 8,
-      "quality_score": 11,
+      "geopolitical_score": 24,
+      "quality_score": 27,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4238,90 +4133,16 @@
     },
     {
       "title": "",
-      "text": "Who is hacking Europe’s supermarket fridges and freezers, and why? https://www. theguardian.com/technology/202 6/nov/02/europe-supermarket-fridges-freezers-who-hacking-why # Cybercrime # Supermarkets # RetailIndustry # Europe # Sweden # Belgium # Estonia # Luxembourg # Finland # Ireland # Business # Internet # Technology # WorldNews",
-      "url": "https://halo.nu/@theguardian_world_news/117548440164354265",
+      "text": "The governing body for # ice # hockey in # Latvia said that # Latvian teams will not play against # russia , despite attempts by russia to force its way back into competitions. \"As long as the # war started by # russia in # Ukraine continues\" https:// eng.lsm.lv/article/culture/spo rt/03.11.2026-latvian-hockey-teams-will-still-not-play-against-russia.a670439",
+      "url": "https://mastodon.social/@uatribune/117555875976580823",
       "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Mon, 02 Nov 2026 19:14:13 +0000",
+      "tag": "latvia",
+      "seen_date": "Wed, 04 Nov 2026 02:45:14 +0000",
       "matched_countries": [
-        "estonia"
+        "latvia"
       ],
       "country_confidence": {
-        "estonia": 1
-      },
-      "event_category": "cyber_disinformation",
-      "event_category_label": "Kiber és dezinformáció",
-      "event_categories": [
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 2,
-          "weight": 8
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 25,
-      "quality_score": 30,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Leonardo.it: Supermercati europei nel mirino degli hacker: gli attacchi ai sistemi di refrigerazione Centinaia di supermercati in Svezia, Belgio ed Estonia colpiti da attacchi hacker coordinati ai sistemi di refrigerazione. Temperature raggiunte fino a 50°C. L'articolo Supermercati europei nel mirino degli hacker: gli attacchi ai sistemi di refrigerazione pr",
-      "url": "https://mastodon.ozioso.online/@ItalianNews/117548268088663541",
-      "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Mon, 02 Nov 2026 18:30:27 +0000",
-      "matched_countries": [
-        "estonia"
-      ],
-      "country_confidence": {
-        "estonia": 1
-      },
-      "event_category": "cyber_disinformation",
-      "event_category_label": "Kiber és dezinformáció",
-      "event_categories": [
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 16,
-      "quality_score": 19,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "𝗪𝗜𝗞𝗜𝗣𝗘𝗗𝗜𝗔 𝗣𝗜𝗖𝗧𝗨𝗥𝗘 𝗢𝗙 𝗧𝗛𝗘 𝗗𝗔𝗬 ✧ Mõdriku ✧ Mõdriku is a village in Vinni Parish in Lääne-Viru County, northeastern Estonia. It is the location of Mõdriku Manor, a house that was first mentioned in 1470, and belonged to several Baltic-German families, including the family of the Russian general and explorer Alexander von Kaulbars. His ancestor R. A. von Kaulbar",
-      "url": "https://mastodon.online/@WikiPicBot/117547843800714797",
-      "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Mon, 02 Nov 2026 16:42:33 +0000",
-      "matched_countries": [
-        "estonia"
-      ],
-      "country_confidence": {
-        "estonia": 1
+        "latvia": 2
       },
       "event_category": "ukraine_russia",
       "event_category_label": "Ukrajna és Oroszország",
@@ -4329,14 +4150,8 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 2,
+          "hits": 3,
           "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
         },
         {
           "category": "foreign_influence",
@@ -4345,8 +4160,8 @@
           "weight": 7
         }
       ],
-      "geopolitical_score": 32,
-      "quality_score": 35,
+      "geopolitical_score": 37,
+      "quality_score": 40,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -4355,55 +4170,31 @@
     },
     {
       "title": "",
-      "text": "‼️🇪🇪Estonia expels suspected spy with ties to the Russian secret services (more) https://www. pravda.com.ua/eng/news/2026/11 /02/8060839/#Ukraine # Estonia # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News # Headlines # NATO # USAIsAStateSponsorofTerror # 12yrInvasi",
-      "url": "https://mastodon.online/@SocraticEthics/117547620739393544",
+      "text": "The new # parliament of # Latvia held its inaugural session on 3 November 2026, swearing in all 100 MPs following # elections a month ago. MPs elected Edvards Smiltens of the United List as speaker of the parliament with 79 votes for and 15 against. https:// viabaltica.fi/latvia-new-parli ament-elects-new-speaker/",
+      "url": "https://mstdn.social/@viabaltica/117555671870740744",
       "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Mon, 02 Nov 2026 15:45:49 +0000",
+      "tag": "latvia",
+      "seen_date": "Wed, 04 Nov 2026 01:53:20 +0000",
       "matched_countries": [
-        "estonia"
+        "latvia"
       ],
       "country_confidence": {
-        "estonia": 1
+        "latvia": 1
       },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
       "event_categories": [
         {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
           "hits": 2,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
+          "weight": 8
         }
       ],
-      "geopolitical_score": 80,
-      "quality_score": 85,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
+      "geopolitical_score": 16,
+      "quality_score": 19,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -4673,20 +4464,26 @@
     },
     {
       "title": "",
-      "text": "🇱🇻 Latvia: European Parliament nowcast (1/11/2026) 9 seats: ⬛ AS 3 (ECR) 🟦 JV 1 (EPP) 🟦 LPV 1 (PfE) ⬛ NA 1 (ECR) 🟩 PRO 1 (Greens) ⬜ SV 1 (Others) ⬜ ZZS 1 (Others) Since 2024 by group: Others +2, ECR +1, EPP −1, Renew −1, S&D −1 🔗 https:// nowcast.eu/en/countries/latvia /?utm_source=s&utm_medium=ms&utm_campaign=c # EP2029 # nowcasteu # Latvia",
-      "url": "https://mastodon.social/@nowcast_eu/117547796743224298",
+      "text": "# Lithuania marked the 100th birthday of the country's former # president , Valdas Adamkus, on 3 November 2026. Adamkus said that Lithuania's accession to the European Union and # NATO was \"the greatest joy of my life.\" He served as president in 1998-2003 and 2004-2009. https:// viabaltica.fi/lithuania-ex-pre sident-valdas-adamkus-turns-100/",
+      "url": "https://mstdn.social/@viabaltica/117555945618365399",
       "source": "mastodon",
-      "tag": "latvia",
-      "seen_date": "Mon, 02 Nov 2026 16:30:35 +0000",
+      "tag": "lithuania",
+      "seen_date": "Wed, 04 Nov 2026 03:02:57 +0000",
       "matched_countries": [
-        "latvia"
+        "lithuania"
       ],
       "country_confidence": {
-        "latvia": 1
+        "lithuania": 1
       },
-      "event_category": "government_crisis",
-      "event_category_label": "Belpolitikai feszültség",
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
       "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
         {
           "category": "government_crisis",
           "label": "Belpolitikai feszültség",
@@ -4696,14 +4493,14 @@
         {
           "category": "eu_rule_of_law",
           "label": "EU / jogállamiság",
-          "hits": 1,
+          "hits": 2,
           "weight": 5
         }
       ],
-      "geopolitical_score": 13,
-      "quality_score": 16,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "geopolitical_score": 32,
+      "quality_score": 37,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -4880,37 +4677,6 @@
     },
     {
       "title": "",
-      "text": "GDP growth in # Lithuania stood at 2.3% on year in Q3/2026, according to the State # Data Agency's first estimate. However, compared to the previous quarter, the # GDP contracted by 1.0%. Swedbank economist Nerijus Mačiulis warned that the days of rapid economic # growth could be over. https:// viabaltica.fi/lithuania-gdp-up -2-3-in-q3-2026-statistics/",
-      "url": "https://mstdn.social/@viabaltica/117544871730331377",
-      "source": "mastodon",
-      "tag": "lithuania",
-      "seen_date": "Mon, 02 Nov 2026 04:06:43 +0000",
-      "matched_countries": [
-        "lithuania"
-      ],
-      "country_confidence": {
-        "lithuania": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 13,
-      "quality_score": 16,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "https:// youtu.be/DfvelA5AvSk ⛔️🇧🇬Will Kremlin-Friendly Bulgarians allows Putin to strike commercial vessels in the Black Sea by obstructing EU & NATO responses (Reporting From Ukraine VIDEO) # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Romania # Bucharest # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media",
       "url": "https://mastodon.online/@SocraticEthics/117554423843284473",
       "source": "mastodon",
@@ -5034,16 +4800,16 @@
     },
     {
       "title": "",
-      "text": "Hanna Liubakova: \" # Belarus There will be a time for negotiations with the regime. Europe should prepare from a position of strength by expanding sanctions for human rights violations, including personal sanctions. The EU is wasting time, especially when at least some names are on the table.\" # Europe # Sanctions # EU",
-      "url": "https://mastodon.social/@mse_eu/117554359055969011",
+      "text": "Hallo Brüssel, Berlin – jemand zuhause? Es fibt da eine deutsche Regierungspartei, die sich das, worauf ich Sie hier hinweise, nicht mehr lange leisten kann. Ihre parteinahe Friedrich-Ebert-Stiftung beschäftigt noch Wissenschaftler*innen mit internationaler Expertise, obwohl ihre Partei doch das Auswärtige Amt schon lange weggegeben hat. Für kurze Zeit noch ",
+      "url": "https://extradienst.net/2026/11/04/hallo-bruessel-berlin-jemand-zuhause/",
       "source": "mastodon",
       "tag": "eu",
-      "seen_date": "Tue, 03 Nov 2026 20:19:28 +0000",
+      "seen_date": "Tue, 03 Nov 2026 23:02:59 +0000",
       "matched_countries": [
-        "lithuania"
+        "poland"
       ],
       "country_confidence": {
-        "lithuania": 1
+        "poland": 1
       },
       "event_category": "ukraine_russia",
       "event_category_label": "Ukrajna és Oroszország",
@@ -5051,7 +4817,7 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
-          "hits": 1,
+          "hits": 2,
           "weight": 9
         },
         {
@@ -5067,8 +4833,8 @@
           "weight": 5
         }
       ],
-      "geopolitical_score": 24,
-      "quality_score": 27,
+      "geopolitical_score": 33,
+      "quality_score": 36,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
@@ -5077,11 +4843,79 @@
     },
     {
       "title": "",
-      "text": "Prime Minister says Russia will not be allowed to compete at 2026 world juniors in Alberta https://www. cbc.ca/sports/hockey/norway-ho ckey-world-championships-refusal-russia-9.7406832 &gt; Prime Minister Mark Carney says Russia will not be allowed to compete at next month's world junior hockey championship in Alberta. Carney, speaking in Antigua at the Comm",
-      "url": "https://pouet.chapril.org/@dallo/117554913247777403",
+      "text": "Головний бар’єр для евакуації з Херсона - відсутність доступних і передбачуваних умов життя після виїзду Головний бар’єр евакуації з Херсона пов’язаний не стільки з можливістю фізично виїхати з міста, скільки з відсутністю доступних і передбачуваних умов життя після виїзду. ukrinform.ua/rubric-regions/4181149-golovnij-barer-dla-evakuacii-z-hersona-vidsutnist",
+      "url": "https://www.ukrinform.ua/rubric-regions/4181149-golovnij-barer-dla-evakuacii-z-hersona-vidsutnist-dostupnih-i-peredbacuvanih-umov-zitta-pisla-viizdu.html",
       "source": "mastodon",
       "tag": "ukraine",
-      "seen_date": "Tue, 03 Nov 2026 22:40:24 +0000",
+      "seen_date": "Wed, 04 Nov 2026 04:05:00 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 9,
+      "quality_score": 12,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Rubio said the U.S. is exploring a limited Black Sea ceasefire for grain and energy shipments while admitting a broader Ukraine peace deal isn’t close. After years of “peace soon,” diplomacy has discovered the sampler platter. # Ukraine",
+      "url": "https://mastodon.social/@realTuckFrumper/117556155279793485",
+      "source": "mastodon",
+      "tag": "ukraine",
+      "seen_date": "Wed, 04 Nov 2026 03:56:16 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 3
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 13,
+      "quality_score": 16,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "KYIV INDEPENDENT: Canada to block Russian team from World Junior Hockey Championship, Carney says https:// kyivindependent.com/canada-to- block-russian-team-from-world-junior-hockey-championship-carney-says/ The Canadian government said it would use its authority under the Immigration and Refugee Protection Act to prevent Russian and Belarusian athletes and ",
+      "url": "https://mstdn.social/@ukrdef/117556147181336575",
+      "source": "mastodon",
+      "tag": "ukraine",
+      "seen_date": "Wed, 04 Nov 2026 03:54:12 +0000",
       "matched_countries": [
         "lithuania"
       ],
@@ -5108,86 +4942,16 @@
           "label": "Külső befolyás",
           "hits": 2,
           "weight": 7
-        }
-      ],
-      "geopolitical_score": 61,
-      "quality_score": 64,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "DCG420 MeetUp Praha, Kavárna Liberál, Wednesday, November 4 at 05:30 PM GMT+1 DCG420 MeetUp Web & Registration: https://www.eventbrite.com/e/dcg420-meetup-lectures-blitztalks-social-club-cse-2026v-prague-tickets-1995037016421 Let's talk and listen about cyber security, active defense, hacking and play Backdoors&Breaches. Event is focused on visitors privacy.",
-      "url": "https://akce.cyberladies.cz/event/dcg420-meetup-5",
-      "source": "mastodon",
-      "tag": "cybersecurity",
-      "seen_date": "Tue, 03 Nov 2026 22:47:53 +0000",
-      "matched_countries": [
-        "czechia",
-        "estonia"
-      ],
-      "country_confidence": {
-        "czechia": 4,
-        "estonia": 3
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 3,
-          "weight": 10
         },
         {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
+          "category": "migration_border",
+          "label": "Migráció és határnyomás",
           "hits": 2,
-          "weight": 8
+          "weight": 6
         }
       ],
-      "geopolitical_score": 47,
-      "quality_score": 50,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Possible Phishing 🎣 on: ⚠️hxxps[:]//sk-slovensko[.]web[.]app/ 🧬 Analysis at: https:// urldna.io/scan/6aea3d5a3b77500 0074c66d6 # cybersecurity # phishing # infosec # urldna # scam # infosec",
-      "url": "https://infosec.exchange/@urldna/117554873078433218",
-      "source": "mastodon",
-      "tag": "cybersecurity",
-      "seen_date": "Tue, 03 Nov 2026 22:30:11 +0000",
-      "matched_countries": [
-        "slovakia"
-      ],
-      "country_confidence": {
-        "slovakia": 4
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 18,
-      "quality_score": 21,
+      "geopolitical_score": 70,
+      "quality_score": 73,
       "source_reliability": 3,
       "trusted_source_hint": false,
       "engagement": 0,
