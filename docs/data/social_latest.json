@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 05:03 UTC",
+  "updated_at": "2026-11-21 14:02 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás. Az X API csak akkor aktív, ha az X_BEARER_TOKEN secret be van állítva.",
   "x_status": {
@@ -55,20 +55,24 @@
       "name_en": "Hungary",
       "name_hu": "Magyarország",
       "social_signal": {
-        "mentions": 13,
-        "negative": 4,
-        "positive": 0,
+        "mentions": 16,
+        "negative": 5,
+        "positive": 1,
         "index": 78,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 13,
+        "mastodon_mentions": 16,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 12,
-        "geopolitical_score": 716,
+        "reliable_sources": 13,
+        "geopolitical_score": 783,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 12
+            "count": 13
+          },
+          {
+            "name": "Belpolitikai feszültség",
+            "count": 2
           },
           {
             "name": "Ukrajna és Oroszország",
@@ -78,16 +82,17 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
+          "mastodon": 16,
           "x": 0
         },
         "category_counts": {
-          "security": 12,
+          "government_crisis": 2,
+          "security": 13,
           "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 779,
+        "quality_total": 857,
         "top_posts": [
           {
             "title": "",
@@ -280,7 +285,7 @@
             "text": "Poland reports airspace violation during Russian attack on Ukraine # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117648037778256400",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "slovakia",
             "seen_date": "Fri, 20 Nov 2026 09:23:12 +0000",
             "matched_countries": [
               "slovakia",
@@ -338,7 +343,7 @@
             "text": "Coalition of the Willing calls on Russia to accept winter energy truce # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Is",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117645386107677290",
             "source": "mastodon",
-            "tag": "slovakia",
+            "tag": "latvia",
             "seen_date": "Thu, 19 Nov 2026 22:08:50 +0000",
             "matched_countries": [
               "slovakia",
@@ -411,40 +416,100 @@
       "name_en": "Poland",
       "name_hu": "Lengyelország",
       "social_signal": {
-        "mentions": 14,
-        "negative": 7,
-        "positive": 0,
-        "index": 81,
+        "mentions": 18,
+        "negative": 12,
+        "positive": 1,
+        "index": 79,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 14,
+        "mastodon_mentions": 18,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 9,
-        "geopolitical_score": 768,
+        "reliable_sources": 10,
+        "geopolitical_score": 1164,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 10
+            "count": 14
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 4
+            "count": 3
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 18,
           "x": 0
         },
         "category_counts": {
-          "security": 10,
-          "ukraine_russia": 4
+          "security": 14,
+          "ukraine_russia": 3,
+          "eu_rule_of_law": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 828,
+        "quality_total": 1238,
         "top_posts": [
+          {
+            "title": "",
+            "text": "🔴 BREAKING Russian Missiles and Drone Fall in Poland During NATO Exercises Two Russian missiles and a suspected drone came down in Poland on Friday. Prime Minister Donald Tusk said the incident was likely an \"intentional provocation\" timed to coincide with European military exercises in the country for a possible postwar mission in Ukraine. The article tests",
+            "url": "https://mastodon.social/@GeoWire/117654539017139693",
+            "source": "mastodon",
+            "tag": "eu",
+            "seen_date": "Sat, 21 Nov 2026 12:56:33 +0000",
+            "matched_countries": [
+              "poland"
+            ],
+            "country_confidence": {
+              "poland": 5
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 5,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              }
+            ],
+            "geopolitical_score": 113,
+            "quality_score": 118,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Ukraine war briefing: European leaders react with anger and alarm after Russian missiles crash in Poland By Guardian staff and agencies Russian missile and drone incident during western military exercises a ‘grave violation’ of Polish airspace, says Nato’s Rutte. What we know on day 1,732 https://www. theguardian.com/world/2026/nov /21/ukraine-war-briefing-e",
@@ -554,103 +619,11 @@
           },
           {
             "title": "",
-            "text": "🔴 Missile Strike | 10/10 🇵🇱 🇺🇦 🇷🇺 Russian Kh-101 cruise missile impact near Rudnik nad Sanem, Poland - 80 km from Ukraine border Russian Kh-101 cruise missile confirmed impacting near Rudnik nad Sanem in eastern Poland, approximately 80 km from Ukraine border. Polish PM Tusk stated response required for airspace violation. # OSINT # NewsGroup # Poland # NATO",
-            "url": "https://social.vir.group/@analytics/117651033924495347",
+            "text": "Russian missiles crash in Poland = NATO soil. Trump: 'a couple of little missiles, by mistake.' Sure. Two cruise missiles and a drone land right beside 11-nation war games. Same night, 8 civilians die in Ukraine. An 'oops' with a warhead. Stop shrugging USA: reinforce NATO's flank and arm Ukraine's air defence. # Russia # Poland # NATO # Ukraine # Trump # Pu",
+            "url": "https://mastodon.social/@jhlyon/117653790201868050",
             "source": "mastodon",
             "tag": "poland",
-            "seen_date": "Fri, 20 Nov 2026 22:05:09 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 6
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 85,
-            "quality_score": 90,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🟡 Diplomatic Escalation | 8/10 🇵🇱 🇷🇺 🇺🇸 Poland demands response to Russian missile airspace violation; US concerned about escalation Polish PM Tusk states that Russian missile violations of Polish airspace require a response. US expresses escalation concerns. Tusk references previous incidents including 'night of drones' and missile fall in Lublin region. # ",
-            "url": "https://social.vir.group/@analytics/117651202365683777",
-            "source": "mastodon",
-            "tag": "poland",
-            "seen_date": "Fri, 20 Nov 2026 22:47:59 +0000",
-            "matched_countries": [
-              "poland"
-            ],
-            "country_confidence": {
-              "poland": 6
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 4,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 69,
-            "quality_score": 74,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "German Defence Minister Boris Pistorius said on Friday he had apologised ‌for calling Pentagon policy chief Elbridge Colby's opposition to Ukrainian deep strikes into Russia \"stupid\" but that he would not withdraw his criticism. https://www. reuters.com/world/german-minis ter-sorry-calling-pentagon-officials-view-stupid-2026-11-20/ # Ukraine # Russia # US # ",
-            "url": "https://mastodon.social/@hanse_mina/117651720536745577",
-            "source": "mastodon",
-            "tag": "eu",
-            "seen_date": "Sat, 21 Nov 2026 00:59:46 +0000",
+            "seen_date": "Sat, 21 Nov 2026 09:46:07 +0000",
             "matched_countries": [
               "poland"
             ],
@@ -663,7 +636,64 @@
               {
                 "category": "security",
                 "label": "Biztonsági kockázat",
+                "hits": 4,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 4,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
                 "hits": 1,
+                "weight": 7
+              },
+              {
+                "category": "eu_rule_of_law",
+                "label": "EU / jogállamiság",
+                "hits": 1,
+                "weight": 5
+              },
+              {
+                "category": "energy_economy",
+                "label": "Energia és gazdaság",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 99,
+            "quality_score": 104,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "A cargo ship from # Russia was hit by a drone in international waters in the the Gulf of Finland, an arm of the Baltic sea that borders Finland in the north, Estonia in south and Russia in the east. \"#Ukraine has the right to defend themselves against the attacker\", the prime minister of Finland states. The only way Ukraine can have a drone reach this point ",
+            "url": "https://tech.lgbt/@lettosprey/117654370224710510",
+            "source": "mastodon",
+            "tag": "nato",
+            "seen_date": "Sat, 21 Nov 2026 12:13:37 +0000",
+            "matched_countries": [
+              "poland",
+              "estonia"
+            ],
+            "country_confidence": {
+              "poland": 6,
+              "estonia": 2
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 5,
                 "weight": 10
               },
               {
@@ -679,26 +709,14 @@
                 "weight": 8
               },
               {
-                "category": "protest",
-                "label": "Tiltakozás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
                 "category": "foreign_influence",
                 "label": "Külső befolyás",
                 "hits": 1,
                 "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
               }
             ],
-            "geopolitical_score": 68,
-            "quality_score": 73,
+            "geopolitical_score": 99,
+            "quality_score": 104,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -713,20 +731,20 @@
       "name_en": "Slovakia",
       "name_hu": "Szlovákia",
       "social_signal": {
-        "mentions": 12,
-        "negative": 3,
+        "mentions": 13,
+        "negative": 4,
         "positive": 0,
-        "index": 75,
+        "index": 79,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 12,
+        "mastodon_mentions": 13,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 11,
-        "geopolitical_score": 730,
+        "reliable_sources": 12,
+        "geopolitical_score": 770,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 11
+            "count": 12
           },
           {
             "name": "Ukrajna és Oroszország",
@@ -736,16 +754,16 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
-          "security": 11,
+          "security": 12,
           "ukraine_russia": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 788,
+        "quality_total": 833,
         "top_posts": [
           {
             "title": "",
@@ -996,7 +1014,7 @@
             "text": "Poland reports airspace violation during Russian attack on Ukraine # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117648037778256400",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "slovakia",
             "seen_date": "Fri, 20 Nov 2026 09:23:12 +0000",
             "matched_countries": [
               "slovakia",
@@ -1057,20 +1075,20 @@
       "name_en": "Czechia",
       "name_hu": "Csehország",
       "social_signal": {
-        "mentions": 26,
-        "negative": 16,
+        "mentions": 28,
+        "negative": 17,
         "positive": 1,
         "index": 79,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 26,
+        "mastodon_mentions": 28,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 13,
-        "geopolitical_score": 1019,
+        "reliable_sources": 14,
+        "geopolitical_score": 1103,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 11
+            "count": 13
           },
           {
             "name": "Belpolitikai feszültség",
@@ -1088,18 +1106,18 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 26,
+          "mastodon": 28,
           "x": 0
         },
         "category_counts": {
-          "security": 11,
+          "security": 13,
           "protest": 6,
           "ukraine_russia": 2,
           "government_crisis": 7
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 1123,
+        "quality_total": 1215,
         "top_posts": [
           {
             "title": "",
@@ -1350,7 +1368,7 @@
             "text": "Poland reports airspace violation during Russian attack on Ukraine # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
             "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117648037778256400",
             "source": "mastodon",
-            "tag": "hungary",
+            "tag": "slovakia",
             "seen_date": "Fri, 20 Nov 2026 09:23:12 +0000",
             "matched_countries": [
               "slovakia",
@@ -1411,39 +1429,39 @@
       "name_en": "Romania",
       "name_hu": "Románia",
       "social_signal": {
-        "mentions": 5,
-        "negative": 4,
-        "positive": 1,
-        "index": 36,
+        "mentions": 3,
+        "negative": 2,
+        "positive": 0,
+        "index": 28,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 5,
+        "mastodon_mentions": 3,
         "main_social_topic": "Ukrajna és Oroszország",
         "reliable_sources": 0,
-        "geopolitical_score": 106,
+        "geopolitical_score": 69,
         "topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 4
+            "count": 2
           },
           {
-            "name": "EU / jogállamiság",
+            "name": "Belpolitikai feszültség",
             "count": 1
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
-          "ukraine_russia": 4,
-          "eu_rule_of_law": 1
+          "government_crisis": 1,
+          "ukraine_russia": 2
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 121,
+        "quality_total": 78,
         "top_posts": [
           {
             "title": "",
@@ -1496,80 +1514,6 @@
           },
           {
             "title": "",
-            "text": "Content warning: Victorie majoră a politicii externe a administrației Trump bazate pe principiul „America First”. Danemarca… TECHZONE · TECHZONE · 20 nov., 14:05 Parlamentul Danemarcei a ratificat joi, în unanimitate, un acord strategic de securitate cu președintele Donald Trump și cu Statele Unite, extinzând rolul militar al Americii în Groenlanda.. https:/",
-            "url": "https://mastodon.social/@rodispatch/117648669148174291",
-            "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Fri, 20 Nov 2026 12:03:46 +0000",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "label": "Belpolitikai feszültség",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Content warning: Zoe Dantes: Viitorul anunțat înainte să se întâmple: Trilaterala din China TECHZONE · TECHZONE · 20 nov., 14:26 Uneori, istoria nu bate la ușă. Intră direct în salon, se așază la aceeași masă cu cei pe care, până mai ieri, lumea îi privea ca pe adversari ireconciliabili și începe să vorbească despre pace. https://www. activenews.ro/opinii/Zo",
-            "url": "https://mastodon.social/@rodispatch/117648747205402754",
-            "source": "mastodon",
-            "tag": "romania",
-            "seen_date": "Fri, 20 Nov 2026 12:23:37 +0000",
-            "matched_countries": [
-              "romania"
-            ],
-            "country_confidence": {
-              "romania": 1
-            },
-            "event_category": "ukraine_russia",
-            "event_category_label": "Ukrajna és Oroszország",
-            "event_categories": [
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Content warning: CETĂȚENIA DE ONOARE – EXPRESIE A MEMORIEI, IDENTITĂȚII ȘI CONȘTIINȚEI CULTURALE TECHZONE · TECHZONE · 20 nov., 14:17 O perspectivă asupra volumului „CETĂȚEAN DE ONOARE pentru Vaslui, județ, Moldova, România”, vol. I, de Dumitru V. Marin Dumitru V. Marin, profesor doctor, este autorul unei lucrări al cărei titlu propune o temă de profundă sem",
             "url": "https://mastodon.social/@rodispatch/117648747205821502",
             "source": "mastodon",
@@ -1601,29 +1545,29 @@
           },
           {
             "title": "",
-            "text": "🇪🇺 🇷🇴 Industrial growth in Maramureș: At least nine new factories are set to open with significant investment. This is a major economic development for the region. https://www. europafm.ro/maramures-cel-puti n-noua-fabrici-noi-se-vor-deschide-in-judet-investitiile-vor-crea-cateva-sute-de-locuri-de-munca/ # EU # EUEconomics # Romania # Investment",
-            "url": "https://mastodon.social/@EUEconomics/117648262787276448",
+            "text": "📌 From the InfoBuz Archive Ion Iliescu dies at 95 Romania’s first post-communist president, Ion Iliescu, died aged 95 on 5 August 2025 in Bucharest. Read the full story: https://www. infobuz.ro/en/news/ion-iliescu -dies-95/?utm_source=mastodon&utm_medium=social&utm_campaign=evergreen # InfoBuz # Romania",
+            "url": "https://mastodon.social/@infobuz/117653825389996739",
             "source": "mastodon",
             "tag": "romania",
-            "seen_date": "Fri, 20 Nov 2026 10:20:25 +0000",
+            "seen_date": "Sat, 21 Nov 2026 09:55:04 +0000",
             "matched_countries": [
               "romania"
             ],
             "country_confidence": {
-              "romania": 1
+              "romania": 5
             },
-            "event_category": "eu_rule_of_law",
-            "event_category_label": "EU / jogállamiság",
+            "event_category": "government_crisis",
+            "event_category_label": "Belpolitikai feszültség",
             "event_categories": [
               {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
                 "hits": 1,
-                "weight": 5
+                "weight": 8
               }
             ],
-            "geopolitical_score": 6,
-            "quality_score": 9,
+            "geopolitical_score": 8,
+            "quality_score": 11,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1638,40 +1582,86 @@
       "name_en": "Estonia",
       "name_hu": "Észtország",
       "social_signal": {
-        "mentions": 7,
-        "negative": 3,
+        "mentions": 9,
+        "negative": 5,
         "positive": 0,
-        "index": 62,
+        "index": 70,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
+        "mastodon_mentions": 9,
         "main_social_topic": "Biztonsági kockázat",
-        "reliable_sources": 5,
-        "geopolitical_score": 365,
+        "reliable_sources": 7,
+        "geopolitical_score": 536,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 6
-          },
-          {
-            "name": "Kiber és dezinformáció",
-            "count": 1
+            "count": 9
           }
         ],
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
-          "security": 6,
-          "cyber_disinformation": 1
+          "security": 9
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 396,
+        "quality_total": 577,
         "top_posts": [
+          {
+            "title": "",
+            "text": "A cargo ship from # Russia was hit by a drone in international waters in the the Gulf of Finland, an arm of the Baltic sea that borders Finland in the north, Estonia in south and Russia in the east. \"#Ukraine has the right to defend themselves against the attacker\", the prime minister of Finland states. The only way Ukraine can have a drone reach this point ",
+            "url": "https://tech.lgbt/@lettosprey/117654370224710510",
+            "source": "mastodon",
+            "tag": "nato",
+            "seen_date": "Sat, 21 Nov 2026 12:13:37 +0000",
+            "matched_countries": [
+              "poland",
+              "estonia"
+            ],
+            "country_confidence": {
+              "poland": 6,
+              "estonia": 2
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 5,
+                "weight": 10
+              },
+              {
+                "category": "ukraine_russia",
+                "label": "Ukrajna és Oroszország",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "label": "Belpolitikai feszültség",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "label": "Külső befolyás",
+                "hits": 1,
+                "weight": 7
+              }
+            ],
+            "geopolitical_score": 99,
+            "quality_score": 104,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "🇪🇪 # Estonia will close its road border crossings with # Russia on security grounds for at least six months, the Baltic country's government said on Friday, prompting a warning from Moscow that it ​would respond with political and diplomatic measures. https://www. reuters.com/world/estonia-clos e-border-with-russia-least-six-months-2026-11-20/",
@@ -1882,63 +1872,6 @@
             ],
             "geopolitical_score": 61,
             "quality_score": 66,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "https:// youtu.be/mfbfnYR21Fo ⛔️⚠️Ukraine: The Latest | America’s Neville Chamberlin moment as Trump signs document in China with modern day Hitler for “Peace” | MAGA official storms out of Ukraine Council meeting (The Telegraph VIDEO) # Ukraine # Press # UnitedStates # Kyiv # Lithuania # Estonia # Lviv # Kharkiv # Berlin # Brussels # USA # America # France ",
-            "url": "https://mastodon.online/@SocraticEthics/117644987291503993",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Thu, 19 Nov 2026 20:27:25 +0000",
-            "matched_countries": [
-              "estonia",
-              "lithuania"
-            ],
-            "country_confidence": {
-              "estonia": 1,
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "ukraine_russia",
-                "label": "Ukrajna és Oroszország",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "label": "Külső befolyás",
-                "hits": 1,
-                "weight": 7
-              },
-              {
-                "category": "eu_rule_of_law",
-                "label": "EU / jogállamiság",
-                "hits": 1,
-                "weight": 5
-              }
-            ],
-            "geopolitical_score": 55,
-            "quality_score": 60,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -2168,20 +2101,20 @@
       "name_en": "Lithuania",
       "name_hu": "Litvánia",
       "social_signal": {
-        "mentions": 4,
+        "mentions": 3,
         "negative": 0,
         "positive": 0,
-        "index": 27,
+        "index": 24,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 4,
+        "mastodon_mentions": 3,
         "main_social_topic": "Biztonsági kockázat",
         "reliable_sources": 1,
-        "geopolitical_score": 124,
+        "geopolitical_score": 80,
         "topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 3
+            "count": 2
           },
           {
             "name": "Kiber és dezinformáció",
@@ -2191,16 +2124,16 @@
         "source_status": "active",
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
-          "cyber_disinformation": 1,
-          "security": 3
+          "security": 2,
+          "cyber_disinformation": 1
         },
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 138,
+        "quality_total": 91,
         "top_posts": [
           {
             "title": "",
@@ -2261,80 +2194,6 @@
           },
           {
             "title": "",
-            "text": "CW: adatvédelmi incidens — A litván vámhatóság részlegesen helyreállította szolgáltatásait, de a digitális tanúsítványos bejelentkezés még nem működik. A BAP-hoz jogosulatlan hozzáférést észleltek (nov. 9–10.), potenciálisan név, cím, telefonszám, e-mail és személyi azonosító szivárgott. ICS2 is érintett lehet. Vizsgálat folyik. https:// linuxmint.hu/hir/202",
-            "url": "https://mastodon.social/@linuxmint_hun/117644931219225674",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Thu, 19 Nov 2026 20:13:09 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 2,
-                "weight": 10
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Litván vámhatóság részben visszaállt; a BAP (felhasználókezelő) jogosulatlanul hozzáférhetővé vált — a november 9–10-én bejelentkezők adatai (név, lakcím, telef., e‑mail, személyi azonosító) kiszivároghattak. Tanúsítványos bejelentkezés még nem működik, vizsgálat és külső szakértők bevonása folyik. https:// linuxmint.hu/hir/2026/11/reszl egesen-helyrealltak-",
-            "url": "https://mastodon.social/@linuxmint_hun/117644943044334125",
-            "source": "mastodon",
-            "tag": "lithuania",
-            "seen_date": "Thu, 19 Nov 2026 20:16:10 +0000",
-            "matched_countries": [
-              "lithuania"
-            ],
-            "country_confidence": {
-              "lithuania": 1
-            },
-            "event_category": "security",
-            "event_category_label": "Biztonsági kockázat",
-            "event_categories": [
-              {
-                "category": "security",
-                "label": "Biztonsági kockázat",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "cyber_disinformation",
-                "label": "Kiber és dezinformáció",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 29,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Roman Protasevich’s show about his ex Sofia Sapega aired on a Belarusian propaganda channel. She says a man posing as a Novaya Gazeta reporter tried to trick her into an interview in Lithuania. https:// meduza.io/en/feature/2026/11/2 0/roman-protasevich-s-show-about-his-ex-sofia-sapega-aired-on-a-belarusian-propaganda-channel-she-says-a-man-posing-as-a-novay",
             "url": "https://mastodon.social/@meduza_bot/117650365000697719",
             "source": "mastodon",
@@ -2369,12 +2228,170 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Carguero ruso en llamas en el Golfo de Finlandia - militar finlandés confirma huelga de drones https:// yle.fi/a/74-20258256?origin=rss # GolfodeFinlandia # Transportedeagua # Elrestodelmundo # Barcosdecarga # Fletemarítimo # invasiónrusa # Kaliningrad # MarBáltico # Interior # Estonia # Drones # Rusia # Peter",
+            "url": "https://social.koti.site/@rss_bot/117654221644148072",
+            "source": "mastodon",
+            "tag": "estonia",
+            "seen_date": "Sat, 21 Nov 2026 11:35:50 +0000",
+            "matched_countries": [
+              "lithuania"
+            ],
+            "country_confidence": {
+              "lithuania": 4,
+              "estonia": 1
+            },
+            "event_category": "security",
+            "event_category_label": "Biztonsági kockázat",
+            "event_categories": [
+              {
+                "category": "security",
+                "label": "Biztonsági kockázat",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
     }
   ],
   "posts": [
+    {
+      "title": "",
+      "text": "🇪🇺 🇭🇺 Hungary to Boost Salaries for Young Family Doctors from January The government is introducing increased salary support for young family doctors starting in January, aiming to address workforce shortages in the healthcare sector. https://www. portfolio.hu/gazdasag/20261120 /elarulta-az-allamtitkar-januartol-kiemelt-bertamogatast-kapnak-a-fiatal-haziorvo",
+      "url": "https://mastodon.social/@EUEconomics/117654617522420101",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Sat, 21 Nov 2026 13:16:31 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 1
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 14,
+      "quality_score": 17,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Trump intel chief warned no funding for Musk’s SpaceX without answers on Ukraine Starshield slowdown # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark #",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117653713696166292",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Sat, 21 Nov 2026 09:26:39 +0000",
+      "matched_countries": [
+        "slovakia",
+        "czechia",
+        "hungary"
+      ],
+      "country_confidence": {
+        "slovakia": 2,
+        "czechia": 2,
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 40,
+      "quality_score": 45,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🇭🇺 Hungary: European Parliament nowcast (20/11/2026) 21 seats: 🟦 TISZA 15 (EPP) 🟦 Fidesz-KDNP 5 (PfE) 🟦 Mi Hazánk 1 (ESN) Since 2024 by group: EPP +8, PfE −6, S&D −2 🔗 https:// nowcast.eu/en/countries/hungar y/?utm_source=s&utm_medium=ms&utm_campaign=c # EP2029 # nowcasteu # Hungary",
+      "url": "https://mastodon.social/@nowcast_eu/117653493178088909",
+      "source": "mastodon",
+      "tag": "hungary",
+      "seen_date": "Sat, 21 Nov 2026 08:30:34 +0000",
+      "matched_countries": [
+        "hungary"
+      ],
+      "country_confidence": {
+        "hungary": 5
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 13,
+      "quality_score": 16,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
     {
       "title": "",
       "text": "Trump admitted that he is pursuing his own interests in the negotiations with Putin and is NOT representing America's interests # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # F",
@@ -2976,25 +2993,240 @@
     },
     {
       "title": "",
-      "text": "Poland reports airspace violation during Russian attack on Ukraine # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
-      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117648037778256400",
+      "text": "Polish soldiers & civilians began the three-day # LwówPogrom on # ThisDayInHistory in 1918. # Galicia had been # Austrian but was fought over by # Ukraine & # Poland at the end of the war. Having won it, Poles massacred ~150 # Jews & ~200 # Ukrainians , with few killers facing punishment.",
+      "url": "https://mastodon.social/@LiamOMaraIV/117654790179361659",
       "source": "mastodon",
-      "tag": "hungary",
-      "seen_date": "Fri, 20 Nov 2026 09:23:12 +0000",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 14:00:25 +0000",
       "matched_countries": [
-        "slovakia",
-        "czechia",
-        "hungary"
+        "poland"
       ],
       "country_confidence": {
-        "slovakia": 2,
-        "czechia": 2,
-        "hungary": 1,
+        "poland": 2
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 30,
+      "quality_score": 33,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Polish Defense Minister said that 2 # missiles & # jet -powered # drone fell on Polish # territory during # Russia 's overnight attack on Nov. 20 This incident is clearly dangerous. A consequence of Russia’s ongoing war against # Ukraine . I condemn Russia’s attacks as well as its ongoing war # Trump downplayed Russian # incursions into # Poland while speaki",
+      "url": "https://mastodon.scot/@paka/117654731959113284",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 13:45:37 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 4,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 95,
+      "quality_score": 98,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "\"Poland awards 1.81 GW of solar in latest renewables auctions\" # Poland # Energy # Renewables https://www. pv-magazine.com/2026/11/17/pol and-awards-1-81-gw-of-solar-in-latest-renewables-auctions/",
+      "url": "https://mstdn.social/@primonatura/117654553631289666",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 13:00:16 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 16,
+      "quality_score": 19,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🇪🇺 🇵🇱 Foreign firms leave billions in Poland as FDI surges, NBP reveals Foreign direct investment in Poland reached 65.5 billion zł in 2025, up 1.7 billion zł from the previous year. https:// biznes.interia.pl/gospodarka/n ews-zagraniczne-firmy-zostawiaja-w-polsce-miliardy-nbp-ujawnil-s,nId,23576536 # EU # EUEconomics # Poland # Investment",
+      "url": "https://mastodon.social/@EUEconomics/117654432461568050",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 12:29:27 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "eu_rule_of_law",
+      "event_category_label": "EU / jogállamiság",
+      "event_categories": [
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 6,
+      "quality_score": 9,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Mayors want lower house to label missiles that hit Poland as Russian provocation https:// english.radio.cz/mayors-want-l ower-house-label-missiles-hit-poland-russian-provocation-8903229 # Russia # CzechRepublic # Poland # CzechRepublicNews # News # PolandNews # RussiaNews # RussianinvasionofUkraine",
+      "url": "https://mastodon.social/@publicnewsfeed/117654379831521386",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 12:16:04 +0000",
+      "matched_countries": [
+        "poland",
+        "czechia"
+      ],
+      "country_confidence": {
         "poland": 1,
-        "romania": 1,
-        "estonia": 1,
-        "latvia": 1,
-        "lithuania": 1
+        "czechia": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 44,
+      "quality_score": 47,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Deux missiles Russes tombent en Pologne. -\" C'est l'automne!\" # EU # Poland (Cartoon by Mric)",
+      "url": "https://mastodon.social/@hadon/117654375083847358",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 12:14:51 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 15,
+      "quality_score": 18,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Trump calls Putin 'my friend'. Zelensky calls him a killer. Same week: Russian strikes kill nine in Kyiv, wound dozens more, and guided missiles even crash in Poland. 'A great relationship.' Lovely. Perhaps Trump could ask his 'friend' to stop killing innocent citizens? # Trump # Putin # Zelensky # Ukraine # Russia # NATO # Poland # StandWithUkraine ​⁠ https",
+      "url": "https://mastodon.social/@jhlyon/117654165000451414",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 11:21:26 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -3008,7 +3240,166 @@
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 74,
+      "quality_score": 79,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russian missiles crash in Poland = NATO soil. Trump: 'a couple of little missiles, by mistake.' Sure. Two cruise missiles and a drone land right beside 11-nation war games. Same night, 8 civilians die in Ukraine. An 'oops' with a warhead. Stop shrugging USA: reinforce NATO's flank and arm Ukraine's air defence. # Russia # Poland # NATO # Ukraine # Trump # Pu",
+      "url": "https://mastodon.social/@jhlyon/117653790201868050",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 09:46:07 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 4,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 99,
+      "quality_score": 104,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Americans are severely under reacting at this point. For the second time in the past 30 days Musk/Trump block star shield. Ukraine’s message is straightforward: let us use the tools we need to defend our people. President Volodymyr Zelenskyy has challenged restrictions affecting satellite connectivity, saying Ukraine will continue resisting Russia’s invasion",
+      "url": "https://sfba.social/@skykiss/117653649713848058",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 09:10:23 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 69,
+      "quality_score": 72,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🟡 Airspace Violation | 8/10 🇵🇱 🇷🇺 Russian cruise missile violated Polish airspace - not intercepted due to bad weather A Russian cruise missile that entered Polish airspace yesterday could not be intercepted due to bad weather conditions. This was reported by Polish Armed Forces operational commander General Ireneusz Nowak. A Swedish Gripen fighter jet was u",
+      "url": "https://social.vir.group/@analytics/117653427599371545",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 08:13:54 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 2
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
           "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
           "weight": 9
         },
         {
@@ -3024,10 +3415,41 @@
           "weight": 5
         }
       ],
-      "geopolitical_score": 66,
-      "quality_score": 71,
+      "geopolitical_score": 64,
+      "quality_score": 69,
       "source_reliability": 5,
       "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "The Manufaktura shopping center was not as cool as we expected, basically it was a mall like we would find in America built in an old manufacturing site. Photos from our mid September visit to #Poland . It was a great destination and we look forward to returning. Lodz, Lodz Voivodeship, Poland 2026 #UrbanArchitecture #IndustrialBuilding #Cityscape #ModernDes",
+      "url": "https://pixey.org/p/iolaire/1029621216673339282",
+      "source": "mastodon",
+      "tag": "poland",
+      "seen_date": "Sat, 21 Nov 2026 05:07:07 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 1
+      },
+      "event_category": "ukraine_russia",
+      "event_category_label": "Ukrajna és Oroszország",
+      "event_categories": [
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        }
+      ],
+      "geopolitical_score": 12,
+      "quality_score": 15,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -3181,380 +3603,11 @@
     },
     {
       "title": "",
-      "text": "Polish Prime Minister Donald Tusk said Friday that Russian projectiles entering his country’s territory appeared to be part of an “intentional provocation” from Moscow. https://www. politico.eu/article/russian-mi ssile-incursion-into-poland-seems-intentional-tusk-says/ # Ukraine # Russia # EU # Poland",
-      "url": "https://mastodon.social/@hanse_mina/117651795973545865",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Sat, 21 Nov 2026 01:18:57 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 4,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 60,
-      "quality_score": 65,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "# Trump saying of murderous war criminal # Putin \"he's my friend\" outrages many # European leaders, particularly those of # Poland . The Trump/Putin attack on the # ICC is an attempt to protect war criminals like themselves and Netanyahu from prosecution. https://www. nbcnews.com/world/europe/trump -friend-greeting-putin-causes-alarm-europe-ukraine-rcna61037",
-      "url": "https://kolektiva.social/@maeve_bkk/117651402637831333",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 23:38:55 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 26,
-      "quality_score": 29,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🟡 Diplomatic Escalation | 8/10 🇵🇱 🇷🇺 🇺🇸 Poland demands response to Russian missile airspace violation; US concerned about escalation Polish PM Tusk states that Russian missile violations of Polish airspace require a response. US expresses escalation concerns. Tusk references previous incidents including 'night of drones' and missile fall in Lublin region. # ",
-      "url": "https://social.vir.group/@analytics/117651202365683777",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 22:47:59 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 4,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 69,
-      "quality_score": 74,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🔴 Missile Strike | 10/10 🇵🇱 🇺🇦 🇷🇺 Russian Kh-101 cruise missile impact near Rudnik nad Sanem, Poland - 80 km from Ukraine border Russian Kh-101 cruise missile confirmed impacting near Rudnik nad Sanem in eastern Poland, approximately 80 km from Ukraine border. Polish PM Tusk stated response required for airspace violation. # OSINT # NewsGroup # Poland # NATO",
-      "url": "https://social.vir.group/@analytics/117651033924495347",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 22:05:09 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 4,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 3,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 85,
-      "quality_score": 90,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Case of the day: Mercuria Energy v. Poland The case of the day is Mercuria Energy Group Ltd. v. Republic of Poland (D.C. Cir. 2026) . Mercuria had won an arbitration against Poland in Sweden arising out of a fine that Poland had imposed on the company. A Swedish court, though, annulled the award, because EU law “prohibit[s] the enforcement of arbitration awa",
-      "url": "https://lettersblogatory.com/2026/11/20/case-of-the-day-mercuria-energy-v-poland/",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 19:14:31 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
-        }
-      ],
-      "geopolitical_score": 21,
-      "quality_score": 24,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "A female soldier from the Polish Home Army holding a Błyskawica SMG during the Warsaw Uprising, 1944 # ww2 # worldwar2 # warsaw # poland # soldier # 1940s # uprising # history",
-      "url": "https://mastodon.social/@theworldatwar/117650464431885722",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 19:40:19 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 6
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 22,
-      "quality_score": 25,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "BREAKING: Russian cruise missiles STRIKE POLAND! #NATO #Article5 #escalation #Russia #Poland youtu.be/_Ho5WYmwFCw BREAKING: Russia Cruise Missil...",
-      "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:3c5jgoau5nb42r6ecka4pmpw/post/3n2rddtcmts2p",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 19:34:02 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 2,
-          "weight": 9
-        },
-        {
-          "category": "protest",
-          "label": "Tiltakozás",
-          "hits": 1,
-          "weight": 7
-        },
-        {
-          "category": "foreign_influence",
-          "label": "Külső befolyás",
-          "hits": 1,
-          "weight": 7
-        }
-      ],
-      "geopolitical_score": 56,
-      "quality_score": 61,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Trump says Putin launched a couple of small missiles into Poland by accident — ‘a couple of little missiles’ https:// meduza.io/en/news/2026/11/20/t rump-says-putin-launched-a-couple-of-small-missiles-into-poland-by-accident-a-couple-of-little-missiles # Meduza # Poland # Putin",
-      "url": "https://mastodon.social/@meduza_bot/117650011232415541",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 17:45:04 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        }
-      ],
-      "geopolitical_score": 10,
-      "quality_score": 13,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "This was an interesting flower-like mushroom, sort of hard to take a focused photo of, but cool. Photos from our mid September visit to #Poland . It was a great destination and we look forward to returning. Lodz, Lodz Voivodeship, Poland 2026 #MushroomForaging #WildMushrooms #NaturePhotography #OutdoorAdventure #FungiFun",
-      "url": "https://pixey.org/p/iolaire/1029424957481064252",
-      "source": "mastodon",
-      "tag": "poland",
-      "seen_date": "Fri, 20 Nov 2026 16:07:15 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        }
-      ],
-      "geopolitical_score": 12,
-      "quality_score": 15,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Coalition of the Willing calls on Russia to accept winter energy truce # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Is",
-      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117645386107677290",
+      "text": "Poland reports airspace violation during Russian attack on Ukraine # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Israel",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117648037778256400",
       "source": "mastodon",
       "tag": "slovakia",
-      "seen_date": "Thu, 19 Nov 2026 22:08:50 +0000",
+      "seen_date": "Fri, 20 Nov 2026 09:23:12 +0000",
       "matched_countries": [
         "slovakia",
         "czechia",
@@ -3576,7 +3629,7 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 1,
+          "hits": 2,
           "weight": 10
         },
         {
@@ -3584,12 +3637,6 @@
           "label": "Ukrajna és Oroszország",
           "hits": 3,
           "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
         },
         {
           "category": "foreign_influence",
@@ -3602,68 +3649,10 @@
           "label": "EU / jogállamiság",
           "hits": 1,
           "weight": 5
-        },
-        {
-          "category": "energy_economy",
-          "label": "Energia és gazdaság",
-          "hits": 1,
-          "weight": 4
         }
       ],
-      "geopolitical_score": 65,
-      "quality_score": 70,
-      "source_reliability": 5,
-      "trusted_source_hint": true,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Trump presses European leaders about Ukraine aid in call after Putin summit # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain",
-      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117644971362604839",
-      "source": "mastodon",
-      "tag": "slovakia",
-      "seen_date": "Thu, 19 Nov 2026 20:23:22 +0000",
-      "matched_countries": [
-        "slovakia",
-        "czechia",
-        "hungary"
-      ],
-      "country_confidence": {
-        "slovakia": 2,
-        "czechia": 2,
-        "hungary": 1,
-        "poland": 1,
-        "romania": 1,
-        "estonia": 1,
-        "latvia": 1,
-        "lithuania": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 28,
-      "quality_score": 33,
+      "geopolitical_score": 66,
+      "quality_score": 71,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
@@ -4242,6 +4231,37 @@
     },
     {
       "title": "",
+      "text": "📌 From the InfoBuz Archive Ion Iliescu dies at 95 Romania’s first post-communist president, Ion Iliescu, died aged 95 on 5 August 2025 in Bucharest. Read the full story: https://www. infobuz.ro/en/news/ion-iliescu -dies-95/?utm_source=mastodon&utm_medium=social&utm_campaign=evergreen # InfoBuz # Romania",
+      "url": "https://mastodon.social/@infobuz/117653825389996739",
+      "source": "mastodon",
+      "tag": "romania",
+      "seen_date": "Sat, 21 Nov 2026 09:55:04 +0000",
+      "matched_countries": [
+        "romania"
+      ],
+      "country_confidence": {
+        "romania": 5
+      },
+      "event_category": "government_crisis",
+      "event_category_label": "Belpolitikai feszültség",
+      "event_categories": [
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        }
+      ],
+      "geopolitical_score": 8,
+      "quality_score": 11,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
       "text": "🇷🇺 🇷🇴 # Russia ’s Foreign Ministry said Friday it has summoned # Romania ’s ambassador in Moscow to protest Bucharest’s refusal to grant visas to a Russian youth taekwondo team ahead of an upcoming European championship. https://www. themoscowtimes.com/2026/11/20/ russia-summons-romanian-ambassador-over-youth-athletes-visa-denial-a94336",
       "url": "https://mastodon.social/@rvps2001/117649858895408719",
       "source": "mastodon",
@@ -4322,20 +4342,107 @@
     },
     {
       "title": "",
-      "text": "Content warning: Zoe Dantes: Viitorul anunțat înainte să se întâmple: Trilaterala din China TECHZONE · TECHZONE · 20 nov., 14:26 Uneori, istoria nu bate la ușă. Intră direct în salon, se așază la aceeași masă cu cei pe care, până mai ieri, lumea îi privea ca pe adversari ireconciliabili și începe să vorbească despre pace. https://www. activenews.ro/opinii/Zo",
-      "url": "https://mastodon.social/@rodispatch/117648747205402754",
+      "text": "Russian cargo ship on fire in Gulf of Finland after reported drone strike A fire broke out aboard the Russian dry cargo ship Sparta II in the Gulf of Finland on Saturday morning, with Russian officials claiming the vessel was struck by two drones. https:// news.err.ee/1610202715/russian -cargo-ship-on-fire-in-gulf-of-finland-after-reported-drone-strike # Rus",
+      "url": "https://mastodon.social/@publicnewsfeed/117654615718070652",
       "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Fri, 20 Nov 2026 12:23:37 +0000",
+      "tag": "estonia",
+      "seen_date": "Sat, 21 Nov 2026 13:16:03 +0000",
       "matched_countries": [
-        "romania"
+        "estonia"
       ],
       "country_confidence": {
-        "romania": 1
+        "estonia": 2
       },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
       "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 2,
+          "weight": 9
+        },
+        {
+          "category": "protest",
+          "label": "Tiltakozás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 42,
+      "quality_score": 45,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Carguero ruso en llamas en el Golfo de Finlandia - militar finlandés confirma huelga de drones https:// yle.fi/a/74-20258256?origin=rss # GolfodeFinlandia # Transportedeagua # Elrestodelmundo # Barcosdecarga # Fletemarítimo # invasiónrusa # Kaliningrad # MarBáltico # Interior # Estonia # Drones # Rusia # Peter",
+      "url": "https://social.koti.site/@rss_bot/117654221644148072",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Sat, 21 Nov 2026 11:35:50 +0000",
+      "matched_countries": [
+        "lithuania"
+      ],
+      "country_confidence": {
+        "lithuania": 4,
+        "estonia": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        }
+      ],
+      "geopolitical_score": 10,
+      "quality_score": 13,
+      "source_reliability": 3,
+      "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russia complains of ‘new Iron Curtain’ as Estonia shuts its borders Tallinn's decision to shut road border crossings comes after an attack on a drone manufacturer. https://www. aljazeera.com/news/2026/11/20/ russia-complains-of-new-iron-curtain-as-estonia-shuts-its-borders # TopNews # News # Estonia # Russia # Tallinn",
+      "url": "https://mastodon.social/@top_news/117653910854962121",
+      "source": "mastodon",
+      "tag": "estonia",
+      "seen_date": "Sat, 21 Nov 2026 10:16:48 +0000",
+      "matched_countries": [
+        "estonia"
+      ],
+      "country_confidence": {
+        "estonia": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 2,
+          "weight": 10
+        },
         {
           "category": "ukraine_russia",
           "label": "Ukrajna és Oroszország",
@@ -4349,78 +4456,10 @@
           "weight": 7
         }
       ],
-      "geopolitical_score": 19,
-      "quality_score": 22,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "Content warning: Victorie majoră a politicii externe a administrației Trump bazate pe principiul „America First”. Danemarca… TECHZONE · TECHZONE · 20 nov., 14:05 Parlamentul Danemarcei a ratificat joi, în unanimitate, un acord strategic de securitate cu președintele Donald Trump și cu Statele Unite, extinzând rolul militar al Americii în Groenlanda.. https:/",
-      "url": "https://mastodon.social/@rodispatch/117648669148174291",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Fri, 20 Nov 2026 12:03:46 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 1
-      },
-      "event_category": "ukraine_russia",
-      "event_category_label": "Ukrajna és Oroszország",
-      "event_categories": [
-        {
-          "category": "ukraine_russia",
-          "label": "Ukrajna és Oroszország",
-          "hits": 1,
-          "weight": 9
-        },
-        {
-          "category": "government_crisis",
-          "label": "Belpolitikai feszültség",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 20,
-      "quality_score": 23,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "🇪🇺 🇷🇴 Industrial growth in Maramureș: At least nine new factories are set to open with significant investment. This is a major economic development for the region. https://www. europafm.ro/maramures-cel-puti n-noua-fabrici-noi-se-vor-deschide-in-judet-investitiile-vor-crea-cateva-sute-de-locuri-de-munca/ # EU # EUEconomics # Romania # Investment",
-      "url": "https://mastodon.social/@EUEconomics/117648262787276448",
-      "source": "mastodon",
-      "tag": "romania",
-      "seen_date": "Fri, 20 Nov 2026 10:20:25 +0000",
-      "matched_countries": [
-        "romania"
-      ],
-      "country_confidence": {
-        "romania": 1
-      },
-      "event_category": "eu_rule_of_law",
-      "event_category_label": "EU / jogállamiság",
-      "event_categories": [
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 6,
-      "quality_score": 9,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
+      "geopolitical_score": 43,
+      "quality_score": 48,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -4692,43 +4731,6 @@
     },
     {
       "title": "",
-      "text": "\"Supermarkets in at least half a dozen European countries, including # Sweden , # Belgium , # Luxembourg , # Ireland , # Italy and # Estonia , reported problems on Monday. \"It wasn’t just big chains. \"The owner of a butcher shop in Athens told private Greek Skai TV Tuesday that someone hacked into the temperature control of a refrigeration unit, raising the ",
-      "url": "https://kolektiva.social/@DoomsdaysCW/117645400672028676",
-      "source": "mastodon",
-      "tag": "estonia",
-      "seen_date": "Thu, 19 Nov 2026 22:12:33 +0000",
-      "matched_countries": [
-        "estonia"
-      ],
-      "country_confidence": {
-        "estonia": 1
-      },
-      "event_category": "cyber_disinformation",
-      "event_category_label": "Kiber és dezinformáció",
-      "event_categories": [
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        },
-        {
-          "category": "eu_rule_of_law",
-          "label": "EU / jogállamiság",
-          "hits": 1,
-          "weight": 5
-        }
-      ],
-      "geopolitical_score": 13,
-      "quality_score": 16,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
       "text": "🇪🇺 🇱🇻 Fewer Documents, More Secure Transactions Latvian businesses are adopting digital solutions to streamline processes and enhance transaction security, reflecting broader trends in digital transformation and regulatory compliance in the financial sector. https:// db.lv/zinas/mazak-dokumentu-va irak-drosu-darijumu # EU # EUEconomics # Latvia # Investment ",
       "url": "https://mastodon.social/@EUEconomics/117648584644167623",
       "source": "mastodon",
@@ -4797,6 +4799,128 @@
       "quality_score": 17,
       "source_reliability": 3,
       "trusted_source_hint": false,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Coalition of the Willing calls on Russia to accept winter energy truce # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain # Is",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117645386107677290",
+      "source": "mastodon",
+      "tag": "latvia",
+      "seen_date": "Thu, 19 Nov 2026 22:08:50 +0000",
+      "matched_countries": [
+        "slovakia",
+        "czechia",
+        "hungary"
+      ],
+      "country_confidence": {
+        "slovakia": 2,
+        "czechia": 2,
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 3,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        },
+        {
+          "category": "energy_economy",
+          "label": "Energia és gazdaság",
+          "hits": 1,
+          "weight": 4
+        }
+      ],
+      "geopolitical_score": 65,
+      "quality_score": 70,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Trump presses European leaders about Ukraine aid in call after Putin summit # Ukraine # USA # UK # EU # Europe # Czechia # Poland # Lithuania # Latvia # Estonia # Germany # France # Austria # Hungary # Romania # Slovakia # Japan # Taiwan # Australia # Switzerland # Canada # Italy # Ireland # Netherlands # Finland # Sweden # Denmark # Iceland # Norway # Spain",
+      "url": "https://social.kyiv.dcomm.net.ua/@September_UA/117644971362604839",
+      "source": "mastodon",
+      "tag": "latvia",
+      "seen_date": "Thu, 19 Nov 2026 20:23:22 +0000",
+      "matched_countries": [
+        "slovakia",
+        "czechia",
+        "hungary"
+      ],
+      "country_confidence": {
+        "slovakia": 2,
+        "czechia": 2,
+        "hungary": 1,
+        "poland": 1,
+        "romania": 1,
+        "estonia": 1,
+        "latvia": 1,
+        "lithuania": 1
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 1,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 1,
+          "weight": 9
+        },
+        {
+          "category": "eu_rule_of_law",
+          "label": "EU / jogállamiság",
+          "hits": 1,
+          "weight": 5
+        }
+      ],
+      "geopolitical_score": 28,
+      "quality_score": 33,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
       "engagement": 0,
       "raw_engagement": 0,
       "quality": "rss_filtered"
@@ -4934,16 +5058,18 @@
     },
     {
       "title": "",
-      "text": "Litván vámhatóság részben visszaállt; a BAP (felhasználókezelő) jogosulatlanul hozzáférhetővé vált — a november 9–10-én bejelentkezők adatai (név, lakcím, telef., e‑mail, személyi azonosító) kiszivároghattak. Tanúsítványos bejelentkezés még nem működik, vizsgálat és külső szakértők bevonása folyik. https:// linuxmint.hu/hir/2026/11/reszl egesen-helyrealltak-",
-      "url": "https://mastodon.social/@linuxmint_hun/117644943044334125",
+      "text": "A cargo ship from # Russia was hit by a drone in international waters in the the Gulf of Finland, an arm of the Baltic sea that borders Finland in the north, Estonia in south and Russia in the east. \"#Ukraine has the right to defend themselves against the attacker\", the prime minister of Finland states. The only way Ukraine can have a drone reach this point ",
+      "url": "https://tech.lgbt/@lettosprey/117654370224710510",
       "source": "mastodon",
-      "tag": "lithuania",
-      "seen_date": "Thu, 19 Nov 2026 20:16:10 +0000",
+      "tag": "nato",
+      "seen_date": "Sat, 21 Nov 2026 12:13:37 +0000",
       "matched_countries": [
-        "lithuania"
+        "poland",
+        "estonia"
       ],
       "country_confidence": {
-        "lithuania": 1
+        "poland": 6,
+        "estonia": 2
       },
       "event_category": "security",
       "event_category_label": "Biztonsági kockázat",
@@ -4951,81 +5077,7 @@
         {
           "category": "security",
           "label": "Biztonsági kockázat",
-          "hits": 1,
-          "weight": 10
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 2,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 26,
-      "quality_score": 29,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "CW: adatvédelmi incidens — A litván vámhatóság részlegesen helyreállította szolgáltatásait, de a digitális tanúsítványos bejelentkezés még nem működik. A BAP-hoz jogosulatlan hozzáférést észleltek (nov. 9–10.), potenciálisan név, cím, telefonszám, e-mail és személyi azonosító szivárgott. ICS2 is érintett lehet. Vizsgálat folyik. https:// linuxmint.hu/hir/202",
-      "url": "https://mastodon.social/@linuxmint_hun/117644931219225674",
-      "source": "mastodon",
-      "tag": "lithuania",
-      "seen_date": "Thu, 19 Nov 2026 20:13:09 +0000",
-      "matched_countries": [
-        "lithuania"
-      ],
-      "country_confidence": {
-        "lithuania": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 2,
-          "weight": 10
-        },
-        {
-          "category": "cyber_disinformation",
-          "label": "Kiber és dezinformáció",
-          "hits": 1,
-          "weight": 8
-        }
-      ],
-      "geopolitical_score": 28,
-      "quality_score": 31,
-      "source_reliability": 3,
-      "trusted_source_hint": false,
-      "engagement": 0,
-      "raw_engagement": 0,
-      "quality": "rss_filtered"
-    },
-    {
-      "title": "",
-      "text": "German Defence Minister Boris Pistorius said on Friday he had apologised ‌for calling Pentagon policy chief Elbridge Colby's opposition to Ukrainian deep strikes into Russia \"stupid\" but that he would not withdraw his criticism. https://www. reuters.com/world/german-minis ter-sorry-calling-pentagon-officials-view-stupid-2026-11-20/ # Ukraine # Russia # US # ",
-      "url": "https://mastodon.social/@hanse_mina/117651720536745577",
-      "source": "mastodon",
-      "tag": "eu",
-      "seen_date": "Sat, 21 Nov 2026 00:59:46 +0000",
-      "matched_countries": [
-        "poland"
-      ],
-      "country_confidence": {
-        "poland": 1
-      },
-      "event_category": "security",
-      "event_category_label": "Biztonsági kockázat",
-      "event_categories": [
-        {
-          "category": "security",
-          "label": "Biztonsági kockázat",
-          "hits": 1,
+          "hits": 5,
           "weight": 10
         },
         {
@@ -5041,10 +5093,96 @@
           "weight": 8
         },
         {
-          "category": "protest",
-          "label": "Tiltakozás",
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
           "hits": 1,
           "weight": 7
+        }
+      ],
+      "geopolitical_score": 99,
+      "quality_score": 104,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "Russian missiles hit Poland: What happened, and could NATO respond? Warsaw accuses Moscow of intentional provocation, but bar for triggering NATO's collective defence clause remains high. https://www. aljazeera.com/news/2026/11/21/ russian-missiles-hit-poland-what-happened-and-could-nato-respond # TopNews # News # NATO # Russia # Ukraine",
+      "url": "https://mastodon.social/@top_news/117654226215038228",
+      "source": "mastodon",
+      "tag": "nato",
+      "seen_date": "Sat, 21 Nov 2026 11:37:00 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 3,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 5,
+          "weight": 9
+        },
+        {
+          "category": "foreign_influence",
+          "label": "Külső befolyás",
+          "hits": 1,
+          "weight": 7
+        }
+      ],
+      "geopolitical_score": 89,
+      "quality_score": 94,
+      "source_reliability": 5,
+      "trusted_source_hint": true,
+      "engagement": 0,
+      "raw_engagement": 0,
+      "quality": "rss_filtered"
+    },
+    {
+      "title": "",
+      "text": "🔴 BREAKING Russian Missiles and Drone Fall in Poland During NATO Exercises Two Russian missiles and a suspected drone came down in Poland on Friday. Prime Minister Donald Tusk said the incident was likely an \"intentional provocation\" timed to coincide with European military exercises in the country for a possible postwar mission in Ukraine. The article tests",
+      "url": "https://mastodon.social/@GeoWire/117654539017139693",
+      "source": "mastodon",
+      "tag": "eu",
+      "seen_date": "Sat, 21 Nov 2026 12:56:33 +0000",
+      "matched_countries": [
+        "poland"
+      ],
+      "country_confidence": {
+        "poland": 5
+      },
+      "event_category": "security",
+      "event_category_label": "Biztonsági kockázat",
+      "event_categories": [
+        {
+          "category": "security",
+          "label": "Biztonsági kockázat",
+          "hits": 5,
+          "weight": 10
+        },
+        {
+          "category": "ukraine_russia",
+          "label": "Ukrajna és Oroszország",
+          "hits": 4,
+          "weight": 9
+        },
+        {
+          "category": "government_crisis",
+          "label": "Belpolitikai feszültség",
+          "hits": 1,
+          "weight": 8
         },
         {
           "category": "foreign_influence",
@@ -5059,8 +5197,8 @@
           "weight": 5
         }
       ],
-      "geopolitical_score": 68,
-      "quality_score": 73,
+      "geopolitical_score": 113,
+      "quality_score": 118,
       "source_reliability": 5,
       "trusted_source_hint": true,
       "engagement": 0,
