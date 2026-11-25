@@ -1,25 +1,29 @@
 {
-  "last_update": "2026-11-25T01:51:56.693173+00:00",
+  "last_update": "2026-11-25T16:38:34.853959+00:00",
   "source": "latest_status.json + raw_news.json + security_overlay.json + social_overlay.json",
   "regional_summary": {
     "regional_risk_score": 90,
-    "regional_social_score": 63,
+    "regional_social_score": 59,
     "top_regional_narratives": [
       {
         "name": "EU-politika, jogállamiság és uniós források",
-        "score": 295
+        "score": 311
       },
       {
         "name": "Ukrajna támogatása és orosz–ukrán háború",
-        "score": 288
+        "score": 284
       },
       {
         "name": "NATO keleti szárny és katonai elrettentés",
-        "score": 262
+        "score": 269
       },
       {
         "name": "Belpolitikai feszültség és választási dinamika",
-        "score": 152
+        "score": 158
+      },
+      {
+        "name": "Energiabiztonság, gazdaság és infrastruktúra",
+        "score": 17
       }
     ]
   },
@@ -37,24 +41,50 @@
       "dominant_narratives": [
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 103,
+          "score": 105,
           "sub_narratives": [
             {
               "name": "EU-s döntéshozatali konfliktus",
-              "score": 12
-            },
-            {
-              "name": "korrupció és intézményi bizalom",
-              "score": 1
+              "score": 15
             }
           ]
         },
         {
           "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 34,
+          "score": 29,
           "sub_narratives": [
             {
               "name": "szankciós politika",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "name": "Belpolitikai feszültség és választási dinamika",
+          "score": 28,
+          "sub_narratives": [
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 10
+            },
+            {
+              "name": "kormány–ellenzék konfliktus",
+              "score": 8
+            },
+            {
+              "name": "választási kampány és politikai verseny",
+              "score": 7
+            },
+            {
+              "name": "tüntetések és utcai mobilizáció",
+              "score": 1
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 1
+            },
+            {
+              "name": "médiaszabadság és civil szféra",
               "score": 1
             }
           ]
@@ -64,51 +94,17 @@
           "score": 15,
           "sub_narratives": [
             {
-              "name": "légtérellenőrzés és légvédelem",
-              "score": 2
-            },
-            {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 2
-            },
-            {
-              "name": "balti elrettentés",
-              "score": 2
-            }
-          ]
-        },
-        {
-          "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 14,
-          "sub_narratives": [
-            {
-              "name": "választási kampány és politikai verseny",
-              "score": 6
-            },
-            {
-              "name": "parlamenti válság vagy kormányválság",
-              "score": 5
-            },
-            {
-              "name": "tüntetések és utcai mobilizáció",
-              "score": 4
-            },
-            {
-              "name": "kormány–ellenzék konfliktus",
-              "score": 3
-            },
-            {
-              "name": "korrupciós ügyek",
               "score": 1
             },
             {
-              "name": "igazságszolgáltatási vita",
+              "name": "balti elrettentés",
               "score": 1
             }
           ]
         }
       ],
-      "narrative_summary": "A domináns stratégiai narratíva jelenleg: EU-politika, jogállamiság és uniós források. A legerősebb alnarratívák: EU-s döntéshozatali konfliktus, korrupció és intézményi bizalom.",
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: EU-politika, jogállamiság és uniós források. A legerősebb alnarratívák: EU-s döntéshozatali konfliktus.",
       "top_narrative_drivers": [
         {
           "title": "UK to brief defence chiefs on Russian sabotage threat",
@@ -121,12 +117,6 @@
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/eu-targets-russian-athletes-soldiers-in-fresh-sanctions-package/",
           "score": 9
-        },
-        {
-          "title": "MI5 warns UK defense firms they are target of Russian attacks",
-          "source": "Politico Europe",
-          "url": "https://www.politico.eu/article/mi5-warns-uk-defense-firms-they-are-target-of-russian-attacks/",
-          "score": 8
         },
         {
           "title": "THE HACK: Digital tax plan back in play",
@@ -145,6 +135,12 @@
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/ukraine-france-renew-push-for-kyivs-nato-membership/",
           "score": 8
+        },
+        {
+          "title": "‘Putin escalates, EU cuts’: Kubilius warns over defence MFF reduction",
+          "source": "Euractiv",
+          "url": "https://www.rapporteur.com/news/putin-escalates-eu-cuts-kubilius-warns-over-defence-mff-reduction/",
+          "score": 7
         }
       ],
       "security_layer": {
@@ -154,20 +150,20 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 64,
-        "social_mentions": 19,
+        "social_index": 67,
+        "social_mentions": 21,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 19,
+        "mastodon_mentions": 21,
         "social_topic": "Biztonsági kockázat",
         "social_topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 10
+            "count": 13
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 9
+            "count": 8
           }
         ]
       },
@@ -355,31 +351,17 @@
       ],
       "top_articles": [
         {
-          "title": "Dispute over bird nests threatens to derail centrist peace talks in EU Parliament",
-          "url": "https://www.politico.eu/article/dispute-over-bird-nests-threatens-to-derail-centrist-peace-talks-in-eu-parliament/",
+          "title": "EU rejects Trump’s case for new tariffs",
+          "url": "https://www.politico.eu/article/eu-rejects-donald-trump-case-for-new-tariffs/",
           "source": "Politico Europe",
-          "seen_date": "2026-11-24T16:15:45+00:00",
+          "seen_date": "2026-11-25T15:48:14+00:00",
           "origin": "RSS"
         },
         {
-          "title": "COP must change after Antalya failure, UK climate chief warns",
-          "url": "https://www.politico.eu/article/rachel-kyte-cop-change-antalya-failure/",
+          "title": "Der Kampf um die „Remigration“",
+          "url": "https://www.politico.eu/podcast/inside-afd/der-kampf-um-die-remigration/",
           "source": "Politico Europe",
-          "seen_date": "2026-11-24T15:17:01+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Wildberger reagiert skeptisch auf Weimers TikTok-Vorstoß",
-          "url": "https://www.politico.eu/article/wildberger-reagiert-skeptisch-auf-weimers-tiktok-vorstoss/",
-          "source": "Politico Europe",
-          "seen_date": "2026-11-24T13:36:11+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "MI5 warns UK defense firms they are target of Russian attacks",
-          "url": "https://www.politico.eu/article/mi5-warns-uk-defense-firms-they-are-target-of-russian-attacks/",
-          "source": "Politico Europe",
-          "seen_date": "2026-11-24T13:30:17+00:00",
+          "seen_date": "2026-11-25T14:11:21+00:00",
           "origin": "RSS"
         },
         {
@@ -390,24 +372,38 @@
           "origin": "RSS"
         },
         {
-          "title": "EU clinical trials reform support grows, as industry calls for consistent investment signals [Partner Content]",
-          "url": "https://www.rapporteur.com/news/eu-clinical-trials-reform-support-grows-as-industry-calls-for-consistent-investment-signals/",
+          "title": "From steel to coffee: why Europe needs an integrated climate-trade strategy [Promoted Content]",
+          "url": "https://www.rapporteur.com/opinion/from-steel-to-coffee-why-europe-needs-an-integrated-climate-trade-strategy/",
           "source": "Euractiv",
-          "seen_date": "2026-11-23T12:30:31+00:00",
+          "seen_date": "2026-11-25T15:00:04+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Solving Europe’s defence funding gap [Partner Content]",
-          "url": "https://www.rapporteur.com/news/solving-europes-defence-funding-gap/",
+          "title": "Slovenia presses Belgrade for spy archives in Kos row",
+          "url": "https://www.rapporteur.com/news/slovenia-presses-belgrade-for-spy-archives-in-kos-row/",
           "source": "Euractiv",
-          "seen_date": "2026-11-23T08:30:44+00:00",
+          "seen_date": "2026-11-25T14:52:15+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Magyar offers Ukraine aid but holds firm on EU budget dispute",
-          "url": "https://www.rapporteur.com/news/magyar-offers-ukraine-aid-but-holds-firm-on-eu-budget-dispute/",
+          "title": "Parliament adopts pharma overhaul amid industry warnings",
+          "url": "https://www.rapporteur.com/news/parliament-adopts-pharma-overhaul-amid-industry-warnings/",
           "source": "Euractiv",
-          "seen_date": "2026-11-24T19:58:12+00:00",
+          "seen_date": "2026-11-25T14:15:17+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "‘Putin escalates, EU cuts’: Kubilius warns over defence MFF reduction",
+          "url": "https://www.rapporteur.com/news/putin-escalates-eu-cuts-kubilius-warns-over-defence-mff-reduction/",
+          "source": "Euractiv",
+          "seen_date": "2026-11-25T13:12:25+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Enforce AI nudifier ban, MEPs warn",
+          "url": "https://www.rapporteur.com/news/enforce-ai-nudifier-ban-meps-warn/",
+          "source": "Euractiv",
+          "seen_date": "2026-11-25T13:11:29+00:00",
           "origin": "RSS"
         }
       ]
@@ -421,11 +417,11 @@
       "political_mood": "ALERT",
       "security_trend": "RISING",
       "main_topic": "NATO keleti szárny és katonai elrettentés",
-      "article_count": 81,
+      "article_count": 90,
       "dominant_narratives": [
         {
           "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 55,
+          "score": 56,
           "sub_narratives": [
             {
               "name": "orosz diplomáciai nyomás",
@@ -435,25 +431,29 @@
         },
         {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 51,
+          "score": 49,
           "sub_narratives": [
             {
-              "name": "balti elrettentés",
-              "score": 11
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 10
             },
             {
-              "name": "védelmi kiadások és fegyverbeszerzés",
+              "name": "balti elrettentés",
               "score": 9
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 4
+              "score": 3
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
             }
           ]
         },
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 29,
+          "score": 34,
           "sub_narratives": [
             {
               "name": "korrupció és intézményi bizalom",
@@ -463,27 +463,27 @@
         },
         {
           "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 17,
+          "score": 19,
           "sub_narratives": [
             {
               "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 34
+              "score": 31
             },
             {
               "name": "kormány–ellenzék konfliktus",
+              "score": 7
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 6
+            },
+            {
+              "name": "igazságszolgáltatási vita",
               "score": 6
             },
             {
               "name": "tüntetések és utcai mobilizáció",
               "score": 4
-            },
-            {
-              "name": "parlamenti válság vagy kormányválság",
-              "score": 4
-            },
-            {
-              "name": "választási kampány és politikai verseny",
-              "score": 2
             },
             {
               "name": "médiaszabadság és civil szféra",
@@ -501,16 +501,22 @@
           "score": 11
         },
         {
-          "title": "Peace in Ukraine wont end Russian sabotage in Europe , Poland warns – POLITICO",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/ukraine-peace-wont-end-russian-sabotage-in-europe-poland-warns/",
+          "title": "Rutte a îndemnat NATO să pregătească și populația civilă pentru un eventual conflict cu Rusia. Ce spune despre România",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/rutte-a-indemnat-nato-sa-pregateasca-nu-doar-armatele-ci-si-populatia-civila-pentru-un-eventual-conflict-cu-rusia-4051649",
           "score": 9
         },
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
           "score": 9
+        },
+        {
+          "title": "Poland renews push for permanent US troops after Russian incursions",
+          "source": "foxnews.com",
+          "url": "https://www.foxnews.com/world/nato-jet-cleared-shoot-russian-missile-poland-warsaw-pushes-us-troops",
+          "score": 8
         },
         {
           "title": "Like Sánchez, Spanish opposition stalls on NATO defence target",
@@ -523,12 +529,6 @@
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/ukraine-france-renew-push-for-kyivs-nato-membership/",
           "score": 8
-        },
-        {
-          "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
-          "score": 8
         }
       ],
       "security_layer": {
@@ -539,26 +539,30 @@
       },
       "social_layer": {
         "social_index": 82,
-        "social_mentions": 28,
+        "social_mentions": 23,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 28,
-        "social_topic": "Ukrajna és Oroszország",
+        "mastodon_mentions": 23,
+        "social_topic": "Biztonsági kockázat",
         "social_topics": [
           {
-            "name": "Ukrajna és Oroszország",
-            "count": 18
-          },
-          {
             "name": "Biztonsági kockázat",
-            "count": 7
+            "count": 11
           },
           {
-            "name": "EU / jogállamiság",
-            "count": 2
+            "name": "Ukrajna és Oroszország",
+            "count": 8
           },
           {
             "name": "Belpolitikai feszültség",
+            "count": 2
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
+          },
+          {
+            "name": "Külső befolyás",
             "count": 1
           }
         ]
@@ -742,15 +746,29 @@
           "date": "2026-11-25",
           "risk_score": 90,
           "social_signal": 0,
-          "article_count": 81
+          "article_count": 90
         }
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T14:18:56+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T09:17:19+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T05:00:36+00:00",
           "origin": "RSS"
         },
         {
@@ -775,31 +793,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Public astronomical observatory opens in Warsaw",
-          "url": "https://notesfrompoland.com/2026/11/23/public-astronomical-observatory-opens-in-warsaw/",
+          "title": "Warsaw orders protest outside constitutional court to end",
+          "url": "https://notesfrompoland.com/2026/11/25/warsaw-orders-protest-outside-constitutional-court-to-end/",
           "source": "Notes from Poland",
-          "seen_date": "2026-11-23T13:20:59+00:00",
+          "seen_date": "2026-11-25T13:10:45+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Two Russian missiles and a drone hit Poland",
-          "url": "https://notesfrompoland.com/2026/11/20/unidentified-object-hits-poland-amid-russian-attacks-on-western-ukraine/",
+          "title": "Russia denies its missiles hit Poland and accuses Warsaw of “stoking anti-Russian sentiment”",
+          "url": "https://notesfrompoland.com/2026/11/25/russia-denies-its-missiles-hit-poland-and-accuses-warsaw-of-stoking-anti-russian-sentiment/",
           "source": "Notes from Poland",
-          "seen_date": "2026-11-20T09:30:31+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "„A fost o criză uriașă”. Radu Miruță a dat detalii despre intervenția Armatei Române pentru a distruge drona de lângă Neptun Deep",
-          "url": "https://www.digi24.ro/stiri/a-fost-o-criza-uriasa-radu-miruta-a-dat-detalii-despre-interventia-armatei-romane-pentru-a-distruge-drona-de-langa-neptun-deep-4050647",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T12:27:45+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Merz consideră o greșeală refuzul de a permite Ucrainei să adere la NATO în 2008: „Acest război ar fi putut fi probabil prevenit”",
-          "url": "https://www.digi24.ro/stiri/externe/ue/merz-considera-o-greseala-refuzul-de-a-permite-ucrainei-sa-adere-la-nato-in-2008-acest-razboi-ar-fi-putut-fi-probabil-prevenit-4049757",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T17:44:59+00:00",
+          "seen_date": "2026-11-25T10:37:33+00:00",
           "origin": "RSS"
         }
       ]
@@ -817,77 +821,74 @@
       "dominant_narratives": [
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 23,
+          "score": 29,
           "sub_narratives": [
             {
               "name": "EU-s döntéshozatali konfliktus",
-              "score": 2
-            }
-          ]
-        },
-        {
-          "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 22,
-          "sub_narratives": [
-            {
-              "name": "orosz diplomáciai nyomás",
               "score": 1
             }
           ]
         },
         {
           "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 15,
+          "score": 24,
           "sub_narratives": [
             {
               "name": "tüntetések és utcai mobilizáció",
-              "score": 8
+              "score": 12
             },
             {
               "name": "kormány–ellenzék konfliktus",
-              "score": 7
-            },
-            {
-              "name": "választási kampány és politikai verseny",
-              "score": 1
+              "score": 9
             },
             {
               "name": "parlamenti válság vagy kormányválság",
-              "score": 1
+              "score": 7
             },
             {
-              "name": "helyi önkormányzati konfliktus",
+              "name": "igazságszolgáltatási vita",
+              "score": 2
+            },
+            {
+              "name": "médiaszabadság és civil szféra",
+              "score": 2
+            },
+            {
+              "name": "kisebbségi vagy etnikai belpolitikai vita",
               "score": 1
             }
           ]
         },
         {
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 17,
+          "sub_narratives": []
+        },
+        {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 13,
+          "score": 16,
           "sub_narratives": [
             {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 6
+              "score": 4
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 3
+              "score": 2
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
             },
             {
               "name": "balti elrettentés",
-              "score": 2
+              "score": 1
             }
           ]
         }
       ],
       "narrative_summary": "A domináns stratégiai narratíva jelenleg: EU-politika, jogállamiság és uniós források. A legerősebb alnarratívák: EU-s döntéshozatali konfliktus.",
       "top_narrative_drivers": [
-        {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "score": 9
-        },
         {
           "title": "Like Sánchez, Spanish opposition stalls on NATO defence target",
           "source": "Euractiv",
@@ -907,15 +908,21 @@
           "score": 8
         },
         {
+          "title": "Itt a válasz az orosz provokációkra: repüléstilalmi zónát hoznak létre a NATO keleti szárnyánál",
+          "source": "Portfolio Global",
+          "url": "https://www.portfolio.hu/global/20261125/itt-a-valasz-az-orosz-provokaciokra-repulestilalmi-zonat-hoznak-letre-a-nato-keleti-szarnyanal-879092",
+          "score": 7
+        },
+        {
+          "title": "Olyan vörös vonalhoz érkeztünk, amit soha korábban nem mert átlépni a NATO: nyílt beavatkozás jöhet Ukrajnában?",
+          "source": "Portfolio Global",
+          "url": "https://www.portfolio.hu/global/20261125/olyan-voros-vonalhoz-erkeztunk-amit-soha-korabban-nem-mert-atlepni-a-nato-nyilt-beavatkozas-johet-ukrajnaban-879028",
+          "score": 7
+        },
+        {
           "title": "INTERVIEW: How ready is Europe for wartime health emergencies?",
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/interview-how-ready-is-europe-for-wartime-health-emergencies/",
-          "score": 6
-        },
-        {
-          "title": "NATO’s Black Sea ambitions meet Turkish caution",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/natos-black-sea-ambitions-meet-turkish-caution/",
           "score": 6
         }
       ],
@@ -938,11 +945,11 @@
             "count": 7
           },
           {
-            "name": "Ukrajna és Oroszország",
+            "name": "Belpolitikai feszültség",
             "count": 2
           },
           {
-            "name": "Belpolitikai feszültség",
+            "name": "Ukrajna és Oroszország",
             "count": 2
           }
         ]
@@ -1131,13 +1138,6 @@
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
-          "origin": "RSS"
-        },
-        {
           "title": "INTERVIEW: How ready is Europe for wartime health emergencies?",
           "url": "https://www.rapporteur.com/news/interview-how-ready-is-europe-for-wartime-health-emergencies/",
           "source": "Euractiv",
@@ -1159,10 +1159,31 @@
           "origin": "RSS"
         },
         {
-          "title": "Protesters oppose Malta’s new fees for non-EU workers",
-          "url": "https://www.rapporteur.com/news/protesters-oppose-maltas-new-fees-for-non-eu-workers/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-21T16:24:16+00:00",
+          "title": "Warsaw orders protest outside constitutional court to end",
+          "url": "https://notesfrompoland.com/2026/11/25/warsaw-orders-protest-outside-constitutional-court-to-end/",
+          "source": "Notes from Poland",
+          "seen_date": "2026-11-25T13:10:45+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Ukrajina hlásí zničení pěti ruských letadel a zásah dvou rafinerií. Kyjev a Charkov čelily ostřelování",
+          "url": "https://ct24.ceskatelevize.cz/clanek/svet/pri-ruskem-utoku-v-kyjevske-oblasti-zahynul-muz-v-rusku-hori-rafinerie-379928",
+          "source": "CT24 Czechia",
+          "seen_date": "2026-11-25T06:49:48+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Protesters rally outside European Parliament against pesticide bill",
+          "url": "https://www.euronews.com/video/2026/11/25/protesters-rally-outside-european-parliament-against-pesticide-bill",
+          "source": "Euronews",
+          "seen_date": "2026-11-25T08:19:10+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Teachers clash with police during nationwide strike over education cuts in Chile",
+          "url": "https://www.euronews.com/video/2026/11/25/teachers-clash-with-police-during-nationwide-strike-over-education-cuts-in-chile",
+          "source": "Euronews",
+          "seen_date": "2026-11-25T06:23:23+00:00",
           "origin": "RSS"
         },
         {
@@ -1170,20 +1191,6 @@
           "url": "https://www.euronews.com/2026/11/24/qatar-says-it-will-not-accept-attacks-after-iran-protests-over-joint-statement-with-german",
           "source": "Euronews",
           "seen_date": "2026-11-24T14:29:42+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Belgium: Workers march against spending cuts as living costs rise",
-          "url": "https://www.euronews.com/video/2026/11/23/belgium-workers-march-against-spending-cuts-as-living-costs-rise",
-          "source": "Euronews",
-          "seen_date": "2026-11-23T21:09:46+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Spor v jadrovej agentúre OSN. Do jej vedenia má nastúpiť Rus, ktorého sankcionuje Ukrajina",
-          "url": "https://www.aktuality.sk/clanok/KkT5wbA/ukrajina-protestuje-proti-rusovi-vo-vedeni-jadrovej-agentury-osn-grossi-na-nominacii-trva/",
-          "source": "Aktuality Slovakia",
-          "seen_date": "2026-11-24T19:31:00+00:00",
           "origin": "RSS"
         }
       ]
@@ -1200,53 +1207,56 @@
       "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 26,
-          "sub_narratives": [
-            {
-              "name": "orosz diplomáciai nyomás",
-              "score": 2
-            }
-          ]
-        },
-        {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 23,
+          "score": 30,
           "sub_narratives": [
             {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 6
+              "score": 5
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 4
+              "score": 3
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
             },
             {
               "name": "balti elrettentés",
-              "score": 2
+              "score": 1
             }
           ]
         },
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 21,
+          "score": 29,
+          "sub_narratives": []
+        },
+        {
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 22,
           "sub_narratives": []
         },
         {
           "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 14,
+          "score": 19,
           "sub_narratives": [
             {
-              "name": "kormány–ellenzék konfliktus",
-              "score": 12
-            },
-            {
               "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 9
+              "score": 14
             },
             {
-              "name": "tüntetések és utcai mobilizáció",
-              "score": 3
+              "name": "kormány–ellenzék konfliktus",
+              "score": 11
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 8
+            },
+            {
+              "name": "igazságszolgáltatási vita",
+              "score": 7
             },
             {
               "name": "médiaszabadság és civil szféra",
@@ -1254,21 +1264,23 @@
             },
             {
               "name": "választási kampány és politikai verseny",
-              "score": 2
-            },
-            {
-              "name": "igazságszolgáltatási vita",
-              "score": 2
+              "score": 1
             }
           ]
         }
       ],
-      "narrative_summary": "A domináns stratégiai narratíva jelenleg: Ukrajna támogatása és orosz–ukrán háború. A legerősebb alnarratívák: orosz diplomáciai nyomás.",
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem, keleti szárny megerősítése.",
       "top_narrative_drivers": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
+          "title": "Rutte a îndemnat NATO să pregătească și populația civilă pentru un eventual conflict cu Rusia. Ce spune despre România",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/rutte-a-indemnat-nato-sa-pregateasca-nu-doar-armatele-ci-si-populatia-civila-pentru-un-eventual-conflict-cu-rusia-4051649",
+          "score": 9
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
           "score": 9
         },
         {
@@ -1284,22 +1296,16 @@
           "score": 8
         },
         {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "score": 8
+        },
+        {
           "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
           "source": "Digi24 Romania",
           "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
           "score": 8
-        },
-        {
-          "title": "Reacția șefului NATO la informațiile potrivit cărora Rusia se pregătește să lanseze o armă nucleară în spațiu",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/reactia-sefului-nato-la-informatiile-potrivit-carora-rusia-se-pregateste-sa-lanseze-o-arma-nucleara-in-spatiu-4050153",
-          "score": 7
-        },
-        {
-          "title": "INTERVIEW: How ready is Europe for wartime health emergencies?",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/interview-how-ready-is-europe-for-wartime-health-emergencies/",
-          "score": 6
         }
       ],
       "security_layer": {
@@ -1309,20 +1315,24 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 72,
-        "social_mentions": 14,
+        "social_index": 70,
+        "social_mentions": 15,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 14,
+        "mastodon_mentions": 15,
         "social_topic": "Biztonsági kockázat",
         "social_topics": [
           {
             "name": "Biztonsági kockázat",
-            "count": 10
+            "count": 12
           },
           {
             "name": "Ukrajna és Oroszország",
-            "count": 4
+            "count": 2
+          },
+          {
+            "name": "EU / jogállamiság",
+            "count": 1
           }
         ]
       },
@@ -1510,10 +1520,24 @@
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T14:18:56+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T09:17:19+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T05:00:36+00:00",
           "origin": "RSS"
         },
         {
@@ -1538,31 +1562,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Kyjev se přihlásil k útoku na ruskou vojenskou loď Merkurij poblíž Libye",
-          "url": "https://ct24.ceskatelevize.cz/clanek/svet/kyjev-se-prihlasil-k-utoku-na-ruskou-vojenskou-lod-merkurij-pobliz-libye-379853",
+          "title": "Ukrajina hlásí zničení pěti ruských letadel a zásah dvou rafinerií. Kyjev a Charkov čelily ostřelování",
+          "url": "https://ct24.ceskatelevize.cz/clanek/svet/pri-ruskem-utoku-v-kyjevske-oblasti-zahynul-muz-v-rusku-hori-rafinerie-379928",
           "source": "CT24 Czechia",
-          "seen_date": "2026-11-23T08:13:27+00:00",
+          "seen_date": "2026-11-25T06:49:48+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Spor v jadrovej agentúre OSN. Do jej vedenia má nastúpiť Rus, ktorého sankcionuje Ukrajina",
-          "url": "https://www.aktuality.sk/clanok/KkT5wbA/ukrajina-protestuje-proti-rusovi-vo-vedeni-jadrovej-agentury-osn-grossi-na-nominacii-trva/",
-          "source": "Aktuality Slovakia",
-          "seen_date": "2026-11-24T19:31:00+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Rusko podľa Británie stupňuje hybridnú vojnu. Ohrozené sú aj logistické firmy",
-          "url": "https://www.aktuality.sk/clanok/tq7Kj29/britania-varuje-firmy-podporujuce-ukrajinu-pred-ruskymi-sabotazami/",
-          "source": "Aktuality Slovakia",
-          "seen_date": "2026-11-24T18:41:00+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "SME Online: Kyjev čelil ďalšiemu dronovému útoku, Rusi zasiahli 16-poschodovú budovu",
-          "url": "https://www.sme.sk/svet/c/ukrajina-rusko-zelenskyj-putin-trump-online-minuta-po-minute-25-11-2026",
-          "source": "SME Slovakia",
-          "seen_date": "2026-11-24T22:31:26+00:00",
+          "title": "„Izrael se musí připravit.“ Klíčový verdikt říká, že obrana genocidu neomlouvá",
+          "url": "https://ct24.ceskatelevize.cz/clanek/svet/izrael-se-musi-pripravit-klicovy-verdikt-rika-ze-sebeobrana-genocidu-neomlouva-379905",
+          "source": "CT24 Czechia",
+          "seen_date": "2026-11-25T05:00:00+00:00",
           "origin": "RSS"
         }
       ]
@@ -1579,56 +1589,52 @@
       "article_count": 90,
       "dominant_narratives": [
         {
-          "name": "EU-politika, jogállamiság és uniós források",
-          "score": 32,
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 44,
           "sub_narratives": [
             {
-              "name": "korrupció és intézményi bizalom",
-              "score": 3
-            },
-            {
-              "name": "EU-s döntéshozatali konfliktus",
-              "score": 1
+              "name": "orosz diplomáciai nyomás",
+              "score": 8
             }
           ]
         },
         {
-          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "name": "EU-politika, jogállamiság és uniós források",
           "score": 31,
           "sub_narratives": [
             {
-              "name": "orosz diplomáciai nyomás",
+              "name": "korrupció és intézményi bizalom",
               "score": 2
             }
           ]
         },
         {
           "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 23,
+          "score": 26,
           "sub_narratives": [
             {
               "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 76
+              "score": 79
             },
             {
               "name": "kormány–ellenzék konfliktus",
+              "score": 12
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
               "score": 10
             },
             {
               "name": "választási kampány és politikai verseny",
-              "score": 8
-            },
-            {
-              "name": "parlamenti válság vagy kormányválság",
-              "score": 5
+              "score": 4
             },
             {
               "name": "korrupciós ügyek",
-              "score": 4
+              "score": 3
             },
             {
               "name": "tüntetések és utcai mobilizáció",
-              "score": 4
+              "score": 3
             }
           ]
         },
@@ -1638,11 +1644,15 @@
           "sub_narratives": [
             {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 9
+              "score": 5
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 3
+              "score": 2
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
             },
             {
               "name": "balti elrettentés",
@@ -1651,14 +1661,8 @@
           ]
         }
       ],
-      "narrative_summary": "A domináns stratégiai narratíva jelenleg: EU-politika, jogállamiság és uniós források. A legerősebb alnarratívák: korrupció és intézményi bizalom, EU-s döntéshozatali konfliktus.",
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: Ukrajna támogatása és orosz–ukrán háború. A legerősebb alnarratívák: orosz diplomáciai nyomás.",
       "top_narrative_drivers": [
-        {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "score": 9
-        },
         {
           "title": "Like Sánchez, Spanish opposition stalls on NATO defence target",
           "source": "Euractiv",
@@ -1672,22 +1676,28 @@
           "score": 8
         },
         {
-          "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
           "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
           "score": 8
         },
         {
-          "title": "INTERVIEW: How ready is Europe for wartime health emergencies?",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/interview-how-ready-is-europe-for-wartime-health-emergencies/",
-          "score": 6
+          "title": "Itt a válasz az orosz provokációkra: repüléstilalmi zónát hoznak létre a NATO keleti szárnyánál",
+          "source": "Portfolio Global",
+          "url": "https://www.portfolio.hu/global/20261125/itt-a-valasz-az-orosz-provokaciokra-repulestilalmi-zonat-hoznak-letre-a-nato-keleti-szarnyanal-879092",
+          "score": 7
         },
         {
-          "title": "NATO’s Black Sea ambitions meet Turkish caution",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/natos-black-sea-ambitions-meet-turkish-caution/",
-          "score": 6
+          "title": "Olyan vörös vonalhoz érkeztünk, amit soha korábban nem mert átlépni a NATO: nyílt beavatkozás jöhet Ukrajnában?",
+          "source": "Portfolio Global",
+          "url": "https://www.portfolio.hu/global/20261125/olyan-voros-vonalhoz-erkeztunk-amit-soha-korabban-nem-mert-atlepni-a-nato-nyilt-beavatkozas-johet-ukrajnaban-879028",
+          "score": 7
+        },
+        {
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "score": 7
         }
       ],
       "security_layer": {
@@ -1697,20 +1707,24 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 50,
-        "social_mentions": 7,
+        "social_index": 20,
+        "social_mentions": 3,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
-        "social_topic": "Biztonsági kockázat",
+        "mastodon_mentions": 3,
+        "social_topic": "Belpolitikai feszültség",
         "social_topics": [
           {
-            "name": "Biztonsági kockázat",
-            "count": 5
+            "name": "Belpolitikai feszültség",
+            "count": 1
           },
           {
-            "name": "Ukrajna és Oroszország",
-            "count": 2
+            "name": "Külső befolyás",
+            "count": 1
+          },
+          {
+            "name": "Biztonsági kockázat",
+            "count": 1
           }
         ]
       },
@@ -1898,31 +1912,31 @@
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "Ursula von der Leyen îi cere lui Putin un armistițiu energetic pe timpul iernii: Ar demonstra că Rusia ia în serios negocierile de pace",
+          "url": "https://www.digi24.ro/stiri/externe/ue/ursula-von-der-leyen-ii-cere-lui-putin-un-armistitiu-energetic-pe-timpul-iernii-ar-demonstra-ca-rusia-ia-in-serios-negocierile-de-pace-4052879",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T16:24:15+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Donald Trump i-a acordat lui Rudy Giuliani cea mai înaltă distincție civilă a SUA: „Un funcționar public devotat”",
-          "url": "https://www.digi24.ro/stiri/externe/sua/donald-trump-i-a-acordat-lui-rudy-giuliani-cea-mai-inalta-distinctie-civila-a-sua-un-functionar-public-devotat-4051443",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T19:22:54+00:00",
+          "seen_date": "2026-11-25T14:18:56+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Ministrul Apărării, în Politico: România vrea ca firmele americane să aibă acces la fondurile UE pentru înarmare. Ce argumente invocă",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ministrul-apararii-in-politico-romania-vrea-ca-firmele-americane-sa-aiba-acces-la-fondurile-ue-pentru-inarmare-ce-argumente-invoca-4051149",
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T16:17:33+00:00",
+          "seen_date": "2026-11-25T09:17:19+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Patru scenarii pentru România: ce câștigăm prin reforme și ce putem pierde în cazul unui RoExit până în anul 2035 (raport)",
-          "url": "https://www.digi24.ro/stiri/economie/patru-scenarii-pentru-romania-ce-castigam-prin-reforme-si-ce-putem-pierde-in-cazul-unui-roexit-pana-in-anul-2035-raport-4051041",
+          "title": "Prima țară europeană care confirmă că și-ar trimite diplomații la Moscova pentru negocieri privind încheierea războiului",
+          "url": "https://www.digi24.ro/stiri/externe/ue/prima-tara-europeana-care-confirma-ca-si-ar-trimite-diplomatii-la-moscova-pentru-negocieri-privind-incheierea-razboiului-4051863",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T15:12:28+00:00",
+          "seen_date": "2026-11-25T09:50:44+00:00",
           "origin": "RSS"
         },
         {
@@ -1940,17 +1954,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Bugetul UE, noul câmp de luptă al Europei. Ucraina, coeziunea și taxele europene adâncesc diviziunile dintre țările membre",
-          "url": "https://www.digi24.ro/stiri/externe/ue/bugetul-ue-noul-camp-de-lupta-al-europei-ucraina-coeziunea-si-taxele-europene-adancesc-diviziunile-dintre-tarile-membre-4051529",
+          "title": "Grecii cer salarii mai mari și prime de sărbători. Mii de oameni au ieșit în stradă, iar transporturile au fost afectate",
+          "url": "https://www.digi24.ro/stiri/externe/ue/grecii-cer-salarii-mai-mari-si-prime-de-sarbatori-mii-de-oameni-au-iesit-in-strada-iar-transporturile-au-fost-afectate-4052805",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T21:10:52+00:00",
+          "seen_date": "2026-11-25T15:46:25+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Min. Digitalizării, despre atacul ransomware de la ANCPI: „Datele au fost criptate și cred că li s-a cerut o răscumpărare”",
-          "url": "https://www.digi24.ro/stiri/actualitate/min-digitalizarii-despre-atacul-ransomware-de-la-ancpi-datele-au-fost-criptate-si-cred-ca-li-s-a-cerut-o-rascumparare-4051501",
+          "title": "Friedrich Merz avertizează că Rusia își intensifică acțiunile pe teritoriul european și în spațiu: „Vrea mai mult decât Ucraina”",
+          "url": "https://www.digi24.ro/stiri/externe/ue/friedrich-merz-avertizeaza-ca-rusia-isi-intensifica-actiunile-pe-teritoriul-european-si-in-spatiu-vrea-mai-mult-decat-ucraina-4052657",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-24T20:35:23+00:00",
+          "seen_date": "2026-11-25T14:30:23+00:00",
           "origin": "RSS"
         }
       ]
@@ -1964,97 +1978,88 @@
       "political_mood": "ALERT",
       "security_trend": "RISING",
       "main_topic": "NATO keleti szárny és katonai elrettentés",
-      "article_count": 90,
+      "article_count": 73,
       "dominant_narratives": [
         {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 49,
-          "sub_narratives": [
-            {
-              "name": "balti elrettentés",
-              "score": 52
-            },
-            {
-              "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 9
-            },
-            {
-              "name": "hadgyakorlatok és katonai készültség",
-              "score": 4
-            },
-            {
-              "name": "légtérellenőrzés és légvédelem",
-              "score": 4
-            }
-          ]
-        },
-        {
-          "name": "Ukrajna támogatása és orosz–ukrán háború",
           "score": 47,
           "sub_narratives": [
             {
-              "name": "orosz diplomáciai nyomás",
-              "score": 2
+              "name": "balti elrettentés",
+              "score": 38
             },
             {
-              "name": "szankciós politika",
+              "name": "védelmi kiadások és fegyverbeszerzés",
+              "score": 6
+            },
+            {
+              "name": "légtérellenőrzés és légvédelem",
+              "score": 3
+            },
+            {
+              "name": "keleti szárny megerősítése",
               "score": 1
             }
           ]
         },
         {
-          "name": "EU-politika, jogállamiság és uniós források",
-          "score": 29,
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 43,
           "sub_narratives": [
             {
-              "name": "EU-s döntéshozatali konfliktus",
-              "score": 3
+              "name": "orosz diplomáciai nyomás",
+              "score": 2
             }
           ]
         },
         {
-          "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 26,
+          "name": "EU-politika, jogállamiság és uniós források",
+          "score": 24,
+          "sub_narratives": []
+        },
+        {
+          "name": "Energiabiztonság, gazdaság és infrastruktúra",
+          "score": 17,
           "sub_narratives": [
             {
-              "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 30
+              "name": "kritikus infrastruktúra",
+              "score": 14
             },
             {
-              "name": "kormány–ellenzék konfliktus",
-              "score": 13
+              "name": "nukleáris energia",
+              "score": 1
             },
             {
-              "name": "tüntetések és utcai mobilizáció",
-              "score": 6
-            },
-            {
-              "name": "parlamenti válság vagy kormányválság",
-              "score": 5
-            },
-            {
-              "name": "helyi önkormányzati konfliktus",
-              "score": 3
-            },
-            {
-              "name": "választási kampány és politikai verseny",
-              "score": 2
+              "name": "LNG és energiaútvonalak",
+              "score": 1
             }
           ]
         }
       ],
-      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: balti elrettentés, védelmi kiadások és fegyverbeszerzés, hadgyakorlatok és katonai készültség.",
+      "narrative_summary": "A domináns stratégiai narratíva jelenleg: NATO keleti szárny és katonai elrettentés. A legerősebb alnarratívák: balti elrettentés, védelmi kiadások és fegyverbeszerzés, légtérellenőrzés és légvédelem.",
       "top_narrative_drivers": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
+          "title": "Russian diplomat summoned yet again by Latvia over ongoing aggression",
+          "source": "LSM Latvia",
+          "url": "https://eng.lsm.lv/article/politics/diplomacy/23.11.2026-russian-diplomat-summoned-yet-again-by-latvia-over-ongoing-aggression.a673122/",
+          "score": 11
+        },
+        {
+          "title": "Renewed call for 'blood grain' transit ban in Latvia",
+          "source": "LSM Latvia",
+          "url": "https://eng.lsm.lv/article/economy/business/23.11.2026-renewed-call-for-blood-grain-transit-ban-in-latvia.a672987/",
+          "score": 10
+        },
+        {
+          "title": "Rutte a îndemnat NATO să pregătească și populația civilă pentru un eventual conflict cu Rusia. Ce spune despre România",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/rutte-a-indemnat-nato-sa-pregateasca-nu-doar-armatele-ci-si-populatia-civila-pentru-un-eventual-conflict-cu-rusia-4051649",
           "score": 9
         },
         {
-          "title": "Estonia backs EU's 22nd Russia sanctions package, fighter visa ban",
-          "source": "ERR Estonia",
-          "url": "https://news.err.ee/1610204860/estonia-backs-eu-s-22nd-russia-sanctions-package-fighter-visa-ban",
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
           "score": 9
         },
         {
@@ -2068,18 +2073,6 @@
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/ukraine-france-renew-push-for-kyivs-nato-membership/",
           "score": 8
-        },
-        {
-          "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
-          "score": 8
-        },
-        {
-          "title": "Maia Sandu avertizează asupra războiului cognitiv al Rusiei împotriva Europei: „Vrea să schimbe ce cred oamenii”. Ce soluții propune",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/maia-sandu-avertizeaza-asupra-razboiului-cognitiv-al-rusiei-impotriva-europei-vrea-sa-schimbe-ce-cred-oamenii-ce-solutii-propune-4049189",
-          "score": 8
         }
       ],
       "security_layer": {
@@ -2089,20 +2082,20 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 50,
-        "social_mentions": 13,
+        "social_index": 76,
+        "social_mentions": 15,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 13,
+        "mastodon_mentions": 15,
         "social_topic": "Ukrajna és Oroszország",
         "social_topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 10
+            "count": 7
           },
           {
             "name": "Biztonsági kockázat",
-            "count": 2
+            "count": 7
           },
           {
             "name": "Külső befolyás",
@@ -2289,15 +2282,29 @@
           "date": "2026-11-25",
           "risk_score": 90,
           "social_signal": 0,
-          "article_count": 90
+          "article_count": 73
         }
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T14:18:56+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T09:17:19+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T05:00:36+00:00",
           "origin": "RSS"
         },
         {
@@ -2305,20 +2312,6 @@
           "url": "https://www.digi24.ro/stiri/externe/ue/avertismentul-sefului-nato-privind-armata-europeana-e-foarte-posibil-ca-putin-sa-cucereasca-rotterdamul-inainte-sa-ajungem-la-un-acord-4049999",
           "source": "Digi24 Romania",
           "seen_date": "2026-11-23T21:05:34+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Teachers' pay dispute ends without agreement",
-          "url": "https://news.err.ee/1610204884/teachers-pay-dispute-ends-without-agreement",
-          "source": "ERR Estonia",
-          "seen_date": "2026-11-24T13:01:00+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Estonia's defense minister: The Gulf of Finland has not become more dangerous",
-          "url": "https://news.err.ee/1610203777/estonia-s-defense-minister-the-gulf-of-finland-has-not-become-more-dangerous",
-          "source": "ERR Estonia",
-          "seen_date": "2026-11-23T12:40:00+00:00",
           "origin": "RSS"
         },
         {
@@ -2336,17 +2329,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Merz consideră o greșeală refuzul de a permite Ucrainei să adere la NATO în 2008: „Acest război ar fi putut fi probabil prevenit”",
-          "url": "https://www.digi24.ro/stiri/externe/ue/merz-considera-o-greseala-refuzul-de-a-permite-ucrainei-sa-adere-la-nato-in-2008-acest-razboi-ar-fi-putut-fi-probabil-prevenit-4049757",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T17:44:59+00:00",
+          "title": "Rosjanie tracą bezpieczne przystanie. Ukraińcy pokazali, jak daleko mogą sięgnąć",
+          "url": "https://tvn24.pl/swiat/ukraina-rosja-atak-na-korwete-merkury-u-wybrzezy-w-libii-co-oznacza-st9352604",
+          "source": "TVN24 Poland",
+          "seen_date": "2026-11-25T15:45:46+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Estonia acționează „la un pas de a declanșa un război deschis”, susține Rusia: „Nu ia în considerare cu seriozitate consecințele”",
-          "url": "https://www.digi24.ro/stiri/externe/rusia/estonia-actioneaza-la-un-pas-de-a-declansa-un-razboi-deschis-sustine-rusia-nu-ia-in-considerare-cu-seriozitate-consecintele-4049537",
+          "title": "Patru senatori PNL, sancționați după conflictul cu Bolojan. Nicoleta Pauliuc și Monica Anisie, excluse din grupul de la Senat",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/pauliuc-si-anisie-in-pericol-de-excludere-din-grupul-pnl-de-la-senat-liberalii-discuta-azi-sanctionarea-contestatarilor-lui-bolojan-4051775",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T15:18:50+00:00",
+          "seen_date": "2026-11-25T11:09:57+00:00",
           "origin": "RSS"
         }
       ]
@@ -2364,7 +2357,7 @@
       "dominant_narratives": [
         {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 44,
+          "score": 46,
           "sub_narratives": [
             {
               "name": "balti elrettentés",
@@ -2372,35 +2365,39 @@
             },
             {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 7
+              "score": 8
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 4
-            }
-          ]
-        },
-        {
-          "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 36,
-          "sub_narratives": [
+              "score": 3
+            },
             {
-              "name": "orosz diplomáciai nyomás",
+              "name": "keleti szárny megerősítése",
               "score": 1
             }
           ]
         },
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 33,
+          "score": 36,
           "sub_narratives": [
             {
-              "name": "korrupció és intézményi bizalom",
+              "name": "EU-s döntéshozatali konfliktus",
               "score": 4
             },
             {
-              "name": "EU-s döntéshozatali konfliktus",
+              "name": "korrupció és intézményi bizalom",
               "score": 3
+            }
+          ]
+        },
+        {
+          "name": "Ukrajna támogatása és orosz–ukrán háború",
+          "score": 35,
+          "sub_narratives": [
+            {
+              "name": "orosz diplomáciai nyomás",
+              "score": 1
             }
           ]
         },
@@ -2410,27 +2407,27 @@
           "sub_narratives": [
             {
               "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 28
+              "score": 26
             },
             {
               "name": "kormány–ellenzék konfliktus",
-              "score": 9
+              "score": 11
             },
             {
               "name": "parlamenti válság vagy kormányválság",
-              "score": 7
+              "score": 6
+            },
+            {
+              "name": "médiaszabadság és civil szféra",
+              "score": 6
             },
             {
               "name": "korrupciós ügyek",
-              "score": 5
+              "score": 4
             },
             {
               "name": "tüntetések és utcai mobilizáció",
-              "score": 5
-            },
-            {
-              "name": "igazságszolgáltatási vita",
-              "score": 3
+              "score": 4
             }
           ]
         }
@@ -2450,9 +2447,15 @@
           "score": 10
         },
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
+          "title": "Rutte a îndemnat NATO să pregătească și populația civilă pentru un eventual conflict cu Rusia. Ce spune despre România",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/rutte-a-indemnat-nato-sa-pregateasca-nu-doar-armatele-ci-si-populatia-civila-pentru-un-eventual-conflict-cu-rusia-4051649",
+          "score": 9
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
           "score": 9
         },
         {
@@ -2466,12 +2469,6 @@
           "source": "Euractiv",
           "url": "https://www.rapporteur.com/news/ukraine-france-renew-push-for-kyivs-nato-membership/",
           "score": 8
-        },
-        {
-          "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
-          "score": 8
         }
       ],
       "security_layer": {
@@ -2481,16 +2478,20 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 47,
-        "social_mentions": 15,
+        "social_index": 49,
+        "social_mentions": 12,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 15,
+        "mastodon_mentions": 12,
         "social_topic": "Ukrajna és Oroszország",
         "social_topics": [
           {
             "name": "Ukrajna és Oroszország",
-            "count": 15
+            "count": 11
+          },
+          {
+            "name": "Külső befolyás",
+            "count": 1
           }
         ]
       },
@@ -2678,10 +2679,24 @@
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T14:18:56+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T09:17:19+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T05:00:36+00:00",
           "origin": "RSS"
         },
         {
@@ -2689,13 +2704,6 @@
           "url": "https://www.digi24.ro/stiri/externe/ue/avertismentul-sefului-nato-privind-armata-europeana-e-foarte-posibil-ca-putin-sa-cucereasca-rotterdamul-inainte-sa-ajungem-la-un-acord-4049999",
           "source": "Digi24 Romania",
           "seen_date": "2026-11-23T21:05:34+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Latvian Foreign Ministry to support Moldovan project",
-          "url": "https://eng.lsm.lv/article/society/society/20.11.2026-latvian-foreign-ministry-to-support-moldovan-project.a672814/",
-          "source": "LSM Latvia",
-          "seen_date": "2026-11-20T15:45:11+00:00",
           "origin": "RSS"
         },
         {
@@ -2713,24 +2721,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Merz consideră o greșeală refuzul de a permite Ucrainei să adere la NATO în 2008: „Acest război ar fi putut fi probabil prevenit”",
-          "url": "https://www.digi24.ro/stiri/externe/ue/merz-considera-o-greseala-refuzul-de-a-permite-ucrainei-sa-adere-la-nato-in-2008-acest-razboi-ar-fi-putut-fi-probabil-prevenit-4049757",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T17:44:59+00:00",
+          "title": "Rosjanie tracą bezpieczne przystanie. Ukraińcy pokazali, jak daleko mogą sięgnąć",
+          "url": "https://tvn24.pl/swiat/ukraina-rosja-atak-na-korwete-merkury-u-wybrzezy-w-libii-co-oznacza-st9352604",
+          "source": "TVN24 Poland",
+          "seen_date": "2026-11-25T15:45:46+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Maia Sandu avertizează asupra războiului cognitiv al Rusiei împotriva Europei: „Vrea să schimbe ce cred oamenii”. Ce soluții propune",
-          "url": "https://www.digi24.ro/stiri/maia-sandu-avertizeaza-asupra-razboiului-cognitiv-al-rusiei-impotriva-europei-vrea-sa-schimbe-ce-cred-oamenii-ce-solutii-propune-4049189",
+          "title": "Patru senatori PNL, sancționați după conflictul cu Bolojan. Nicoleta Pauliuc și Monica Anisie, excluse din grupul de la Senat",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/pauliuc-si-anisie-in-pericol-de-excludere-din-grupul-pnl-de-la-senat-liberalii-discuta-azi-sanctionarea-contestatarilor-lui-bolojan-4051775",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T12:35:07+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Polonia a cerut o reuniune de urgență a NATO, după ce trei rachete au ajuns pe teritoriul său",
-          "url": "https://www.digi24.ro/stiri/externe/ue/varsovia-a-cerut-o-reuniune-de-urgenta-a-nato-dupa-ce-trei-rachete-au-ajuns-pe-teritoriul-sau-4048499",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T08:35:55+00:00",
+          "seen_date": "2026-11-25T11:09:57+00:00",
           "origin": "RSS"
         }
       ]
@@ -2748,25 +2749,29 @@
       "dominant_narratives": [
         {
           "name": "NATO keleti szárny és katonai elrettentés",
-          "score": 46,
+          "score": 45,
           "sub_narratives": [
             {
               "name": "balti elrettentés",
-              "score": 53
+              "score": 55
             },
             {
               "name": "védelmi kiadások és fegyverbeszerzés",
-              "score": 6
+              "score": 5
             },
             {
               "name": "légtérellenőrzés és légvédelem",
-              "score": 4
+              "score": 3
+            },
+            {
+              "name": "keleti szárny megerősítése",
+              "score": 1
             }
           ]
         },
         {
           "name": "Ukrajna támogatása és orosz–ukrán háború",
-          "score": 37,
+          "score": 38,
           "sub_narratives": [
             {
               "name": "orosz diplomáciai nyomás",
@@ -2776,32 +2781,32 @@
         },
         {
           "name": "EU-politika, jogállamiság és uniós források",
-          "score": 25,
+          "score": 23,
           "sub_narratives": []
         },
         {
           "name": "Belpolitikai feszültség és választási dinamika",
-          "score": 13,
+          "score": 12,
           "sub_narratives": [
             {
               "name": "kisebbségi vagy etnikai belpolitikai vita",
-              "score": 28
+              "score": 26
+            },
+            {
+              "name": "parlamenti válság vagy kormányválság",
+              "score": 5
             },
             {
               "name": "kormány–ellenzék konfliktus",
               "score": 4
             },
             {
-              "name": "parlamenti válság vagy kormányválság",
-              "score": 4
-            },
-            {
               "name": "tüntetések és utcai mobilizáció",
-              "score": 3
+              "score": 2
             },
             {
-              "name": "választási kampány és politikai verseny",
-              "score": 1
+              "name": "médiaszabadság és civil szféra",
+              "score": 2
             },
             {
               "name": "igazságszolgáltatási vita",
@@ -2819,9 +2824,15 @@
           "score": 11
         },
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "source": "Euractiv",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
+          "title": "Rutte a îndemnat NATO să pregătească și populația civilă pentru un eventual conflict cu Rusia. Ce spune despre România",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/rutte-a-indemnat-nato-sa-pregateasca-nu-doar-armatele-ci-si-populatia-civila-pentru-un-eventual-conflict-cu-rusia-4051649",
+          "score": 9
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "source": "Digi24 Romania",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
           "score": 9
         },
         {
@@ -2837,15 +2848,9 @@
           "score": 8
         },
         {
-          "title": "Ucraina, în fața unui paradox: ar putea adera la NATO, în timp ce alianța își reduce capacitatea de apărare",
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
           "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/externe/ue/ucraina-in-fata-unui-paradox-ar-putea-adera-la-nato-in-timp-ce-alianta-isi-reduce-capacitatea-de-aparare-4051385",
-          "score": 8
-        },
-        {
-          "title": "Maia Sandu avertizează asupra războiului cognitiv al Rusiei împotriva Europei: „Vrea să schimbe ce cred oamenii”. Ce soluții propune",
-          "source": "Digi24 Romania",
-          "url": "https://www.digi24.ro/stiri/maia-sandu-avertizeaza-asupra-razboiului-cognitiv-al-rusiei-impotriva-europei-vrea-sa-schimbe-ce-cred-oamenii-ce-solutii-propune-4049189",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
           "score": 8
         }
       ],
@@ -2856,24 +2861,20 @@
         "security_trend": "RISING"
       },
       "social_layer": {
-        "social_index": 66,
-        "social_mentions": 7,
+        "social_index": 40,
+        "social_mentions": 5,
         "x_mentions": 0,
         "reddit_mentions": 0,
-        "mastodon_mentions": 7,
-        "social_topic": "Ukrajna és Oroszország",
+        "mastodon_mentions": 5,
+        "social_topic": "Biztonsági kockázat",
         "social_topics": [
           {
-            "name": "Ukrajna és Oroszország",
-            "count": 4
-          },
-          {
             "name": "Biztonsági kockázat",
-            "count": 2
+            "count": 3
           },
           {
             "name": "Külső befolyás",
-            "count": 1
+            "count": 2
           }
         ]
       },
@@ -3061,10 +3062,24 @@
       ],
       "top_articles": [
         {
-          "title": "Poland seeks more NATO support after Russian missile incursion",
-          "url": "https://www.rapporteur.com/news/poland-seeks-more-nato-support-after-russian-missile-incursion/",
-          "source": "Euractiv",
-          "seen_date": "2026-11-20T14:06:06+00:00",
+          "title": "„Discuțiile deja se poartă”. Polonia a venit cu o propunere care ar putea schimba soarta războiului din Ucraina (Bloomberg)",
+          "url": "https://www.digi24.ro/stiri/externe/ue/discutiile-deja-se-poarta-polonia-a-venit-cu-o-propunere-care-ar-putea-schimba-soarta-razboiului-din-ucraina-bloomberg-4052465",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T14:18:56+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război",
+          "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T09:17:19+00:00",
+          "origin": "RSS"
+        },
+        {
+          "title": "Cum și-ar putea reconfigura Europa arhitectura de securitate pentru a-i mulțumi pe Putin și Trump. Cinci scenarii analizate de POLITICO",
+          "url": "https://www.digi24.ro/stiri/externe/ue/cum-si-ar-putea-reconfigura-europa-arhitectura-de-securitate-pentru-a-i-multumi-pe-putin-si-trump-cinci-scenarii-analizate-de-politico-4050839",
+          "source": "Digi24 Romania",
+          "seen_date": "2026-11-25T05:00:36+00:00",
           "origin": "RSS"
         },
         {
@@ -3089,31 +3104,17 @@
           "origin": "RSS"
         },
         {
-          "title": "Merz consideră o greșeală refuzul de a permite Ucrainei să adere la NATO în 2008: „Acest război ar fi putut fi probabil prevenit”",
-          "url": "https://www.digi24.ro/stiri/externe/ue/merz-considera-o-greseala-refuzul-de-a-permite-ucrainei-sa-adere-la-nato-in-2008-acest-razboi-ar-fi-putut-fi-probabil-prevenit-4049757",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T17:44:59+00:00",
+          "title": "Rosjanie tracą bezpieczne przystanie. Ukraińcy pokazali, jak daleko mogą sięgnąć",
+          "url": "https://tvn24.pl/swiat/ukraina-rosja-atak-na-korwete-merkury-u-wybrzezy-w-libii-co-oznacza-st9352604",
+          "source": "TVN24 Poland",
+          "seen_date": "2026-11-25T15:45:46+00:00",
           "origin": "RSS"
         },
         {
-          "title": "Maia Sandu avertizează asupra războiului cognitiv al Rusiei împotriva Europei: „Vrea să schimbe ce cred oamenii”. Ce soluții propune",
-          "url": "https://www.digi24.ro/stiri/maia-sandu-avertizeaza-asupra-razboiului-cognitiv-al-rusiei-impotriva-europei-vrea-sa-schimbe-ce-cred-oamenii-ce-solutii-propune-4049189",
+          "title": "Patru senatori PNL, sancționați după conflictul cu Bolojan. Nicoleta Pauliuc și Monica Anisie, excluse din grupul de la Senat",
+          "url": "https://www.digi24.ro/stiri/actualitate/politica/pauliuc-si-anisie-in-pericol-de-excludere-din-grupul-pnl-de-la-senat-liberalii-discuta-azi-sanctionarea-contestatarilor-lui-bolojan-4051775",
           "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T12:35:07+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Polonia a cerut o reuniune de urgență a NATO, după ce trei rachete au ajuns pe teritoriul său",
-          "url": "https://www.digi24.ro/stiri/externe/ue/varsovia-a-cerut-o-reuniune-de-urgenta-a-nato-dupa-ce-trei-rachete-au-ajuns-pe-teritoriul-sau-4048499",
-          "source": "Digi24 Romania",
-          "seen_date": "2026-11-23T08:35:55+00:00",
-          "origin": "RSS"
-        },
-        {
-          "title": "Russian diplomat summoned yet again by Latvia over ongoing aggression",
-          "url": "https://eng.lsm.lv/article/politics/diplomacy/23.11.2026-russian-diplomat-summoned-yet-again-by-latvia-over-ongoing-aggression.a673122/",
-          "source": "LSM Latvia",
-          "seen_date": "2026-11-23T17:32:00+00:00",
+          "seen_date": "2026-11-25T11:09:57+00:00",
           "origin": "RSS"
         }
       ]
